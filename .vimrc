@@ -199,6 +199,8 @@ if version >= 600
  nmap <M->> <C-W>>     " Increase current window width by 1
  nmap <M-<> <C-W><     " Decrease current window width by 1
 endif
+map <C-n> :cn<C-m>
+map <C-p> :cp<C-m>
 
 "
 " Autocommands for specific file types
@@ -349,6 +351,10 @@ if version >= 600
 
      " Wrap text after a certain number of characters
      autocmd BufRead,BufNewFile *.c,*.h set textwidth=79
+
+     " Use clang-format
+     map <leader>cf :pyf /home/pmkippes/.vim/clang-format.py<cr>
+     vmap <leader>cf :pyf /home/pmkippes/.vim/clang-format.py<cr>
    augroup END
 
    "
