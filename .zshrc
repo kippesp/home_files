@@ -10,7 +10,7 @@ zstyle ':completion:*' max-errors 2
 zstyle ':completion:*' menu select=long
 zstyle ':completion:*' select-prompt %SScrolling active: current selection at %p%s
 zstyle ':completion:*' verbose true
-zstyle :compinstall filename '/home/pmkippes/.zshrc'
+zstyle :compinstall filename '~/.zshrc'
 
 autoload -Uz compinit
 compinit
@@ -34,3 +34,8 @@ precmd_functions+=( precmd_vcs_info )
 setopt prompt_subst
 RPROMPT=\$vcs_info_msg_0_
 zstyle ':vcs_info:git:*' formats '%b'
+
+# Alias a few commands
+alias gls='git log --stat --decorate --graph --abbrev-commit'
+
+alias history='history 1'
