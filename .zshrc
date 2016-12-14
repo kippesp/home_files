@@ -39,3 +39,10 @@ zstyle ':vcs_info:git:*' formats '%b'
 alias gls='git log --stat --decorate --graph --abbrev-commit'
 
 alias history='history 1'
+
+# TOD make better
+export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
+
+# Defer glob-ing to certain commands
+alias scp='noglob scp'
+alias rsync='noglob rsync'
