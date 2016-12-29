@@ -1,5 +1,3 @@
-# The following lines were added by compinstall
-
 zstyle ':completion:*' auto-description 'specify: %d'
 zstyle ':completion:*' completer _complete _ignored _approximate
 zstyle ':completion:*' format 'Completing %d'
@@ -24,8 +22,7 @@ SAVEHIST=200000
 # Configure the prompt
 autoload -Uz promptinit
 promptinit
-prompt zefram
-PROMPT='%(?..%B{%v}%b)%m:%B%~%b%(!.#.>) '
+prompt adam1
 
 # Configure git integration
 autoload -Uz vcs_info

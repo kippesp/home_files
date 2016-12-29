@@ -1,0 +1,15 @@
+[user]
+name = Paul Kippes
+email = fixme@anon.com
+
+#[http]
+#proxy = http://host:911
+#
+#[https]
+#proxy = https://host:912
+
+[sendemail]
+suppresscc=all
+
+[push]
+default = simple
