@@ -31,6 +31,12 @@ set noequalalways       " Don't resize windows when splitting
 "set history=50          " keep 50 lines of command line history
 let mapleader=','
 
+" ## Mouse and clipboard settings
+
+set mouse=nhv           " Enable console mouse for Normal, Visual, and Help
+set clipboard=autoselect,unnamed        " (text mode) Attempt to place Visual mode selected text
+                                        "    and yank text in windowing system's clipboard
+
 " #########################################################################
 " ## VIM LOOK AND FEEL SETTINGS (ALL FILE TYPES, ALL CLIENT TYPES)
 " #########################################################################
@@ -51,6 +57,11 @@ set laststatus=2        " status line always on
 set colorcolumn=78      " highlight a "soft" right bounds
 set cpoptions+=$        " put the nice little $ when we change text
 
+set scrolloff=2         " Keep 2 lines above/below cursor line
+set sidescroll=1        " Scroll sideways 1 position at a time
+set sidescrolloff=5   " Keep 5 characters to the right/left of cursor when side scrolling
+set listchars+=precedes:<,extends:>   " Use < and > to indicated text beyond visible area
+" TODO: precedes not functioning
 
 "if version >= 600
 " if exists("DEJAVU")
@@ -178,18 +189,7 @@ set tabstop=4           " existing tabs will remain standard 8
 "" Scroll settings
 ""
 "if version >= 600
-" set sidescrolloff=5   " Keep 5 characters to the right/left of cursor when side scrolling
-" set listchars+=precedes:<,extends:>   " Use < and > to indicated text beyond visible area
 "endif
-"set scrolloff=2         " Keep 2 lines above/below cursor line
-"set sidescroll=1        " Scroll sideways 1 position at a time
-"
-""
-"" Mouse/clipboard settings
-""
-"set mouse=nhv           " Enable console mouse for Normal, Visual, and Help
-"set clipboard=autoselect,unnamed        " (text mode) Attempt to place Visual mode selected text
-"                                       "    and yank text in windowing system's clipboard
 "set guioptions+=a       " (gui mode)  Attempt to place Visual mode selected text
 "                       "    in windowing system's clipboard
 "
@@ -200,18 +200,18 @@ set tabstop=4           " existing tabs will remain standard 8
 "set guioptions-=m       " No menu bar
 "set guioptions-=T       " No toolbar
 "
-""
-"" Abbreviations
-""
-"iabbrev teh the
 "
-""
-"" Key mappings
-""
-"nmap :W :w
-"nmap :Q :q
-"nmap :B :b
-"nmap :E :e
+" Abbreviations
+"
+iabbrev teh the
+
+"
+" Key mappings
+"
+nmap :W :w
+nmap :Q :q
+nmap :B :b
+nmap :E :e
 "map <M-k> <C-y>         " Scroll window down
 "map <M-j> <C-e>         " Scroll window up
 "map <M-l> zl            " Scroll window right
