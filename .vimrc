@@ -2,21 +2,55 @@
 " .vimrc common file
 "
 " Maintainer: Paul Kippes
+" Original version: 1996
 
-"
-" Vim extensions
-"
+if version < 600
+ echo "This configuration file, .vimrc, assumes a modern vim."
+ echo "Run with -v option: 'vim -v [FILE]'"
+endif
+
+" #########################################################################
+" ## ENVIRONMENT AND CLIENT CAPABILITIES/RESTRICTIONS
+" #########################################################################
+
+" TODO: Determine in console
+" TODO: Determine in GUI
+
+" #########################################################################
+" ## VIM USABILITY ENABLING AND SETTINGS (ALL FILE TYPES)
+" #########################################################################
+
+" ## Vim Extensions and Miscellaneous
+
 set nocompatible        " Use Vim defaults (much better!)
 "set viminfo='20,\"50    " read/write a .viminfo file, don't store more
 "                       " than 50 lines of registers
 "set hidden              " Allow hidden buffers
 set noequalalways       " Don't resize windows when splitting
 "set splitbelow          " When splitting windows, current window is the lower
+"set history=50          " keep 50 lines of command line history
+let mapleader=','
+
+" #########################################################################
+" ## VIM LOOK AND FEEL SETTINGS (ALL FILE TYPES, ALL CLIENT TYPES)
+" #########################################################################
+
+" ## Enable and customize wildmenu feature
+
 "set wildmenu            " Enable cool completion
 "set wildmode=list:longest,list:full
 "set wildignore=*.o,*.tar,*.tgz,*.a
-"set history=50          " keep 50 lines of command line history
-"let mapleader=','
+
+" ## Interface view adjustments (non-editor)
+
+set ruler               " display ruler at bottom
+set laststatus=2        " status line always on
+
+" ## Editor view adjustments
+
+set colorcolumn=78      " highlight a "soft" right bounds
+set cpoptions+=$        " put the nice little $ when we change text
+
 
 "if version >= 600
 " if exists("DEJAVU")
@@ -129,13 +163,9 @@ set noequalalways       " Don't resize windows when splitting
 "
 " Editing settings
 "
-set ruler               " display ruler at bottom
-set laststatus=2        " status line always on
-set cpoptions+=$        " put the nice little $ when we change text
 "set showmatch           " Enable flash when matching brackets are found
 "set matchtime=2         " time to delay on matched bracket
 "set smartindent         " use smartindent when not using cindent
-set colorcolumn=100     " highlight a right bounds
 
 "
 " Default Tab settings to use spaces for tabs and tab stop/shift(>>) at 4 characters.
@@ -485,5 +515,8 @@ endif
 "command Header :call Header()
 "
 "let g:miniBufExplSplitBelow=0
+
+command SpellEn :setlocal spell spelllang=en_us
+"command SpellFr :setlocal spell spelllang=fr_fr
 
 " vim:expandtab:tabstop=2 shiftwidth=2
