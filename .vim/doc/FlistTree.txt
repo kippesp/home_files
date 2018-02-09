@@ -1,0 +1,40 @@
+*flisttree.txt*	Flist Tree		January 18, 2002
+
+Authors:  Charles E. Campbell, Jr.  <cec@NgrOyphSon.gPsfAc.nMasa.gov>
+	  (remove NOSPAM from Dr. Campbell's email before using)
+
+==============================================================================
+1. Contents						*flisttree-contents*
+
+	1. Contents...................................: |flisttree-contents|
+	2. Flist Tree Manual..........................: |flisttree|
+
+==============================================================================
+2. Flist Tree Manual					*flisttree*
+							*flisttree-manual*
+
+    :FlistTree [filename(s)]  Will (re)generate a <tags> file using the
+                              the program in the variable g:flist_tags.
+			      Will analyze the file(s) with flist -Tg -asx
+			      to generate the graphical function-usage
+			      tree.  To override the -asx option, use
+			      g:flist_options.
+
+    On GraphTree side:
+    \[.                       go up   one function level
+    \].                       go down one function level
+    \[[                       go to previous   function called at same depth
+    \]]                       go to succeeding function called at same depth
+
+    On Source side:
+    \[[                       like [[, but will also move the GraphTree
+                              appropriately
+    \]]                       like ]], but will also move the GraphTree
+                              appropriately
+
+  g:DrChipTopLvlMenu:         by default its "DrChip"; you may set this to
+                              whatever you like in your <.vimrc>.  This
+			      variable controls where DrawIt's menu items
+			      are placed.
+
+vim:tw=78:ts=8:ft=help
