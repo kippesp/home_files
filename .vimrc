@@ -31,6 +31,11 @@ set noequalalways       " Don't resize windows when splitting
 "set history=50          " keep 50 lines of command line history
 let mapleader=','
 
+" ## Search behavior
+
+set ignorecase          " Ignore case when searching
+set smartcase           " Allow override of case-sensitive search patterns
+
 " #########################################################################
 " ## VIM LOOK AND FEEL SETTINGS (ALL FILE TYPES, ALL CLIENT TYPES)
 " #########################################################################
@@ -156,8 +161,6 @@ set cpoptions+=$        " put the nice little $ when we change text
 ""
 "set incsearch           " Incremental search (highlight while searching)
 "set gdefault            " Substitute all matches in a line
-"set ignorecase          " Ignore case when searching
-"set smartcase           " Allow override of case-sensitive search patterns
 "set infercase           " Keyword completion isn't picky about case
 
 "
