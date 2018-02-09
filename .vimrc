@@ -36,6 +36,10 @@ let mapleader=','
 set mouse=nhv           " Enable console mouse for Normal, Visual, and Help
 set clipboard=autoselect,unnamed        " (text mode) Attempt to place Visual mode selected text
                                         "    and yank text in windowing system's clipboard
+" ## Search behavior
+
+set ignorecase          " Ignore case when searching
+set smartcase           " Allow override of case-sensitive search patterns
 
 " #########################################################################
 " ## VIM LOOK AND FEEL SETTINGS (ALL FILE TYPES, ALL CLIENT TYPES)
@@ -167,8 +171,6 @@ set listchars+=precedes:<,extends:>   " Use < and > to indicated text beyond vis
 ""
 "set incsearch           " Incremental search (highlight while searching)
 "set gdefault            " Substitute all matches in a line
-"set ignorecase          " Ignore case when searching
-"set smartcase           " Allow override of case-sensitive search patterns
 "set infercase           " Keyword completion isn't picky about case
 
 "
