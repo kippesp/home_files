@@ -15,6 +15,7 @@ endif
 
 " TODO: Determine in console
 " TODO: Determine in GUI
+" TODO: Get 'gqap' or other to reflow more sanely
 
 " #########################################################################
 " ## VIM USABILITY ENABLING AND SETTINGS (ALL FILE TYPES)
@@ -36,12 +37,16 @@ let mapleader=','
 set mouse=nhv           " Enable console mouse for Normal, Visual, and Help
 set clipboard=autoselect,unnamed        " (text mode) Attempt to place Visual mode selected text
                                         "    and yank text in windowing system's clipboard
+" ## Search behavior
+
+set ignorecase          " Ignore case when searching
+set smartcase           " Allow override of case-sensitive search patterns
 
 " #########################################################################
 " ## VIM LOOK AND FEEL SETTINGS (ALL FILE TYPES, ALL CLIENT TYPES)
 " #########################################################################
 
-" ## Enable and customize wildmenu feature
+" ## Enable and customize wild-menu feature
 
 "set wildmenu            " Enable cool completion
 "set wildmode=list:longest,list:full
@@ -167,8 +172,6 @@ set listchars+=precedes:<,extends:>   " Use < and > to indicated text beyond vis
 ""
 "set incsearch           " Incremental search (highlight while searching)
 "set gdefault            " Substitute all matches in a line
-"set ignorecase          " Ignore case when searching
-"set smartcase           " Allow override of case-sensitive search patterns
 "set infercase           " Keyword completion isn't picky about case
 
 "
