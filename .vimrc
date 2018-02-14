@@ -15,6 +15,7 @@ endif
 
 " TODO: Determine in console
 " TODO: Determine in GUI
+" TODO: Get 'gqap' or other to reflow more sanely
 
 " #########################################################################
 " ## VIM USABILITY ENABLING AND SETTINGS (ALL FILE TYPES)
@@ -45,7 +46,7 @@ set smartcase           " Allow override of case-sensitive search patterns
 " ## VIM LOOK AND FEEL SETTINGS (ALL FILE TYPES, ALL CLIENT TYPES)
 " #########################################################################
 
-" ## Enable and customize wildmenu feature
+" ## Enable and customize wild-menu feature
 
 "set wildmenu            " Enable cool completion
 "set wildmode=list:longest,list:full
