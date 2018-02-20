@@ -18,29 +18,54 @@ endif
 " TODO: Get 'gqap' or other to reflow more sanely
 
 " #########################################################################
-" ## VIM USABILITY ENABLING AND SETTINGS (ALL FILE TYPES)
+" ## VIM USABILITY ADJUSTMENTS (ALL FILE TYPES)
 " #########################################################################
 
 " ## Vim Extensions and Miscellaneous
 
 set nocompatible        " Use Vim defaults (much better!)
-"set viminfo='20,\"50    " read/write a .viminfo file, don't store more
+set viminfo='20,\"50    " read/write a .viminfo file, don't store more
 "                       " than 50 lines of registers
 "set hidden              " Allow hidden buffers
 set noequalalways       " Don't resize windows when splitting
 "set splitbelow          " When splitting windows, current window is the lower
-"set history=50          " keep 50 lines of command line history
+set history=75          " keep 75 lines of command line history
 let mapleader=','
 
-" ## Mouse and clipboard settings
+" ## Mouse and Clipboard Settings
 
 set mouse=nhv           " Enable console mouse for Normal, Visual, and Help
 set clipboard=autoselect,unnamed        " (text mode) Attempt to place Visual mode selected text
                                         "    and yank text in windowing system's clipboard
-" ## Search behavior
+" ## Search Behavior
 
 set ignorecase          " Ignore case when searching
 set smartcase           " Allow override of case-sensitive search patterns
+
+" ## File Settings
+
+set autowriteall        " write files when switching files
+
+"
+" Default Tab settings (Overridden by Specific File Types)
+"
+
+set expandtab           " expand tab into spaces
+set shiftwidth=4
+set tabstop=4           " existing tabs will remain standard 8
+
+"
+" Command Aliases
+"
+nmap :W :w
+nmap :Q :q
+nmap :B :b
+nmap :E :e
+
+"
+" Abbreviations And Typos Corrections
+"
+iabbrev teh the
 
 " #########################################################################
 " ## VIM LOOK AND FEEL SETTINGS (ALL FILE TYPES, ALL CLIENT TYPES)
@@ -163,8 +188,6 @@ set listchars+=precedes:<,extends:>   " Use < and > to indicated text beyond vis
 ""
 "" File settings
 ""
-"set nobackup            " don't keep a backup file
-"set autowrite           " write files when switching files
 ""set patchmode=.org  " Rename original file with .org extension
 "
 ""
@@ -181,13 +204,6 @@ set listchars+=precedes:<,extends:>   " Use < and > to indicated text beyond vis
 "set matchtime=2         " time to delay on matched bracket
 "set smartindent         " use smartindent when not using cindent
 
-"
-" Default Tab settings to use spaces for tabs and tab stop/shift(>>) at 4 characters.
-"
-set expandtab           " expand tab into spaces
-set shiftwidth=4
-set tabstop=4           " existing tabs will remain standard 8
-
 ""
 "" Scroll settings
 ""
@@ -203,18 +219,7 @@ set tabstop=4           " existing tabs will remain standard 8
 "set guioptions-=m       " No menu bar
 "set guioptions-=T       " No toolbar
 "
-"
-" Abbreviations
-"
-iabbrev teh the
 
-"
-" Key mappings
-"
-nmap :W :w
-nmap :Q :q
-nmap :B :b
-nmap :E :e
 "map <M-k> <C-y>         " Scroll window down
 "map <M-j> <C-e>         " Scroll window up
 "map <M-l> zl            " Scroll window right
