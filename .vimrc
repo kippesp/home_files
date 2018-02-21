@@ -302,10 +302,18 @@ set listchars+=precedes:<,extends:>   " Use < and > to indicated text beyond vis
 " nmap \cvi :vert scs find i <C-R>=expand("<cfile>")<CR><CR>
 " nmap \cvd :vert scs find d <C-R>=expand("<cfile>")<CR><CR>
 "endif
+
 "
-""
-"" Autocommand settings
-""
+" Autocommand settings
+"
+augroup cppgroup
+  au!
+
+  autocmd BufNewFile,BufRead *.cpp,*.hpp set formatoptions=croq shiftwidth=2 tabstop=2 cindent comments=sr:/*,mb:*,el:*/,://
+
+augroup end
+
+
 "if version >= 600
 " if has("autocmd")
 "   "
