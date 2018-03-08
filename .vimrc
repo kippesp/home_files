@@ -30,21 +30,25 @@ set viminfo='20,\"50    " read/write a .viminfo file, don't store more
 set noequalalways       " Don't resize windows when splitting
 "set splitbelow          " When splitting windows, current window is the lower
 set history=75          " keep 75 lines of command line history
-let mapleader=','
+let mapleader=','       " set the <leader>
 
 " ## Mouse and Clipboard Settings
 
 set mouse=nhv           " Enable console mouse for Normal, Visual, and Help
 set clipboard=autoselect,unnamed        " (text mode) Attempt to place Visual mode selected text
                                         "    and yank text in windowing system's clipboard
-" ## Search Behavior
+" ## Search/Replace Behavior
 
 set ignorecase          " Ignore case when searching
 set smartcase           " Allow override of case-sensitive search patterns
+set incsearch           " Incremental search (highlight while searching)
+set infercase           " Keyword completion isn't picky about case
+set gdefault            " Substitute all matches in a line
 
 " ## File Settings
 
 set autowriteall        " write files when switching files
+"set patchmode=.org  " Rename original file with .org extension
 
 "
 " Default Tab settings (Overridden by Specific File Types)
@@ -53,6 +57,14 @@ set autowriteall        " write files when switching files
 set expandtab           " expand tab into spaces
 set shiftwidth=4
 set tabstop=4           " existing tabs will remain standard 8
+
+"
+" Key mappings for tab pages
+"
+map <leader>to :tabnew %<CR>
+map <leader>tc :tabclose<CR>
+map <leader>tn :tabnext<CR>
+map <leader>tp :tabprevious<CR>
 
 "
 " Command Aliases
@@ -170,32 +182,12 @@ set listchars+=precedes:<,extends:>   " Use < and > to indicated text beyond vis
 "  set guifont=LucidaTypewriter
 "endif
 "
-"
-""
-"" Tabbed pages
-""
-"map <leader>to :tabnew %<CR>
-"map <leader>tc :tabclose<CR>
-"map <leader>tn :tabnext<CR>
-"map <leader>tp :tabprevious<CR>
-"
 ""
 "" Popup menu settings
 "
 ":set completeopt=longest,menuone
 ":inoremap <expr> <c-n> pumvisible() ? "\<lt>c-n>" : "\<lt>c-n>\<lt>c-r>=pumvisible() ? \"\\<lt>down>\" : \"\"\<lt>cr>"
 "
-""
-"" File settings
-""
-""set patchmode=.org  " Rename original file with .org extension
-"
-""
-"" Search/Replace settings
-""
-"set incsearch           " Incremental search (highlight while searching)
-"set gdefault            " Substitute all matches in a line
-"set infercase           " Keyword completion isn't picky about case
 
 "
 " Editing settings
