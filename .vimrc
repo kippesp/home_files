@@ -28,7 +28,7 @@ set viminfo='20,\"50    " read/write a .viminfo file, don't store more
 "                       " than 50 lines of registers
 "set hidden              " Allow hidden buffers
 set noequalalways       " Don't resize windows when splitting
-"set splitbelow          " When splitting windows, current window is the lower
+set splitbelow          " When splitting windows, current window is the lower
 set history=75          " keep 75 lines of command line history
 let mapleader=','       " set the <leader>
 
