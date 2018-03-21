@@ -58,6 +58,12 @@ set expandtab           " expand tab into spaces
 set shiftwidth=4
 set tabstop=4           " existing tabs will remain standard 8
 
+" ## Enable and customize wild-menu feature
+
+set wildmenu            " Enable wildmenu completion
+set wildmode=list:longest,list:full
+set wildignore=*.o,*.tar,*.tgz,*.a
+
 "
 " Key mappings for tab pages
 "
@@ -82,12 +88,6 @@ iabbrev teh the
 " #########################################################################
 " ## VIM LOOK AND FEEL SETTINGS (ALL FILE TYPES, ALL CLIENT TYPES)
 " #########################################################################
-
-" ## Enable and customize wild-menu feature
-
-"set wildmenu            " Enable cool completion
-"set wildmode=list:longest,list:full
-"set wildignore=*.o,*.tar,*.tgz,*.a
 
 " ## Interface view adjustments (non-editor)
 
