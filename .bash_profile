@@ -20,3 +20,7 @@ export PATH
 if [ -e ~/.ccache ] ; then
     export CCACHE_DIR=~/.ccache
 fi
+
+if [ -e ~/.bash_profile.local ] ; then
+    . ~/.bash_profile.local
+fi
