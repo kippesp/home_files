@@ -1,2 +1,1 @@
-# .profile - ???
-echo ".profile"
+# .profile
