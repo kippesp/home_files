@@ -48,10 +48,6 @@ if [ -e ~/.ccache ] ; then
     export CCACHE_DIR=~/.ccache
 fi
 
-if [ -e ~/.bash_profile.local ] ; then
-    . ~/.bash_profile.local
-fi
-
 # enable color support of ls and also add handy aliases
 if [ `which dircolors` ]; then
     dircolor=`which dircolors`
@@ -74,3 +70,7 @@ alias less='less -Xm -j.5'
 alias gls='git log --stat --decorate --graph --abbrev-commit'
 
 unset -f pathmunge
+
+if [ -e ~/.bash_profile.local ] ; then
+    . ~/.bash_profile.local
+fi
