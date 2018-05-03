@@ -40,9 +40,12 @@ alias gls='git log --stat --decorate --graph --abbrev-commit'
 
 alias history='history 1'
 
-# TOD make better
+# TODO make better
 export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
 
 # Defer glob-ing to certain commands
 alias scp='noglob scp'
 alias rsync='noglob rsync'
+
+# Fix issue with ctrl-r, ctrl-a, etc. not being mapped correctly
+bindkey -e
