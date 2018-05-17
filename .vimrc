@@ -9,6 +9,11 @@ if version < 600
  echo "Run with -v option: 'vim -v [FILE]'"
 endif
 
+" ## Platform settings
+if has('win32') || has('win64')
+ set runtimepath=~/.vim,$VIMRUNTIME
+endif
+
 " #########################################################################
 " ## ENVIRONMENT AND CLIENT CAPABILITIES/RESTRICTIONS
 " #########################################################################
@@ -104,6 +109,11 @@ set sidescroll=1        " Scroll sideways 1 position at a time
 set sidescrolloff=5   " Keep 5 characters to the right/left of cursor when side scrolling
 set listchars+=precedes:<,extends:>   " Use < and > to indicated text beyond visible area
 " TODO: precedes not functioning
+
+" ## GUI settings
+set guioptions-=r       " No verticle scrollbar on right
+set guioptions-=m       " No menu bar
+set guioptions-=T       " No toolbar
 
 "if version >= 600
 " if exists("DEJAVU")
@@ -203,14 +213,6 @@ set listchars+=precedes:<,extends:>   " Use < and > to indicated text beyond vis
 "endif
 "set guioptions+=a       " (gui mode)  Attempt to place Visual mode selected text
 "                       "    in windowing system's clipboard
-"
-""
-"" GUI settings
-""
-"set guioptions+=r       " Use a verticle scrollbar on right
-"set guioptions-=m       " No menu bar
-"set guioptions-=T       " No toolbar
-"
 
 "map <M-k> <C-y>         " Scroll window down
 "map <M-j> <C-e>         " Scroll window up
@@ -482,9 +484,6 @@ if &t_Co > 2 || has("gui_running")
  colorscheme kippes
 " hi Search     cterm=NONE      ctermbg=cyan    ctermfg=black
 " hi IncSearch  cterm=NONE      ctermbg=yellow  ctermfg=black
-" hi Comment    ctermfg=cyan
-" hi Comment    cterm=NONE
-" hi String     ctermfg=yellow
 " hi String     cterm=NONE
 " hi Special    ctermfg=magenta
 " hi Special    cterm=NONE
