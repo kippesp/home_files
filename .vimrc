@@ -26,8 +26,23 @@ endif
 " ## VIM USABILITY ADJUSTMENTS (ALL FILE TYPES)
 " #########################################################################
 
-" ## Vim Extensions and Miscellaneous
+"if has('gui_running')
+"  if platform == "win"
+"    set guifont=ProggySquareTTSZ:h12 " Set font
+"    "winpos 110 30
+"    winsize 130 50
+"  elseif has('gui_gtk2')
+"    set guifont="Courier 10"
+"  elseif has('gui_gtk')
+"    set guifont="Ubuntu Mono 12"
+"    set guifont="Monospace 10,Courier 10"
+"  elseif has('gui_kde')
+"  else
+"    set guifont=LucidaTypewriter
+"  endif
+"endif
 
+" ## Vim Extensions and Miscellaneous
 set nocompatible        " Use Vim defaults (much better!)
 set viminfo='20,\"50    " read/write a .viminfo file, don't store more
 "                       " than 50 lines of registers
