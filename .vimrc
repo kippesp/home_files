@@ -315,11 +315,22 @@ set guioptions-=T       " No toolbar
 "
 " Autocommand settings
 "
+
+" C++
 augroup cppgroup
   au!
 
   autocmd BufNewFile,BufRead *.cpp,*.hpp set formatoptions=croq shiftwidth=2 tabstop=2 cindent comments=sr:/*,mb:*,el:*/,://
 
+augroup end
+
+" CMakeLists.txt
+
+augroup cmakelists
+  au!
+
+  " TODO: >> needs help
+  autocmd BufNewFile,BufRead CMakeLists.txt set shiftwidth=2 tabstop=2
 augroup end
 
 
