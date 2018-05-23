@@ -1,4 +1,4 @@
-# .bashrc - interactive, non-login shell
+# .bashrc - called for each interactive, non-login shell/terminal
 # (exception, macos) - not called on each terminal invocation
 
 if [ -f /etc/bashrc ]; then
