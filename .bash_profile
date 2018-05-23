@@ -28,6 +28,7 @@ pathmunge () {
     esac
 }
 
+# TODO: https://groups.google.com/a/continuum.io/forum/#!topic/anaconda/mWPH_zCAfAg
 setbashprompt() {
     TITLEPREFIX=$MSYSTEM
 
@@ -58,6 +59,7 @@ setbashprompt() {
     PS1="$PS1"'\[\033[0m\]'        # change color
     PS1="$PS1"'\n'                 # new line
     PS1="$PS1"'\[\033[1;37m\]'     # change bright white
+    PS1="$PS1""$CONDA_PROMPT_MODIFIER"   # add anaconda environment name
     PS1="$PS1"'$'                  # prompt: always $
     PS1="$PS1"'\[\033[0m\]'        # change color
     PS1="$PS1"' '                  # prompt: <space>
@@ -67,7 +69,6 @@ setbashprompt() {
 
 # Add a few directories to PATH
 pathmunge $HOME/bin after
-pathmunge $HOME/anaconda/bin after
 pathmunge /opt/clang+llvm-5.0.0-x86_64-apple-darwin/bin after
 
 pathmunge $HOME/Library/Haskell/bin after
@@ -81,6 +82,9 @@ pathmunge /opt/verilator-3.902/bin after
 pathmunge /opt/local/libexec/gnubin
 pathmunge /opt/local/bin
 pathmunge /opt/local/sbin
+
+# Anaconda packages (keep at end of PATH)
+pathmunge $HOME/anaconda/bin after
 
 export PATH
 
