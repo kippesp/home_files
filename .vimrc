@@ -22,6 +22,9 @@ endif
 " TODO: Determine in GUI
 " TODO: Get 'gqap' or other to reflow more sanely
 
+" Do not restore the screen on returning to prompt
+set t_ti= t_te=
+
 " #########################################################################
 " ## VIM USABILITY ADJUSTMENTS (ALL FILE TYPES)
 " #########################################################################
@@ -91,6 +94,13 @@ map <leader>to :tabnew %<CR>
 map <leader>tc :tabclose<CR>
 map <leader>tn :tabnext<CR>
 map <leader>tp :tabprevious<CR>
+
+"
+" Key mappings for QuickFix buffer
+"
+
+map <C-n> :cn<C-m>
+map <C-p> :cp<C-m>
 
 "
 " Command Aliases
@@ -246,8 +256,6 @@ set guioptions-=T       " No toolbar
 " nmap <M->> <C-W>>     " Increase current window width by 1
 " nmap <M-<> <C-W><     " Decrease current window width by 1
 "endif
-"map <C-n> :cn<C-m>
-"map <C-p> :cp<C-m>
 "
 ""
 "" Autocommands for specific file types
