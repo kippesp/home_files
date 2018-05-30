@@ -47,7 +47,7 @@ setbashprompt() {
 	GIT_EXEC_PATH="$(git --exec-path 2>/dev/null)"
 	COMPLETION_PATH="${GIT_EXEC_PATH%/libexec/git-core}"
 	COMPLETION_PATH="${COMPLETION_PATH%/lib/git-core}"
-	COMPLETION_PATH="$COMPLETION_PATH/share/git/completion"
+	COMPLETION_PATH="$COMPLETION_PATH/share/git/contrib/completion"
 	if test -f "$COMPLETION_PATH/git-prompt.sh"
 	then
 		. "$COMPLETION_PATH/git-completion.bash"
@@ -134,6 +134,11 @@ alias less='less -Xm -j.5'
 alias gls='git log --stat --decorate --graph --abbrev-commit'
 
 unset -f pathmunge
+
+# Enable macport's bash-completion
+if [ -f /opt/local/etc/profile.d/bash_completion.sh ]; then
+    . /opt/local/etc/profile.d/bash_completion.sh
+fi
 
 if [ -e ~/.bash_profile.local ] ; then
     . ~/.bash_profile.local
