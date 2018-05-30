@@ -1,8 +1,14 @@
 # .bashrc - called for each interactive, non-login shell/terminal
 # (exception, macos) - not called on each terminal invocation
 
+echo "Sourcing .bashrc"
+
 if [ -f /etc/bashrc ]; then
     . /etc/bashrc
+fi
+
+if [ "$BASHRC_WAS_RUN" == "1" ]; then
+    echo ".bashrc was run twice"
 fi
 
 BASHRC_WAS_RUN=1
@@ -25,7 +31,12 @@ unset HISTFILESIZE
 HISTSIZE=1000000
 PROMPT_COMMAND="history -a"
 
-export MANPAGER='/usr/bin/less -isrRX'
-export PS1="\[\e]0;\u@\h: \w\a\]\u@\h:\w\$ "
-export EDITOR=vim
+# User specific aliases and functions
+alias less='less -Xm -j.5'
+alias gls='git log --stat --decorate --graph --abbrev-commit'
+
+# Set login shell variables
+MANPAGER='/usr/bin/less -isrRX'
+#export PS1="\[\e]0;\u@\h: \w\a\]\u@\h:\w\$ "
+EDITOR=vim
 GREP_OPTIONS=--color

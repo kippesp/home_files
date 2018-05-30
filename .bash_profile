@@ -1,10 +1,16 @@
 # .bash_profile - login shells (called one time)
 
+echo "Sourcing .bash_profile"
+
 # TODO: mklink - "git bash shell fails to create symbolic links"
 
 # If not running interactively, don't do anything
 #[ -z "$PS1" ] && return
 [[ "$-" != *i* ]] && return
+
+if [ "$BASH_PROFILE_WAS_RUN" == "1" ]; then
+    echo ".bash_profile was run twice"
+fi
 
 BASH_PROFILE_WAS_RUN=1
 
@@ -44,6 +50,7 @@ setbashprompt() {
     PS1="$PS1"'\[\033[36m\]'       # change to cyan
     PS1="$PS1"'\w'                 # current working directory
 
+    # See: http://tldp.org/LDP/abs/html/string-manipulation.html
 	GIT_EXEC_PATH="$(git --exec-path 2>/dev/null)"
 	COMPLETION_PATH="${GIT_EXEC_PATH%/libexec/git-core}"
 	COMPLETION_PATH="${COMPLETION_PATH%/lib/git-core}"
@@ -125,13 +132,12 @@ fi
 # TODO: Fix to help with other platforms
 shopt -q login_shell
 if [ $? -eq 0 ]; then
+    echo "Setting login shell prompt"
     setbashprompt
+    export PS1
+    export MSYS2_PS1
 fi
 
-# User specific aliases and functions
-alias less='less -Xm -j.5'
-
-alias gls='git log --stat --decorate --graph --abbrev-commit'
 
 unset -f pathmunge
 
