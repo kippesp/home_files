@@ -3,8 +3,6 @@
 
 # See: https://superuser.com/questions/183870/difference-between-bashrc-and-bash-profile
 
-echo "Sourcing .bashrc"
-
 if [ -f /etc/bashrc ]; then
     . /etc/bashrc
 fi
@@ -107,7 +105,6 @@ fi
 #if [ $? -eq 0 ]; then
 #fi
 
-echo "Setting login shell prompt"
 setbashprompt
 
 # Cleanup

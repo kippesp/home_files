@@ -1,7 +1,5 @@
 # .bash_profile - login shells (called one time)
 
-echo "Sourcing .bash_profile"
-
 # TODO: mklink - "git bash shell fails to create symbolic links"
 
 # If not running interactively, don't do anything
