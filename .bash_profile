@@ -44,6 +44,9 @@ pathmunge /opt/local/libexec/gnubin
 pathmunge /opt/local/bin
 pathmunge /opt/local/sbin
 
+# MacOS git
+pathmunge /usr/local/git/bin
+
 # Anaconda packages (keep at end of PATH)
 pathmunge $HOME/anaconda/bin after
 
