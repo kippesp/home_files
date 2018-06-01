@@ -36,7 +36,6 @@ setbashprompt() {
     if [ -e $COMPLETION_PATH/contrib ]; then
         # macos - git-scm.com
         COMPLETION_PATH="$COMPLETION_PATH/contrib/completion"
-        echo "here"
     else
         # ubuntu - (customized)
         # macports - high sierra
