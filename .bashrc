@@ -38,8 +38,9 @@ setbashprompt() {
         COMPLETION_PATH="$COMPLETION_PATH/contrib/completion"
         echo "here"
     else
-        # ubuntu - 18.04
+        # ubuntu - (customized)
         # macports - high sierra
+        # windows - gitbash
         COMPLETION_PATH="$COMPLETION_PATH/share/git/contrib/completion"
     fi
 	if test -f "$COMPLETION_PATH/git-prompt.sh"
