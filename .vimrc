@@ -328,19 +328,32 @@ set guioptions-=T       " No toolbar
 augroup cppgroup
   au!
 
-  autocmd BufNewFile,BufRead *.cpp,*.hpp set formatoptions=croq shiftwidth=2 tabstop=2 cindent comments=sr:/*,mb:*,el:*/,://
+  autocmd BufNewFile,BufRead *.cpp,*.hpp set formatoptions+=croqj shiftwidth=2 tabstop=2 cindent comments=sr:/*,mb:*,el:*/,://
+augroup end
 
+" ObjectiveC
+augroup objc
+  au!
+
+  autocmd BufNewFile,BufRead *.m set formatoptions+=croqj shiftwidth=2 tabstop=2 cindent comments=sr:/*,mb:*,el:*/,://
 augroup end
 
 " CMakeLists.txt
-
 augroup cmakelists
   au!
 
-  " TODO: >> needs help
   autocmd BufNewFile,BufRead CMakeLists.txt set shiftwidth=2 tabstop=2
 augroup end
 
+" Makefiles
+augroup makefiles
+  "
+  " Remove all makefiles autocommands
+  "
+  au!
+
+  autocmd BufNewFile,BufRead Makefile,Makefile.am,makefile setl noexpandtab
+augroup END
 
 "if version >= 600
 " if has("autocmd")
@@ -480,17 +493,6 @@ augroup end
 "     autocmd BufRead,BufNewFile *.py,*.pyw,*.yaml set shiftwidth=2 tabstop=2
 "   augroup END
 "
-"   "
-"   " Makefiles
-"   "
-"   augroup makefiles
-"     "
-"     " Remove all makefiles autocommands
-"     "
-"     au!
-"
-"     autocmd BufNewFile,BufRead Makefile,Makefile.am,makefile setl noexpandtab
-"   augroup END
 "   "
 "   " .r
 "   "
