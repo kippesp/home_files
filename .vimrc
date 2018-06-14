@@ -79,7 +79,7 @@ set autowriteall        " write files when switching files
 
 set expandtab           " expand tab into spaces
 set shiftwidth=4
-set tabstop=4           " existing tabs will remain standard 8
+set softtabstop=4       " existing tabs will remain standard 8
 
 " ## Enable and customize wild-menu feature
 
@@ -258,10 +258,6 @@ set guioptions-=T       " No toolbar
 "endif
 "
 ""
-"" Autocommands for specific file types
-""
-"
-""
 "" cscope key mappings
 ""
 "if has("cscope")
@@ -321,38 +317,35 @@ set guioptions-=T       " No toolbar
 "endif
 
 "
-" Autocommand settings
+" Autocommands for specific file types
 "
 
 " C++
 augroup cppgroup
   au!
 
-  autocmd BufNewFile,BufRead *.cpp,*.hpp set formatoptions+=croqj shiftwidth=2 tabstop=2 cindent comments=sr:/*,mb:*,el:*/,://
+  autocmd BufNewFile,BufRead *.cpp,*.hpp setl formatoptions+=croqj shiftwidth=2 softtabstop=2 cindent comments=sr:/*,mb:*,el:*/,://
 augroup end
 
 " ObjectiveC
 augroup objc
   au!
 
-  autocmd BufNewFile,BufRead *.m set formatoptions+=croqj shiftwidth=2 tabstop=2 cindent comments=sr:/*,mb:*,el:*/,://
+  autocmd BufNewFile,BufRead *.m setl formatoptions+=croqj shiftwidth=2 softtabstop=2 cindent comments=sr:/*,mb:*,el:*/,://
 augroup end
 
 " CMakeLists.txt
 augroup cmakelists
   au!
 
-  autocmd BufNewFile,BufRead CMakeLists.txt set shiftwidth=2 tabstop=2
+  autocmd BufNewFile,BufRead CMakeLists.txt setl shiftwidth=2 softtabstop=2
 augroup end
 
 " Makefiles
 augroup makefiles
-  "
-  " Remove all makefiles autocommands
-  "
   au!
 
-  autocmd BufNewFile,BufRead Makefile,Makefile.am,makefile setl noexpandtab
+  autocmd BufNewFile,BufRead Makefile,Makefile.am,makefile setl softtabstop=0 shiftwidth=8 noexpandtab
 augroup END
 
 
@@ -367,10 +360,10 @@ augroup python
   "autocmd BufRead,BufNewFile *.py,*.pyw match pythonSpaceError /^\t\+/
 
   " Wrap text after a certain number of characters
-  autocmd BufRead,BufNewFile *.py,*.pyw set textwidth=79
+  autocmd BufRead,BufNewFile *.py,*.pyw setl textwidth=79
 
   " Indent two spaces
-  autocmd BufRead,BufNewFile *.py,*.pyw,*.yaml set shiftwidth=2 tabstop=2
+  autocmd BufRead,BufNewFile *.py,*.pyw,*.yaml setl shiftwidth=2 softtabstop=2
 augroup END
 
 "if version >= 600
@@ -440,7 +433,7 @@ augroup END
 "     "   For other files switch it off.
 "     " Removed comments settings since I couldn't figure out if it was necessary anymore. (PK 3/29/05)
 "     "autocmd BufNewFile,BufRead *.c,*.h set formatoptions=croql cindent comments=sr:/*,mb:*,el:*/,://
-"     autocmd BufNewFile,BufRead *.c,*.h,*.cpp,*.hpp set formatoptions=croq shiftwidth=2 tabstop=2 cindent comments=sr:/*,mb:*,el:*/,://
+"     autocmd BufNewFile,BufRead *.c,*.h,*.cpp,*.hpp set formatoptions=croq shiftwidth=2 softtabstop=2 cindent comments=sr:/*,mb:*,el:*/,://
 "
 "     " Allow \xx to #define-out a block of C code
 "     autocmd BufNewFile,BufRead *.c,*.h,*.cc,*.cpp let b:removed_count=1 | vmap \xx <Esc>:call RemoveCCode()<Return>
@@ -467,7 +460,7 @@ augroup END
 "   "
 "   augroup text
 "     autocmd BufNewFile,BufRead *.txt,*.tex setlocal linebreak
-"     autocmd BufNewFile,BufRead *.txt,*.tex setlocal shiftwidth=2 tabstop=2
+"     autocmd BufNewFile,BufRead *.txt,*.tex setlocal shiftwidth=2 softtabstop=2
 "
 "     " Map movement for visual line movement
 "     autocmd BufEnter *.txt,*.tex map j gj
@@ -501,7 +494,7 @@ augroup END
 "     " Remove all rprog autocommands
 "     au!
 "
-"     autocmd BufNewFile,BufRead *.r,*.R set formatoptions=croq shiftwidth=2 tabstop=2 cindent comments=b:#|inoremap # X#
+"     autocmd BufNewFile,BufRead *.r,*.R set formatoptions=croq shiftwidth=2 softtabstop=2 cindent comments=b:#|inoremap # X#
 "   augroup END
 " endif
 "endif
@@ -563,4 +556,4 @@ endif
 command SpellEn :setlocal spell spelllang=en_us
 "command SpellFr :setlocal spell spelllang=fr_fr
 
-" vim:expandtab:tabstop=2 shiftwidth=2
+" vim:expandtab:softtabstop=2 shiftwidth=2
