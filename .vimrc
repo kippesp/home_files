@@ -355,6 +355,24 @@ augroup makefiles
   autocmd BufNewFile,BufRead Makefile,Makefile.am,makefile setl noexpandtab
 augroup END
 
+
+augroup python
+  " Do not unindent comments
+  autocmd FileType python setlocal cindent comments=b:#|inoremap # X#
+
+  " Indent code blocks
+  autocmd FileType python setlocal si cinwords=if,elif,else,for,while,try,except,finally,def,class
+
+  " Display tabs at the beginning of a line in Python mode as bad
+  "autocmd BufRead,BufNewFile *.py,*.pyw match pythonSpaceError /^\t\+/
+
+  " Wrap text after a certain number of characters
+  autocmd BufRead,BufNewFile *.py,*.pyw set textwidth=79
+
+  " Indent two spaces
+  autocmd BufRead,BufNewFile *.py,*.pyw,*.yaml set shiftwidth=2 tabstop=2
+augroup END
+
 "if version >= 600
 " if has("autocmd")
 "   "
@@ -474,23 +492,6 @@ augroup END
 "     "   For *.php files set formatting of comments and set C-indenting on.
 "     "   For other files switch it off.
 "     autocmd BufNewFile,BufRead *.f :call FortranSettings()
-"   augroup END
-"
-"   augroup python
-"     " Do not unindent comments
-"     autocmd FileType python setlocal comments=b:#|inoremap # X#
-"
-"     " Indent code blocks
-"     autocmd FileType python setlocal si cinwords=if,elif,else,for,while,try,except,finally,def,class
-"
-"     " Display tabs at the beginning of a line in Python mode as bad
-"     autocmd BufRead,BufNewFile *.py,*.pyw match pythonSpaceError /^\t\+/
-"
-"     " Wrap text after a certain number of characters
-"     autocmd BufRead,BufNewFile *.py,*.pyw set textwidth=79
-"
-"     " Indent two spaces
-"     autocmd BufRead,BufNewFile *.py,*.pyw,*.yaml set shiftwidth=2 tabstop=2
 "   augroup END
 "
 "   "
