@@ -37,7 +37,7 @@ setbashprompt() {
         # macos - git-scm.com
         COMPLETION_PATH="$COMPLETION_PATH/contrib/completion"
     else
-        # ubuntu - (customized)
+        # ubuntu - (customized) "ln -s /opt/git.git/contrib /usr/share/git"
         # macports - high sierra
         # windows - gitbash
         COMPLETION_PATH="$COMPLETION_PATH/share/git/contrib/completion"
