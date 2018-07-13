@@ -53,6 +53,9 @@ pathmunge /opt/local/sbin
 # MacOS git
 pathmunge /usr/local/git/bin
 
+# Local LLVM
+pathmunge /opt/llvm-6.0.0/bin
+
 # Anaconda packages (keep at end of PATH)
 pathmunge $HOME/anaconda/bin after
 
