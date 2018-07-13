@@ -6,6 +6,13 @@
 #[ -z "$PS1" ] && return
 [[ "$-" != *i* ]] && return
 
+# Prevent PATH from being sorted when using tmux on macos
+# See: https://superuser.com/questions/544989/does-tmux-sort-the-path-variable
+if [ -n "$TMUX" ] && [ -f /etc/profile ]; then
+    PATH=""
+    source /etc/profile
+fi
+
 if [ "$BASH_PROFILE_WAS_RUN" == "1" ]; then
     echo ".bash_profile was run twice"
 fi
@@ -26,7 +33,6 @@ pathmunge () {
 			fi
     esac
 }
-
 
 # Add a few directories to PATH
 pathmunge $HOME/bin after
