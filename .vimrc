@@ -167,8 +167,6 @@ set guioptions-=T       " No toolbar
 "   let &term = "vt100"
 " endif
 "
-" " Do not restore the screen on returning to prompt
-" set t_ti= t_te=
 "endif
 "
 ""
@@ -333,7 +331,14 @@ augroup end
 augroup objc
   au!
 
-  autocmd BufNewFile,BufRead *.m setl formatoptions+=croqj shiftwidth=2 softtabstop=2 cindent comments=sr:/*,mb:*,el:*/,://
+  autocmd BufNewFile,BufRead *.m,*.mm setl formatoptions+=croqj shiftwidth=2 softtabstop=2 cindent comments=sr:/*,mb:*,el:*/,://
+augroup end
+
+" Metal
+augroup metal
+  au!
+
+  autocmd BufNewFile,BufRead *.metal setl formatoptions+=croqj shiftwidth=2 softtabstop=2 cindent comments=sr:/*,mb:*,el:*/,://
 augroup end
 
 " CMakeLists.txt
@@ -540,18 +545,6 @@ endif
 "if filereadable(expand("./.vimrc_local"))
 "  source ./.vimrc_local
 "endif
-"
-"function! Header()
-"  if (&filetype == 'c') || (&filetype == 'cpp')
-"    :read $HOME/.vim/templates/header_boiler.c
-"  elseif (&filetype == 'fortran')
-"    :read $HOME/.vim/templates/header_boiler.f
-"  elseif (&filetype == 'ada')
-"    :read $HOME/.vim/templates/header_boiler.ada
-"  endif
-"endfunction
-"
-"command Header :call Header()
 "
 "let g:miniBufExplSplitBelow=0
 

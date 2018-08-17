@@ -6,6 +6,13 @@
 #[ -z "$PS1" ] && return
 [[ "$-" != *i* ]] && return
 
+# Prevent PATH from being sorted when using tmux on macos
+# See: https://superuser.com/questions/544989/does-tmux-sort-the-path-variable
+if [ -n "$TMUX" ] && [ -f /etc/profile ]; then
+    PATH=""
+    source /etc/profile
+fi
+
 if [ "$BASH_PROFILE_WAS_RUN" == "1" ]; then
     echo ".bash_profile was run twice"
 fi
@@ -27,7 +34,6 @@ pathmunge () {
     esac
 }
 
-
 # Add a few directories to PATH
 pathmunge $HOME/bin after
 pathmunge /opt/clang+llvm-5.0.0-x86_64-apple-darwin/bin after
@@ -46,6 +52,9 @@ pathmunge /opt/local/sbin
 
 # MacOS git
 pathmunge /usr/local/git/bin
+
+# Local LLVM
+pathmunge /opt/llvm-6.0.0/bin
 
 # Anaconda packages (keep at end of PATH)
 pathmunge $HOME/anaconda/bin after
