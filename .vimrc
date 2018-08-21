@@ -320,11 +320,11 @@ set guioptions-=T       " No toolbar
 " Autocommands for specific file types
 "
 
-" C++
+" C++ and C
 augroup cppgroup
   au!
 
-  autocmd BufNewFile,BufRead *.cpp,*.hpp setl formatoptions+=croqj shiftwidth=2 softtabstop=2 cindent comments=sr:/*,mb:*,el:*/,://
+  autocmd BufNewFile,BufRead *.cpp,*.hpp,*.c,*.h setl formatoptions+=croqj shiftwidth=2 softtabstop=2 cindent comments=sr:/*,mb:*,el:*/,://
 augroup end
 
 " ObjectiveC
