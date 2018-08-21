@@ -26,6 +26,14 @@ setbashprompt() {
         PS1="$PS1"'\[\033[35m\]'       # change to purple
         PS1="$PS1"'$MSYSTEM '          # show MSYSTEM
     fi
+    # Used for chroot environments (Linux)
+    if [ -e /.chroot ]; then
+        PS1="$PS1"'\[\033[31m\]'       # change to red
+        CHROOT_NAME=`cat /.chroot | awk '{printf $1}'`
+        PS1="$PS1"'chroot:'
+        PS1="$PS1"'\[\033[1;31m\]'     # change to bright red
+        PS1="$PS1"'$CHROOT_NAME '      # show MSYSTEM
+    fi
     PS1="$PS1"'\[\033[36m\]'       # change to cyan
     PS1="$PS1"'\w'                 # current working directory
 
