@@ -8,10 +8,10 @@
 
 # Prevent PATH from being sorted when using tmux on macos
 # See: https://superuser.com/questions/544989/does-tmux-sort-the-path-variable
-if [ -n "$TMUX" ] && [ -f /etc/profile ]; then
-    PATH=""
-    source /etc/profile
-fi
+#if [ -n "$TMUX" ] && [ -f /etc/profile ]; then
+#    PATH=""
+#    source /etc/profile
+#fi
 
 if [ "$BASH_PROFILE_WAS_RUN" == "1" ]; then
     echo ".bash_profile was run twice"
