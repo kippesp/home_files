@@ -56,6 +56,7 @@ set noequalalways       " Don't resize windows when splitting
 set splitbelow          " When splitting windows, current window is the lower
 set history=75          " keep 75 lines of command line history
 let mapleader=','       " set the <leader>
+set modelines=1         " process a single modeline (as opposed to ...?)
 
 " ## Mouse and Clipboard Settings
 
