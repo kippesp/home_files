@@ -85,6 +85,17 @@ if [ -f /opt/local/etc/profile.d/bash_completion.sh ]; then
     . /opt/local/etc/profile.d/bash_completion.sh
 fi
 
+# Determine OS type
+uname_str="$(uname -s)"
+case "${uname_str}" in
+    Linux*)     sysos=linux;;
+    Darwin*)    sysos=macos;;
+    CYGWIN*)    sysos=cygwin;;
+    MINGW*)     sysos=mingw;;
+    *)          sysos="UNKNOWN:${uname_str}"
+esac
+export SYSOS=$sysos
+
 if [ -e ~/.bash_profile.local ] ; then
     . ~/.bash_profile.local
 fi
