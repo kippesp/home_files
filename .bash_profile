@@ -39,6 +39,7 @@ pathmunge $HOME/bin after
 pathmunge $HOME/usr/bin after
 pathmunge /opt/clang+llvm-6.0.0-x86_64-apple-darwin/bin after
 pathmunge /opt/clang+llvm-5.0.0-x86_64-apple-darwin/bin after
+pathmunge /opt/bin
 
 pathmunge $HOME/Library/Haskell/bin after
 
