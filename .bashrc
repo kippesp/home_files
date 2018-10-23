@@ -86,9 +86,12 @@ unset HISTFILESIZE
 HISTSIZE=1000000
 PROMPT_COMMAND="history -a"
 
-# User specific aliases and functions
+# User specific aliases
 alias less='less -Xm -j.5'
+
+# User specific aliases - git
 alias gls='git log --stat --decorate --graph --abbrev-commit'
+alias gss='git status -s'
 
 # enable color support of ls and also add handy aliases
 if [ `which dircolors` ]; then
