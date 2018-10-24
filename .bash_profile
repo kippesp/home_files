@@ -10,10 +10,10 @@
 # See: https://superuser.com/questions/544989/does-tmux-sort-the-path-variable
 # - Sorting the path causes issues with switching between git and Xcode-git
 # - May want to look at double sourcing on macos
-if [ -n "$TMUX" ] && [ -f /etc/profile ]; then
-    PATH=""
-    source /etc/profile
-fi
+#if [ -n "$TMUX" ] && [ -f /etc/profile ]; then
+#    PATH=""
+#    source /etc/profile
+#fi
 
 if [ "$BASH_PROFILE_WAS_RUN" == "1" ]; then
     echo ".bash_profile was run twice"
@@ -43,7 +43,9 @@ pathmunge /opt/clang+llvm-6.0.0-x86_64-apple-darwin/bin after
 pathmunge /opt/clang+llvm-5.0.0-x86_64-apple-darwin/bin after
 pathmunge /opt/bin
 
+# Haskell additions
 pathmunge $HOME/Library/Haskell/bin after
+pathmunge $HOME/.local/bin after
 
 pathmunge /Applications/CoqIDE_8.4pl5.app/Contents/Resources/bin after
 pathmunge /Users/kippesp/.emacs.d/lisp/PG/coq after
