@@ -359,7 +359,7 @@ augroup END
 
 augroup python
   " Do not unindent comments
-  autocmd FileType python setlocal cindent comments=b:#|inoremap # X#
+  autocmd FileType python setlocal autoindent comments=b:#|inoremap # X#
 
   " Indent code blocks
   autocmd FileType python setlocal si cinwords=if,elif,else,for,while,try,except,finally,def,class
