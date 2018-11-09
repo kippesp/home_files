@@ -100,26 +100,39 @@ alias less='less -Xm -j.5'
 alias gls='git log --stat --decorate --graph --abbrev-commit'
 alias gss='git status -s'
 
-# enable color support of ls and also add handy aliases
-if [ `which dircolors` ]; then
-    dircolor=`which dircolors`
-    #test -r ~/.dircolors && eval "$($dircolors -b ~/.dircolors)" || eval "$($dircolors -b)"
-
-    # enable "ls" colors if supported
-    _=`ls --color=auto > /dev/null 2>&1`
-    if [ $? -eq 0 ]; then
-        alias ls='ls --color=auto'
-    fi
-
+# enable git colors if available
+_=`grep --color=auto --version > /dev/null 2>&1`
+if [ $? -eq 0 ]; then
     alias grep='grep --color=auto'
     alias fgrep='fgrep --color=auto'
     alias egrep='egrep --color=auto'
 fi
 
-# Set login shell variables
-MANPAGER='/usr/bin/less -isrRX'
-EDITOR=vim
-GREP_OPTIONS=--color
+# configure ls coloring
+_=`ls --color=auto / > /dev/null 2>&1`
+if [ $? -eq 0 ]; then
+    alias ls='ls --color=auto'
+
+    _=`dircolors --version / > /dev/null 2>&1`
+    if [ $? -eq 0 ]; then
+        export LS_COLORS=`dircolors`
+    fi
+else
+    # fallback to LSCOLORS
+    export CLICOLOR=1
+
+    # a WIP - https://geoff.greer.fm/lscolors
+    export LSCOLORS=EaGacxdxCaegedadagacad
+fi
+
+# replace man pager
+_=`less --version > /dev/null 2>&1`
+if [ $? -eq 0 ]; then
+    export MANPAGER='/usr/bin/less -isrRX'
+fi
+
+# specify vim as preferred editor
+export EDITOR=vim
 
 if [ -e ~/.ccache ] ; then
     export CCACHE_DIR=~/.ccache
