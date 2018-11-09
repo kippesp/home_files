@@ -50,13 +50,20 @@ setbashprompt() {
         # windows - gitbash
         COMPLETION_PATH="$COMPLETION_PATH/share/git/contrib/completion"
     fi
-	if test -f "$COMPLETION_PATH/git-prompt.sh"
-	then
-		. "$COMPLETION_PATH/git-completion.bash"
-		. "$COMPLETION_PATH/git-prompt.sh"
-		PS1="$PS1"'\[\033[1;36m\]'  # change color to cyan
-		PS1="$PS1"'`__git_ps1`'   # bash function
-	fi
+
+    # Configure git-ified bash prompt
+    if test -f "$COMPLETION_PATH/git-prompt.sh"
+    then
+            . "$COMPLETION_PATH/git-completion.bash"
+            . "$COMPLETION_PATH/git-prompt.sh"
+            PS1="$PS1"'\[\033[1;36m\]'  # change color to cyan
+            PS1="$PS1"'`__git_ps1`'   # bash function
+
+            GIT_PS1_SHOWDIRTYSTATE=1            # enable dirty indicator
+            GIT_PS1_SHOWSTASHSTATE=1            # enable stash empty indicator
+            GIT_PS1_SHOWUPSTREAM='verbose '     # show upstream count delta
+            GIT_PS1_SHOWUPSTREAM+='name'        # show tracking branch name
+    fi
 
     PS1="$PS1"'\[\033[0m\]'        # change color
     PS1="$PS1"'\n'                 # new line
