@@ -21,12 +21,14 @@ setbashprompt() {
     PS1="$PS1"'\n'                 # new line
     PS1="$PS1"'\[\033[32m\]'       # change to green
     PS1="$PS1"'\u@\h '             # user@host<space>
+
     # Used by MSYS/gitbash
     if [ "x" != "x${MSYSTEM}" ]; then
         PS1="$PS1"'\[\033[35m\]'       # change to purple
         PS1="$PS1"'$MSYSTEM '          # show MSYSTEM
     fi
-    # Used for chroot environments (Linux)
+
+    # Used for my chroot environments (Linux)
     if [ -e /.chroot ]; then
         PS1="$PS1"'\[\033[31m\]'       # change to red
         CHROOT_NAME=`cat /.chroot | awk '{printf $1}'`
@@ -56,8 +58,8 @@ setbashprompt() {
     then
             . "$COMPLETION_PATH/git-completion.bash"
             . "$COMPLETION_PATH/git-prompt.sh"
-            PS1="$PS1"'\[\033[1;36m\]'  # change color to cyan
-            PS1="$PS1"'`__git_ps1`'   # bash function
+            PS1="$PS1"'\[\033[1;36m\]'      # change color to cyan
+            PS1="$PS1"'`__git_ps1`'         # bash function
 
             GIT_PS1_SHOWDIRTYSTATE=1            # enable dirty indicator
             GIT_PS1_SHOWSTASHSTATE=1            # enable stash empty indicator
