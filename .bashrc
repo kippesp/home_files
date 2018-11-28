@@ -115,7 +115,7 @@ if [ $? -eq 0 ]; then
 
     _=`dircolors --version / > /dev/null 2>&1`
     if [ $? -eq 0 ]; then
-        export LS_COLORS=`dircolors`
+        eval `dircolors`
     fi
 else
     # fallback to LSCOLORS
