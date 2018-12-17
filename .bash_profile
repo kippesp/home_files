@@ -64,8 +64,11 @@ pathmunge /usr/local/git/bin
 pathmunge /opt/llvm-6.0.0/bin
 pathmunge $HOME/usr/opt/llvm-latest/bin/
 
-# Anaconda packages (keep at end of PATH)
-pathmunge $HOME/anaconda/bin after
+# Anaconda/miniconda/pipenv packages
+pathmunge $HOME/anaconda/bin
+pathmunge $HOME/miniconda2/bin
+pathmunge $HOME/miniconda3/bin
+#pathmunge $HOME/.local/bin after
 
 export PATH
 

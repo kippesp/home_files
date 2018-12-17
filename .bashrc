@@ -70,7 +70,7 @@ setbashprompt() {
     PS1="$PS1"'\[\033[0m\]'        # change color
     PS1="$PS1"'\n'                 # new line
     PS1="$PS1"'\[\033[1;37m\]'     # change bright white
-    PS1="$PS1""$CONDA_PROMPT_MODIFIER"   # add anaconda environment name
+    #PS1="$PS1""${CONDA_PROMPT_MODIFIER}"   # add anaconda environment name
     PS1="$PS1"'$'                  # prompt: always $
     PS1="$PS1"'\[\033[0m\]'        # change color
     PS1="$PS1"' '                  # prompt: <space>
