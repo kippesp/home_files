@@ -6,6 +6,9 @@
 
 " TODO: http://vim.wikia.com/wiki/Indenting_source_code
 
+" TODO: https://github.com/keith/swift.vim
+"       swift and syntastic
+
 if version < 600
  echo "This configuration file, .vimrc, assumes a modern vim."
  echo "Run with -v option: 'vim -v [FILE]'"
