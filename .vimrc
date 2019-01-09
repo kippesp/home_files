@@ -55,7 +55,7 @@ set nocompatible        " Use Vim defaults (much better!)
 set viminfo='20,\"50    " read/write a .viminfo file, don't store more
 "                       " than 50 lines of registers
 "set hidden              " Allow hidden buffers
-set noequalalways       " Don't resize windows when splitting
+set noequalalways       " Do not resize windows when splitting
 set splitbelow          " When splitting windows, current window is the lower
 set history=75          " keep 75 lines of command line history
 let mapleader=','       " set the <leader>
@@ -148,8 +148,13 @@ set sidescrolloff=5   " Keep 5 characters to the right/left of cursor when side 
 set listchars+=precedes:<,extends:>   " Use < and > to indicated text beyond visible area
 " TODO: precedes not functioning
 
+" TODO: see https://jeffkreeftmeijer.com/vim-number/
+" for buffer switching
+set relativenumber      " Enable relative vertical line numbering
+set number              " Enable current line
+
 " ## GUI settings
-set guioptions-=r       " No verticle scrollbar on right
+set guioptions-=r       " No vertical scrollbar on right
 set guioptions-=m       " No menu bar
 set guioptions-=T       " No toolbar
 
