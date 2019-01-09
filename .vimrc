@@ -341,6 +341,10 @@ augroup cppgroup
   au!
 
   autocmd BufNewFile,BufRead *.cpp,*.hpp,*.c,*.h setl formatoptions+=croqj shiftwidth=2 softtabstop=2 cindent comments=sr:/*,mb:*,el:*/,://
+
+  " For vim-cpp-enhanced-highlight in after/syntax
+  autocmd BufNewFile,BufRead *.cpp,*.hpp,*.c,*.h let g:cpp_class_scope_highlight=1
+  autocmd BufNewFile,BufRead *.cpp,*.hpp,*.c,*.h let g:cpp_experimental_template_highlight=1
 augroup end
 
 " ObjectiveC
