@@ -43,15 +43,23 @@ setbashprompt() {
     GIT_EXEC_PATH="$(git --exec-path 2>/dev/null)"
     COMPLETION_PATH="${GIT_EXEC_PATH%/libexec/git-core}"
     COMPLETION_PATH="${COMPLETION_PATH%/lib/git-core}"
-    if [ -e $COMPLETION_PATH/contrib ]; then
+    if [ -e $COMPLETION_PATH/contrib ]
+    then
         # macos - git-scm.com
         COMPLETION_PATH="$COMPLETION_PATH/contrib/completion"
-    else
-        # ubuntu - (customized) "ln -s /opt/git.git/contrib /usr/share/git"
-        # macports - high sierra - /Applications/Xcode.app/Contents/Developer/usr/share/git/contrib/completion
-        # windows - gitbash
-        #COMPLETION_PATH="$COMPLETION_PATH/share/git/contrib/completion"
+    elif [ -e $COMPLETION_PATH/share/git/completion ]
+    then
         COMPLETION_PATH="$COMPLETION_PATH/share/git/completion"
+    elif [ -e /opt/git.git/contrib/completion ]
+    then
+        # my linux configurations
+        COMPLETION_PATH="/opt/git.git/contrib/completion"
+    #else
+    #    # ubuntu - (customized) "ln -s /opt/git.git/contrib /usr/share/git"
+    #    # macports - high sierra - /Applications/Xcode.app/Contents/Developer/usr/share/git/contrib/completion
+    #    # windows - gitbash
+    #    #COMPLETION_PATH="$COMPLETION_PATH/share/git/contrib/completion"
+    #    COMPLETION_PATH="$COMPLETION_PATH/share/git/completion"
     fi
 
     # Configure git-ified bash prompt
