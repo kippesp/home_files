@@ -157,6 +157,7 @@ set number              " Enable current line
 set guioptions-=r       " No vertical scrollbar on right
 set guioptions-=m       " No menu bar
 set guioptions-=T       " No toolbar
+set guicursor+=n-v-c:blinkon0
 
 "if version >= 600
 " if exists("DEJAVU")
