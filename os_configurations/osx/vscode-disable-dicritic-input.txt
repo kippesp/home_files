@@ -1,1 +1,1 @@
-defaults write com.microsoft.VSCode ApplePressAndHoldEnable -bool false
+defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
