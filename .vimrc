@@ -154,10 +154,11 @@ set relativenumber      " Enable relative vertical line numbering
 set number              " Enable current line
 
 " ## GUI settings
-set guioptions-=r       " No vertical scrollbar on right
-set guioptions-=m       " No menu bar
-set guioptions-=T       " No toolbar
-set guicursor+=n-v-c:blinkon0
+set guioptions-=r              " No vertical scrollbar on right
+set guioptions-=L              " No vertical scrollbar on left when split
+set guioptions-=m              " No menu bar
+set guioptions-=T              " No toolbar
+set guicursor+=i-n-v-c:blinkon0 " No blinking curser
 
 "if version >= 600
 " if exists("DEJAVU")
