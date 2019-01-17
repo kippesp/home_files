@@ -9,12 +9,15 @@
 " TODO: https://github.com/keith/swift.vim
 "       swift and syntastic
 
+" #########################################################################
+" ## PLATFORM SETTINGS
+" #########################################################################
+
 if version < 600
  echo "This configuration file, .vimrc, assumes a modern vim."
  echo "Run with -v option: 'vim -v [FILE]'"
 endif
 
-" ## Platform settings
 if has('win32') || has('win64')
  set runtimepath=~/.vim,$VIMRUNTIME
 endif
@@ -159,6 +162,44 @@ set guioptions-=L              " No vertical scrollbar on left when split
 set guioptions-=m              " No menu bar
 set guioptions-=T              " No toolbar
 set guicursor+=i-n-v-c:blinkon0 " No blinking curser
+
+" #########################################################################
+" ## PLUGIN: CLANG COMPLETE
+" #########################################################################
+
+" (macports) install vim +python36 +cscope
+
+let ena=0
+if has("conceal") && has("python3")
+  let ena=1
+endif
+
+
+
+" "let g:clang_user_options="-std=c++0x "
+" let g:clang_complete_auto = 1
+" let g:clang_complete_copen = 1
+" let g:clang_auto_select = 1
+" let g:clang_periodic_quickfix = 0
+" 
+" 
+" inoremap <S-Tab> <C-N>
+" 
+" " :h clang_complete-auto_user_options
+" if has('win32unix') " Cygwin
+"        " Using libclang requires a Vim built with +python
+"        let g:clang_use_library = 1
+"        " Mit der Option "gcc" kriege ich Fehler.
+"        " Remove "gcc" option as it causes errors.
+"        let g:clang_auto_user_options='path, .clang_complete'
+" "elseif has('win32') " Windows
+" "       let g:clang_auto_user_options='path, .clang_complete'
+" "       let g:clang_use_library = 1
+" "       let g:clang_library_path='D:\Sourcen\LLVM\build\bin\Debug'
+" endif
+
+
+
 
 "if version >= 600
 " if exists("DEJAVU")
