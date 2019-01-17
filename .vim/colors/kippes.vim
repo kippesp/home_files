@@ -64,7 +64,7 @@ else
 endif
 
 exe "hi Blue           start=[m[34m      stop=[m[32m   ctermfg=".s:blue."                              guifg=blue        guibg=black         term=none".s:usebold."             cterm=none".s:usebold."              gui=none".s:usebold
-exe "hi Comment        start=[m[37m      stop=[m[32m   ctermfg=".s:white."                             guifg=white                           term=none".s:usebold."             cterm=none".s:usebold."              gui=none".s:usebold
+exe "hi Comment        start=[m[37m      stop=[m[32m   ctermfg=".s:white."                             guifg=grey                            term=none".s:usebold."             cterm=none".s:usebold."              gui=none".s:usebold
 exe "hi Constant       start=[m[33m      stop=[m[32m   ctermfg=".s:cyan."                              guifg=cyan        guibg=black         term=none".s:usebold."             cterm=none".s:usebold."              gui=none".s:usebold
 exe "hi Cursor                                                                                                 guifg=blue        guibg=green         term=none".s:usebold."             cterm=none".s:usebold."              gui=none".s:usebold
 exe "hi Cyan           start=[m[36m      stop=[m[32m   ctermfg=".s:cyan."                              guifg=cyan        guibg=black         term=none".s:usebold."             cterm=none".s:usebold."              gui=none".s:usebold
