@@ -37,6 +37,8 @@ elseif has('win32unix') || has('win64unix') " cygwin
 else                                        " unix/bsd
   let $VIMHOME = $HOME."/.vim"
 endif
+let ENABLE_CLANG_COMPLETE=0
+let g:clang_complete_loaded=0
 
 " #########################################################################
 " ## ENVIRONMENT AND CLIENT CAPABILITIES/RESTRICTIONS
@@ -193,6 +195,8 @@ if ENABLE_CLANG_COMPLETE
     let ENABLE_CLANG_COMPLETE=0
   else
     let g:clang_library_path=LIBCLANG_DIRPATH
+    "let g:clang_auto_user_options="compile_commands.json"
+    ",.clang_complete,path"
   endif
 endif
 
@@ -219,7 +223,15 @@ endif
 " endif
 
 
+" #########################################################################
+" ## CTAGS CONFIG
+" #########################################################################
 
+if !ENABLE_CLANG_COMPLETE
+  if ("$TAGSFILE" != "") && filereadable($TAGSFILE)
+    set tags=$TAGSFILE
+  endif
+endif
 
 "if version >= 600
 " if exists("DEJAVU")
