@@ -72,16 +72,6 @@ pathmunge $HOME/miniconda3/bin
 
 export PATH
 
-# TODO - ??macos only?? Get the aliases and functions
-if [ -f ~/.bashrc ]; then
-    . ~/.bashrc
-fi
-
-# Enable macport's bash-completion
-if [ -f /opt/local/etc/profile.d/bash_completion.sh ]; then
-    . /opt/local/etc/profile.d/bash_completion.sh
-fi
-
 # Determine OS type
 uname_str="$(uname -s)"
 case "${uname_str}" in
@@ -92,6 +82,16 @@ case "${uname_str}" in
     *)          sysos="UNKNOWN:${uname_str}"
 esac
 export SYSOS=$sysos
+
+# TODO - ??macos only?? Get the aliases and functions
+if [ -f ~/.bashrc ]; then
+    . ~/.bashrc
+fi
+
+# Enable macport's bash-completion
+if [ -f /opt/local/etc/profile.d/bash_completion.sh ]; then
+    . /opt/local/etc/profile.d/bash_completion.sh
+fi
 
 if [ -e ~/.bash_profile.local ] ; then
     . ~/.bash_profile.local

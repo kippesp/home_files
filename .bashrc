@@ -150,6 +150,11 @@ if [ -e ~/.ccache ] ; then
     export CCACHE_DIR=~/.ccache
 fi
 
+# fixup for Windows mingw terminal applications
+if [ "$SYSOS" == "mingw" ]; then
+    alias python='winpty python'
+fi
+
 # If a login shell, fancify the prompt
 # TODO: Fix to help with other platforms
 #shopt -q login_shell
