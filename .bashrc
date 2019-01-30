@@ -78,7 +78,6 @@ setbashprompt() {
             GIT_PS1_SHOWUPSTREAM='verbose '     # show upstream count delta
             GIT_PS1_SHOWUPSTREAM+='name'        # show tracking branch name
         fi
-    else
     fi
 
     PS1="$PS1"'\[\033[0m\]'        # change color
