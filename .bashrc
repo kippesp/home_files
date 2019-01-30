@@ -39,42 +39,46 @@ setbashprompt() {
     PS1="$PS1"'\[\033[36m\]'       # change to cyan
     PS1="$PS1"'\w'                 # current working directory
 
-    # See: http://tldp.org/LDP/abs/html/string-manipulation.html
-    GIT_EXEC_PATH="$(git --exec-path 2>/dev/null)"
-    COMPLETION_PATH="${GIT_EXEC_PATH%/libexec/git-core}"
-    COMPLETION_PATH="${COMPLETION_PATH%/lib/git-core}"
-    if [ -e "$COMPLETION_PATH/contrib" ]
+    if [ ! -e ~/.simple_bash_prompt ]
     then
-        # macos - git-scm.com
-        COMPLETION_PATH="$COMPLETION_PATH/contrib/completion"
-    elif [ -e "$COMPLETION_PATH/share/git/completion" ]
-    then
-        # windows - gitbash
-        COMPLETION_PATH="$COMPLETION_PATH/share/git/completion"
-    elif [ -e /opt/git.git/contrib/completion ]
-    then
-        # custom linux - manual clone of repo (but no installation)
-        COMPLETION_PATH="/opt/git.git/contrib/completion"
-    #else
-    #    # ubuntu - (customized) "ln -s /opt/git.git/contrib /usr/share/git"
-    #    # macports - high sierra - /Applications/Xcode.app/Contents/Developer/usr/share/git/contrib/completion
-    #    # windows - gitbash
-    #    #COMPLETION_PATH="$COMPLETION_PATH/share/git/contrib/completion"
-    #    COMPLETION_PATH="$COMPLETION_PATH/share/git/completion"
-    fi
+        # See: http://tldp.org/LDP/abs/html/string-manipulation.html
+        GIT_EXEC_PATH="$(git --exec-path 2>/dev/null)"
+        COMPLETION_PATH="${GIT_EXEC_PATH%/libexec/git-core}"
+        COMPLETION_PATH="${COMPLETION_PATH%/lib/git-core}"
+        if [ -e "$COMPLETION_PATH/contrib" ]
+        then
+            # macos - git-scm.com
+            COMPLETION_PATH="$COMPLETION_PATH/contrib/completion"
+        elif [ -e "$COMPLETION_PATH/share/git/completion" ]
+        then
+            # windows - gitbash
+            COMPLETION_PATH="$COMPLETION_PATH/share/git/completion"
+        elif [ -e /opt/git.git/contrib/completion ]
+        then
+            # custom linux - manual clone of repo (but no installation)
+            COMPLETION_PATH="/opt/git.git/contrib/completion"
+        #else
+        #    # ubuntu - (customized) "ln -s /opt/git.git/contrib /usr/share/git"
+        #    # macports - high sierra - /Applications/Xcode.app/Contents/Developer/usr/share/git/contrib/completion
+        #    # windows - gitbash
+        #    #COMPLETION_PATH="$COMPLETION_PATH/share/git/contrib/completion"
+        #    COMPLETION_PATH="$COMPLETION_PATH/share/git/completion"
+        fi
 
-    # Configure git-ified bash prompt
-    if test -f "$COMPLETION_PATH/git-prompt.sh"
-    then
-        . "$COMPLETION_PATH/git-completion.bash"
-        . "$COMPLETION_PATH/git-prompt.sh"
-        PS1="$PS1"'\[\033[1;36m\]'          # change color to cyan
-        PS1="$PS1"'`__git_ps1`'             # bash function
+        # Configure git-ified bash prompt
+        if test -f "$COMPLETION_PATH/git-prompt.sh"
+        then
+            . "$COMPLETION_PATH/git-completion.bash"
+            . "$COMPLETION_PATH/git-prompt.sh"
+            PS1="$PS1"'\[\033[1;36m\]'          # change color to cyan
+            PS1="$PS1"'`__git_ps1`'             # bash function
 
-        GIT_PS1_SHOWDIRTYSTATE=1            # enable dirty indicator
-        GIT_PS1_SHOWSTASHSTATE=1            # enable stash empty indicator
-        GIT_PS1_SHOWUPSTREAM='verbose '     # show upstream count delta
-        GIT_PS1_SHOWUPSTREAM+='name'        # show tracking branch name
+            GIT_PS1_SHOWDIRTYSTATE=1            # enable dirty indicator
+            GIT_PS1_SHOWSTASHSTATE=1            # enable stash empty indicator
+            GIT_PS1_SHOWUPSTREAM='verbose '     # show upstream count delta
+            GIT_PS1_SHOWUPSTREAM+='name'        # show tracking branch name
+        fi
+    else
     fi
 
     PS1="$PS1"'\[\033[0m\]'        # change color
