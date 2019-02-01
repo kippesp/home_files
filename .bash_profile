@@ -97,5 +97,20 @@ if [ -e ~/.bash_profile.local ] ; then
     . ~/.bash_profile.local
 fi
 
+# Linux: Hook in a project script for each tmux window when starting tmux with
+# a script like the following
+# (source: https://stackoverflow.com/questions/20701757/tmux-setting-environment-variables-for-sessions)
+# Macos: Doesn't have this issue
+#!/bin/sh
+#        BAR=/path/to/project/script/file.sh
+#        SESSION_NAME="mysession"
+#        tmux new-session -s $SESSION_NAME \; \
+#            setenv TMUX_SESSION_HOOK $BAR \; \
+#            send-keys -t 0 "export TMUX_SESSION_HOOK="$BAR C-m \; \
+#            send-keys -t 0 '. $TMUX_SESSION_HOOK' C-m \;
+if [ "$TMUX_SESSION_HOOK" != "" ]; then
+    . $TMUX_SESSION_HOOK
+fi
+
 # Cleanup
 unset -f pathmunge
