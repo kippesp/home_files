@@ -105,6 +105,9 @@ unset HISTFILESIZE
 HISTSIZE=1000000
 PROMPT_COMMAND="history -a"
 
+# Expand aliased sudo-ed command
+alias sudo='sudo '
+
 # User specific aliases
 alias less='less -Xm -j.5'
 
@@ -119,6 +122,10 @@ if [ $? -eq 0 ]; then
     alias fgrep='fgrep --color=auto'
     alias egrep='egrep --color=auto'
 fi
+
+# programmer aliases
+# cfng - C/C++ function grep
+#grep --include="*.cpp" -nr "getInstruction()"
 
 # configure ls coloring
 _=`ls --color=auto / > /dev/null 2>&1`
