@@ -8,6 +8,13 @@
 
 " TODO: https://github.com/keith/swift.vim
 "       swift and syntastic
+"
+" TODO: " Windows enabling (admin cmd prompt)
+" https://github.com/git-for-windows/git/wiki/Symbolic-Links
+" mklink .vimrc /path/to/git/.vimrc
+" mklink _vimrc /path/to/git/.vimrc
+" mklink /d _vim /path/to/git/.vim
+" mklink /d .vim /path/to/git/.vim
 
 if version < 600
  echo "This configuration file, .vimrc, assumes a modern vim."
@@ -164,6 +171,16 @@ set guioptions-=m              " No menu bar
 set guioptions-=T              " No toolbar
 set guicursor+=i-n-v-c:blinkon0 " No blinking curser
 
+" ## Highlighting
+ colorscheme kippes
+ syntax on             " Enable syntax highlighting
+ set hlsearch          " Highlight the last search
+" hi Search     cterm=NONE      ctermbg=cyan    ctermfg=black
+" hi IncSearch  cterm=NONE      ctermbg=yellow  ctermfg=black
+" hi String     cterm=NONE
+" hi Special    ctermfg=magenta
+" hi Special    cterm=NONE
+
 "if version >= 600
 " if exists("DEJAVU")
 "   finish
@@ -171,15 +188,35 @@ set guicursor+=i-n-v-c:blinkon0 " No blinking curser
 "   let DEJAVU = 1
 " endif
 "endif
+
 "
-""
-"" Determine platform
-""
-"if &term == "win32" || &term == "pcterm" || has("gui_win32")
-" let platform="win"
-"else
-" let platform="unix"
-"endif
+" Determine platform
+"
+if &term == "win32" || &term == "pcterm" || has("gui_win32")
+ let platform="win"
+else
+ let platform="unix"
+endif
+
+if has('gui_running')
+  if platform == "win"
+    set guifont=Lucida_Console:h10
+"    set guifont=ProggySquareTTSZ:h12 " Set font
+"    "winpos 110 30
+"    winsize 130 50
+"  elseif has('gui_gtk2')
+"    set guifont="Courier 10"
+"  elseif has('gui_gtk')
+"    set guifont="Ubuntu Mono 12"
+"    set guifont="Monospace 10,Courier 10"
+"  elseif has('gui_kde')
+"  else
+"    set guifont=LucidaTypewriter
+  endif
+endif
+
+"
+"
 "
 ""
 "" Check for non-ansi emulation
@@ -535,22 +572,14 @@ augroup END
 "
 " Color-terminal highlighting settings
 "
-if &t_Co > 2 || has("gui_running")
- syntax on             " Enable syntax highlighting
- set hlsearch          " Highlight the last search
+"if &t_Co > 2 || has("gui_running")
 
 " " Use the below highlight group when displaying bad whitespace is desired
 " let c_space_errors=1  " Highlight C-Spacing "errors"
 " let java_space_errors=1  " Highlight Java-Spacing "errors"
 " let python_highlight_space_errors=1  " Highlight Python-Spacing "errors"
 "
- colorscheme kippes
-" hi Search     cterm=NONE      ctermbg=cyan    ctermfg=black
-" hi IncSearch  cterm=NONE      ctermbg=yellow  ctermfg=black
-" hi String     cterm=NONE
-" hi Special    ctermfg=magenta
-" hi Special    cterm=NONE
-endif
+"endif
 
 ""
 "" Custom commands
