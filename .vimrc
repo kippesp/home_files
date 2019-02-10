@@ -37,8 +37,6 @@ elseif has('win32unix') || has('win64unix') " cygwin
 else                                        " unix/bsd
   let $VIMHOME = $HOME."/.vim"
 endif
-let ENABLE_CLANG_COMPLETE=0
-let g:clang_complete_loaded=0
 
 " #########################################################################
 " ## ENVIRONMENT AND CLIENT CAPABILITIES/RESTRICTIONS
@@ -182,6 +180,18 @@ set guioptions-=T              " No toolbar
 set guicursor+=i-n-v-c:blinkon0 " No blinking curser
 
 " #########################################################################
+" ## CTAGS CONFIG
+" #########################################################################
+
+if ("$TAGSFILE" != "") && filereadable($TAGSFILE)
+  set tags=$TAGSFILE
+
+  " with ctags, don't use clang_complete
+  let ENABLE_CLANG_COMPLETE=0
+  let g:clang_complete_loaded=0
+endif
+
+" #########################################################################
 " ## PLUGIN: CLANG COMPLETE
 " #########################################################################
 
@@ -195,7 +205,7 @@ if ENABLE_CLANG_COMPLETE
     let ENABLE_CLANG_COMPLETE=0
   else
     let g:clang_library_path=LIBCLANG_DIRPATH
-    "let g:clang_auto_user_options="compile_commands.json"
+    let g:clang_auto_user_options="compile_commands.json"
     ",.clang_complete,path"
   endif
 endif
@@ -221,17 +231,6 @@ endif
 " "       let g:clang_use_library = 1
 " "       let g:clang_library_path='D:\Sourcen\LLVM\build\bin\Debug'
 " endif
-
-
-" #########################################################################
-" ## CTAGS CONFIG
-" #########################################################################
-
-if !ENABLE_CLANG_COMPLETE
-  if ("$TAGSFILE" != "") && filereadable($TAGSFILE)
-    set tags=$TAGSFILE
-  endif
-endif
 
 "if version >= 600
 " if exists("DEJAVU")
