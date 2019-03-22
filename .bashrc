@@ -116,6 +116,7 @@ alias less='less -Xm -j.5'
 alias gls='git log --stat --decorate --graph --abbrev-commit'
 alias gss='git status -s'
 alias glo='git log --graph --format="%C(auto) %h %aE %d %s"'
+alias glist='git show --pretty="" --name-only HEAD'
 
 # enable git colors if available
 _=`grep --color=auto --version > /dev/null 2>&1`
