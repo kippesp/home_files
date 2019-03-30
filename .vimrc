@@ -56,6 +56,10 @@ endif
 " Do not restore the screen on returning to prompt
 set t_ti= t_te=
 
+" No terminal audible bells
+set t_vb=
+set visualbell
+
 " #########################################################################
 " ## VIM USABILITY ADJUSTMENTS (ALL FILE TYPES)
 " #########################################################################

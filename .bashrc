@@ -71,10 +71,14 @@ setbashprompt() {
         PS1="$PS1"'\[\033[1;36m\]'          # change color to cyan
         PS1="$PS1"'`__git_ps1`'             # bash function
 
-        GIT_PS1_SHOWDIRTYSTATE=1            # enable dirty indicator
-        GIT_PS1_SHOWSTASHSTATE=1            # enable stash empty indicator
-        GIT_PS1_SHOWUPSTREAM='verbose '     # show upstream count delta
-        GIT_PS1_SHOWUPSTREAM+='name'        # show tracking branch name
+        # Disable a few niceties when using msysgit's bash
+        if [ ! -e ~/.simple_bash_prompt ]
+        then
+            GIT_PS1_SHOWDIRTYSTATE=1            # enable dirty indicator
+            GIT_PS1_SHOWSTASHSTATE=1            # enable stash empty indicator
+            GIT_PS1_SHOWUPSTREAM='verbose '     # show upstream count delta
+            GIT_PS1_SHOWUPSTREAM+='name'        # show tracking branch name
+        fi
     fi
 
     PS1="$PS1"'\[\033[0m\]'        # change color
@@ -114,6 +118,8 @@ alias less='less -Xm -j.5'
 # User specific aliases - git
 alias gls='git log --stat --decorate --graph --abbrev-commit'
 alias gss='git status -s'
+alias glo='git log --graph --format="%C(auto) %h %aE %d %s"'
+alias glist='git show --pretty="" --name-only HEAD'
 
 # enable git colors if available
 _=`grep --color=auto --version > /dev/null 2>&1`
@@ -155,6 +161,11 @@ export EDITOR=vim
 
 if [ -e ~/.ccache ] ; then
     export CCACHE_DIR=~/.ccache
+fi
+
+# fixup for Windows mingw terminal applications
+if [ "$SYSOS" == "mingw" ]; then
+    alias python='winpty python'
 fi
 
 # If a login shell, fancify the prompt
