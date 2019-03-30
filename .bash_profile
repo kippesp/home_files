@@ -65,9 +65,10 @@ pathmunge /opt/llvm-6.0.0/bin
 pathmunge $HOME/usr/opt/llvm-latest/bin/
 
 # Anaconda/miniconda/pipenv packages
-pathmunge $HOME/anaconda/bin
-pathmunge $HOME/miniconda2/bin
-pathmunge $HOME/miniconda3/bin
+# Place at end to prevent clash with python3-pkginfo's pkginfo (ubuntu)
+pathmunge $HOME/anaconda/bin after
+pathmunge $HOME/miniconda2/bin after
+pathmunge $HOME/miniconda3/bin after
 #pathmunge $HOME/.local/bin after
 
 export PATH
