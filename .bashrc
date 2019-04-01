@@ -140,9 +140,15 @@ _=`ls --color=auto / > /dev/null 2>&1`
 if [ $? -eq 0 ]; then
     alias ls='ls --color=auto'
 
-    _=`dircolors --version / > /dev/null 2>&1`
+    # try to use the vivid LS_COLORS manager
+    _=`vivid generate snazzy > /dev/null 2>&1`
     if [ $? -eq 0 ]; then
-        eval `dircolors`
+        export LS_COLORS="$(vivid generate snazzy)"
+    else
+        _=`dircolors --version / > /dev/null 2>&1`
+        if [ $? -eq 0 ]; then
+            eval `dircolors`
+        fi
     fi
 else
     # fallback to LSCOLORS
