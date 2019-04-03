@@ -181,7 +181,8 @@ set listchars+=precedes:<,extends:>   " Use < and > to indicated text beyond vis
 " TODO: see https://jeffkreeftmeijer.com/vim-number/
 " for buffer switching
 "set relativenumber      " Enable relative vertical line numbering
-set number              " Enable line numbering
+set number               " Enable line numbering
+"set cursorline "TODO: (future) use to alter current line's line number color
 
 " ## GUI settings
 set guioptions-=r              " No vertical scrollbar on right
