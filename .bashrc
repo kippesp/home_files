@@ -114,6 +114,7 @@ alias sudo='sudo '
 
 # User specific aliases
 alias less='less -Xm -j.5'
+alias grepunicode='grep --color=auto -n "[^ -~]"'
 
 # User specific aliases - git
 alias gls='git log --stat --decorate --graph --abbrev-commit'
