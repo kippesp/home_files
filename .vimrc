@@ -200,7 +200,6 @@ if ("$TAGSFILE" != "") && filereadable($TAGSFILE)
 
   " with ctags, don't use clang_complete
   let ENABLE_CLANG_COMPLETE=0
-  let g:clang_complete_loaded=0
 endif
 
 " #########################################################################
@@ -220,6 +219,11 @@ if ENABLE_CLANG_COMPLETE
     let g:clang_auto_user_options="compile_commands.json"
     ",.clang_complete,path"
   endif
+else
+  " If we won't be enabling clang complete, set the flag indicating it has
+  " been loaded in order to prevent annoying errors on platforms without
+  " enough plugin support.
+  let g:clang_complete_loaded=1
 endif
 
 " "let g:clang_user_options="-std=c++0x "
