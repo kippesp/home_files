@@ -118,9 +118,10 @@ alias grepunicode='grep --color=auto -n "[^ -~]"'
 
 # User specific aliases - git
 alias gls='git log --stat --decorate --graph --abbrev-commit'
+alias glsw='git log --stat --decorate --graph --abbrev-commit --stat-width=120'
 alias gss='git status -s'
 alias glo='git log --graph --format="%C(auto) %h %aE %d %s"'
-alias glist='git show --pretty="" --name-only HEAD'
+alias glist='git show --pretty="" --name-only'
 
 # enable git colors if available
 _=`grep --color=auto --version > /dev/null 2>&1`
