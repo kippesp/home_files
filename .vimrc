@@ -249,6 +249,8 @@ endif
 " endif
 
 " ## Highlighting
+ "let kippes_bold=1
+ "let kippes_dark=1
  colorscheme kippes
  syntax on             " Enable syntax highlighting
  set hlsearch          " Highlight the last search
@@ -485,7 +487,8 @@ augroup end
 augroup cmakelists
   au!
 
-  autocmd BufNewFile,BufRead CMakeLists.txt setl shiftwidth=2 softtabstop=2
+  autocmd BufRead,BufNewFile *.cmake,CMakeLists.txt setl shiftwidth=2 softtabstop=2
+  autocmd BufRead,BufNewFile *.cmake,CMakeLists.txt runtime! indent/cmake.vim 
 augroup end
 
 " Makefiles

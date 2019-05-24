@@ -91,13 +91,18 @@ exe "hi Menu                                                                    
 exe "hi ModeMsg                                                                                                                                      term=none".s:usebold."             cterm=none".s:usebold."              gui=none".s:usebold
 exe "hi MoreMsg                                                ctermfg=".s:yellow."                            guifg=yellow                          term=none".s:usebold."             cterm=none".s:usebold."              gui=none".s:usebold
 exe "hi NonText                                                ctermfg=".s:blue."                              guifg=Blue                            term=none".s:usebold."             cterm=none".s:usebold."              gui=none".s:usebold
+
 exe "hi Normal         start=[m[32m      stop=[m[32m   ctermfg=".s:green."                             guifg=green       guibg=black         term=none".s:usebold."             cterm=none".s:usebold."              gui=none".s:usebold
+
 exe "hi PreProc        start=[m[37;44m   stop=[m[32m   ctermfg=".s:magenta."                           guifg=magenta                         term=none".s:usebold."             cterm=none".s:usebold."              gui=none".s:usebold
 exe "hi PmenuSel       start=[m[34m      stop=[m[32m   ctermfg=".s:black."     ctermbg=".s:green."     guifg=black       guibg=green         term=none".s:usebold."             cterm=none".s:usebold."              gui=none".s:usebold
 exe "hi Question       start=[m[33m      stop=[m[32m   ctermfg=".s:yellow."                            guifg=yellow                          term=none".s:usebold."             cterm=none".s:usebold."              gui=none".s:usebold
 exe "hi Red            start=[m[31m      stop=[m[32m   ctermfg=".s:red."                               guifg=red         guibg=black         term=none".s:usebold."             cterm=none".s:usebold."              gui=none".s:usebold
 exe "hi Scrollbar                                                                                              guifg=gray80      guibg=gray70        term=none".s:usebold."             cterm=none".s:usebold."              gui=none".s:usebold
 exe "hi Search         start=[m[34m      stop=[m[32m   ctermfg=".s:blue."      ctermbg=".s:yellow."    guifg=blue        guibg=Yellow        term=none".s:usebold."             cterm=none".s:usebold."              gui=none".s:usebold
+
+exe "hi Special        start=[m[30;43m   stop=[m[32m   ctermfg=".s:black."     ctermbg=".s:green."     guifg=black       guibg=cyan          term=none".s:usebold."             cterm=none".s:usebold."              gui=none".s:usebold
+
 exe "hi SpecialKey     start=[m[30;45m   stop=[m[32m   ctermfg=".s:black."     ctermbg=".s:magenta."   guifg=black       guibg=magenta       term=none".s:usebold."             cterm=none".s:usebold."              gui=none".s:usebold
 exe "hi Statement      start=[m[36m      stop=[m[32m   ctermfg=".s:cyan."                              guifg=cyan        guibg=black         term=none".s:usebold."             cterm=none".s:usebold."              gui=none".s:usebold
 exe "hi StatusLine     start=[m[30;46m   stop=[m[32m   ctermfg=".s:white."     ctermbg=".s:blue."      guifg=white       guibg=blue          term=none".s:usebold."             cterm=none".s:usebold."              gui=none".s:usebold
