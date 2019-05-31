@@ -6,14 +6,15 @@
 #[ -z "$PS1" ] && return
 [[ "$-" != *i* ]] && return
 
-# Prevent PATH from being sorted when using tmux on macos
+# Undo PATH sorting effects with tmux under macos.
 # See: https://superuser.com/questions/544989/does-tmux-sort-the-path-variable
 # - Sorting the path causes issues with switching between git and Xcode-git
+#   and with macport's python (3) version selector method
 # - May want to look at double sourcing on macos
-#if [ -n "$TMUX" ] && [ -f /etc/profile ]; then
-#    PATH=""
-#    source /etc/profile
-#fi
+if [ -n "$TMUX" ] && [ -f /etc/profile ]; then
+    PATH=""
+    source /etc/profile
+fi
 
 if [ "$BASH_PROFILE_WAS_RUN" == "1" ]; then
     echo ".bash_profile was run twice"
@@ -54,7 +55,9 @@ pathmunge /opt/verilator-3.902/bin after
 pathmunge /opt/local/libexec/gnubin
 pathmunge /opt/local/bin
 pathmunge /opt/local/sbin
-pathmunge /Users/pmkippes/Library/Python/3.7/bin
+
+# Local (macos) Python installations
+pathmunge $HOME/Library/Python/3.7/bin
 
 # MacOS git
 pathmunge /usr/local/git/bin
