@@ -39,8 +39,6 @@ pathmunge () {
 # Add a few directories to PATH
 pathmunge $HOME/bin after
 pathmunge $HOME/usr/bin after
-pathmunge /opt/clang+llvm-6.0.0-x86_64-apple-darwin/bin after
-pathmunge /opt/clang+llvm-5.0.0-x86_64-apple-darwin/bin after
 pathmunge /opt/bin
 
 # Haskell additions
@@ -56,11 +54,15 @@ pathmunge /opt/verilator-3.902/bin after
 pathmunge /opt/local/libexec/gnubin
 pathmunge /opt/local/bin
 pathmunge /opt/local/sbin
+pathmunge /Users/pmkippes/Library/Python/3.7/bin
 
 # MacOS git
 pathmunge /usr/local/git/bin
 
 # Local LLVM
+pathmunge /opt/clang+llvm-7.0.0-x86_64-apple-darwin/bin after
+pathmunge /opt/clang+llvm-6.0.0-x86_64-apple-darwin/bin after
+pathmunge /opt/clang+llvm-5.0.0-x86_64-apple-darwin/bin after
 pathmunge /opt/llvm-6.0.0/bin
 pathmunge $HOME/usr/opt/llvm-latest/bin/
 
