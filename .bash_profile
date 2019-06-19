@@ -22,11 +22,9 @@ export SYSOS=$sysos
 # - Sorting the path causes issues with switching between git and Xcode-git
 #   and with macport's python (3) version selector method
 # - May want to look at double sourcing on macos
-if [ "$SYSOS" == "macos" ]; then
-    if [ -n "$TMUX" ] && [ -f /etc/profile ]; then
-        PATH=""
-        source /etc/profile
-    fi
+if [ "$SYSOS" == "macos" ] && [ -n "$TMUX" ] && [ -f /etc/profile ]; then
+    PATH=""
+    source /etc/profile
 fi
 
 if [ "$BASH_PROFILE_WAS_RUN" == "1" ]; then
