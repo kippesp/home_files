@@ -82,10 +82,8 @@ pathmunge $HOME/usr/opt/llvm-latest/bin/
 
 # Anaconda/miniconda/pipenv packages
 # Place at end to prevent clash with python3-pkginfo's pkginfo (ubuntu)
-pathmunge $HOME/miniconda2/bin after
+# Continue to use "source activate ENV_NAME"
 pathmunge $HOME/miniconda3/bin after
-pathmunge $HOME/miniconda3/condabin after
-#pathmunge $HOME/.local/bin after
 
 export PATH
 
