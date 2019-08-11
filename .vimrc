@@ -516,6 +516,15 @@ augroup python
   autocmd BufRead,BufNewFile *.py,*.pyw,*.yaml setl shiftwidth=2 softtabstop=2
 augroup END
 
+" Special filename handling
+augroup filenamespecific
+  au!
+
+  " Format ldscript (linkscript) without extension
+  autocmd BufNewFile,BufRead ldscript set syntax=ld
+augroup end
+
+
 "if version >= 600
 " if has("autocmd")
 "   "
