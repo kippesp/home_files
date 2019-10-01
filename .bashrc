@@ -123,6 +123,21 @@ alias gss='git status -s'
 alias glo='git log --graph --format="%C(auto) %h %aE %d %s"'
 alias glist='git show --pretty="" --name-only'
 
+# Compiler tools
+function dot2pdf {
+    if [ "$1" = "" ] ; then
+        echo Usage: dos2pdf FILE
+        return
+    fi
+
+    if [ ! -e "$1" ] ; then
+        echo File not found
+        return
+    fi
+
+    dot -Tpdf $1 -o ${1%.dot}.pdf
+}
+
 # enable git colors if available
 _=`grep --color=auto --version > /dev/null 2>&1`
 if [ $? -eq 0 ]; then
