@@ -54,8 +54,8 @@ pathmunge $HOME/usr/bin after
 pathmunge /opt/bin
 
 # Haskell additions
-pathmunge $HOME/Library/Haskell/bin after
-pathmunge $HOME/.local/bin after
+pathmunge $HOME/.ghcup/bin
+pathmunge $HOME/.cabal/bin
 
 pathmunge /Applications/CoqIDE_8.4pl5.app/Contents/Resources/bin after
 pathmunge /Users/kippesp/.emacs.d/lisp/PG/coq after
