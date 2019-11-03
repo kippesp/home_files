@@ -70,7 +70,28 @@ There are two things you can do about this warning:
  ;; If there is more than one, they won't work right.
  )
 
-;;;my adjustments
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;; FUNCTIONS
+(defun font-exists-p (font) "check if font exists" (if (null (x-list-fonts font)) nil t))
 
-;no blinking cursor
+;;; ADJUSTMENTS
+
 (blink-cursor-mode 0)
+
+(global-display-line-numbers-mode)
+
+(tool-bar-mode -1)
+(toggle-scroll-bar -1)
+
+; font picker
+(cond
+ ((find-font (font-spec :name "Source Code Pro"))
+  (set-frame-font "Source Code Pro-12"))
+ ((find-font (font-spec :name "Inconsolata"))
+  (set-frame-font "Inconsolata-13"))
+ ((find-font (font-spec :name "Lucida Console"))
+  (set-frame-font "Lucida Console-12"))
+ ((find-font (font-spec :name "Consolas"))
+  (set-frame-font "Consolas-14"))
+ ((find-font (font-spec :name "Courier"))
+  (set-frame-font "Courier-12")))
