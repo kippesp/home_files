@@ -70,7 +70,7 @@ There are two things you can do about this warning:
  '(frame-background-mode (quote dark))
  '(package-selected-packages
    (quote
-    (hindent use-package haskell-mode color-theme-sanityinc-tomorrow dante attrap lcr)))
+    (exec-path-from-shell hindent use-package haskell-mode color-theme-sanityinc-tomorrow dante attrap lcr)))
  '(vc-annotate-background nil)
  '(vc-annotate-color-map
    (quote
@@ -128,3 +128,8 @@ There are two things you can do about this warning:
   (set-frame-font "Consolas-14"))
  ((find-font (font-spec :name "Courier"))
   (set-frame-font "Courier-12")))
+
+;;; Fix path issues
+; https://github.com/purcell/exec-path-from-shell
+(when (memq window-system '(mac ns x))
+  (exec-path-from-shell-initialize))
