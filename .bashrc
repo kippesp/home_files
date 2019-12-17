@@ -91,6 +91,11 @@ setbashprompt() {
     MSYS2_PS1="$PS1"               # for detection by MSYS2 SDK's bash.basrc
 }
 
+# ls, but only for directories
+lsdirs () {
+    /bin/ls -l $1 | grep ^d | awk '{print $9}'
+}
+
 # check the window size after each Bash command and, if necessary,
 # update the values of LINES and COLUMNS.
 shopt -s checkwinsize
