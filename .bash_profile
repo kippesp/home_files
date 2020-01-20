@@ -78,7 +78,7 @@ pathmunge /opt/clang+llvm-7.0.0-x86_64-apple-darwin/bin after
 pathmunge /opt/clang+llvm-6.0.0-x86_64-apple-darwin/bin after
 pathmunge /opt/clang+llvm-5.0.0-x86_64-apple-darwin/bin after
 pathmunge /opt/llvm-6.0.0/bin
-pathmunge $HOME/usr/opt/llvm-latest/bin/
+pathmunge $HOME/usr/opt/llvm-latest/bin
 
 # Anaconda/miniconda/pipenv packages
 # Place at end to prevent clash with python3-pkginfo's pkginfo (ubuntu)
