@@ -524,6 +524,19 @@ augroup filenamespecific
   autocmd BufNewFile,BufRead ldscript set syntax=ld
 augroup end
 
+" .ll and .td (llvm)
+augroup llvm
+  au!
+
+  autocmd BufRead,BufNewFile *.td set filetype=tablegen
+  autocmd BufRead,BufNewFile *.ll set filetype=llvm
+  autocmd BufRead,BufNewFile *.ll set filetype=llvm
+  autocmd BufRead,BufNewFile *.ll runtime! indent/llvm.vim
+
+  autocmd BufRead,BufNewFile *.ll setl softtabstop=2 shiftwidth=2 expandtab comments+=:;
+  autocmd BufRead,BufNewFile *.td setl matchpairs+=<:> softtabstop=2 shiftwidth=2 expandtab
+augroup end
+
 
 "if version >= 600
 " if has("autocmd")
