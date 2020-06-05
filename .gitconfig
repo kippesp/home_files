@@ -1,0 +1,21 @@
+[user]
+	name = Paul Kippes
+	email = kippesp@gmail.com
+
+[http]
+#proxy = http://proxy-chain.intel.com:911
+
+[https]
+#proxy = https://proxy-chain.intel.com:912
+
+[sendemail]
+suppresscc=all
+
+[push]
+default = simple
+
+# See https://git-scm.com/docs/git-config#Documentation/git-config.txt-color
+# See https://stackoverflow.com/questions/26941144/how-do-you-customize-the-color-of-the-diff-header-in-git-diff
+# See https://stackoverflow.com/questions/24455377/git-diff-with-line-numbers-git-log-with-line-numbers/61997003#61997003
+[color "diff"]
+    commit = bold yellow
