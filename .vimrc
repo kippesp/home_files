@@ -102,13 +102,6 @@ map <leader>tc :tabclose<CR>
 map <leader>tn :tabnext<CR>
 map <leader>tp :tabprevious<CR>
 
-"WIP
-"Check &diff == 1 for vimdiff mode
-" https://vi.stackexchange.com/questions/2705/create-mappings-that-only-apply-to-diff-mode
-":diffget REMOTE
-":diffget BASE
-":diffget LOCAL
-
 "
 " Key mappings for QuickFix buffer
 "
@@ -161,5 +154,12 @@ set guioptions-=L              " No vertical scrollbar on left when split
 set guioptions-=m              " No menu bar
 set guioptions-=T              " No toolbar
 set guicursor+=i-n-v-c:blinkon0 " No blinking curser
+
+" #########################################################################
+" ## COLOR SETTINGS
+" #########################################################################
+
+ syntax on             " Enable syntax highlighting
+ colorscheme kippes
 
 " vim:expandtab:softtabstop=2 shiftwidth=2
