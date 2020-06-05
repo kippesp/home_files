@@ -123,6 +123,7 @@ alias grepunicode='grep --color=auto -n "[^ -~[:space:]]"'
 
 # User specific aliases - git
 alias gls='git log --stat --decorate --graph --abbrev-commit'
+alias glsf='git log --stat --decorate --graph --abbrev-commit --pretty=fuller'
 alias glsw='git log --stat --decorate --graph --abbrev-commit --stat-width=120'
 alias gss='git status -s'
 alias glo='git log --graph --format="%C(auto) %h %aE %d %s"'
