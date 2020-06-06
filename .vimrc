@@ -9,7 +9,7 @@
 " #########################################################################
 
 if has('win32') || has('win64')
- set runtimepath=~/.vim,$VIMRUNTIME
+  set runtimepath=~/.vim,$VIMRUNTIME
 endif
 
 let ENABLE_CLANG_COMPLETE=0
@@ -150,22 +150,22 @@ set listchars+=precedes:<,extends:>   " Use < and > to indicated text beyond vis
 
 " TODO: see https://jeffkreeftmeijer.com/vim-number/
 " for buffer switching
-"set relativenumber      " Enable relative vertical line numbering
-set number               " Enable line numbering
+"set relativenumber     " Enable relative vertical line numbering
+set number              " Enable line numbering
 "set cursorline "TODO: (future) use to alter current line's line number color
 
 " ## GUI settings
-set guioptions-=r              " No vertical scrollbar on right
-set guioptions-=L              " No vertical scrollbar on left when split
-set guioptions-=m              " No menu bar
-set guioptions-=T              " No toolbar
+set guioptions-=r       " No vertical scrollbar on right
+set guioptions-=L       " No vertical scrollbar on left when split
+set guioptions-=m       " No menu bar
+set guioptions-=T       " No toolbar
 set guicursor+=i-n-v-c:blinkon0 " No blinking curser
 
 " #########################################################################
 " ## COLOR SETTINGS
 " #########################################################################
 
- syntax on             " Enable syntax highlighting
- colorscheme kippes
+syntax on               " Enable syntax highlighting
+colorscheme kippes
 
 " vim:expandtab:softtabstop=2 shiftwidth=2
