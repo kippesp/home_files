@@ -51,7 +51,6 @@ set visualbell
 
 " ## Vim Extensions and Miscellaneous
 
-set nocompatible        " Use Vim defaults (much better!)
 set viminfo='20,\"50    " read/write a .viminfo file, don't store more
 "                       " than 50 lines of registers
 set noequalalways       " Do not resize windows when splitting
@@ -73,6 +72,9 @@ set incsearch           " Incremental search (highlight while searching)
 set infercase           " Keyword completion isn't picky about case
 set gdefault            " Substitute all matches in a line
 set hlsearch            " Highlight the last search
+
+" Clear search highlights with a double tap, <esc><esc>
+nnoremap <silent> <Esc><Esc> <Esc>:nohlsearch<CR><Esc>
 
 " Key mappings to keep incremental searches in the center
 :nnoremap n nzz
