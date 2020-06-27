@@ -85,6 +85,9 @@ pathmunge $HOME/usr/opt/llvm-latest/bin
 # Continue to use "source activate ENV_NAME"
 pathmunge $HOME/miniconda3/bin after
 
+# Verilator
+pathmunge /opt/verilator/bin after
+
 export PATH
 
 # TODO - ??macos only?? Get the aliases and functions
