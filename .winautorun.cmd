@@ -1,7 +1,7 @@
 @echo off
 rem Add this file to c:\
 rem Add a registy autorun entry:
-rem     reg add "HKCU\Software\Microsoft\Command Processor" /v Autorun /d "%HOMEPATH%\.winautorun.cmd" /f
+rem     reg add "HKCU\Software\Microsoft\Command Processor" /v Autorun /d "%HOMEDRIVE%%HOMEPATH%\.winautorun.cmd" /f
 rem Verify setting with:
 rem     reg query "HKCU\Software\Microsoft\Command Processor" /v Autorun
 
@@ -16,6 +16,6 @@ doskey ex.=explorer .
 doskey history=doskey /history
 
 rem ==== work related
-doskey sct=cd %HOMEPATH%\projects\wddm-mx.git\Source\ShaderCompiler\tests\scripts
+doskey scs=cd %HOMEPATH%\projects\wddm-mx.git\Source\ShaderCompiler\tests\scripts
 
 prompt $P$_$G$S
