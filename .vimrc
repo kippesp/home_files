@@ -8,6 +8,9 @@
 " ## PLATFORM SETTINGS
 " #########################################################################
 
+" TODO: generalize to iswindows
+" TODO: move to cpp area
+
 if has('win32') || has('win64')
   set runtimepath=~/.vim,$VIMRUNTIME
 endif
@@ -146,7 +149,7 @@ set cpoptions+=$        " put the nice little $ when we change text
 
 set scrolloff=2         " Keep 2 lines above/below cursor line
 set sidescroll=1        " Scroll sideways 1 position at a time
-set sidescrolloff=5   " Keep 5 characters to the right/left of cursor when side scrolling
+set sidescrolloff=5     " Keep 5 characters to the right/left of cursor when side scrolling
 set listchars+=precedes:<,extends:>   " Use < and > to indicated text beyond visible area
 " TODO: precedes not functioning
 
