@@ -8,25 +8,15 @@
 " ## PLATFORM SETTINGS
 " #########################################################################
 
-" TODO: generalize to iswindows
-" TODO: move to cpp area
-
 if has('win32') || has('win64')
   set runtimepath=~/.vim,$VIMRUNTIME
-endif
-
-let ENABLE_CLANG_COMPLETE=0
-if has("conceal") && has("python3")
-  let ENABLE_CLANG_COMPLETE=1
 endif
 
 " set path to user's .vim
 if has('win32') || has('win64')             " windows
   let $VIMHOME = $VIM."vimfile"
-  let ENABLE_CLANG_COMPLETE=0
 elseif has('win32unix') || has('win64unix') " cygwin
   let $VIMHOME = $HOME."/.vim"
-  let ENABLE_CLANG_COMPLETE=0
 else                                        " unix/bsd
   let $VIMHOME = $HOME."/.vim"
 endif
