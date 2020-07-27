@@ -156,6 +156,21 @@ set guioptions-=m       " No menu bar
 set guioptions-=T       " No toolbar
 set guicursor+=i-n-v-c:blinkon0 " No blinking curser
 
+if has('gui_running')
+  if has('win32') || has('win64')
+    set guifont=Lucida_Console:h10
+    winsize 130 50
+"  elseif has('gui_gtk2')
+"    set guifont="Courier 10"
+"  elseif has('gui_gtk')
+"    set guifont="Ubuntu Mono 12"
+"    set guifont="Monospace 10,Courier 10"
+"  elseif has('gui_kde')
+"  else
+"    set guifont=LucidaTypewriter
+  endif
+endif
+
 " #########################################################################
 " ## COLOR SETTINGS
 " #########################################################################
