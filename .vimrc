@@ -131,6 +131,7 @@ iabbrev teh the
 
 set ruler               " display ruler at bottom
 set laststatus=2        " status line always on
+set showcmd             " terse status line updates
 
 " ## Editor view adjustments
 
