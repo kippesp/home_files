@@ -77,8 +77,16 @@ pathmunge /usr/local/git/bin
 pathmunge /opt/clang+llvm-7.0.0-x86_64-apple-darwin/bin after
 pathmunge /opt/clang+llvm-6.0.0-x86_64-apple-darwin/bin after
 pathmunge /opt/clang+llvm-5.0.0-x86_64-apple-darwin/bin after
-pathmunge /opt/llvm-6.0.0/bin
 pathmunge $HOME/usr/opt/llvm-latest/bin
+
+# Pickup libc++api in my local LLVM
+if [ -d $HOME/usr/opt/llvm-latest/lib ]; then
+    if [ "$LD_LIBRARY_PATH" != "" ]; then
+        export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$HOME/usr/opt/llvm-latest/lib
+    else
+        export LD_LIBRARY_PATH=$HOME/usr/opt/llvm-latest/lib
+    fi
+fi
 
 # Anaconda/miniconda/pipenv packages
 # Place at end to prevent clash with python3-pkginfo's pkginfo (ubuntu)
