@@ -16,6 +16,6 @@ doskey ex.=explorer .
 doskey history=doskey /history
 
 rem ==== work related
-doskey scs=cd %HOMEPATH%\projects\wddm-mx.git\Source\ShaderCompiler\tests\scripts
+doskey scs=cd %DOSKEY_SC_SCRIPTS_DIR%
 
 prompt $P$_$G$S
