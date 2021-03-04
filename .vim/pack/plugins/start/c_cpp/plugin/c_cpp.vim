@@ -3,6 +3,24 @@ if exists("b:did_ftplugin")
 endif
 let b:did_ftplugin = 1
 
+setl syntax=cpp
+
+" #########################################################################
+" ## INDENT SETTINGS
+" #########################################################################
+
+" :help new-filetype
+
+" see :help fo-table
+setl formatoptions+=c   " auto-wrap comments using textwidth
+setl formatoptions+=r   " insert the current comment leader after return
+setl formatoptions+=o   " insert the current comment leader after insert
+setl formatoptions+=q   " support comment formatting with 'gq'
+setl formatoptions+=j   " when appropriate, remove comment leader on join
+setl shiftwidth=2
+setl softtabstop=2
+setl cindent
+
 " #########################################################################
 " ## PROJECT-SPECIFIC CTAGS CONFIG
 " #########################################################################
