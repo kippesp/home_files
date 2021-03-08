@@ -96,6 +96,12 @@ pathmunge $HOME/miniconda3/bin after
 # Verilator
 pathmunge /opt/verilator/bin after
 
+# Yarn-installed binaries
+pathmunge $HOME/.yarn/bin after
+
+# Python packages on macos
+pathmunge $HOME/Library/Python/3.8/bin
+
 export PATH
 
 # TODO - ??macos only?? Get the aliases and functions
