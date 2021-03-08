@@ -21,6 +21,18 @@
 [sendemail]
     suppresscc=all
 
+#[merge]
+#    tool=vimdiff
+#    conflictstyle=diff3
+#    prompt=false
+#
+#[difftool "sourcetree"]
+#	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+#	path =
+#[mergetool "sourcetree"]
+#	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+#	trustExitCode = true
+
 # Still looking at this
 #[color "diff"]
 # See https://git-scm.com/docs/git-config#Documentation/git-config.txt-color
