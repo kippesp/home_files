@@ -207,3 +207,12 @@ setbashprompt
 
 # Cleanup
 unset -f setbashprompt
+
+# Fix gitbash's habit of not leaving us is a useful location
+if [ "$SYSOS" == "mingw" ]; then
+    if [ -d $HOME/projects ]; then
+        cd $HOME/projects
+    else
+        cd $HOME
+    fi
+fi
