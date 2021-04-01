@@ -15,6 +15,8 @@ doskey exp=explorer %HOMEPATH%\projects
 doskey ex.=explorer .
 doskey history=doskey /history
 
+doskey scp=cd %HOMEPATH%\projects
+
 rem ==== work related
 doskey scs=cd %DOSKEY_SC_SCRIPTS_DIR%
 
