@@ -79,6 +79,10 @@ pathmunge /opt/clang+llvm-6.0.0-x86_64-apple-darwin/bin after
 pathmunge /opt/clang+llvm-5.0.0-x86_64-apple-darwin/bin after
 pathmunge $HOME/usr/opt/llvm-latest/bin
 
+# Local cmake
+pathmunge $HOME/usr/opt/cmake-3.18.1/bin
+pathmunge /opt/cmake/cmake-current/bin
+
 # Pickup libc++api in my local LLVM
 if [ -d $HOME/usr/opt/llvm-latest/lib ]; then
     if [ "$LD_LIBRARY_PATH" != "" ]; then
