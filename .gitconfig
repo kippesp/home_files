@@ -7,6 +7,7 @@
 [user]
     name = Paul Kippes
     email = kippesp@gmail.com
+	signingkey = B7D97825FE146ED7
 
 [push]
     # git push the current, same-named, branch
@@ -39,3 +40,8 @@
 # See https://stackoverflow.com/questions/26941144/how-do-you-customize-the-color-of-the-diff-header-in-git-diff
 # See https://stackoverflow.com/questions/24455377/git-diff-with-line-numbers-git-log-with-line-numbers/61997003#61997003
 #    commit = bold yellow
+[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
