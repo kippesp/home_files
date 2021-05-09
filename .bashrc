@@ -197,6 +197,12 @@ if [ "$SYSOS" == "mingw" ]; then
     alias python='winpty python'
 fi
 
+# if git configured with a key, support using it
+grep -q signingkey ~/.gitconfig
+if [ $? -eq 0 ]; then
+    export GPG_TTY=$(tty)
+fi
+
 # If a login shell, fancify the prompt
 # TODO: Fix to help with other platforms
 #shopt -q login_shell

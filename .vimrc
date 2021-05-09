@@ -45,7 +45,7 @@ set visualbell
 " ## Vim Extensions and Miscellaneous
 
 set viminfo='20,\"50    " read/write a .viminfo file, don't store more
-"                       " than 50 lines of registers
+                        " than 50 lines of registers
 set noequalalways       " Do not resize windows when splitting
 set splitbelow          " When splitting windows, current window is the lower
 set history=75          " keep 75 lines of command line history
@@ -131,6 +131,7 @@ iabbrev teh the
 
 set ruler               " display ruler at bottom
 set laststatus=2        " status line always on
+set showcmd             " terse status line updates
 
 " ## Editor view adjustments
 
