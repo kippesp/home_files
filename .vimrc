@@ -537,6 +537,10 @@ augroup llvm
   autocmd BufRead,BufNewFile *.td setl matchpairs+=<:> softtabstop=2 shiftwidth=2 expandtab
 augroup end
 
+augroup systemverilog
+	au! BufRead,BufNewFile *.v,*.vh,*.sv,*.svh setfiletype systemverilog
+augroup END
+
 
 "if version >= 600
 " if has("autocmd")
