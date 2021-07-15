@@ -13,6 +13,11 @@ fi
 
 BASHRC_WAS_RUN=1
 
+# OS configuration:
+#   mkdir ~/usr/opt
+#   cd ~/usr/opt
+#   git clone https://github.com/git/git.git git.git
+
 # TODO: https://groups.google.com/a/continuum.io/forum/#!topic/anaconda/mWPH_zCAfAg
 setbashprompt() {
     TITLEPREFIX=$MSYSTEM
@@ -51,8 +56,16 @@ setbashprompt() {
     then
         # windows - gitbash
         COMPLETION_PATH="$COMPLETION_PATH/share/git/completion"
-    elif [ -e /opt/git.git/contrib/completion ]
+    #elif [ -e /usr/share/bash-completion/completions/git ]
+    #then
+    #    # ubuntu linux - 'git' package
+    #    COMPLETION_PATH="/usr/share/bash-completion/completions/git"
+    #elif [ -e /opt/git.git/contrib/completion ]
+    elif [ -e "$HOME/usr/opt/git.git/contrib/completion" ]
     then
+        # upstream github
+        COMPLETION_PATH="$HOME/usr/opt/git.git/contrib/completion"
+    else
         # custom linux - manual clone of repo (but no installation)
         COMPLETION_PATH="/opt/git.git/contrib/completion"
     #else
@@ -62,6 +75,14 @@ setbashprompt() {
     #    #COMPLETION_PATH="$COMPLETION_PATH/share/git/contrib/completion"
     #    COMPLETION_PATH="$COMPLETION_PATH/share/git/completion"
     fi
+
+    ## LATER
+    ## Handle Ubuntu's modifications
+    #if [ -f $COMPLETION_PATH ]
+    #then
+    #  ; # We're good.  We've got the file
+    #elif [ -d $COMPLETION_PATH ]
+    #then
 
     # Configure git-ified bash prompt
     if test -f "$COMPLETION_PATH/git-prompt.sh"
@@ -188,7 +209,7 @@ fi
 # specify vim as preferred editor
 export EDITOR=vim
 
-if [ -e ~/.ccache ] ; then
+if [ -e ~/.ccache ]; then
     export CCACHE_DIR=~/.ccache
 fi
 
@@ -198,9 +219,11 @@ if [ "$SYSOS" == "mingw" ]; then
 fi
 
 # if git configured with a key, support using it
-grep -q signingkey ~/.gitconfig
-if [ $? -eq 0 ]; then
-    export GPG_TTY=$(tty)
+if [ -e ~/.gitconfig ]; then
+  grep -q signingkey ~/.gitconfig
+  if [ $? -eq 0 ]; then
+      export GPG_TTY=$(tty)
+  fi
 fi
 
 # If a login shell, fancify the prompt
