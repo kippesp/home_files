@@ -52,6 +52,10 @@ setbashprompt() {
     then
         # macos - git-scm.com
         COMPLETION_PATH="$COMPLETION_PATH/contrib/completion"
+    elif [ -e "$COMPLETION_PATH/share/git/contrib/completion" ]
+    then
+        # macos - macports
+        COMPLETION_PATH="$COMPLETION_PATH/share/git/contrib/completion"
     elif [ -e "$COMPLETION_PATH/share/git/completion" ]
     then
         # windows - gitbash

@@ -81,6 +81,7 @@ pathmunge $HOME/usr/opt/llvm-latest/bin
 
 # Local cmake
 pathmunge $HOME/usr/opt/cmake-3.18.1/bin
+pathmunge $HOME/usr/opt/cmake/current/bin
 pathmunge /opt/cmake/cmake-current/bin
 
 # Pickup libc++api in my local LLVM
