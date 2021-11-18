@@ -9,13 +9,15 @@
 " #########################################################################
 
 if has('win32') || has('win64')
-  set runtimepath=~/.vim,$VIMRUNTIME
+  set runtimepath^=~/.vim
+  "set runtimepath=~/.vim,$VIMRUNTIME
+  set packpath=~/.vim,
 endif
 
 " set path to user's .vim
 if has('win32') || has('win64')             " windows
   let $VIMHOME = $VIM."vimfile"
-elseif has('win32unix') || has('win64unix') " cygwin
+elseif has('win32unix') || has('win64unix') " cygwin/mingw
   let $VIMHOME = $HOME."/.vim"
 else                                        " unix/bsd
   let $VIMHOME = $HOME."/.vim"

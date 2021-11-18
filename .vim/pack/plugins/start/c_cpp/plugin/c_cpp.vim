@@ -40,8 +40,7 @@ endif
 
 " enable on non-windoz if python3 available
 if ENABLE_CLANG_COMPLETE == -1
-  if has('win32') || has('win64')                           " windows
-                  || has('win32unix')|| has('win64unix')    " cygwin
+  if has('win32') || has('win64') || has('win32unix') || has('win64unix')
     let ENABLE_CLANG_COMPLETE=0
   elseif has("conceal") && has("python3")
     let ENABLE_CLANG_COMPLETE=1
