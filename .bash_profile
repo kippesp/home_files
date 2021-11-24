@@ -66,21 +66,22 @@ pathmunge /opt/verilator-3.902/bin after
 pathmunge /opt/local/libexec/gnubin
 pathmunge /opt/local/bin
 pathmunge /opt/local/sbin
+pathmunge /opt/local/Library/Frameworks/Python.framework/Versions/Current/bin
 
 # Local (macos) Python installations
-pathmunge $HOME/Library/Python/3.7/bin
+pathmunge $HOME/Library/Python/Current/bin
 
 # MacOS git
-pathmunge /usr/local/git/bin
+# pathmunge /usr/local/git/bin
 
 # Local LLVM
-pathmunge /opt/clang+llvm-7.0.0-x86_64-apple-darwin/bin after
-pathmunge /opt/clang+llvm-6.0.0-x86_64-apple-darwin/bin after
-pathmunge /opt/clang+llvm-5.0.0-x86_64-apple-darwin/bin after
+# pathmunge /opt/clang+llvm-7.0.0-x86_64-apple-darwin/bin after
+# pathmunge /opt/clang+llvm-6.0.0-x86_64-apple-darwin/bin after
+# pathmunge /opt/clang+llvm-5.0.0-x86_64-apple-darwin/bin after
 pathmunge $HOME/usr/opt/llvm-latest/bin
 
 # Local cmake
-pathmunge $HOME/usr/opt/cmake-3.18.1/bin
+# pathmunge $HOME/usr/opt/cmake-3.18.1/bin
 pathmunge $HOME/usr/opt/cmake/current/bin
 pathmunge /opt/cmake/cmake-current/bin
 
@@ -96,16 +97,13 @@ fi
 # Anaconda/miniconda/pipenv packages
 # Place at end to prevent clash with python3-pkginfo's pkginfo (ubuntu)
 # Continue to use "source activate ENV_NAME"
-pathmunge $HOME/miniconda3/bin after
+# pathmunge $HOME/miniconda3/bin after
 
 # Verilator
 pathmunge /opt/verilator/bin after
 
-# Yarn-installed binaries
+# Yarn-installed binaries (such as brili)
 pathmunge $HOME/.yarn/bin after
-
-# Python packages on macos
-pathmunge $HOME/Library/Python/3.8/bin
 
 export PATH
 
