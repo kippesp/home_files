@@ -34,6 +34,7 @@ endif
 
 if exists("kippes_dark") && kippes_dark != 0
  let s:black   = "black"
+ let s:darkgray= "darkgray"
  let s:red     = "darkred"
  let s:green   = "darkgreen"
  let s:yellow  = "darkyellow"
@@ -43,6 +44,7 @@ if exists("kippes_dark") && kippes_dark != 0
  let s:white   = "white"
 else
  let s:black   = "black"
+ let s:darkgray= "darkgray"
  let s:red     = "red"
  let s:green   = "green"
  let s:yellow  = "yellow"
@@ -84,7 +86,7 @@ exe "hi Green          start=[m[32m      stop=[m[32m   ctermfg=".s:green."  
 exe "hi Identifier     start=[m[35m      stop=[m[32m   ctermfg=".s:magenta."                           guifg=magenta     guibg=black         term=none".s:usebold."             cterm=none".s:usebold."              gui=none".s:usebold
 exe "hi Ignore                                                 ctermfg=".s:black  ."                           guifg=bg                              term=none".s:usebold."             cterm=none".s:usebold."              gui=none".s:usebold
 exe "hi IncSearch      start=[m[30;42m   stop=[m[32m   ctermfg=".s:black  ."   ctermbg=".s:white."     guifg=black       guibg=green         term=none".s:usebold."             cterm=none".s:usebold."              gui=none".s:usebold
-exe "hi LineNr                                                 ctermfg=".s:white."     ctermbg=".s:black."     guifg=grey        guibg=black         term=none".s:underline.s:usebold." cterm=none".s:usebold."              gui=none".s:usebold
+exe "hi LineNr                                                 ctermfg=".s:darkgray."     ctermbg=".s:black."     guifg=grey        guibg=black         term=none".s:underline.s:usebold." cterm=none".s:usebold."              gui=none".s:usebold
 exe "hi MatchParen                                             ctermfg=".s:white."     ctermbg=".s:magenta."   guifg=white       guibg=black         term=none".s:usebold."             cterm=none".s:usebold."              gui=none".s:usebold
 exe "hi Magenta        start=[m[35m      stop=[m[32m   ctermfg=".s:magenta."                           guifg=magenta     guibg=black         term=none".s:usebold."             cterm=none".s:usebold."              gui=none".s:usebold
 exe "hi Menu                                                                                                   guifg=black       guibg=gray75        term=none".s:usebold."             cterm=none".s:usebold."              gui=none".s:usebold

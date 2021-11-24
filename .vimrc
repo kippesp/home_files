@@ -57,8 +57,13 @@ set modelines=1         " process a single modeline (as opposed to ...?)
 " ## Mouse and Clipboard Settings
 
 set mouse=nhv           " Enable console mouse for Normal, Visual, and Help
-set clipboard=autoselect,unnamed        " (text mode) Attempt to place Visual mode selected text
-                                        "    and yank text in windowing system's clipboard
+if has('X11')
+set clipboard=unnamedplus     " Use '+' register
+else
+set clipboard=autoselect      " (text mode) Use system clipboard
+set clipboard+=unnamed        " Use '*' register
+endif
+
 " ## Search/Replace Behavior
 
 set ignorecase          " Ignore case when searching
@@ -148,9 +153,11 @@ set listchars+=precedes:<,extends:>   " Use < and > to indicated text beyond vis
 
 " TODO: see https://jeffkreeftmeijer.com/vim-number/
 " for buffer switching
-"set relativenumber     " Enable relative vertical line numbering
 set number              " Enable line numbering
 "set cursorline "TODO: (future) use to alter current line's line number color
+
+" Resize splits when window is resized
+autocmd VimResized * wincmd =
 
 " ## GUI settings
 set guioptions-=r       " No vertical scrollbar on right
