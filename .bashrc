@@ -184,7 +184,7 @@ fi
 # configure ls coloring
 _=`ls --color=auto / > /dev/null 2>&1`
 if [ $? -eq 0 ]; then
-    alias ls='ls --color=auto'
+    alias ls='ls -p --color=auto'
 
     # try to use the vivid LS_COLORS manager
     _=`vivid generate snazzy > /dev/null 2>&1`
@@ -197,6 +197,8 @@ if [ $? -eq 0 ]; then
         fi
     fi
 else
+    alias ls='ls -p'
+
     # fallback to LSCOLORS
     export CLICOLOR=1
 
