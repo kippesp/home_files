@@ -232,6 +232,11 @@ if [ -e ~/.gitconfig ]; then
   fi
 fi
 
+# local git caches
+if [ -e ~/projects/local_git_caches ]; then
+  export GIT_DEP_REPOS_CACHE=~/projects/local_git_caches
+fi
+
 # If a login shell, fancify the prompt
 # TODO: Fix to help with other platforms
 #shopt -q login_shell

@@ -112,9 +112,14 @@ if [ -f ~/.bashrc ]; then
     . ~/.bashrc
 fi
 
-# Enable macport's bash-completion
+# Enable bash-completion from macports
 if [ -f /opt/local/etc/profile.d/bash_completion.sh ]; then
     . /opt/local/etc/profile.d/bash_completion.sh
+fi
+
+# Enable nvm from macports
+if [ -f /opt/local/share/nvm/init-nvm.sh ]; then
+    . /opt/local/share/nvm/init-nvm.sh
 fi
 
 if [ -e ~/.bash_profile.local ] ; then
