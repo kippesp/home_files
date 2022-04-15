@@ -57,6 +57,9 @@ pathmunge /opt/bin
 pathmunge $HOME/.ghcup/bin
 pathmunge $HOME/.cabal/bin
 
+# Rust additions
+pathmunge $HOME/.cargo/bin
+
 pathmunge /Applications/CoqIDE_8.4pl5.app/Contents/Resources/bin after
 pathmunge /Users/kippesp/.emacs.d/lisp/PG/coq after
 
