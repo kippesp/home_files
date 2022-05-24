@@ -89,13 +89,13 @@ pathmunge $HOME/usr/opt/cmake/current/bin
 pathmunge /opt/cmake/cmake-current/bin
 
 # Pickup libc++api in my local LLVM
-if [ -d $HOME/usr/opt/llvm-latest/lib ]; then
-    if [ "$LD_LIBRARY_PATH" != "" ]; then
-        export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$HOME/usr/opt/llvm-latest/lib
-    else
-        export LD_LIBRARY_PATH=$HOME/usr/opt/llvm-latest/lib
-    fi
-fi
+#if [ -d $HOME/usr/opt/llvm-latest/lib ]; then
+#    if [ "$LD_LIBRARY_PATH" != "" ]; then
+#        export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$HOME/usr/opt/llvm-latest/lib
+#    else
+#        export LD_LIBRARY_PATH=$HOME/usr/opt/llvm-latest/lib
+#    fi
+#fi
 
 # Anaconda/miniconda/pipenv packages
 # Place at end to prevent clash with python3-pkginfo's pkginfo (ubuntu)
