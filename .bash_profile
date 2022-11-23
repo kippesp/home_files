@@ -27,6 +27,10 @@ if [ "$SYSOS" == "macos" ] && [ -n "$TMUX" ] && [ -f /etc/profile ]; then
     source /etc/profile
 fi
 
+# linux
+# let &t_EI .= "\<Esc>[2 q"
+#
+
 if [ "$BASH_PROFILE_WAS_RUN" == "1" ]; then
     echo ".bash_profile was run twice"
 fi
@@ -73,6 +77,7 @@ pathmunge /opt/local/Library/Frameworks/Python.framework/Versions/Current/bin
 
 # Local (macos) Python installations
 pathmunge $HOME/Library/Python/Current/bin
+pathmunge $HOME/.local/bin
 
 # MacOS git
 # pathmunge /usr/local/git/bin
