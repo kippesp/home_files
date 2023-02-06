@@ -32,6 +32,12 @@
     "copyFormatting": "none",
     "copyOnSelect": true,
     "defaultProfile": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+    "newTabMenu": 
+    [
+        {
+            "type": "remainingProfiles"
+        }
+    ],
     "profiles": 
     {
         "defaults": {},
@@ -39,6 +45,7 @@
         [
             {
                 "background": "#012456",
+                "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
                 "cursorColor": "#208FC6",
                 "cursorShape": "filledBox",
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
@@ -46,14 +53,16 @@
                 "name": "Windows PowerShell"
             },
             {
+                "commandline": "%SystemRoot%\\System32\\cmd.exe",
                 "cursorShape": "vintage",
                 "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
                 "hidden": false,
                 "name": "Command Prompt"
             },
             {
+                "cursorShape": "vintage",
                 "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
-                "hidden": trvvv88888888888888888888ue,
+                "hidden": false,
                 "name": "Azure Cloud Shell",
                 "source": "Windows.Terminal.Azure"
             },
@@ -67,24 +76,42 @@
                 "startingDirectory": "%USERPROFILE%/projects"
             },
             {
-                "guid": "{459a0d39-0c1c-57dd-a3ed-6f387e27f555}",
-                "hidden": false,
-                "cursorShape": "vintage",
                 "background": "#1F0F34",
-                "tabColor": "#632CA7",
+                "cursorShape": "vintage",
+                "guid": "{64c551c5-f7fb-50b6-bb9f-aebe353ce8c6}",
+                "hidden": false,
                 "name": "Developer Command Prompt for VS 2022",
+                "source": "Windows.Terminal.VisualStudio",
                 "startingDirectory": "%USERPROFILE%/projects",
+                "tabColor": "#632CA7"
+            },
+            {
+                "background": "#1F0F34",
+                "cursorShape": "vintage",
+                "guid": "{2ea8e3fd-443c-5be1-8714-8ced8d2075d0}",
+                "hidden": false,
+                "name": "Developer PowerShell for VS 2022",
+                "source": "Windows.Terminal.VisualStudio",
+                "startingDirectory": "%USERPROFILE%/projects",
+                "tabColor": "#632CA7"
+            },
+            {
+                "guid": "{91832fc2-63b5-53b7-b0ae-6e463bdae5bc}",
+                "hidden": true,
+                "name": "Developer Command Prompt for VS 2019",
                 "source": "Windows.Terminal.VisualStudio"
             },
             {
-                "guid": "{eefeae0e-cebd-5ed2-a394-c5d8d3313f7c}",
-                "hidden": false,
-                "cursorShape": "vintage",
-                "background": "#1F0F34",
-                "tabColor": "#632CA7",
-                "name": "Developer PowerShell for VS 2022",
-                "startingDirectory": "%USERPROFILE%/projects",
+                "guid": "{44c5cad7-c514-50b2-9b16-a5d0a76c45a7}",
+                "hidden": true,
+                "name": "Developer PowerShell for VS 2019",
                 "source": "Windows.Terminal.VisualStudio"
+            },
+            {
+                "guid": "{16208362-94fc-5b1f-a491-5b2624d5ab56}",
+                "hidden": true,
+                "name": "Visual Studio Debug Console",
+                "source": "VSDebugConsole"
             }
         ]
     },
