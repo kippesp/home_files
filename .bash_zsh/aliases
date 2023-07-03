@@ -1,0 +1,27 @@
+function alias-misc_unix_augmentations()
+{
+    # Expand aliased sudo-ed command
+    alias sudo='sudo '
+
+    # User specific aliases
+    alias less='less -Xm -j.5'
+}
+
+function alias-git_abbreviations()
+{
+    alias gls='git log --stat --decorate --graph --abbrev-commit'
+    alias glsf='git log --stat --decorate --graph --abbrev-commit --pretty=fuller'
+    alias glsw='git log --stat --decorate --graph --abbrev-commit --stat-width=120'
+    alias gss='git status -s'
+    alias glo='git log --graph --format="%C(auto) %h %aE %d %s"'
+    alias glist='git show --pretty="" --name-only'
+}
+
+function alias-use_colorized_grep()
+{
+    alias grep='grep --color=auto'
+    alias fgrep='fgrep --color=auto'
+    alias egrep='egrep --color=auto'
+
+    alias grepunicode='grep --color=auto -n "[^ -~[:space:]]"'
+}
