@@ -9,5 +9,7 @@ let b:did_ftplugin = 1
 
 setlocal softtabstop=2 shiftwidth=2
 setlocal expandtab
-setlocal comments+=:;
+setlocal comments=:;
 
+setlocal formatoptions+=r   " insert the current comment leader after return
+setlocal formatoptions+=o   " insert the current comment leader after insert
