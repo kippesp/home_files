@@ -1,4 +1,4 @@
-﻿Windows Registry Editor Version 5.00
+Windows Registry Editor Version 5.00
 
 ; correspondng change with admin prompt:
 ;   git config --system core.longpaths true
