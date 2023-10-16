@@ -154,6 +154,13 @@ alias gss='git status -s'
 alias glo='git log --graph --format="%C(auto) %h %aE %d %s"'
 alias glist='git show --pretty="" --name-only'
 
+# Defer to gcal with work week annotations
+# see: https://unix.stackexchange.com/questions/29434/displaying-weeks-number-in-certain-format-using-ncal-or-cal
+if command -v gcal &> /dev/null
+then
+    alias cal='gcal --starting-day=Monday --with-week-number'
+fi
+
 # Compiler tools
 function dot2pdf {
     if [ "$1" = "" ] ; then
