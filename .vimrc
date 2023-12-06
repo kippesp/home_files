@@ -58,10 +58,10 @@ set modelines=1         " process a single modeline (as opposed to ...?)
 
 set mouse=nhv           " Enable console mouse for Normal, Visual, and Help
 if has('X11')
-set clipboard=unnamedplus     " Use '+' register
+  set clipboard=unnamedplus     " Use '+' register
 else
-set clipboard=autoselect      " (text mode) Use system clipboard
-set clipboard+=unnamed        " Use '*' register
+  set clipboard=autoselect      " (text mode) Use system clipboard
+  set clipboard+=unnamed        " Use '*' register
 endif
 
 " ## Search/Replace Behavior
