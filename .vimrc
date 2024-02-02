@@ -193,14 +193,18 @@ if &term =~ '^xterm\\|rxvt'
 " 6 -> solid vertical bar
 endif
 
-
-
-
 " #########################################################################
 " ## COLOR SETTINGS
 " #########################################################################
 
 syntax on               " Enable syntax highlighting
 colorscheme kippes
+
+" #########################################################################
+" ## PLUGIN SETTINGS
+" #########################################################################
+
+" Store the local vimrc file sourcing answer when it is a capial letter
+let g:localvimrc_persistent=1
 
 " vim:expandtab:softtabstop=2 shiftwidth=2
