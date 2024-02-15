@@ -151,3 +151,12 @@ fi
 
 # Cleanup
 unset -f pathmunge
+
+##
+# Your previous /Users/kippesp/.bash_profile file was backed up as /Users/kippesp/.bash_profile.macports-saved_2024-02-14_at_20:26:03
+##
+
+# MacPorts Installer addition on 2024-02-14_at_20:26:03: adding an appropriate PATH variable for use with MacPorts.
+export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
+# Finished adapting your PATH environment variable for use with MacPorts.
+
