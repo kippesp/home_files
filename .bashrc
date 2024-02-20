@@ -1,1 +1,1 @@
-.bash_zsh/.bashrc
+.bash_zsh/bashrc
