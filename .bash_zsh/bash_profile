@@ -113,6 +113,10 @@ pathmunge /opt/verilator/bin after
 # Yarn-installed binaries (such as brili)
 pathmunge $HOME/.yarn/bin after
 
+# Various retro stuff
+pathmunge $HOME/opt/apple_ii/CiderPress2/cp2/bin after
+pathmunge $HOME/opt/apple_ii/Maconv/bin after
+
 export PATH
 
 # TODO - ??macos only?? Get the aliases and functions
