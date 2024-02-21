@@ -84,6 +84,14 @@ nnoremap <silent> <Esc><Esc> <Esc>:nohlsearch<CR><Esc>
 :nnoremap g* g*zz
 :nnoremap g# g#zz
 
+" TODO: possibly per ft:
+
+" Delete comment character when joining commented lines.
+set formatoptions+=j
+
+" Continue comments on <return> for ins/norm modes
+set formatoptions+=cro
+
 " ## File Settings
 
 set autowriteall        " write files when switching files
@@ -124,6 +132,7 @@ nmap :W :w
 nmap :Q :q
 nmap :B :b
 nmap :E :e
+nmap :qA :qa
 
 "
 " Abbreviations And Typos Corrections
