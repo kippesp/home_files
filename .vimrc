@@ -2,102 +2,116 @@
 " .vimrc common file
 "
 " Maintainer: Paul Kippes
-" Id: $Id: .vimrc,v 1.10 2005/10/21 14:50:31 en36219 Exp $
-"
-if version >= 600
- if exists("DEJAVU")
-   finish
- else
-   let DEJAVU = 1
- endif
+" Original version: 1996
+
+" #########################################################################
+" ## PLATFORM SETTINGS
+" #########################################################################
+
+if has('win32') || has('win64')
+  set runtimepath^=~/.vim
+  "set runtimepath=~/.vim,$VIMRUNTIME
+  set packpath=~/.vim,
 endif
 
-"
-" Determine platform
-"
-if &term == "win32" || &term == "pcterm" || has("gui_win32")
- let platform="win"
-else
- let platform="unix"
+" set path to user's .vim
+if has('win32') || has('win64')             " windows
+  let $VIMHOME = $VIM."vimfile"
+elseif has('win32unix') || has('win64unix') " cygwin/mingw
+  let $VIMHOME = $HOME."/.vim"
+else                                        " unix/bsd
+  let $VIMHOME = $HOME."/.vim"
 endif
 
-"
-" Check for non-ansi emulation
-"
-if platform == "unix"
- if &term == "vt220" || &term == "vt52" || &term == "ansi"
-   let &term = "vt100"
- endif
+" #########################################################################
+" ## PLUGIN SETTINGS
+" #########################################################################
 
- " Do not restore the screen on returning to prompt
- set t_ti= t_te=
-endif
+filetype plugin indent on             " allow plugins to determine indentation
 
-"
-" Install 3rd party stuff
-"
-if platform == "unix"
- "
- " Install Stephen Riehm's bracketing system
- "
-"  let $SCRIPT_=$HOME . "/vim/macros/vim-bracketing/vim-bracketing-current/macros/bracketing.meta.vim"
-"  if filereadable($SCRIPT_)
-"    source $SCRIPT_
-"  endif
+" #########################################################################
+" ## ENVIRONMENT AND CLIENT CAPABILITIES/RESTRICTIONS
+" #########################################################################
 
- "
- " Install Dr. Campbell's diffwin script
- "
-"  let $SCRIPT_=$HOME . "/usr-solaris/share/vim/vim-current/macros/diffwin.vim"
-"  if filereadable($SCRIPT_)
-"    source $SCRIPT_
-"  endif
+" Do not restore the screen on returning to prompt
+set t_ti= t_te=
 
- "
- " Install Dr. Campbell's flist script
- "
- if version >= 600
-   let flist_options="-ax"
-"    let $SCRIPT_=$HOME . "/usr-solaris/share/vim/vim-usr/macros/flist.vim"
-"    if filereadable($SCRIPT_)
-"      source $SCRIPT_
-      runtime macros/flist.vim
+" No terminal audible bells
+set t_vb=
+set visualbell
 
-     nmap \fl :let flist_options="-Tfs"<CR>:Flist<CR>:let flist_options="-Tg -asx"<CR>
-"    endif
- endif
+" #########################################################################
+" ## VIM USABILITY ADJUSTMENTS (ALL FILE TYPES)
+" #########################################################################
 
- "
- " Load Man page viewer
- "
- :runtime! ftplugin/man.vim
-endif
+" ## Vim Extensions and Miscellaneous
 
-if platform == "win"
-  set guifont=ProggySquareTTSZ:h12 " Set font
-  "winpos 110 30
-  winsize 130 50
-else
-  set guifont=LucidaTypewriter
-endif
-
-"
-" Vim extensions
-"
-set nocompatible        " Use Vim defaults (much better!)
 set viminfo='20,\"50    " read/write a .viminfo file, don't store more
-                       " than 50 lines of registers
-set hidden              " Allow hidden buffers
-set noequalalways       " Don't resize windows when splitting
+                        " than 50 lines of registers
+set noequalalways       " Do not resize windows when splitting
 set splitbelow          " When splitting windows, current window is the lower
-set wildmenu            " Enable cool completion
+set history=75          " keep 75 lines of command line history
+let mapleader=','       " set the <leader>
+set modelines=1         " process a single modeline (as opposed to ...?)
+
+" ## Mouse and Clipboard Settings
+
+set mouse=nhv           " Enable console mouse for Normal, Visual, and Help
+if has('X11')
+  set clipboard=unnamedplus     " Use '+' register
+else
+  set clipboard=autoselect      " (text mode) Use system clipboard
+  set clipboard+=unnamed        " Use '*' register
+endif
+
+" ## Search/Replace Behavior
+
+set ignorecase          " Ignore case when searching
+set smartcase           " Allow override of case-sensitive search patterns
+set incsearch           " Incremental search (highlight while searching)
+set infercase           " Keyword completion isn't picky about case
+set gdefault            " Substitute all matches in a line
+set hlsearch            " Highlight the last search
+
+" Clear search highlights with a double tap, <esc><esc>
+nnoremap <silent> <Esc><Esc> <Esc>:nohlsearch<CR><Esc>
+
+" Key mappings to keep incremental searches in the center
+:nnoremap n nzz
+:nnoremap N Nzz
+:nnoremap * *zz
+:nnoremap # #zz
+:nnoremap g* g*zz
+:nnoremap g# g#zz
+
+" TODO: possibly per ft:
+
+" Delete comment character when joining commented lines.
+set formatoptions+=j
+
+" Continue comments on <return> for ins/norm modes
+set formatoptions+=cro
+
+" ## File Settings
+
+set autowriteall        " write files when switching files
+
+"
+" Default tab settings (overridden by specific file types)
+"
+
+set expandtab           " expand tab into spaces
+set shiftwidth=4
+set softtabstop=4       " existing tabs will remain standard 8
+
+" ## Enable and customize wild-menu feature
+
+set wildmenu            " Enable wildmenu completion
 set wildmode=list:longest,list:full
 set wildignore=*.o,*.tar,*.tgz,*.a
-set history=50          " keep 50 lines of command line history
-let mapleader=','
 
 "
-" Tabbed pages
+" Key mappings for tab pages
 "
 map <leader>to :tabnew %<CR>
 map <leader>tc :tabclose<CR>
@@ -105,385 +119,101 @@ map <leader>tn :tabnext<CR>
 map <leader>tp :tabprevious<CR>
 
 "
-" Popup menu settings
+" Key mappings for QuickFix buffer
 "
-:set completeopt=longest,menuone
-:inoremap <expr> <c-n> pumvisible() ? "\<lt>c-n>" : "\<lt>c-n>\<lt>c-r>=pumvisible() ? \"\\<lt>down>\" : \"\"\<lt>cr>"
+
+map <C-n> :cn<C-m>
+map <C-p> :cp<C-m>
 
 "
-" File settings
-"
-set nobackup            " don't keep a backup file
-set autowrite           " write files when switching files
-"set patchmode=.org  " Rename original file with .org extension
-
-"
-" Search/Replace settings
-"
-set incsearch           " Incremental search (highlight while searching)
-set gdefault            " Substitute all matches in a line
-set ignorecase          " Ignore case when searching
-set smartcase           " Allow override of case-sensitive search patterns
-set infercase           " Keyword completion isn't picky about case
-
-"
-" Editing settings
-"
-set ruler               " display ruler at bottom
-set laststatus=2        " status line always on
-set backspace=2         " allow backspacing over everything in insert mode
-set cpoptions+=$        " put the nice little $ when we change text
-set showmatch           " Enable flash when matching brackets are found
-set matchtime=2         " time to delay on matched bracket
-set smartindent         " use smartindent when not using cindent
-
-"
-" Tab settings to use spaces for tabs.  Tab stop on 4 characters.
-"
-set expandtab           " expand tab into spaces
-set shiftwidth=4
-set tabstop=4           " existing tabs will remain standard 8
-
-"
-" Scroll settings
-"
-if version >= 600
- set sidescrolloff=5   " Keep 5 characters to the right/left of cursor when side scrolling
- set listchars+=precedes:<,extends:>   " Use < and > to indicated text beyond visible area
-endif
-set scrolloff=2         " Keep 2 lines above/below cursor line
-set sidescroll=1        " Scroll sideways 1 position at a time
-
-"
-" Mouse/clipboard settings
-"
-set mouse=nhv           " Enable console mouse for Normal, Visual, and Help
-set clipboard=autoselect,unnamed        " (text mode) Attempt to place Visual mode selected text
-                                       "    and yank text in windowing system's clipboard
-set guioptions+=a       " (gui mode)  Attempt to place Visual mode selected text
-                       "    in windowing system's clipboard
-
-"
-" GUI settings
-"
-set guioptions+=r       " Use a verticle scrollbar on right
-set guioptions-=m       " No menu bar
-set guioptions-=T       " No toolbar
-
-"
-" Abbreviations
-"
-iabbrev teh the
-
-"
-" Key mappings
+" Command Aliases
 "
 nmap :W :w
 nmap :Q :q
 nmap :B :b
 nmap :E :e
-map <M-k> <C-y>         " Scroll window down
-map <M-j> <C-e>         " Scroll window up
-map <M-l> zl            " Scroll window right
-map <M-h> zh            " Scroll window left
-nmap <M-+> <C-W>+       " Increase current window height by 1
-nmap <M--> <C-W>-       " Decrease current window height by 1
-if has("folding")
- nmap \tw :botright ptag <C-R>=expand("<cword>")<CR><CR>:silent!
-       \ wincmd P<CR>zv:wincmd p<CR>   " Give preview-tag command a easy interface
-else
- nmap \tw :ptag <C-R>=expand("<cword>")<CR><CR>        " Give preview-tag command a easy interface
-endif
-nmap \ts :ts <C-R>=expand("<cword>")<CR><CR>    " Give select-tag command a easy interface
-if version >= 600
- nmap <M->> <C-W>>     " Increase current window width by 1
- nmap <M-<> <C-W><     " Decrease current window width by 1
-endif
-map <C-n> :cn<C-m>
-map <C-p> :cp<C-m>
+nmap :qA :qa
 
 "
-" Autocommands for specific file types
+" Abbreviations And Typos Corrections
 "
+iabbrev teh the
 
-"
-" cscope key mappings
-"
-if has("cscope")
- " add any cscope database in current directory
- if filereadable("cscope.out")
-   cs add cscope.out  
- endif
+" #########################################################################
+" ## VIM LOOK AND FEEL SETTINGS (ALL FILE TYPES, ALL CLIENT TYPES)
+" #########################################################################
 
- " use both cscope and ctag for 'ctrl-]', ':ta', and 'vim -t'
- set cscopetag
+" ## Interface view adjustments (non-editor)
 
- " check ctags for definition of a symbol before checking cscope
- set csto=1
+set ruler               " display ruler at bottom
+set laststatus=2        " status line always on
+set showcmd             " terse status line updates
 
+" ## Editor view adjustments
 
-" Support for cscope program
-"       tag searches    : Use tags file
-"       cscope searches : Use cscope database.  On failure search tags.
-"
-"       cscope usage:
-"               \cs   symbol:   find all references to the token under cursor
-"               \cg   global:   find global definition(s) of the token under cursor
-"               \cc   calls:    find all calls to the function name under cursor
-"               \ct   text:     find all instances of the text under cursor
-"               \ce   egrep:    egrep search for the word under cursor
-"               \cf   file:     open the filename under cursor
-"               \ci   includes: find files that include the filename under cursor
-"               \cd   called:   find functions that function under cursor calls
- nmap \cs :cs find s <C-R>=expand("<cword>")<CR><CR>
- nmap \cg :cs find g <C-R>=expand("<cword>")<CR><CR>
- nmap \cc :cs find c <C-R>=expand("<cword>")<CR><CR>
- nmap \ct :cs find t <C-R>=expand("<cword>")<CR><CR>
- nmap \ce :cs find e <C-R>=expand("<cword>")<CR><CR>
- nmap \cf :cs find f <C-R>=expand("<cword>")<CR><CR>
- nmap \ci :cs find i <C-R>=expand("<cfile>")<CR><CR>
- nmap \cd :cs find d <C-R>=expand("<cfile>")<CR><CR>
+set colorcolumn=78      " highlight a "soft" right bounds
+set cpoptions+=$        " put the nice little $ when we change text
 
-" Horizontially split the window with the found result
- nmap \chs :scs find s <C-R>=expand("<cword>")<CR><CR>
- nmap \chg :scs find g <C-R>=expand("<cword>")<CR><CR>
- nmap \chc :scs find c <C-R>=expand("<cword>")<CR><CR>
- nmap \cht :scs find t <C-R>=expand("<cword>")<CR><CR>
- nmap \che :scs find e <C-R>=expand("<cword>")<CR><CR>
- nmap \chf :scs find f <C-R>=expand("<cword>")<CR><CR>
- nmap \chi :scs find i <C-R>=expand("<cfile>")<CR><CR>
- nmap \chd :scs find d <C-R>=expand("<cfile>")<CR><CR>
+set scrolloff=2         " Keep 2 lines above/below cursor line
+set sidescroll=1        " Scroll sideways 1 position at a time
+set sidescrolloff=5     " Keep 5 characters to the right/left of cursor when side scrolling
+set listchars+=precedes:<,extends:>   " Use < and > to indicated text beyond visible area
+" TODO: precedes not functioning
 
-" Vertically split the window with the found result
- nmap \cvs :vert scs find s <C-R>=expand("<cword>")<CR><CR>
- nmap \cvg :vert scs find g <C-R>=expand("<cword>")<CR><CR>
- nmap \cvc :vert scs find c <C-R>=expand("<cword>")<CR><CR>
- nmap \cvt :vert scs find t <C-R>=expand("<cword>")<CR><CR>
- nmap \cve :vert scs find e <C-R>=expand("<cword>")<CR><CR>
- nmap \cvf :vert scs find f <C-R>=expand("<cword>")<CR><CR>
- nmap \cvi :vert scs find i <C-R>=expand("<cfile>")<CR><CR>
- nmap \cvd :vert scs find d <C-R>=expand("<cfile>")<CR><CR>
-endif
+" TODO: see https://jeffkreeftmeijer.com/vim-number/
+" for buffer switching
+set number              " Enable line numbering
+"set cursorline "TODO: (future) use to alter current line's line number color
 
-"
-" Autocommand settings
-"
-if version >= 600
- if has("autocmd")
-   "
-   " .php
-   "
-   augroup phpscr
-     "
-     " Remove all phpscr autocommands
-     "
-     au!
+" Resize splits when window is resized
+autocmd VimResized * wincmd =
 
-     "
-     " PHP settings
-     "
-      function! PhpSettings()
-        :set formatoptions=croql cindent comments=sr:/*,mb:*,el:*/,://
-        :highlight rightMargin term=bold ctermfg=blue guifg=blue
-        :match rightMargin /.\%>96v/
-      endfunction
+" ## GUI settings
+set guioptions-=r       " No vertical scrollbar on right
+set guioptions-=L       " No vertical scrollbar on left when split
+set guioptions-=m       " No menu bar
+set guioptions-=T       " No toolbar
+set guicursor+=i-n-v-c:blinkon0 " No blinking curser
 
-     " When starting to edit a file:
-     "   For *.php files set formatting of comments and set C-indenting on.
-     "   For other files switch it off.
-     autocmd BufNewFile,BufRead *.php,*.ihtml,*.html,*.inc :call PhpSettings()
-   augroup END
-
-   "
-   " .java
-   "
-   augroup javascr
-     "
-     " Remove all javascr autocommands
-     "
-     au!
-
-     "
-     " Java settings
-     "
-
-     " When starting to edit a file:
-     "   For *.java files set C-indenting on.
-     autocmd BufNewFile,BufRead *.java set formatoptions=croql cindent
-   augroup END
-
-   "
-   " .c, cpp
-   "
-   augroup cprog
-     "
-     " Remove all cprog autocommands
-     "
-     au!
-
-     "
-     " Add function to #define out C code
-     "
-       function! RemoveCCode()
-         execute "normal `>o0\<C-d>#endif /* REMOVED_BLOCK_" . b:removed_count .
-             \ " */\<Esc>'<O0\<C-d>#ifdef REMOVED_BLOCK_" . b:removed_count . "\<Esc>j"
-         let b:removed_count = b:removed_count + 1
-       endfunction
-
-     " When starting to edit a file:
-     "   For *.c and *.h files set formatting of comments and set C-indenting on.
-     "   For other files switch it off.
-     " Removed comments settings since I couldn't figure out if it was necessary anymore. (PK 3/29/05)
-     "autocmd BufNewFile,BufRead *.c,*.h set formatoptions=croql cindent comments=sr:/*,mb:*,el:*/,://
-     autocmd BufNewFile,BufRead *.c,*.h,*.cpp,*.hpp set formatoptions=croq shiftwidth=2 tabstop=2 cindent comments=sr:/*,mb:*,el:*/,://
-
-     " Allow \xx to #define-out a block of C code
-     autocmd BufNewFile,BufRead *.c,*.h,*.cc,*.cpp let b:removed_count=1 | vmap \xx <Esc>:call RemoveCCode()<Return>
-
-     " Key mappings for tal Comment Formatter
-     autocmd BufNewFile,BufRead *.c,*.h,*.cc vmap ,v ! ~/perl/cor2.pl -l c -b i<CR>
-     autocmd BufNewFile,BufRead *.c,*.h,*.cc vmap ,c ! ~/perl/cor2.pl -l c -b c<CR>
-     autocmd BufNewFile,BufRead *.c,*.h,*.cc vmap ,b ! ~/perl/cor2.pl -l c -b o<CR>
-     autocmd BufNewFile,BufRead *.c,*.h,*.cc vmap ,r ! ~/perl/cor2.pl -l c -r<CR>
-
-     " Prevent insertion of '*' at the beginning of every line in a comment
-     autocmd BufRead,BufNewFile *.c,*.h set formatoptions-=c formatoptions-=o formatoptions-=r
-
-     " Wrap text after a certain number of characters
-     autocmd BufRead,BufNewFile *.c,*.h set textwidth=79
-
-     " Use clang-format
-     map <leader>cf :pyf /home/pmkippes/.vim/clang-format.py<cr>
-     vmap <leader>cf :pyf /home/pmkippes/.vim/clang-format.py<cr>
-   augroup END
-
-   "
-   " .txt, .tex
-   "
-   augroup text
-     autocmd BufNewFile,BufRead *.txt,*.tex setlocal linebreak
-     autocmd BufNewFile,BufRead *.txt,*.tex setlocal shiftwidth=2 tabstop=2
-
-     " Map movement for visual line movement
-     autocmd BufEnter *.txt,*.tex map j gj
-     autocmd BufEnter *.txt,*.tex map k gk
-     autocmd BufLeave *.txt,*.tex map j j
-     autocmd BufLeave *.txt,*.tex map k k
-   augroup END
-
-   "
-   " .f
-   "
-   augroup fortran
-      function! FortranSettings()
-        :set ts=6
-        ":highlight rightMargin term=bold ctermbg=lightblue guifg=blue
-        ":match rightMargin /.\%7v/
-        :highlight rightMargin term=bold ctermbg=lightblue guifg=blue guibg=magenta
-        :match rightMargin /.\%>73v/
-      endfunction
-
-     " When starting to edit a file:
-     "   For *.php files set formatting of comments and set C-indenting on.
-     "   For other files switch it off.
-     autocmd BufNewFile,BufRead *.f :call FortranSettings()
-   augroup END
-
-   augroup python
-     " Do not unindent comments
-     autocmd FileType python setlocal comments=b:#|inoremap # X#
-
-     " Indent code blocks
-     autocmd FileType python setlocal si cinwords=if,elif,else,for,while,try,except,finally,def,class
-
-     " Display tabs at the beginning of a line in Python mode as bad
-     autocmd BufRead,BufNewFile *.py,*.pyw match pythonSpaceError /^\t\+/
-
-     " Wrap text after a certain number of characters
-     autocmd BufRead,BufNewFile *.py,*.pyw set textwidth=79
-
-     " Indent two spaces
-     autocmd BufRead,BufNewFile *.py,*.pyw,*.yaml set shiftwidth=2 tabstop=2
-   augroup END
-
-   "
-   " Makefiles
-   "
-   augroup makefiles
-     "
-     " Remove all makefiles autocommands
-     "
-     au!
-
-     autocmd BufNewFile,BufRead Makefile,Makefile.am,makefile setl noexpandtab
-   augroup END
-   "
-   " .r
-   "
-   augroup rprog
-     " Remove all rprog autocommands
-     au!
-
-     autocmd BufNewFile,BufRead *.r,*.R set formatoptions=croq shiftwidth=2 tabstop=2 cindent comments=b:#|inoremap # X#
-   augroup END
- endif
-endif
-
-"
-" Color-terminal highlighting settings
-"
-if &t_Co > 2 || has("gui_running")
- syntax on             " Enable syntax highlighting
- set hlsearch          " Highlight the last search
-
- " Use the below highlight group when displaying bad whitespace is desired
- let c_space_errors=1  " Highlight C-Spacing "errors"
- let java_space_errors=1  " Highlight Java-Spacing "errors"
- let python_highlight_space_errors=1  " Highlight Python-Spacing "errors"
-
- colorscheme kippes
-" hi Search     cterm=NONE      ctermbg=cyan    ctermfg=black
-" hi IncSearch  cterm=NONE      ctermbg=yellow  ctermfg=black
-" hi Comment    ctermfg=cyan
-" hi Comment    cterm=NONE
-" hi String     ctermfg=yellow
-" hi String     cterm=NONE
-" hi Special    ctermfg=magenta
-" hi Special    cterm=NONE
-endif
-
-"
-" Custom commands
-"
-command Cfd :cd %:h     " Change to the current file's directory
-
-"
-" Source additional .vimrc files
-"
-if filereadable(expand("$HOME/.vimrc_local"))
-  source $HOME/.vimrc_local
-endif
-
-if platform == "win" && filereadable(expand("$APPDATA/_vimrc_local"))
-  source $APPDATA/_vimrc_local
-endif
-
-if filereadable(expand("./.vimrc_local"))
-  source ./.vimrc_local
-endif
-
-function! Header()
-  if (&filetype == 'c') || (&filetype == 'cpp')
-    :read $HOME/.vim/templates/header_boiler.c
-  elseif (&filetype == 'fortran')
-    :read $HOME/.vim/templates/header_boiler.f
-  elseif (&filetype == 'ada')
-    :read $HOME/.vim/templates/header_boiler.ada
+if has('gui_running')
+  if has('win32') || has('win64')
+    set guifont=Lucida_Console:h10
+    winsize 130 50
+"  elseif has('gui_gtk2')
+"    set guifont="Courier 10"
+"  elseif has('gui_gtk')
+"    set guifont="Ubuntu Mono 12"
+"    set guifont="Monospace 10,Courier 10"
+"  elseif has('gui_kde')
+"  else
+"    set guifont=LucidaTypewriter
   endif
-endfunction
+endif
 
-command Header :call Header()
+if &term =~ '^xterm\\|rxvt'
+" solid underscore
+"let &t_SI .= "\<Esc>[4 q"
+" solid block
+  let &t_EI .= "\<Esc>[2 q"
+" 1 or 0 -> blinking block
+" 3 -> blinking underscore
+" Recent versions of xterm (282 or above) also support
+" 5 -> blinking vertical bar
+" 6 -> solid vertical bar
+endif
 
-let g:miniBufExplSplitBelow=0
+" #########################################################################
+" ## COLOR SETTINGS
+" #########################################################################
 
-" vim:expandtab:tabstop=2 shiftwidth=2
+syntax on               " Enable syntax highlighting
+colorscheme kippes
+
+" #########################################################################
+" ## PLUGIN SETTINGS
+" #########################################################################
+
+" Store the local vimrc file sourcing answer when it is a capial letter
+let g:localvimrc_persistent=1
+
+" vim:expandtab:softtabstop=2 shiftwidth=2

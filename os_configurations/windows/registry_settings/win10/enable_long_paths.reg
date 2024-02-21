@@ -1,0 +1,7 @@
+Windows Registry Editor Version 5.00
+
+; correspondng change with admin prompt:
+;   git config --system core.longpaths true
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\FileSystem]
+"LongPathsEnabled"=dword:00000001

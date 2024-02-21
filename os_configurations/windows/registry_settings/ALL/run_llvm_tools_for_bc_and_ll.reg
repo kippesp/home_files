@@ -1,0 +1,26 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\.bc]
+@="bcfile"
+
+[HKEY_CLASSES_ROOT\bcfile]
+
+[HKEY_CLASSES_ROOT\bcfile\shell]
+
+[HKEY_CLASSES_ROOT\bcfile\shell\llvm-dis]
+
+[HKEY_CLASSES_ROOT\bcfile\shell\llvm-dis\command]
+@="c:\\Users\\pmkippes\\usr\\bin\\llvm-dis.exe %1"
+
+[HKEY_CLASSES_ROOT\.ll]
+@="llfile"
+
+[HKEY_CLASSES_ROOT\llfile]
+
+[HKEY_CLASSES_ROOT\llfile\shell]
+
+[HKEY_CLASSES_ROOT\llfile\shell\llvm-as]
+
+[HKEY_CLASSES_ROOT\llfile\shell\llvm-as\command]
+@="c:\\Users\\pmkippes\\usr\\bin\\llvm-as.exe %1"
+

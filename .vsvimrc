@@ -1,0 +1,97 @@
+" .vsvimrc
+"
+" Maintainer: Paul Kippes
+" Original version: 2021
+
+" #########################################################################
+" ## ENVIRONMENT AND CLIENT CAPABILITIES/RESTRICTIONS
+" #########################################################################
+
+" No terminal audible bells
+set visualbell
+
+" #########################################################################
+" ## VIM USABILITY ADJUSTMENTS (ALL FILE TYPES)
+" #########################################################################
+
+" ## Vim Extensions and Miscellaneous
+
+set history=75          " keep 75 lines of command line history
+let mapleader=','       " set the <leader>
+set modelines=1         " process a single modeline (as opposed to ...?)
+
+" ## Mouse and Clipboard Settings
+
+set clipboard=unnamed        " (text mode) yank text in windowing system's clipboard
+
+" ## Search/Replace Behavior
+
+set ignorecase          " Ignore case when searching
+set smartcase           " Allow override of case-sensitive search patterns
+set incsearch           " Incremental search (highlight while searching)
+set gdefault            " Substitute all matches in a line
+set hlsearch            " Highlight the last search
+
+" Clear search highlights with a double tap, <esc><esc>
+nnoremap <silent> <Esc><Esc> <Esc>:nohlsearch<CR><Esc>
+
+" Key mappings to keep incremental searches in the center
+:nnoremap n nzz
+:nnoremap N Nzz
+:nnoremap * *zz
+:nnoremap # #zz
+:nnoremap g* g*zz
+:nnoremap g# g#zz
+
+"
+" Default tab settings (overridden by specific file types)
+"
+
+set expandtab           " expand tab into spaces
+set shiftwidth=4
+set softtabstop=4       " existing tabs will remain standard 8
+
+"
+" Key mappings for tab pages
+"
+map <leader>to :tabnew %<CR>
+map <leader>tc :tabclose<CR>
+map <leader>tn :tabnext<CR>
+map <leader>tp :tabprevious<CR>
+
+"
+" Key mappings for QuickFix buffer
+"
+
+map <C-n> :cn<C-m>
+map <C-p> :cp<C-m>
+
+"
+" Command Aliases
+"
+nmap :W :w
+nmap :Q :q
+nmap :B :b
+nmap :E :e
+
+"
+" Abbreviations And Typos Corrections
+"
+iabbrev teh the
+
+" #########################################################################
+" ## VIM LOOK AND FEEL SETTINGS (ALL FILE TYPES, ALL CLIENT TYPES)
+" #########################################################################
+
+" ## Interface view adjustments (non-editor)
+
+set laststatus=2        " status line always on
+set showcmd             " terse status line updates
+
+" ## Editor view adjustments
+
+set scrolloff=2         " Keep 2 lines above/below cursor line
+
+set number              " Enable line numbering
+
+" vim:expandtab:softtabstop=2 shiftwidth=2
