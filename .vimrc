@@ -132,7 +132,6 @@ nmap :W :w
 nmap :Q :q
 nmap :B :b
 nmap :E :e
-nmap :qA :qa
 
 "
 " Abbreviations And Typos Corrections
