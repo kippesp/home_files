@@ -216,4 +216,16 @@ colorscheme kippes
 " Store the local vimrc file sourcing answer when it is a capial letter
 let g:localvimrc_persistent=1
 
+" #########################################################################
+" ## CUSTOM PLUGINS
+" #########################################################################
+
+if isdirectory('/opt/local/share/fzf/vim' )
+  set runtimepath+=/opt/local/share/fzf/vim
+endif
+
+if filereadable('/opt/local/share/vim/vimfiles/ftdetect/lf.vim')
+  exec "source /opt/local/share/vim/vimfiles/ftdetect/lf.vim"
+endif
+
 " vim:expandtab:softtabstop=2 shiftwidth=2

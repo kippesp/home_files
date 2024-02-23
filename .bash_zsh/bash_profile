@@ -129,6 +129,14 @@ if [ -f /opt/local/etc/profile.d/bash_completion.sh ]; then
     . /opt/local/etc/profile.d/bash_completion.sh
 fi
 
+# Enable fzf's fuzzy auto completion for bash (from macports)
+_=`fzf --version > /dev/null 2>&1`
+if [ $? -eq 0 ]; then
+    if [ -f /opt/local/share/fzf/shell/key-bindings.bash ]; then
+        . /opt/local/share/fzf/shell/key-bindings.bash
+    fi
+fi
+
 # Enable nvm from macports
 if [ -f /opt/local/share/nvm/init-nvm.sh ]; then
     . /opt/local/share/nvm/init-nvm.sh
