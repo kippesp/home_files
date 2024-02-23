@@ -7,11 +7,13 @@
 [user]
     name = Paul Kippes
     email = kippesp@gmail.com
-	signingkey = B7D97825FE146ED7
+    # gpg --list-secret-keys --keyid-format=long
+    #signingkey = B7D97825FE146ED7
 
 [push]
     # git push the current, same-named, branch
     default = simple
+    autoSetupRemote = true
 
 [color]
     ui = auto
@@ -19,14 +21,25 @@
 [core]
     editor = vim
 
+[pager]
+    log = diff-highlight | less
+    show = diff-highlight | less
+    diff = diff-highlight | less
+
+#[interactive]
+#	diffFilter = diff-highlight
+
 [sendemail]
     suppresscc=all
+
+[alias]
+	oldest-ancestor = !bash -c 'diff --old-line-format= --new-line-format= <(git rev-list --first-parent \"${1:-main}\") <(git rev-list --first-parent \"${2:-HEAD}\") | head -1' -
 
 #[merge]
 #    tool=vimdiff
 #    conflictstyle=diff3
 #    prompt=false
-#
+
 #[difftool "sourcetree"]
 #	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 #	path =
@@ -40,8 +53,8 @@
 # See https://stackoverflow.com/questions/26941144/how-do-you-customize-the-color-of-the-diff-header-in-git-diff
 # See https://stackoverflow.com/questions/24455377/git-diff-with-line-numbers-git-log-with-line-numbers/61997003#61997003
 #    commit = bold yellow
-[filter "lfs"]
-	process = git-lfs filter-process
-	required = true
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
+#[filter "lfs"]
+#	process = git-lfs filter-process
+#	required = true
+#	clean = git-lfs clean -- %f
+#	smudge = git-lfs smudge -- %f
