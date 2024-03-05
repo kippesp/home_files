@@ -4,7 +4,7 @@ function alias-misc_unix_augmentations()
     alias sudo='sudo '
 
     # User specific aliases
-    alias less='less -Xm -j.5'
+    alias less='less -R -Xm -j.5'
 }
 
 function alias-git_abbreviations()
