@@ -76,6 +76,10 @@ set hlsearch            " Highlight the last search
 " Clear search highlights with a double tap, <esc><esc>
 nnoremap <silent> <Esc><Esc> <Esc>:nohlsearch<CR><Esc>
 
+" Search Forward - set the search register to the text of the previous
+" yank
+:nnoremap <leader>sf :silent let @/ = @" . '\>'<CR>
+
 " Key mappings to keep incremental searches in the center
 :nnoremap n nzz
 :nnoremap N Nzz
