@@ -25,6 +25,7 @@ DerivePointerAlignment: false
 IncludeBlocks:   Preserve
 IndentCaseBlocks: true
 IndentPPDirectives: BeforeHash
+InsertNewlineAtEOF: true
 SortIncludes:    Never
 SpaceBeforeCpp11BracedList: true
 Standard:        Latest
