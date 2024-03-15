@@ -1,0 +1,48 @@
+# Ports
+
+## Big
+
+## Medium
+bash
+bash-completion
+coreutils
+7zip
+tmux
+tree
+gcal
+diffutils
+dos2unix
+findutils
+uni2ascii
+ninja
+ctags
+python312
+py312-click
+py312-pip
+py312-tomli-w
+py312-tomli
+py312-tkinter
+git
+git-lfs
+bat
+bat-extras
+git-delta
+ripgrep
+fzf
+lf
+wget
+xorg-server
+
+ccache -doc variant
+
+graphviz
+graphviz-gui
+
+GraphicsMagick
+ImageMagick
+vim
+
+quartz-wm
+tmux-pasteboard
+
+## Small
