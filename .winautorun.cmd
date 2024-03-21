@@ -17,6 +17,8 @@ doskey history=doskey /history
 
 doskey scp=cd %HOMEPATH%\projects
 
+doskey killps=taskkill /f /t /im $*
+
 rem ==== work related
 doskey scs=cd %DOSKEY_SC_SCRIPTS_DIR%
 
