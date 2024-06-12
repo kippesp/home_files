@@ -212,6 +212,14 @@ endif
 syntax on               " Enable syntax highlighting
 colorscheme kippes
 
+" Highlight text spillovers when editing a git commit
+hi def link gitcommitOverflow Error
+autocmd BufEnter COMMIT_EDITMSG
+   \ if &textwidth > 0 |
+       \ exec 'match Overlength /\%>' . &textwidth . 'v.\+/' |
+   \ endif
+hi def link Overlength Error
+
 " #########################################################################
 " ## PLUGIN SETTINGS
 " #########################################################################
