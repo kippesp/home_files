@@ -44,7 +44,7 @@ if exists("kippes_dark") && kippes_dark != 0
  let s:white   = "white"
 else
  let s:black   = "black"
- let s:darkgray= "darkgray"
+ let s:darkgray= "darkyellow"
  let s:red     = "red"
  let s:green   = "green"
  let s:yellow  = "yellow"
