@@ -138,6 +138,12 @@ nmap :B :b
 nmap :E :e
 
 "
+" Horizontal scrolling with nowrap
+"
+nmap H 5zh
+nmap L 5zl
+
+"
 " Abbreviations And Typos Corrections
 "
 iabbrev teh the
