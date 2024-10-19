@@ -78,7 +78,7 @@ nnoremap <silent> <Esc><Esc> <Esc>:nohlsearch<CR><Esc>
 
 " Search Forward - set the search register to the text of the previous
 " yank
-:nnoremap <leader>sf :silent let @/ = @" . '\>'<CR>
+:nnoremap <leader>sf :silent let @/ = @" . '\>'<CR>:set hlsearch<CR>
 
 " Key mappings to keep incremental searches in the center
 :nnoremap n nzz
@@ -140,8 +140,8 @@ nmap :E :e
 "
 " Horizontal scrolling with nowrap
 "
-nmap H 5zh
-nmap L 5zl
+"nmap H 5zh           " remove for now, stupid remapping
+"nmap L 5zl           " remove for now, stupid remapping
 
 "
 " Abbreviations And Typos Corrections
