@@ -148,6 +148,11 @@ PROMPT_COMMAND="history -a"
 alias-misc_unix_augmentations
 alias-git_abbreviations
 
+if command -v rg 2>&1 >/dev/null
+then
+    alias-ripgrep
+fi
+
 # Compiler tools
 function dot2pdf {
     if [ "$1" = "" ] ; then

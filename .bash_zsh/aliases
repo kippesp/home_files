@@ -25,3 +25,9 @@ function alias-use_colorized_grep()
 
     alias grepunicode='grep --color=auto -n "[^ -~[:space:]]"'
 }
+
+function alias-ripgrep()
+{
+    alias lsf='rg --files --colors path:none'
+    alias lsd='rg --hidden --files --null | xargs -0 dirname | uniq'
+}
