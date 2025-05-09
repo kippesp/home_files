@@ -1,8 +1,7 @@
 [core]
-    autocrlf = false
-
-    # Git on Windows (checkout windows CRLF, commit unix LF)
-    #autocrlf = true
+    # Do not set autocrlf here!!!
+    # Set to TRUE in = C:\Program Files\Git\etc (windoz)
+    # Set to FALSE in = ?
 
 [user]
     name = Paul Kippes
@@ -22,9 +21,9 @@
     editor = vim
 
 [pager]
-    log = diff-highlight | less
-    show = diff-highlight | less
-    diff = diff-highlight | less
+    #log = diff-highlight | less
+    #show = diff-highlight | less
+    #diff = diff-highlight | less
 
 #[interactive]
 #	diffFilter = diff-highlight
