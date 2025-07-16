@@ -1,0 +1,121 @@
+*fontmanager.txt*  Cross-platform font management for Vam
+
+Author:  Paul Kippes
+License: Same terms as Vim itself (see |license|)
+
+Cross-platform font management plugin that provides intelligent font selection
+and dynamic font size adjustment for GUI Vim on Windows, macOS, and Linux.
+
+                                                                *fontmanager*
+
+The fontmanager plugin automatically detects available fonts on your system
+and provides hotkeys for adjusting font size on the fly. It only loads when
+GUI mode is available.
+
+FEATURES                                                *fontmanager-features*
+
+- Cross-platform font detection with fallback lists
+- Dynamic font size adjustment with hotkeys
+- Intelligent font availability testing
+- Platform-specific font format handling
+- Customizable font preference lists
+
+CONFIGURATION                                      *fontmanager-configuration*
+
+                                                        *g:default_font_size*
+g:default_font_size             Default font size on startup (default: 10)
+
+                                                        *g:font_candidates*
+g:font_candidates               Dictionary of font preference lists by platform.
+                                Keys: 'windows', 'mac', 'linux'
+                                Values: List of font names in preference order
+
+Example configuration in your vimrc:
+>
+    let g:default_font_size = 12
+    let g:font_candidates = {
+      \ 'windows': ['Consolas', 'Cascadia_Code'],
+      \ 'mac': ['SF Mono', 'Menlo'],
+      \ 'linux': ['Consolas']
+    \ }
+<
+
+COMMANDS                                                *fontmanager-commands*
+
+                                                              *:FontIncrease*
+:FontIncrease                   Increase font size by 1
+
+                                                              *:FontDecrease*
+:FontDecrease                   Decrease font size by 1 (minimum size: 6)
+
+                                                                 *:FontReset*
+:FontReset                      Reset font size to default
+
+                                                                  *:FontSize*
+:FontSize {size}                Set font to specific size
+
+MAPPINGS                                                *fontmanager-mappings*
+
+                                                               *<M-C-.>*
+<M-C-.>                         Increase font size (Alt+Ctrl+.)
+
+                                                               *<M-C-,>*
+<M-C-,>                         Decrease font size (Alt+Ctrl+,)
+
+                                                               *<M-C-0>*
+<M-C-0>                         Reset to default font size (Alt+Ctrl+0)
+
+                                                                *<C->>*
+<C->>                           Alternative: Increase font size (Ctrl+>)
+
+                                                                *<C-<>*
+<C-<>                           Alternative: Decrease font size (Ctrl+<)
+
+FUNCTIONS                                              *fontmanager-functions*
+
+                                                      *FontManagerSetSize()*
+FontManagerSetSize({size})      Set font to specific size
+
+                                                     *FontManagerIncrease()*
+FontManagerIncrease()           Increase font size by 1
+
+                                                     *FontManagerDecrease()*
+FontManagerDecrease()           Decrease font size by 1
+
+                                                        *FontManagerReset()*
+FontManagerReset()              Reset font size to default
+
+VARIABLES                                            *fontmanager-variables*
+
+                                                        *g:current_font_size*
+g:current_font_size             Current font size (read-only)
+
+                                                       *g:loaded_fontmanager*
+g:loaded_fontmanager            Plugin loaded flag
+
+FONT DETECTION                                    *fontmanager-font-detection*
+
+The plugin maintains platform-specific font preference lists.  The plugin
+tests the existance of each font in order and uses the first available one.
+
+PLATFORM NOTES                                      *fontmanager-platform-notes*
+
+Windows:        Font format: "FontName:hSIZE"
+macOS:          Font format: "Font Name:hSIZE"  
+Linux:          Font format: "Font Name SIZE"
+
+The plugin handles these format differences automatically.
+
+TROUBLESHOOTING                                  *fontmanager-troubleshooting*
+
+Font not changing:
+- Ensure you're running GUI Vim (not terminal)
+- Check if font exists: :echo has('gui_running')
+- Verify current font: :echo &guifont
+
+Key mappings not working:
+- Meta key combinations vary by terminal/OS
+- Use alternative Ctrl+> and Ctrl+< mappings
+- Call functions directly: :call FontManagerIncrease()
+
+vim:tw=78:ts=8:ft=help:norl:
