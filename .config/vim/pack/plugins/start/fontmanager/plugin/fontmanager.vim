@@ -13,7 +13,7 @@ let g:current_font_size = g:default_font_size
 " Platform-specific font lists (in order of preference)
 let g:font_candidates = {
   \ 'windows': [
-    \ 'Consolas', 'Cascadia_Mono', 'Cascadia_Code',
+    \ 'Cascadia_Mono', 'Consolas', 'Cascadia_Code',
     \ 'Source_Code_Pro', 'DejaVu_Sans_Mono', 'Courier_New',
     \ 'Lucida_Console'
   \ ],
