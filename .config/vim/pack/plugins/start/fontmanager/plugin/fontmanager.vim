@@ -6,8 +6,39 @@ if exists('g:loaded_fontmanager') || !has('gui_running')
 endif
 let g:loaded_fontmanager = 1
 
-" Default font size
-let g:default_font_size = get(g:, 'default_font_size', 12)
+" Detect platform early as we need it for initialization
+function! s:DetectPlatform()
+  if has('win32') || has('win64')
+    return 'windows'
+  elseif has('mac') || has('macunix')
+    return 'mac'
+  else
+    return 'linux'
+  endif
+endfunction
+
+" Platform-specific default font sizes
+" Users can override these in their vimrc with:
+" let g:default_font_sizes = {'windows': 16, 'mac': 13, 'linux': 14}
+let g:default_font_sizes = get(g:, 'default_font_sizes', {
+  \ 'windows': 11,
+  \ 'mac': 12,
+  \ 'linux': 13
+  \ })
+
+" Get platform-specific default or fall back to global default
+function! s:GetDefaultFontSize()
+  let platform = s:DetectPlatform()
+  if has_key(g:default_font_sizes, platform)
+    return g:default_font_sizes[platform]
+  else
+    " Fall back to g:default_font_size if set, otherwise 12
+    return get(g:, 'default_font_size', 12)
+  endif
+endfunction
+
+" Initialize with platform-specific default
+let g:default_font_size = s:GetDefaultFontSize()
 let g:current_font_size = g:default_font_size
 let g:current_font_index = 0
 let g:current_font_name = ''
@@ -44,16 +75,6 @@ let g:font_candidates = {
     \ 'Monospace'
   \ ]
 \ }
-
-function! s:DetectPlatform()
-  if has('win32') || has('win64')
-    return 'windows'
-  elseif has('mac') || has('macunix')
-    return 'mac'
-  else
-    return 'linux'
-  endif
-endfunction
 
 function! s:FormatFontSpec(fontname, size)
   let platform = s:DetectPlatform()
@@ -136,6 +157,8 @@ function! FontManagerDecrease()
 endfunction
 
 function! FontManagerReset()
+  " Reset to platform-specific default
+  let g:default_font_size = s:GetDefaultFontSize()
   call FontManagerSetSize(g:default_font_size)
   echo "Font size reset to: " . g:current_font_size
 endfunction
