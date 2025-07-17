@@ -15,11 +15,13 @@ let g:current_font_name = ''
 " Platform-specific font lists (in order of preference)
 let g:font_candidates = {
   \ 'windows': [
-    \ 'Cascadia_Mono',
-    \ 'Consolas',
-    \ 'Cascadia_Code',
-    \ 'Source_Code_Pro',
+    \ 'Fira_Code_Retina',
+    \ 'Meslo_LG_S',
     \ 'DejaVu_Sans_Mono',
+    \ 'Cascadia_Mono',
+    \ 'Cascadia_Code',
+    \ 'Source_Code_Pro_Medium',
+    \ 'Consolas',
     \ 'Courier_New',
     \ 'Lucida_Console'
   \ ],
