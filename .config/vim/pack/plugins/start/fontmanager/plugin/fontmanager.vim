@@ -21,7 +21,7 @@ endfunction
 " Users can override these in their vimrc with:
 " let g:default_font_sizes = {'windows': 16, 'mac': 13, 'linux': 14}
 let g:default_font_sizes = get(g:, 'default_font_sizes', {
-  \ 'windows': 11,
+  \ 'windows': 10,
   \ 'mac': 12,
   \ 'linux': 13
   \ })
