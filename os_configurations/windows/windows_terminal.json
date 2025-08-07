@@ -1,9 +1,9 @@
 {
     "$help": "https://aka.ms/terminal-documentation",
-    "$schema": "https://aka.ms/terminal-profiles-schema",
+    "$schema": "https://aka.ms/terminal-profiles-schema-preview",
     "actions": [],
     "copyFormatting": "none",
-    "copyOnSelect": false,
+    "copyOnSelect": true,
     "defaultProfile": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
     "keybindings": 
     [
@@ -40,30 +40,16 @@
                 "cursorShape": "vintage",
                 "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
                 "hidden": false,
-                "name": "Command Prompt",
-                "startingDirectory": "%USERPROFILE%/projects"
+                "name": "Command Prompt"
             },
             {
-                "background": "#1F0F34",
-                "cursorShape": "vintage",
-                "guid": "{bb0a8940-06cf-54c8-98ac-f460d0d6d900}",
-                "hidden": false,
-                "name": "VS2022 x64",
-                "source": "Windows.Terminal.VisualStudio",
-                "startingDirectory": "%USERPROFILE%/projects",
-                "tabColor": "#632CA7"
-            },
-            {
-                "closeOnExit": "graceful",
                 "cursorColor": "#72E300",
                 "cursorShape": "filledBox",
                 "guid": "{2ece5bfe-50ed-5f3a-ab87-5cd4baafed2b}",
                 "hidden": false,
                 "name": "Git Bash",
                 "source": "Git",
-                "startingDirectory": "%USERPROFILE%/projects",
-                "suppressApplicationTitle": true,
-                "tabTitle": null
+                "startingDirectory": "%USERPROFILE%/projects"
             },
             {
                 "background": "#012456",
@@ -72,19 +58,38 @@
                 "cursorShape": "filledBox",
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
                 "hidden": false,
-                "name": "Windows PowerShell",
-                "startingDirectory": "%USERPROFILE%/projects"
+                "name": "Windows PowerShell"
             },
             {
-                "guid": "{16208362-94fc-5b1f-a491-5b2624d5ab56}",
+                "cursorShape": "vintage",
+                "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
                 "hidden": true,
-                "name": "Visual Studio Debug Console",
-                "source": "VSDebugConsole"
+                "name": "Azure Cloud Shell",
+                "source": "Windows.Terminal.Azure"
+            },
+            {
+                "background": "#1F0F34",
+                "cursorShape": "vintage",
+                "guid": "{d3f996a0-44b9-51bb-a1f8-9b8a0dacc957}",
+                "hidden": false,
+                "name": "Developer Command Prompt for VS 2022",
+                "source": "Windows.Terminal.VisualStudio",
+                "startingDirectory": "%USERPROFILE%/projects",
+                "tabColor": "#632CA7"
+            },
+            {
+                "background": "#1F0F34",
+                "cursorShape": "vintage",
+                "guid": "{578bdfff-c5cf-5135-82bb-c91aa07feb10}",
+                "hidden": false,
+                "name": "Developer PowerShell for VS 2022",
+                "source": "Windows.Terminal.VisualStudio",
+                "startingDirectory": "%USERPROFILE%/projects",
+                "tabColor": "#632CA7"
             }
         ]
     },
     "schemes": [],
-    "showTerminalTitleInTitlebar": false,
     "themes": [],
-    "wordDelimiters": " ()\"',;<>!#$%^&*|+=[]{}?\u2502"
+    "wordDelimiters": " ()\"',:;<>!#$%^&*|+=[]{}?\u2502"
 }
