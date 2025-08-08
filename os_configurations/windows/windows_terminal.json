@@ -40,7 +40,8 @@
                 "cursorShape": "vintage",
                 "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
                 "hidden": false,
-                "name": "Command Prompt"
+                "name": "Command Prompt",
+                "startingDirectory": "%USERPROFILE%/projects"
             },
             {
                 "cursorColor": "#72E300",
@@ -53,7 +54,7 @@
                 "startingDirectory": "%USERPROFILE%/projects"
             },
             {
-                "background": "#012456",
+                "background": "#1C2E4A",
                 "cursorColor": "#208FC6",
                 "cursorShape": "filledBox",
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
@@ -78,7 +79,7 @@
                 "tabColor": "#632CA7"
             },
             {
-                "background": "#1F0F34",
+                "background": "#0F1F34",
                 "cursorShape": "vintage",
                 "guid": "{578bdfff-c5cf-5135-82bb-c91aa07feb10}",
                 "hidden": false,
