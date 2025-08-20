@@ -46,6 +46,7 @@ let g:current_font_name = ''
 " Platform-specific font lists (in order of preference)
 let g:font_candidates = {
   \ 'windows': [
+    \ 'Brutalist Mono',
     \ 'Meslo_LG_S',
     \ 'Fira_Code_Retina',
     \ 'DejaVu_Sans_Mono',
