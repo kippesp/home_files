@@ -117,6 +117,12 @@ pathmunge $HOME/.yarn/bin after
 pathmunge $HOME/opt/apple_ii/CiderPress2/cp2/bin after
 pathmunge $HOME/opt/apple_ii/Maconv/bin after
 
+# Java JRE
+if [ -e /Library/Java/JavaVirtualMachines/jdk-24.0.1.jdk/Contents/Home ] ; then
+    export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-24.0.1.jdk/Contents/Home
+    pathmunge $JAVA_HOME/bin
+fi
+
 export PATH
 
 # TODO - ??macos only?? Get the aliases and functions
