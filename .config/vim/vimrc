@@ -206,6 +206,19 @@ endif
 " ## COLOR SETTINGS
 " #########################################################################
 
+" Enable true 256-color (24-bit) support
+"   Requirements:
+"     - Terminal that supports true color (most modern terminals)
+"     - For tmux users: tmux 2.2+ with proper config (see below)
+"
+"   Tmux configuration needed (add to ~/.tmux.conf):
+"     set -g default-terminal "screen-256color"
+"     set -ga terminal-overrides ",*256col*:Tc"
+"
+if (has("termguicolors"))
+  set termguicolors
+endif
+
 syntax on               " Enable syntax highlighting
 colorscheme kippes
 
