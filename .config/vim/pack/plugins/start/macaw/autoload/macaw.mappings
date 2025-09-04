@@ -1,0 +1,22 @@
+<cr>: Use color under cursor
+<2-leftmouse>: Same as <cr>
+<c-a>: Increment the color/256
+<c-x>: Decrement the color/256
+<bs>: Clear highlighting
+-: Select syntax group in list
+
+B: Toggle foreground/background
+T: Toggle vertical/horizontal
+I: Toggle synID/translated synID
+
+<Right>: Cycle r->g->b->r
+<Left>: Cycle b->g->r->b
+<Down>: Decrement value of r/g/b
+<Up>: Increment value of r/g/b
+
+q: Close the window
+
+Requires 'grabc'
+!: Approximate external color
+
+More info: :help macaw-mappings

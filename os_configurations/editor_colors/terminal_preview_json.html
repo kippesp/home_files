@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terminal Color Preview - 386 Curated RGB Colors</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Fira Code', 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+            background: #000000;
+            color: #ffffff;
+            padding: 20px;
+            line-height: 1.4;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 20px;
+            background: #111111;
+            border-radius: 8px;
+        }
+        
+        .header h1 {
+            color: #00ff00;
+            margin-bottom: 10px;
+        }
+        
+        .controls {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+        
+        .control-group {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            color: #cccccc;
+        }
+        
+        .control-group label {
+            font-size: 14px;
+        }
+        
+        .control-group input, .control-group select {
+            background: #333333;
+            color: #ffffff;
+            border: 1px solid #555555;
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-family: inherit;
+        }
+        
+        .stats {
+            background: #111111;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            text-align: center;
+            color: #cccccc;
+        }
+        
+        .error {
+            background: #330000;
+            border: 1px solid #ff0000;
+            color: #ff9999;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .color-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+            gap: 15px;
+        }
+        
+        .color-sample {
+            background: #111111;
+            border: 1px solid #333333;
+            border-radius: 8px;
+            padding: 15px;
+            position: relative;
+        }
+        
+        .color-sample.low-contrast {
+            border-color: #ff4444;
+        }
+        
+        .color-sample.low-contrast .color-info {
+            opacity: 0.5;
+        }
+        
+        .color-sample.low-contrast .code-sample {
+            opacity: 1 !important;
+        }
+        
+        .color-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+            font-size: 12px;
+            color: #888888;
+        }
+        
+        .color-name {
+            font-weight: bold;
+            max-width: 60%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        
+        .color-meta {
+            text-align: right;
+            font-size: 11px;
+        }
+        
+        .contrast-warning {
+            color: #ff4444;
+            font-size: 10px;
+        }
+        
+        .code-sample {
+            background: #000000;
+            padding: 15px;
+            border-radius: 6px;
+            border: 1px solid #333333;
+            font-size: 14px;
+            white-space: pre-wrap;
+            font-family: 'Fira Code', 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+        }
+        
+        .code-sample[style*="background-color"] {
+            background: inherit !important;
+        }
+        
+        .keyword { font-weight: bold; }
+        .string { font-style: italic; }
+        .comment { opacity: 0.8; }
+        .number { font-weight: bold; }
+        
+        .hidden { display: none; }
+        
+        .filter-info {
+            color: #888888;
+            font-size: 12px;
+            text-align: center;
+            margin: 20px 0;
+        }
+        
+        .contrast-indicator {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            display: inline-block;
+            margin-left: 5px;
+        }
+        
+        .contrast-good { background: #00ff00; }
+        .contrast-fair { background: #ffff00; }
+        .contrast-poor { background: #ff0000; }
+        
+        .loading {
+            text-align: center;
+            color: #888888;
+            padding: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Terminal Color Preview</h1>
+        <p>386 Curated RGB Colors on Black Background (#000000)</p>
+        <p>Loaded from sorted_colors.json with LCH perceptual sorting</p>
+    </div>
+    
+    <div class="controls">
+        <div class="control-group">
+            <label for="minContrast">Min Contrast:</label>
+            <select id="minContrast">
+                <option value="0">All Colors</option>
+                <option value="3">3:1 (Minimum)</option>
+                <option value="4.5" selected>4.5:1 (AA)</option>
+                <option value="7">7:1 (AAA)</option>
+            </select>
+        </div>
+        
+        <div class="control-group">
+            <label for="sortMethod">Sort by:</label>
+            <select id="sortMethod">
+                <option value="original" selected>Original (LCH)</option>
+                <option value="visual">Visual Similarity</option>
+                <option value="contrast">Contrast Ratio</option>
+                <option value="lightness">Lightness</option>
+                <option value="name">Name</option>
+            </select>
+        </div>
+        
+        <div class="control-group">
+            <label for="codeStyle">Code Sample:</label>
+            <select id="codeStyle">
+                <option value="javascript" selected>JavaScript</option>
+                <option value="python">Python</option>
+                <option value="c">C/C++</option>
+                <option value="vim">Vim Script</option>
+            </select>
+        </div>
+        
+        <div class="control-group">
+            <label for="backgroundSelect">Background:</label>
+            <select id="backgroundSelect">
+                <option value="#000000" selected>Black (#000000)</option>
+            </select>
+        </div>
+        
+        <div class="control-group">
+            <label for="searchFilter">Search:</label>
+            <input type="text" id="searchFilter" placeholder="Filter by name...">
+        </div>
+    </div>
+    
+    <div id="loadingMessage" class="loading">
+        Loading 386 colors from sorted_colors.json...
+    </div>
+    
+    <div id="errorMessage" class="error hidden">
+        Error loading colors. Make sure sorted_colors.json is in the same directory.
+        <br><br>
+        <strong>To fix:</strong> Run <code>python3 color_sorter.py</code> to generate the JSON file.
+    </div>
+    
+    <div class="stats hidden" id="stats"></div>
+    
+    <div class="filter-info hidden" id="filterInfo"></div>
+    
+    <div class="color-grid hidden" id="colorGrid">
+    </div>
+
+    <script>
+        let allColors = [];
+        let filteredColors = [];
+        let currentBackground = '#000000';
+        
+        const codeSamples = {
+            javascript: (colorName) => `function ${colorName}() {
+    let variable = "string literal";
+    const number = 42;
+    return variable + number; // comment
+}`,
+            python: (colorName) => `def ${colorName}():
+    variable = "string literal"
+    number = 42
+    return variable + str(number)  # comment`,
+            c: (colorName) => `int ${colorName}() {
+    char* variable = "string literal";
+    int number = 42;
+    return strlen(variable) + number; // comment
+}`,
+            vim: (colorName) => `function! ${colorName}()
+    let variable = "string literal"
+    let number = 42
+    return variable . number " comment
+endfunction`
+        };
+        
+        function createColorSample(color, codeStyle) {
+            // Calculate contrast against current background
+            const contrast = calculateContrastRatio(color.hex, currentBackground);
+            
+            const colorSample = document.createElement('div');
+            colorSample.className = 'color-sample';
+            colorSample.dataset.contrast = contrast.toFixed(2);
+            colorSample.dataset.name = color.name.toLowerCase();
+            
+            if (contrast < 4.5) {
+                colorSample.classList.add('low-contrast');
+            }
+            
+            // Contrast indicator
+            let contrastClass = 'contrast-poor';
+            if (contrast >= 7) contrastClass = 'contrast-good';
+            else if (contrast >= 4.5) contrastClass = 'contrast-fair';
+            
+            const safeName = color.name.replace(/[^a-zA-Z0-9]/g, '_');
+            const codeTemplate = codeSamples[codeStyle];
+            const codeSample = codeTemplate(safeName);
+            
+            colorSample.innerHTML = `
+                <div class="color-info">
+                    <div class="color-name" style="color: #cccccc">${color.name}</div>
+                    <div class="color-meta">
+                        ${color.hex}
+                        <span class="contrast-indicator ${contrastClass}"></span>
+                        ${contrast.toFixed(1)}:1
+                        ${contrast < 3 ? '<div class="contrast-warning">Low Contrast!</div>' : ''}
+                    </div>
+                </div>
+                <div class="code-sample" style="color: ${color.hex}; background-color: ${currentBackground} !important;">
+                    ${codeSample}
+                </div>
+            `;
+            
+            return colorSample;
+        }
+        
+        async function loadColors() {
+            try {
+                const response = await fetch('sorted_colors.json');
+                if (!response.ok) {
+                    throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+                }
+                
+                const data = await response.json();
+                allColors = data.colors;
+                
+                // Hide loading message
+                document.getElementById('loadingMessage').classList.add('hidden');
+                
+                // Show main interface
+                document.getElementById('stats').classList.remove('hidden');
+                document.getElementById('filterInfo').classList.remove('hidden');
+                document.getElementById('colorGrid').classList.remove('hidden');
+                
+                populateBackgroundOptions();
+                updateStats();
+                filterAndRender();
+                
+            } catch (error) {
+                console.error('Failed to load colors:', error);
+                document.getElementById('loadingMessage').classList.add('hidden');
+                document.getElementById('errorMessage').classList.remove('hidden');
+            }
+        }
+        
+        function populateBackgroundOptions() {
+            const backgroundSelect = document.getElementById('backgroundSelect');
+            
+            // Add popular dark backgrounds first
+            const popularDarkBgs = [
+                { name: 'Very Dark Green', hex: '#003300' },
+                { name: 'Background Green', hex: '#002501' },
+                { name: 'Dark Blue', hex: '#000080' },
+                { name: 'Dark Gray', hex: '#333333' },
+                { name: 'Dark Purple', hex: '#2D1B69' },
+                { name: 'Dark Brown', hex: '#654321' }
+            ];
+            
+            popularDarkBgs.forEach(bg => {
+                const option = document.createElement('option');
+                option.value = bg.hex;
+                option.textContent = `${bg.name} (${bg.hex})`;
+                backgroundSelect.appendChild(option);
+            });
+            
+            // Add separator
+            const separator = document.createElement('option');
+            separator.disabled = true;
+            separator.textContent = '━━━ All Colors ━━━';
+            backgroundSelect.appendChild(separator);
+            
+            // Add all colors as background options
+            allColors.forEach(color => {
+                const option = document.createElement('option');
+                option.value = color.hex;
+                option.textContent = `${color.name} (${color.hex})`;
+                backgroundSelect.appendChild(option);
+            });
+        }
+        
+        function calculateContrastRatio(foregroundHex, backgroundHex) {
+            function hexToRgb(hex) {
+                const r = parseInt(hex.slice(1, 3), 16);
+                const g = parseInt(hex.slice(3, 5), 16);
+                const b = parseInt(hex.slice(5, 7), 16);
+                return [r, g, b];
+            }
+            
+            function relativeLuminance(rgb) {
+                const [r, g, b] = rgb.map(c => {
+                    c = c / 255.0;
+                    return c <= 0.03928 ? c / 12.92 : Math.pow((c + 0.055) / 1.055, 2.4);
+                });
+                return 0.2126 * r + 0.7152 * g + 0.0722 * b;
+            }
+            
+            const fgRgb = hexToRgb(foregroundHex);
+            const bgRgb = hexToRgb(backgroundHex);
+            
+            const fgLum = relativeLuminance(fgRgb);
+            const bgLum = relativeLuminance(bgRgb);
+            
+            const lighter = Math.max(fgLum, bgLum);
+            const darker = Math.min(fgLum, bgLum);
+            
+            return (lighter + 0.05) / (darker + 0.05);
+        }
+        
+        function updateBackground() {
+            currentBackground = document.getElementById('backgroundSelect').value;
+            
+            // Update all code sample backgrounds with !important
+            const codeSamples = document.querySelectorAll('.code-sample');
+            codeSamples.forEach(sample => {
+                sample.style.setProperty('background-color', currentBackground, 'important');
+            });
+            
+            // Update stats for new background
+            updateStats();
+            
+            // Re-render colors with updated contrast indicators
+            renderColors();
+        }
+        
+        function updateStats() {
+            const readableColors = allColors.filter(color => {
+                const contrast = calculateContrastRatio(color.hex, currentBackground);
+                return contrast >= 4.5;
+            });
+            const highContrastColors = allColors.filter(color => {
+                const contrast = calculateContrastRatio(color.hex, currentBackground);
+                return contrast >= 7;
+            });
+            
+            const statsEl = document.getElementById('stats');
+            statsEl.innerHTML = `
+                <strong>Total Colors:</strong> ${allColors.length} |
+                <strong>AA Readable (4.5:1+):</strong> ${readableColors.length} |
+                <strong>AAA Readable (7:1+):</strong> ${highContrastColors.length} |
+                <strong>Background:</strong> ${currentBackground}
+            `;
+        }
+        
+        function visualSimilaritySort(colorA, colorB) {
+            // Visual similarity sorting: groups colors that look similar together
+            // Priority: 1) Hue families (color groups), 2) Lightness within family, 3) Saturation
+            
+            const lchA = colorA.lch || { l: 50, c: 0, h: 0 };
+            const lchB = colorB.lch || { l: 50, c: 0, h: 0 };
+            
+            // Define major hue families for intuitive color grouping
+            const getHueFamily = (lch, colorName = '') => {
+                const h = lch.h || 0;  // Handle undefined hue
+                const c = lch.c || 0;  // Handle undefined chroma
+                const l = lch.l || 0;  // Handle undefined lightness
+                
+                // Force greys by name (catch obvious greys that might have slight color cast)
+                const name = (colorName || '').toLowerCase();
+                const isNamedGrey = name.includes('gray') || name.includes('grey') || 
+                                   name.includes('black') || name.includes('white') || 
+                                   name.includes('silver') || name.includes('charcoal') ||
+                                   name.includes('warm gray') || name.includes('cool gray') ||
+                                   name.includes('warm grey') || name.includes('cool grey');
+                
+                
+                // Greys and near-greys first (very low chroma OR extreme lightness/darkness OR named grey)
+                if (c < 10 || l < 10 || l > 92 || isNamedGrey) {
+                    if (l < 15) return 0;      // blacks and very dark
+                    if (l < 35) return 1;      // dark greys  
+                    if (l < 65) return 2;      // medium greys
+                    if (l < 85) return 3;      // light greys
+                    return 4;                  // whites and very light
+                }
+                
+                // Color families by hue ranges
+                if (h >= 345 || h < 15) return 10;    // reds
+                if (h >= 15 && h < 45) return 11;     // oranges
+                if (h >= 45 && h < 75) return 12;     // yellows
+                if (h >= 75 && h < 105) return 13;    // yellow-greens
+                if (h >= 105 && h < 135) return 14;   // greens
+                if (h >= 135 && h < 165) return 15;   // blue-greens
+                if (h >= 165 && h < 195) return 16;   // cyans
+                if (h >= 195 && h < 225) return 17;   // light blues
+                if (h >= 225 && h < 255) return 18;   // blues
+                if (h >= 255 && h < 285) return 19;   // blue-purples
+                if (h >= 285 && h < 315) return 20;   // purples
+                if (h >= 315 && h < 345) return 21;   // magentas
+                
+                return 22; // fallback
+            };
+            
+            const nameA = colorA.name || colorA.color_name || '';
+            const nameB = colorB.name || colorB.color_name || '';
+            const familyA = getHueFamily(lchA, nameA);
+            const familyB = getHueFamily(lchB, nameB);
+            
+            // First: group by hue family
+            if (familyA !== familyB) {
+                return familyA - familyB;
+            }
+            
+            // Within same family: sort by lightness (dark to light)
+            const lightnessDiff = lchA.l - lchB.l;
+            if (Math.abs(lightnessDiff) > 5) {
+                return lightnessDiff;
+            }
+            
+            // Then by chroma (less to more saturated)
+            const chromaDiff = lchA.c - lchB.c;
+            if (Math.abs(chromaDiff) > 3) {
+                return chromaDiff;
+            }
+            
+            // Finally: fine-tune by hue within the family
+            let hueDiff = lchA.h - lchB.h;
+            if (hueDiff > 180) hueDiff -= 360;
+            if (hueDiff < -180) hueDiff += 360;
+            return hueDiff;
+        }
+        
+        function filterAndRender() {
+            const minContrast = parseFloat(document.getElementById('minContrast').value);
+            const sortMethod = document.getElementById('sortMethod').value;
+            const searchTerm = document.getElementById('searchFilter').value.toLowerCase();
+            
+            // Filter colors
+            filteredColors = allColors.filter(color => {
+                const matchesContrast = color.contrast_ratio >= minContrast;
+                const matchesSearch = color.name.toLowerCase().includes(searchTerm);
+                return matchesContrast && matchesSearch;
+            });
+            
+            // Sort colors
+            if (sortMethod !== 'original') {
+                filteredColors.sort((a, b) => {
+                    switch (sortMethod) {
+                        case 'visual':
+                            return visualSimilaritySort(a, b);
+                        case 'contrast':
+                            return b.contrast_ratio - a.contrast_ratio;
+                        case 'lightness':
+                            return b.lch.l - a.lch.l;
+                        case 'name':
+                            return a.name.localeCompare(b.name);
+                        default:
+                            return 0; // Keep original order
+                    }
+                });
+            }
+            
+            renderColors();
+            updateFilterInfo();
+        }
+        
+        function renderColors() {
+            const colorGrid = document.getElementById('colorGrid');
+            const codeStyle = document.getElementById('codeStyle').value;
+            
+            colorGrid.innerHTML = '';
+            
+            filteredColors.forEach(color => {
+                const colorSample = createColorSample(color, codeStyle);
+                colorGrid.appendChild(colorSample);
+            });
+        }
+        
+        function updateFilterInfo() {
+            const filterInfo = document.getElementById('filterInfo');
+            const total = allColors.length;
+            const showing = filteredColors.length;
+            
+            if (showing < total) {
+                filterInfo.textContent = `Showing ${showing} of ${total} colors`;
+                filterInfo.style.display = 'block';
+            } else {
+                filterInfo.style.display = 'none';
+            }
+        }
+        
+        // Event listeners
+        document.getElementById('minContrast').addEventListener('change', filterAndRender);
+        document.getElementById('sortMethod').addEventListener('change', filterAndRender);
+        document.getElementById('codeStyle').addEventListener('change', filterAndRender);
+        document.getElementById('searchFilter').addEventListener('input', filterAndRender);
+        document.getElementById('backgroundSelect').addEventListener('change', updateBackground);
+        
+        // Initialize
+        loadColors();
+    </script>
+</body>
+</html>

@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OneDark Vim Colors Preview</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Fira Code', 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+            background: #000000;
+            color: #ffffff;
+            padding: 20px;
+            line-height: 1.4;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 20px;
+            background: #111111;
+            border-radius: 8px;
+        }
+        
+        .header h1 {
+            color: #00ff00;
+            margin-bottom: 10px;
+        }
+        
+        .controls {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+        
+        .control-group {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            color: #cccccc;
+        }
+        
+        .control-group label {
+            font-size: 14px;
+        }
+        
+        .control-group input, .control-group select {
+            background: #333333;
+            color: #ffffff;
+            border: 1px solid #555555;
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-family: inherit;
+        }
+        
+        .stats {
+            background: #111111;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            text-align: center;
+            color: #cccccc;
+        }
+        
+        .color-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+            gap: 15px;
+        }
+        
+        .color-sample {
+            background: #111111;
+            border: 1px solid #333333;
+            border-radius: 8px;
+            padding: 15px;
+            position: relative;
+        }
+        
+        .color-sample.low-contrast {
+            opacity: 0.6;
+            border-color: #ff4444;
+        }
+        
+        .color-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+            font-size: 12px;
+            color: #888888;
+        }
+        
+        .color-name {
+            font-weight: bold;
+            max-width: 60%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        
+        .color-meta {
+            text-align: right;
+            font-size: 11px;
+        }
+        
+        .vim-info {
+            font-size: 10px;
+            color: #666666;
+            margin-bottom: 8px;
+        }
+        
+        .contrast-warning {
+            color: #ff4444;
+            font-size: 10px;
+        }
+        
+        .code-sample {
+            background: #000000;
+            padding: 15px;
+            border-radius: 6px;
+            border: 1px solid #333333;
+            font-size: 14px;
+            white-space: pre-wrap;
+            font-family: 'Fira Code', 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+        }
+        
+        .contrast-indicator {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            display: inline-block;
+            margin-left: 5px;
+        }
+        
+        .contrast-good { background: #00ff00; }
+        .contrast-fair { background: #ffff00; }
+        .contrast-poor { background: #ff0000; }
+        
+        .filter-info {
+            color: #888888;
+            font-size: 12px;
+            text-align: center;
+            margin: 20px 0;
+        }
+        
+        .hidden { display: none; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>OneDark Vim Colors Preview</h1>
+        <p>Colors from onedark.vim autoload file on Black Background (#000000)</p>
+        <p>Showing your custom vim colorscheme colors</p>
+    </div>
+    
+    <div class="controls">
+        <div class="control-group">
+            <label for="minContrast">Min Contrast:</label>
+            <select id="minContrast">
+                <option value="0">All Colors</option>
+                <option value="3">3:1 (Minimum)</option>
+                <option value="4.5" selected>4.5:1 (AA)</option>
+                <option value="7">7:1 (AAA)</option>
+            </select>
+        </div>
+        
+        <div class="control-group">
+            <label for="sortMethod">Sort by:</label>
+            <select id="sortMethod">
+                <option value="rainbow" selected>Rainbow (Hue)</option>
+                <option value="lightness">Lightness</option>
+                <option value="contrast">Contrast Ratio</option>
+                <option value="name">Name</option>
+                <option value="original">Original Order</option>
+            </select>
+        </div>
+        
+        <div class="control-group">
+            <label for="codeStyle">Code Sample:</label>
+            <select id="codeStyle">
+                <option value="vim" selected>Vim Script</option>
+                <option value="javascript">JavaScript</option>
+                <option value="python">Python</option>
+                <option value="c">C/C++</option>
+            </select>
+        </div>
+        
+        <div class="control-group">
+            <label for="searchFilter">Search:</label>
+            <input type="text" id="searchFilter" placeholder="Filter by name...">
+        </div>
+    </div>
+    
+    <div class="stats" id="stats"></div>
+    <div class="filter-info" id="filterInfo"></div>
+    
+    <div class="color-grid" id="colorGrid"></div>
+
+    <script>
+        const allColors = [
+        {
+                "name": "red",
+                "hex": "#FF0000",
+                "rgb": [
+                        255,
+                        0,
+                        0
+                ],
+                "cterm": "204",
+                "cterm16": "1",
+                "contrast_ratio": 5.25,
+                "readable_on_black": true,
+                "lightness": 29.9
+        },
+        {
+                "name": "status_white",
+                "hex": "#FFFFFF",
+                "rgb": [
+                        255,
+                        255,
+                        255
+                ],
+                "cterm": "15",
+                "cterm16": "15",
+                "contrast_ratio": 21.0,
+                "readable_on_black": true,
+                "lightness": 100.0
+        },
+        {
+                "name": "digital",
+                "hex": "#626262",
+                "rgb": [
+                        98,
+                        98,
+                        98
+                ],
+                "cterm": "242",
+                "cterm16": "8",
+                "contrast_ratio": 3.44,
+                "readable_on_black": false,
+                "lightness": 38.43
+        },
+        {
+                "name": "thunder",
+                "hex": "#4E4E4E",
+                "rgb": [
+                        78,
+                        78,
+                        78
+                ],
+                "cterm": "59",
+                "cterm16": "7",
+                "contrast_ratio": 2.52,
+                "readable_on_black": false,
+                "lightness": 30.59
+        },
+        {
+                "name": "dark_tone_ink",
+                "hex": "#121212",
+                "rgb": [
+                        18,
+                        18,
+                        18
+                ],
+                "cterm": "235",
+                "cterm16": "0",
+                "contrast_ratio": 1.12,
+                "readable_on_black": false,
+                "lightness": 7.06
+        },
+        {
+                "name": "black",
+                "hex": "#000000",
+                "rgb": [
+                        0,
+                        0,
+                        0
+                ],
+                "cterm": "0",
+                "cterm16": "0",
+                "contrast_ratio": 1.0,
+                "readable_on_black": false,
+                "lightness": 0.0
+        },
+        {
+                "name": "background",
+                "hex": "#000000",
+                "rgb": [
+                        0,
+                        0,
+                        0
+                ],
+                "cterm": "0",
+                "cterm16": "0",
+                "contrast_ratio": 1.0,
+                "readable_on_black": false,
+                "lightness": 0.0
+        },
+        {
+                "name": "dark_red",
+                "hex": "#BE5046",
+                "rgb": [
+                        190,
+                        80,
+                        70
+                ],
+                "cterm": "196",
+                "cterm16": "9",
+                "contrast_ratio": 4.43,
+                "readable_on_black": false,
+                "lightness": 43.82
+        },
+        {
+                "name": "bright_red",
+                "hex": "#FF240E",
+                "rgb": [
+                        255,
+                        36,
+                        14
+                ],
+                "cterm": "196",
+                "cterm16": "1",
+                "contrast_ratio": 5.51,
+                "readable_on_black": true,
+                "lightness": 38.81
+        },
+        {
+                "name": "bright_orange",
+                "hex": "#FF6500",
+                "rgb": [
+                        255,
+                        101,
+                        0
+                ],
+                "cterm": "202",
+                "cterm16": "9",
+                "contrast_ratio": 7.11,
+                "readable_on_black": true,
+                "lightness": 53.15
+        },
+        {
+                "name": "dark_yellow",
+                "hex": "#D19A66",
+                "rgb": [
+                        209,
+                        154,
+                        102
+                ],
+                "cterm": "173",
+                "cterm16": "11",
+                "contrast_ratio": 8.53,
+                "readable_on_black": true,
+                "lightness": 64.52
+        },
+        {
+                "name": "yellow",
+                "hex": "#F9E231",
+                "rgb": [
+                        249,
+                        226,
+                        49
+                ],
+                "cterm": "180",
+                "cterm16": "3",
+                "contrast_ratio": 15.95,
+                "readable_on_black": true,
+                "lightness": 83.41
+        },
+        {
+                "name": "bright_yellow",
+                "hex": "#FFFF00",
+                "rgb": [
+                        255,
+                        255,
+                        0
+                ],
+                "cterm": "11",
+                "cterm16": "11",
+                "contrast_ratio": 19.56,
+                "readable_on_black": true,
+                "lightness": 88.6
+        },
+        {
+                "name": "butter",
+                "hex": "#FFFF87",
+                "rgb": [
+                        255,
+                        255,
+                        135
+                ],
+                "cterm": "228",
+                "cterm16": "11",
+                "contrast_ratio": 19.91,
+                "readable_on_black": true,
+                "lightness": 94.64
+        },
+        {
+                "name": "golden_delicious",
+                "hex": "#D7D787",
+                "rgb": [
+                        215,
+                        215,
+                        135
+                ],
+                "cterm": "186",
+                "cterm16": "11",
+                "contrast_ratio": 13.96,
+                "readable_on_black": true,
+                "lightness": 80.74
+        },
+        {
+                "name": "yew",
+                "hex": "#AFAF00",
+                "rgb": [
+                        175,
+                        175,
+                        0
+                ],
+                "cterm": "142",
+                "cterm16": "3",
+                "contrast_ratio": 8.95,
+                "readable_on_black": true,
+                "lightness": 60.8
+        },
+        {
+                "name": "dark_green",
+                "hex": "#005f00",
+                "rgb": [
+                        0,
+                        95,
+                        0
+                ],
+                "cterm": "22",
+                "cterm16": "2",
+                "contrast_ratio": 2.64,
+                "readable_on_black": false,
+                "lightness": 21.87
+        },
+        {
+                "name": "green",
+                "hex": "#00BF02",
+                "rgb": [
+                        0,
+                        191,
+                        2
+                ],
+                "cterm": "10",
+                "cterm16": "2",
+                "contrast_ratio": 8.45,
+                "readable_on_black": true,
+                "lightness": 44.06
+        },
+        {
+                "name": "terminal_green",
+                "hex": "#01BB05",
+                "rgb": [
+                        1,
+                        187,
+                        5
+                ],
+                "cterm": "28",
+                "cterm16": "2",
+                "contrast_ratio": 8.11,
+                "readable_on_black": true,
+                "lightness": 43.39
+        },
+        {
+                "name": "background_green",
+                "hex": "#002501",
+                "rgb": [
+                        0,
+                        37,
+                        1
+                ],
+                "cterm": "22",
+                "cterm16": "0",
+                "contrast_ratio": 1.27,
+                "readable_on_black": false,
+                "lightness": 8.56
+        },
+        {
+                "name": "bold_bright_green",
+                "hex": "#00FF13",
+                "rgb": [
+                        0,
+                        255,
+                        19
+                ],
+                "cterm": "10",
+                "cterm16": "10",
+                "contrast_ratio": 15.31,
+                "readable_on_black": true,
+                "lightness": 59.55
+        },
+        {
+                "name": "plunge_pool",
+                "hex": "#00FFD7",
+                "rgb": [
+                        0,
+                        255,
+                        215
+                ],
+                "cterm": "50",
+                "cterm16": "14",
+                "contrast_ratio": 16.29,
+                "readable_on_black": true,
+                "lightness": 68.31
+        },
+        {
+                "name": "cyan",
+                "hex": "#19CAB7",
+                "rgb": [
+                        25,
+                        202,
+                        183
+                ],
+                "cterm": "38",
+                "cterm16": "6",
+                "contrast_ratio": 10.17,
+                "readable_on_black": true,
+                "lightness": 57.61
+        },
+        {
+                "name": "bright_cyan",
+                "hex": "#00FFFF",
+                "rgb": [
+                        0,
+                        255,
+                        255
+                ],
+                "cterm": "14",
+                "cterm16": "14",
+                "contrast_ratio": 16.75,
+                "readable_on_black": true,
+                "lightness": 70.1
+        },
+        {
+                "name": "blue_cola",
+                "hex": "#0087D7",
+                "rgb": [
+                        0,
+                        135,
+                        215
+                ],
+                "cterm": "32",
+                "cterm16": "4",
+                "contrast_ratio": 5.45,
+                "readable_on_black": true,
+                "lightness": 40.69
+        },
+        {
+                "name": "blue",
+                "hex": "#61AFEF",
+                "rgb": [
+                        97,
+                        175,
+                        239
+                ],
+                "cterm": "39",
+                "cterm16": "4",
+                "contrast_ratio": 8.89,
+                "readable_on_black": true,
+                "lightness": 62.34
+        },
+        {
+                "name": "azure",
+                "hex": "#0087FF",
+                "rgb": [
+                        0,
+                        135,
+                        255
+                ],
+                "cterm": "33",
+                "cterm16": "4",
+                "contrast_ratio": 5.91,
+                "readable_on_black": true,
+                "lightness": 42.48
+        },
+        {
+                "name": "special_grey",
+                "hex": "#3B4048",
+                "rgb": [
+                        59,
+                        64,
+                        72
+                ],
+                "cterm": "238",
+                "cterm16": "7",
+                "contrast_ratio": 2.01,
+                "readable_on_black": false,
+                "lightness": 24.87
+        },
+        {
+                "name": "cursor_grey",
+                "hex": "#2C323C",
+                "rgb": [
+                        44,
+                        50,
+                        60
+                ],
+                "cterm": "236",
+                "cterm16": "0",
+                "contrast_ratio": 1.63,
+                "readable_on_black": false,
+                "lightness": 19.35
+        },
+        {
+                "name": "white",
+                "hex": "#ABB2BF",
+                "rgb": [
+                        171,
+                        178,
+                        191
+                ],
+                "cterm": "145",
+                "cterm16": "15",
+                "contrast_ratio": 9.85,
+                "readable_on_black": true,
+                "lightness": 69.56
+        },
+        {
+                "name": "purple",
+                "hex": "#C678DD",
+                "rgb": [
+                        198,
+                        120,
+                        221
+                ],
+                "cterm": "170",
+                "cterm16": "5",
+                "contrast_ratio": 7.13,
+                "readable_on_black": true,
+                "lightness": 60.72
+        },
+        {
+                "name": "column_dark_red",
+                "hex": "#1C0001",
+                "rgb": [
+                        28,
+                        0,
+                        1
+                ],
+                "cterm": "52",
+                "cterm16": "1",
+                "contrast_ratio": 1.05,
+                "readable_on_black": false,
+                "lightness": 3.33
+        }
+];
+        
+        let filteredColors = [];
+        
+        const codeSamples = {
+            vim: (colorName) => `" Vim colorscheme using ${colorName}
+highlight Normal guifg=${colorName} guibg=#000000
+let g:colors_name = "${colorName}"
+" Sample syntax highlighting
+if condition == "true" | echo "hello" | endif`,
+            
+            javascript: (colorName) => `function ${colorName.replace(/[^a-zA-Z0-9]/g, '_')}() {
+    let variable = "string literal";
+    const number = 42;
+    return variable + number; // comment
+}`,
+            
+            python: (colorName) => `def ${colorName.replace(/[^a-zA-Z0-9]/g, '_')}():
+    variable = "string literal"
+    number = 42
+    return variable + str(number)  # comment`,
+            
+            c: (colorName) => `int ${colorName.replace(/[^a-zA-Z0-9]/g, '_')}() {
+    char* variable = "string literal";
+    int number = 42;
+    return strlen(variable) + number; // comment
+}`
+        };
+        
+        function createColorSample(color, codeStyle) {
+            const contrast = color.contrast_ratio;
+            
+            const colorSample = document.createElement('div');
+            colorSample.className = 'color-sample';
+            colorSample.dataset.contrast = contrast.toFixed(2);
+            colorSample.dataset.name = color.name.toLowerCase();
+            
+            if (contrast < 4.5) {
+                colorSample.classList.add('low-contrast');
+            }
+            
+            // Contrast indicator
+            let contrastClass = 'contrast-poor';
+            if (contrast >= 7) contrastClass = 'contrast-good';
+            else if (contrast >= 4.5) contrastClass = 'contrast-fair';
+            
+            const codeTemplate = codeSamples[codeStyle];
+            const codeSample = codeTemplate(color.name);
+            
+            const vimInfo = `cterm: ${color.cterm || 'none'} | cterm16: ${color.cterm16 || 'none'}`;
+            
+            colorSample.innerHTML = `
+                <div class="color-info">
+                    <div class="color-name" style="color: ${color.hex}">${color.name}</div>
+                    <div class="color-meta">
+                        ${color.hex}
+                        <span class="contrast-indicator ${contrastClass}"></span>
+                        ${contrast.toFixed(1)}:1
+                        ${contrast < 3 ? '<div class="contrast-warning">Low Contrast!</div>' : ''}
+                    </div>
+                </div>
+                <div class="vim-info">${vimInfo}</div>
+                <div class="code-sample" style="color: ${color.hex}">
+                    ${codeSample}
+                </div>
+            `;
+            
+            return colorSample;
+        }
+        
+        function updateStats() {
+            const readableColors = allColors.filter(color => color.readable_on_black);
+            const highContrastColors = allColors.filter(color => color.contrast_ratio >= 7);
+            
+            const statsEl = document.getElementById('stats');
+            statsEl.innerHTML = `
+                <strong>Total Colors:</strong> ${allColors.length} |
+                <strong>AA Readable (4.5:1+):</strong> ${readableColors.length} |
+                <strong>AAA Readable (7:1+):</strong> ${highContrastColors.length}
+            `;
+        }
+        
+        function filterAndRender() {
+            const minContrast = parseFloat(document.getElementById('minContrast').value);
+            const sortMethod = document.getElementById('sortMethod').value;
+            const searchTerm = document.getElementById('searchFilter').value.toLowerCase();
+            
+            // Filter colors
+            filteredColors = allColors.filter(color => {
+                const matchesContrast = color.contrast_ratio >= minContrast;
+                const matchesSearch = color.name.toLowerCase().includes(searchTerm);
+                return matchesContrast && matchesSearch;
+            });
+            
+            // Sort colors (data is already sorted by rainbow, so only re-sort if different method)
+            if (sortMethod !== 'rainbow' && sortMethod !== 'original') {
+                filteredColors.sort((a, b) => {
+                    switch (sortMethod) {
+                        case 'contrast':
+                            return b.contrast_ratio - a.contrast_ratio;
+                        case 'lightness':
+                            return b.lightness - a.lightness;
+                        case 'name':
+                            return a.name.localeCompare(b.name);
+                        default:
+                            return 0;
+                    }
+                });
+            }
+            
+            renderColors();
+            updateFilterInfo();
+        }
+        
+        function renderColors() {
+            const colorGrid = document.getElementById('colorGrid');
+            const codeStyle = document.getElementById('codeStyle').value;
+            
+            colorGrid.innerHTML = '';
+            
+            filteredColors.forEach(color => {
+                const colorSample = createColorSample(color, codeStyle);
+                colorGrid.appendChild(colorSample);
+            });
+        }
+        
+        function updateFilterInfo() {
+            const filterInfo = document.getElementById('filterInfo');
+            const total = allColors.length;
+            const showing = filteredColors.length;
+            
+            if (showing < total) {
+                filterInfo.textContent = `Showing ${showing} of ${total} colors`;
+                filterInfo.style.display = 'block';
+            } else {
+                filterInfo.style.display = 'none';
+            }
+        }
+        
+        // Event listeners
+        document.getElementById('minContrast').addEventListener('change', filterAndRender);
+        document.getElementById('sortMethod').addEventListener('change', filterAndRender);
+        document.getElementById('codeStyle').addEventListener('change', filterAndRender);
+        document.getElementById('searchFilter').addEventListener('input', filterAndRender);
+        
+        // Initialize
+        updateStats();
+        filterAndRender();
+        
+        // Add click to copy hex codes
+        document.addEventListener('click', function(e) {
+            if (e.target.classList.contains('color-meta') || e.target.closest('.color-meta')) {
+                const hex = e.target.textContent.match(/#[0-9A-Fa-f]{6}/);
+                if (hex && navigator.clipboard) {
+                    navigator.clipboard.writeText(hex[0]);
+                    const originalText = e.target.textContent;
+                    e.target.textContent = 'Copied!';
+                    setTimeout(() => {
+                        e.target.textContent = originalText;
+                    }, 1000);
+                }
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,458 @@
+{
+  "metadata": {
+    "source_file": "/Users/kippesp/projects/home_files.git/.config/vim/autoload/onedark.vim",
+    "total_colors": 32,
+    "readable_colors": 21,
+    "generated_by": "Vim Colors Parser"
+  },
+  "colors": [
+    {
+      "name": "red",
+      "hex": "#FF0000",
+      "rgb": [
+        255,
+        0,
+        0
+      ],
+      "cterm": "204",
+      "cterm16": "1",
+      "contrast_ratio": 5.25,
+      "readable_on_black": true,
+      "lightness": 29.9
+    },
+    {
+      "name": "status_white",
+      "hex": "#FFFFFF",
+      "rgb": [
+        255,
+        255,
+        255
+      ],
+      "cterm": "15",
+      "cterm16": "15",
+      "contrast_ratio": 21.0,
+      "readable_on_black": true,
+      "lightness": 100.0
+    },
+    {
+      "name": "digital",
+      "hex": "#626262",
+      "rgb": [
+        98,
+        98,
+        98
+      ],
+      "cterm": "242",
+      "cterm16": "8",
+      "contrast_ratio": 3.44,
+      "readable_on_black": false,
+      "lightness": 38.43
+    },
+    {
+      "name": "thunder",
+      "hex": "#4E4E4E",
+      "rgb": [
+        78,
+        78,
+        78
+      ],
+      "cterm": "59",
+      "cterm16": "7",
+      "contrast_ratio": 2.52,
+      "readable_on_black": false,
+      "lightness": 30.59
+    },
+    {
+      "name": "dark_tone_ink",
+      "hex": "#121212",
+      "rgb": [
+        18,
+        18,
+        18
+      ],
+      "cterm": "235",
+      "cterm16": "0",
+      "contrast_ratio": 1.12,
+      "readable_on_black": false,
+      "lightness": 7.06
+    },
+    {
+      "name": "black",
+      "hex": "#000000",
+      "rgb": [
+        0,
+        0,
+        0
+      ],
+      "cterm": "0",
+      "cterm16": "0",
+      "contrast_ratio": 1.0,
+      "readable_on_black": false,
+      "lightness": 0.0
+    },
+    {
+      "name": "background",
+      "hex": "#000000",
+      "rgb": [
+        0,
+        0,
+        0
+      ],
+      "cterm": "0",
+      "cterm16": "0",
+      "contrast_ratio": 1.0,
+      "readable_on_black": false,
+      "lightness": 0.0
+    },
+    {
+      "name": "dark_red",
+      "hex": "#BE5046",
+      "rgb": [
+        190,
+        80,
+        70
+      ],
+      "cterm": "196",
+      "cterm16": "9",
+      "contrast_ratio": 4.43,
+      "readable_on_black": false,
+      "lightness": 43.82
+    },
+    {
+      "name": "bright_red",
+      "hex": "#FF240E",
+      "rgb": [
+        255,
+        36,
+        14
+      ],
+      "cterm": "196",
+      "cterm16": "1",
+      "contrast_ratio": 5.51,
+      "readable_on_black": true,
+      "lightness": 38.81
+    },
+    {
+      "name": "bright_orange",
+      "hex": "#FF6500",
+      "rgb": [
+        255,
+        101,
+        0
+      ],
+      "cterm": "202",
+      "cterm16": "9",
+      "contrast_ratio": 7.11,
+      "readable_on_black": true,
+      "lightness": 53.15
+    },
+    {
+      "name": "dark_yellow",
+      "hex": "#D19A66",
+      "rgb": [
+        209,
+        154,
+        102
+      ],
+      "cterm": "173",
+      "cterm16": "11",
+      "contrast_ratio": 8.53,
+      "readable_on_black": true,
+      "lightness": 64.52
+    },
+    {
+      "name": "yellow",
+      "hex": "#F9E231",
+      "rgb": [
+        249,
+        226,
+        49
+      ],
+      "cterm": "180",
+      "cterm16": "3",
+      "contrast_ratio": 15.95,
+      "readable_on_black": true,
+      "lightness": 83.41
+    },
+    {
+      "name": "bright_yellow",
+      "hex": "#FFFF00",
+      "rgb": [
+        255,
+        255,
+        0
+      ],
+      "cterm": "11",
+      "cterm16": "11",
+      "contrast_ratio": 19.56,
+      "readable_on_black": true,
+      "lightness": 88.6
+    },
+    {
+      "name": "butter",
+      "hex": "#FFFF87",
+      "rgb": [
+        255,
+        255,
+        135
+      ],
+      "cterm": "228",
+      "cterm16": "11",
+      "contrast_ratio": 19.91,
+      "readable_on_black": true,
+      "lightness": 94.64
+    },
+    {
+      "name": "golden_delicious",
+      "hex": "#D7D787",
+      "rgb": [
+        215,
+        215,
+        135
+      ],
+      "cterm": "186",
+      "cterm16": "11",
+      "contrast_ratio": 13.96,
+      "readable_on_black": true,
+      "lightness": 80.74
+    },
+    {
+      "name": "yew",
+      "hex": "#AFAF00",
+      "rgb": [
+        175,
+        175,
+        0
+      ],
+      "cterm": "142",
+      "cterm16": "3",
+      "contrast_ratio": 8.95,
+      "readable_on_black": true,
+      "lightness": 60.8
+    },
+    {
+      "name": "dark_green",
+      "hex": "#005f00",
+      "rgb": [
+        0,
+        95,
+        0
+      ],
+      "cterm": "22",
+      "cterm16": "2",
+      "contrast_ratio": 2.64,
+      "readable_on_black": false,
+      "lightness": 21.87
+    },
+    {
+      "name": "green",
+      "hex": "#00BF02",
+      "rgb": [
+        0,
+        191,
+        2
+      ],
+      "cterm": "10",
+      "cterm16": "2",
+      "contrast_ratio": 8.45,
+      "readable_on_black": true,
+      "lightness": 44.06
+    },
+    {
+      "name": "terminal_green",
+      "hex": "#01BB05",
+      "rgb": [
+        1,
+        187,
+        5
+      ],
+      "cterm": "28",
+      "cterm16": "2",
+      "contrast_ratio": 8.11,
+      "readable_on_black": true,
+      "lightness": 43.39
+    },
+    {
+      "name": "background_green",
+      "hex": "#002501",
+      "rgb": [
+        0,
+        37,
+        1
+      ],
+      "cterm": "22",
+      "cterm16": "0",
+      "contrast_ratio": 1.27,
+      "readable_on_black": false,
+      "lightness": 8.56
+    },
+    {
+      "name": "bold_bright_green",
+      "hex": "#00FF13",
+      "rgb": [
+        0,
+        255,
+        19
+      ],
+      "cterm": "10",
+      "cterm16": "10",
+      "contrast_ratio": 15.31,
+      "readable_on_black": true,
+      "lightness": 59.55
+    },
+    {
+      "name": "plunge_pool",
+      "hex": "#00FFD7",
+      "rgb": [
+        0,
+        255,
+        215
+      ],
+      "cterm": "50",
+      "cterm16": "14",
+      "contrast_ratio": 16.29,
+      "readable_on_black": true,
+      "lightness": 68.31
+    },
+    {
+      "name": "cyan",
+      "hex": "#19CAB7",
+      "rgb": [
+        25,
+        202,
+        183
+      ],
+      "cterm": "38",
+      "cterm16": "6",
+      "contrast_ratio": 10.17,
+      "readable_on_black": true,
+      "lightness": 57.61
+    },
+    {
+      "name": "bright_cyan",
+      "hex": "#00FFFF",
+      "rgb": [
+        0,
+        255,
+        255
+      ],
+      "cterm": "14",
+      "cterm16": "14",
+      "contrast_ratio": 16.75,
+      "readable_on_black": true,
+      "lightness": 70.1
+    },
+    {
+      "name": "blue_cola",
+      "hex": "#0087D7",
+      "rgb": [
+        0,
+        135,
+        215
+      ],
+      "cterm": "32",
+      "cterm16": "4",
+      "contrast_ratio": 5.45,
+      "readable_on_black": true,
+      "lightness": 40.69
+    },
+    {
+      "name": "blue",
+      "hex": "#61AFEF",
+      "rgb": [
+        97,
+        175,
+        239
+      ],
+      "cterm": "39",
+      "cterm16": "4",
+      "contrast_ratio": 8.89,
+      "readable_on_black": true,
+      "lightness": 62.34
+    },
+    {
+      "name": "azure",
+      "hex": "#0087FF",
+      "rgb": [
+        0,
+        135,
+        255
+      ],
+      "cterm": "33",
+      "cterm16": "4",
+      "contrast_ratio": 5.91,
+      "readable_on_black": true,
+      "lightness": 42.48
+    },
+    {
+      "name": "special_grey",
+      "hex": "#3B4048",
+      "rgb": [
+        59,
+        64,
+        72
+      ],
+      "cterm": "238",
+      "cterm16": "7",
+      "contrast_ratio": 2.01,
+      "readable_on_black": false,
+      "lightness": 24.87
+    },
+    {
+      "name": "cursor_grey",
+      "hex": "#2C323C",
+      "rgb": [
+        44,
+        50,
+        60
+      ],
+      "cterm": "236",
+      "cterm16": "0",
+      "contrast_ratio": 1.63,
+      "readable_on_black": false,
+      "lightness": 19.35
+    },
+    {
+      "name": "white",
+      "hex": "#ABB2BF",
+      "rgb": [
+        171,
+        178,
+        191
+      ],
+      "cterm": "145",
+      "cterm16": "15",
+      "contrast_ratio": 9.85,
+      "readable_on_black": true,
+      "lightness": 69.56
+    },
+    {
+      "name": "purple",
+      "hex": "#C678DD",
+      "rgb": [
+        198,
+        120,
+        221
+      ],
+      "cterm": "170",
+      "cterm16": "5",
+      "contrast_ratio": 7.13,
+      "readable_on_black": true,
+      "lightness": 60.72
+    },
+    {
+      "name": "column_dark_red",
+      "hex": "#1C0001",
+      "rgb": [
+        28,
+        0,
+        1
+      ],
+      "cterm": "52",
+      "cterm16": "1",
+      "contrast_ratio": 1.05,
+      "readable_on_black": false,
+      "lightness": 3.33
+    }
+  ]
+}

@@ -1,0 +1,10433 @@
+{
+  "metadata": {
+    "source_file": "/Users/kippesp/projects/home_files.git/os_configurations/editor_colors/rgb.txt",
+    "total_colors": 386,
+    "readable_colors": 288,
+    "sort_method": "hsv",
+    "generated_by": "RGB Color Sorter"
+  },
+  "colors": [
+    {
+      "name": "black",
+      "hex": "#000000",
+      "rgb": [
+        0,
+        0,
+        0
+      ],
+      "lch": {
+        "l": 0.0,
+        "c": 0.0,
+        "h": 0.0
+      },
+      "hsv": {
+        "h": 0,
+        "s": 0,
+        "v": 0.0
+      },
+      "indices": {
+        "lch": 0.0,
+        "hsv": 0.0,
+        "lightness": 0.0
+      },
+      "contrast_ratio": 1.0,
+      "readable_on_black": false,
+      "line_number": 1
+    },
+    {
+      "name": "badab black wash",
+      "hex": "#080808",
+      "rgb": [
+        8,
+        8,
+        8
+      ],
+      "lch": {
+        "l": 2.19,
+        "c": 0.0,
+        "h": 301.98
+      },
+      "hsv": {
+        "h": 0,
+        "s": 0.0,
+        "v": 3.14
+      },
+      "indices": {
+        "lch": 3019988.9,
+        "hsv": 3.14,
+        "lightness": 2.19
+      },
+      "contrast_ratio": 1.05,
+      "readable_on_black": false,
+      "line_number": 52
+    },
+    {
+      "name": "dark tone ink",
+      "hex": "#121212",
+      "rgb": [
+        18,
+        18,
+        18
+      ],
+      "lch": {
+        "l": 5.46,
+        "c": 0.0,
+        "h": 301.98
+      },
+      "hsv": {
+        "h": 0,
+        "s": 0.0,
+        "v": 7.06
+      },
+      "indices": {
+        "lch": 3020315.93,
+        "hsv": 7.06,
+        "lightness": 5.46
+      },
+      "contrast_ratio": 1.12,
+      "readable_on_black": false,
+      "line_number": 55
+    },
+    {
+      "name": "gluon grey",
+      "hex": "#1C1C1C",
+      "rgb": [
+        28,
+        28,
+        28
+      ],
+      "lch": {
+        "l": 10.27,
+        "c": 0.0,
+        "h": 301.98
+      },
+      "hsv": {
+        "h": 0,
+        "s": 0.0,
+        "v": 10.98
+      },
+      "indices": {
+        "lch": 3020807.88,
+        "hsv": 10.98,
+        "lightness": 10.27
+      },
+      "contrast_ratio": 1.23,
+      "readable_on_black": false,
+      "line_number": 58
+    },
+    {
+      "name": "nero",
+      "hex": "#262626",
+      "rgb": [
+        38,
+        38,
+        38
+      ],
+      "lch": {
+        "l": 15.16,
+        "c": 0.0,
+        "h": 301.98
+      },
+      "hsv": {
+        "h": 0,
+        "s": 0.0,
+        "v": 14.9
+      },
+      "indices": {
+        "lch": 3021297.02,
+        "hsv": 14.9,
+        "lightness": 15.16
+      },
+      "contrast_ratio": 1.39,
+      "readable_on_black": false,
+      "line_number": 59
+    },
+    {
+      "name": "coated",
+      "hex": "#303030",
+      "rgb": [
+        48,
+        48,
+        48
+      ],
+      "lch": {
+        "l": 19.87,
+        "c": 0.0,
+        "h": 301.98
+      },
+      "hsv": {
+        "h": 0,
+        "s": 0.0,
+        "v": 18.82
+      },
+      "indices": {
+        "lch": 3021767.6,
+        "hsv": 18.82,
+        "lightness": 19.87
+      },
+      "contrast_ratio": 1.59,
+      "readable_on_black": false,
+      "line_number": 63
+    },
+    {
+      "name": "limousine leather",
+      "hex": "#3A3A3A",
+      "rgb": [
+        58,
+        58,
+        58
+      ],
+      "lch": {
+        "l": 24.42,
+        "c": 0.0,
+        "h": 301.98
+      },
+      "hsv": {
+        "h": 0,
+        "s": 0.0,
+        "v": 22.75
+      },
+      "indices": {
+        "lch": 3022223.17,
+        "hsv": 22.75,
+        "lightness": 24.42
+      },
+      "contrast_ratio": 1.85,
+      "readable_on_black": false,
+      "line_number": 64
+    },
+    {
+      "name": "medium black",
+      "hex": "#444444",
+      "rgb": [
+        68,
+        68,
+        68
+      ],
+      "lch": {
+        "l": 28.85,
+        "c": 0.01,
+        "h": 301.98
+      },
+      "hsv": {
+        "h": 0,
+        "s": 0.0,
+        "v": 26.67
+      },
+      "indices": {
+        "lch": 3022666.23,
+        "hsv": 26.67,
+        "lightness": 28.85
+      },
+      "contrast_ratio": 2.16,
+      "readable_on_black": false,
+      "line_number": 68
+    },
+    {
+      "name": "thunder",
+      "hex": "#4E4E4E",
+      "rgb": [
+        78,
+        78,
+        78
+      ],
+      "lch": {
+        "l": 33.17,
+        "c": 0.01,
+        "h": 301.98
+      },
+      "hsv": {
+        "h": 0,
+        "s": 0.0,
+        "v": 30.59
+      },
+      "indices": {
+        "lch": 3023098.58,
+        "hsv": 30.59,
+        "lightness": 33.17
+      },
+      "contrast_ratio": 2.52,
+      "readable_on_black": false,
+      "line_number": 70
+    },
+    {
+      "name": "carbon dating",
+      "hex": "#585858",
+      "rgb": [
+        88,
+        88,
+        88
+      ],
+      "lch": {
+        "l": 37.41,
+        "c": 0.01,
+        "h": 301.98
+      },
+      "hsv": {
+        "h": 0,
+        "s": 0.0,
+        "v": 34.51
+      },
+      "indices": {
+        "lch": 3023521.61,
+        "hsv": 34.51,
+        "lightness": 37.41
+      },
+      "contrast_ratio": 2.95,
+      "readable_on_black": false,
+      "line_number": 72
+    },
+    {
+      "name": "iron",
+      "hex": "#5F5F5F",
+      "rgb": [
+        95,
+        95,
+        95
+      ],
+      "lch": {
+        "l": 40.32,
+        "c": 0.01,
+        "h": 301.98
+      },
+      "hsv": {
+        "h": 0,
+        "s": 0.0,
+        "v": 37.25
+      },
+      "indices": {
+        "lch": 3023812.79,
+        "hsv": 37.25,
+        "lightness": 40.32
+      },
+      "contrast_ratio": 3.29,
+      "readable_on_black": false,
+      "line_number": 83
+    },
+    {
+      "name": "digital",
+      "hex": "#626262",
+      "rgb": [
+        98,
+        98,
+        98
+      ],
+      "lch": {
+        "l": 41.55,
+        "c": 0.01,
+        "h": 301.98
+      },
+      "hsv": {
+        "h": 0,
+        "s": 0.0,
+        "v": 38.43
+      },
+      "indices": {
+        "lch": 3023936.42,
+        "hsv": 38.43,
+        "lightness": 41.55
+      },
+      "contrast_ratio": 3.44,
+      "readable_on_black": false,
+      "line_number": 113
+    },
+    {
+      "name": "dark ash",
+      "hex": "#6C6C6C",
+      "rgb": [
+        108,
+        108,
+        108
+      ],
+      "lch": {
+        "l": 45.63,
+        "c": 0.01,
+        "h": 301.98
+      },
+      "hsv": {
+        "h": 0,
+        "s": 0.0,
+        "v": 42.35
+      },
+      "indices": {
+        "lch": 3024343.88,
+        "hsv": 42.35,
+        "lightness": 45.63
+      },
+      "contrast_ratio": 4.0,
+      "readable_on_black": false,
+      "line_number": 115
+    },
+    {
+      "name": "steel wool",
+      "hex": "#767676",
+      "rgb": [
+        118,
+        118,
+        118
+      ],
+      "lch": {
+        "l": 49.64,
+        "c": 0.01,
+        "h": 301.98
+      },
+      "hsv": {
+        "h": 0,
+        "s": 0.0,
+        "v": 46.27
+      },
+      "indices": {
+        "lch": 3024744.71,
+        "hsv": 46.27,
+        "lightness": 49.64
+      },
+      "contrast_ratio": 4.62,
+      "readable_on_black": true,
+      "line_number": 120
+    },
+    {
+      "name": "grey",
+      "hex": "#808080",
+      "rgb": [
+        128,
+        128,
+        128
+      ],
+      "lch": {
+        "l": 53.58,
+        "c": 0.01,
+        "h": 301.98
+      },
+      "hsv": {
+        "h": 0,
+        "s": 0.0,
+        "v": 50.2
+      },
+      "indices": {
+        "lch": 3025139.5,
+        "hsv": 50.2,
+        "lightness": 53.58
+      },
+      "contrast_ratio": 5.32,
+      "readable_on_black": true,
+      "line_number": 128
+    },
+    {
+      "name": "jumbo",
+      "hex": "#878787",
+      "rgb": [
+        135,
+        135,
+        135
+      ],
+      "lch": {
+        "l": 56.31,
+        "c": 0.01,
+        "h": 301.98
+      },
+      "hsv": {
+        "h": 0,
+        "s": 0.0,
+        "v": 52.94
+      },
+      "indices": {
+        "lch": 3025412.55,
+        "hsv": 52.94,
+        "lightness": 56.31
+      },
+      "contrast_ratio": 5.85,
+      "readable_on_black": true,
+      "line_number": 145
+    },
+    {
+      "name": "argent",
+      "hex": "#8A8A8A",
+      "rgb": [
+        138,
+        138,
+        138
+      ],
+      "lch": {
+        "l": 57.48,
+        "c": 0.01,
+        "h": 301.98
+      },
+      "hsv": {
+        "h": 0,
+        "s": 0.0,
+        "v": 54.12
+      },
+      "indices": {
+        "lch": 3025528.77,
+        "hsv": 54.12,
+        "lightness": 57.48
+      },
+      "contrast_ratio": 6.08,
+      "readable_on_black": true,
+      "line_number": 169
+    },
+    {
+      "name": "nickel",
+      "hex": "#949494",
+      "rgb": [
+        148,
+        148,
+        148
+      ],
+      "lch": {
+        "l": 61.32,
+        "c": 0.01,
+        "h": 301.98
+      },
+      "hsv": {
+        "h": 0,
+        "s": 0.0,
+        "v": 58.04
+      },
+      "indices": {
+        "lch": 3025912.95,
+        "hsv": 58.04,
+        "lightness": 61.32
+      },
+      "contrast_ratio": 6.92,
+      "readable_on_black": true,
+      "line_number": 175
+    },
+    {
+      "name": "waiting",
+      "hex": "#9E9E9E",
+      "rgb": [
+        158,
+        158,
+        158
+      ],
+      "lch": {
+        "l": 65.11,
+        "c": 0.01,
+        "h": 301.98
+      },
+      "hsv": {
+        "h": 0,
+        "s": 0.0,
+        "v": 61.96
+      },
+      "indices": {
+        "lch": 3026292.41,
+        "hsv": 61.96,
+        "lightness": 65.11
+      },
+      "contrast_ratio": 7.84,
+      "readable_on_black": true,
+      "line_number": 183
+    },
+    {
+      "name": "nosferatu",
+      "hex": "#A8A8A8",
+      "rgb": [
+        168,
+        168,
+        168
+      ],
+      "lch": {
+        "l": 68.86,
+        "c": 0.01,
+        "h": 301.98
+      },
+      "hsv": {
+        "h": 0,
+        "s": 0.0,
+        "v": 65.88
+      },
+      "indices": {
+        "lch": 3026667.48,
+        "hsv": 65.88,
+        "lightness": 68.86
+      },
+      "contrast_ratio": 8.83,
+      "readable_on_black": true,
+      "line_number": 186
+    },
+    {
+      "name": "tin foil",
+      "hex": "#AFAFAF",
+      "rgb": [
+        175,
+        175,
+        175
+      ],
+      "lch": {
+        "l": 71.46,
+        "c": 0.01,
+        "h": 301.98
+      },
+      "hsv": {
+        "h": 0,
+        "s": 0.0,
+        "v": 68.63
+      },
+      "indices": {
+        "lch": 3026927.58,
+        "hsv": 68.63,
+        "lightness": 71.46
+      },
+      "contrast_ratio": 9.57,
+      "readable_on_black": true,
+      "line_number": 210
+    },
+    {
+      "name": "silverstone",
+      "hex": "#B2B2B2",
+      "rgb": [
+        178,
+        178,
+        178
+      ],
+      "lch": {
+        "l": 72.57,
+        "c": 0.01,
+        "h": 301.98
+      },
+      "hsv": {
+        "h": 0,
+        "s": 0.0,
+        "v": 69.8
+      },
+      "indices": {
+        "lch": 3027038.46,
+        "hsv": 69.8,
+        "lightness": 72.57
+      },
+      "contrast_ratio": 9.9,
+      "readable_on_black": true,
+      "line_number": 226
+    },
+    {
+      "name": "gravel fint",
+      "hex": "#BCBCBC",
+      "rgb": [
+        188,
+        188,
+        188
+      ],
+      "lch": {
+        "l": 76.24,
+        "c": 0.01,
+        "h": 301.98
+      },
+      "hsv": {
+        "h": 0,
+        "s": 0.0,
+        "v": 73.73
+      },
+      "indices": {
+        "lch": 3027405.58,
+        "hsv": 73.73,
+        "lightness": 76.24
+      },
+      "contrast_ratio": 11.06,
+      "readable_on_black": true,
+      "line_number": 234
+    },
+    {
+      "name": "silver",
+      "hex": "#C0C0C0",
+      "rgb": [
+        192,
+        192,
+        192
+      ],
+      "lch": {
+        "l": 77.7,
+        "c": 0.01,
+        "h": 301.98
+      },
+      "hsv": {
+        "h": 0,
+        "s": 0.0,
+        "v": 75.29
+      },
+      "indices": {
+        "lch": 3027551.41,
+        "hsv": 75.29,
+        "lightness": 77.7
+      },
+      "contrast_ratio": 11.54,
+      "readable_on_black": true,
+      "line_number": 235
+    },
+    {
+      "name": "silver polish",
+      "hex": "#C6C6C6",
+      "rgb": [
+        198,
+        198,
+        198
+      ],
+      "lch": {
+        "l": 79.88,
+        "c": 0.01,
+        "h": 301.98
+      },
+      "hsv": {
+        "h": 0,
+        "s": 0.0,
+        "v": 77.65
+      },
+      "indices": {
+        "lch": 3027769.09,
+        "hsv": 77.65,
+        "lightness": 79.88
+      },
+      "contrast_ratio": 12.29,
+      "readable_on_black": true,
+      "line_number": 241
+    },
+    {
+      "name": "american silver",
+      "hex": "#D0D0D0",
+      "rgb": [
+        208,
+        208,
+        208
+      ],
+      "lch": {
+        "l": 83.48,
+        "c": 0.01,
+        "h": 301.98
+      },
+      "hsv": {
+        "h": 0,
+        "s": 0.0,
+        "v": 81.57
+      },
+      "indices": {
+        "lch": 3028129.18,
+        "hsv": 81.57,
+        "lightness": 83.48
+      },
+      "contrast_ratio": 13.62,
+      "readable_on_black": true,
+      "line_number": 250
+    },
+    {
+      "name": "silver medal",
+      "hex": "#D7D7D7",
+      "rgb": [
+        215,
+        215,
+        215
+      ],
+      "lch": {
+        "l": 85.98,
+        "c": 0.01,
+        "h": 301.98
+      },
+      "hsv": {
+        "h": 0,
+        "s": 0.0,
+        "v": 84.31
+      },
+      "indices": {
+        "lch": 3028379.32,
+        "hsv": 84.31,
+        "lightness": 85.98
+      },
+      "contrast_ratio": 14.59,
+      "readable_on_black": true,
+      "line_number": 284
+    },
+    {
+      "name": "silver setting",
+      "hex": "#DADADA",
+      "rgb": [
+        218,
+        218,
+        218
+      ],
+      "lch": {
+        "l": 87.05,
+        "c": 0.01,
+        "h": 301.98
+      },
+      "hsv": {
+        "h": 0,
+        "s": 0.0,
+        "v": 85.49
+      },
+      "indices": {
+        "lch": 3028486.05,
+        "hsv": 85.49,
+        "lightness": 87.05
+      },
+      "contrast_ratio": 15.02,
+      "readable_on_black": true,
+      "line_number": 297
+    },
+    {
+      "name": "grey whisper",
+      "hex": "#E4E4E4",
+      "rgb": [
+        228,
+        228,
+        228
+      ],
+      "lch": {
+        "l": 90.59,
+        "c": 0.01,
+        "h": 301.98
+      },
+      "hsv": {
+        "h": 0,
+        "s": 0.0,
+        "v": 89.41
+      },
+      "indices": {
+        "lch": 3028839.85,
+        "hsv": 89.41,
+        "lightness": 90.59
+      },
+      "contrast_ratio": 16.52,
+      "readable_on_black": true,
+      "line_number": 304
+    },
+    {
+      "name": "super silver",
+      "hex": "#EEEEEE",
+      "rgb": [
+        238,
+        238,
+        238
+      ],
+      "lch": {
+        "l": 94.1,
+        "c": 0.01,
+        "h": 301.98
+      },
+      "hsv": {
+        "h": 0,
+        "s": 0.0,
+        "v": 93.33
+      },
+      "indices": {
+        "lch": 3029190.73,
+        "hsv": 93.33,
+        "lightness": 94.1
+      },
+      "contrast_ratio": 18.1,
+      "readable_on_black": true,
+      "line_number": 314
+    },
+    {
+      "name": "PrintHue Cool Gray 1",
+      "hex": "#F4F4F4",
+      "rgb": [
+        244,
+        244,
+        244
+      ],
+      "lch": {
+        "l": 96.19,
+        "c": 0.01,
+        "h": 301.98
+      },
+      "hsv": {
+        "h": 0,
+        "s": 0.0,
+        "v": 95.69
+      },
+      "indices": {
+        "lch": 3029399.92,
+        "hsv": 95.69,
+        "lightness": 96.19
+      },
+      "contrast_ratio": 19.09,
+      "readable_on_black": true,
+      "line_number": 318
+    },
+    {
+      "name": "white",
+      "hex": "#FFFFFF",
+      "rgb": [
+        255,
+        255,
+        255
+      ],
+      "lch": {
+        "l": 100.0,
+        "c": 0.01,
+        "h": 301.98
+      },
+      "hsv": {
+        "h": 0,
+        "s": 0.0,
+        "v": 100.0
+      },
+      "indices": {
+        "lch": 3029780.94,
+        "hsv": 100.0,
+        "lightness": 100.0
+      },
+      "contrast_ratio": 21.0,
+      "readable_on_black": true,
+      "line_number": 386
+    },
+    {
+      "name": "satin ribbon",
+      "hex": "#FFD7D7",
+      "rgb": [
+        255,
+        215,
+        215
+      ],
+      "lch": {
+        "l": 89.28,
+        "c": 14.86,
+        "h": 20.45
+      },
+      "hsv": {
+        "h": 0.0,
+        "s": 15.69,
+        "v": 100.0
+      },
+      "indices": {
+        "lch": 213412.84,
+        "hsv": 1668.63,
+        "lightness": 89.28
+      },
+      "contrast_ratio": 15.95,
+      "readable_on_black": true,
+      "line_number": 379
+    },
+    {
+      "name": "mary rose",
+      "hex": "#D7AFAF",
+      "rgb": [
+        215,
+        175,
+        175
+      ],
+      "lch": {
+        "l": 74.95,
+        "c": 15.51,
+        "h": 20.69
+      },
+      "hsv": {
+        "h": 0.0,
+        "s": 18.6,
+        "v": 84.31
+      },
+      "indices": {
+        "lch": 214460.2,
+        "hsv": 1944.78,
+        "lightness": 74.95
+      },
+      "contrast_ratio": 10.64,
+      "readable_on_black": true,
+      "line_number": 276
+    },
+    {
+      "name": "woodrose",
+      "hex": "#AF8787",
+      "rgb": [
+        175,
+        135,
+        135
+      ],
+      "lch": {
+        "l": 60.06,
+        "c": 16.37,
+        "h": 21.08
+      },
+      "hsv": {
+        "h": 0.0,
+        "s": 22.86,
+        "v": 68.63
+      },
+      "indices": {
+        "lch": 216779.87,
+        "hsv": 2354.34,
+        "lightness": 60.06
+      },
+      "contrast_ratio": 6.64,
+      "readable_on_black": true,
+      "line_number": 203
+    },
+    {
+      "name": "tarsier",
+      "hex": "#875F5F",
+      "rgb": [
+        135,
+        95,
+        95
+      ],
+      "lch": {
+        "l": 44.46,
+        "c": 17.57,
+        "h": 21.74
+      },
+      "hsv": {
+        "h": 0.0,
+        "s": 29.63,
+        "v": 52.94
+      },
+      "indices": {
+        "lch": 221843.88,
+        "hsv": 3015.9,
+        "lightness": 44.46
+      },
+      "contrast_ratio": 3.83,
+      "readable_on_black": false,
+      "line_number": 138
+    },
+    {
+      "name": "peach bud",
+      "hex": "#FFAFAF",
+      "rgb": [
+        255,
+        175,
+        175
+      ],
+      "lch": {
+        "l": 79.05,
+        "c": 31.58,
+        "h": 22.12
+      },
+      "hsv": {
+        "h": 0.0,
+        "s": 31.37,
+        "v": 100.0
+      },
+      "indices": {
+        "lch": 229112.14,
+        "hsv": 3237.25,
+        "lightness": 79.05
+      },
+      "contrast_ratio": 12.0,
+      "readable_on_black": true,
+      "line_number": 370
+    },
+    {
+      "name": "copperfield",
+      "hex": "#D78787",
+      "rgb": [
+        215,
+        135,
+        135
+      ],
+      "lch": {
+        "l": 64.58,
+        "c": 33.26,
+        "h": 22.88
+      },
+      "hsv": {
+        "h": 0.0,
+        "s": 37.21,
+        "v": 84.31
+      },
+      "indices": {
+        "lch": 235301.11,
+        "hsv": 3805.24,
+        "lightness": 64.58
+      },
+      "contrast_ratio": 7.7,
+      "readable_on_black": true,
+      "line_number": 269
+    },
+    {
+      "name": "sienna red",
+      "hex": "#AF5F5F",
+      "rgb": [
+        175,
+        95,
+        95
+      ],
+      "lch": {
+        "l": 49.65,
+        "c": 35.47,
+        "h": 24.18
+      },
+      "hsv": {
+        "h": 0.0,
+        "s": 45.71,
+        "v": 68.63
+      },
+      "indices": {
+        "lch": 246818.5,
+        "hsv": 4640.06,
+        "lightness": 49.65
+      },
+      "contrast_ratio": 4.62,
+      "readable_on_black": true,
+      "line_number": 196
+    },
+    {
+      "name": "coral trails",
+      "hex": "#FF8787",
+      "rgb": [
+        255,
+        135,
+        135
+      ],
+      "lch": {
+        "l": 69.71,
+        "c": 49.94,
+        "h": 24.64
+      },
+      "hsv": {
+        "h": 0.0,
+        "s": 47.06,
+        "v": 100.0
+      },
+      "indices": {
+        "lch": 253441.31,
+        "hsv": 4805.88,
+        "lightness": 69.71
+      },
+      "contrast_ratio": 9.07,
+      "readable_on_black": true,
+      "line_number": 357
+    },
+    {
+      "name": "deep sea coral",
+      "hex": "#D75F5F",
+      "rgb": [
+        215,
+        95,
+        95
+      ],
+      "lch": {
+        "l": 55.54,
+        "c": 52.73,
+        "h": 26.45
+      },
+      "hsv": {
+        "h": 0.0,
+        "s": 55.81,
+        "v": 84.31
+      },
+      "indices": {
+        "lch": 270118.05,
+        "hsv": 5665.71,
+        "lightness": 55.54
+      },
+      "contrast_ratio": 5.69,
+      "readable_on_black": true,
+      "line_number": 262
+    },
+    {
+      "name": "pompelmo",
+      "hex": "#FF5F5F",
+      "rgb": [
+        255,
+        95,
+        95
+      ],
+      "lch": {
+        "l": 61.89,
+        "c": 69.13,
+        "h": 28.45
+      },
+      "hsv": {
+        "h": 0.0,
+        "s": 62.75,
+        "v": 100.0
+      },
+      "indices": {
+        "lch": 290736.93,
+        "hsv": 6374.51,
+        "lightness": 61.89
+      },
+      "contrast_ratio": 7.05,
+      "readable_on_black": true,
+      "line_number": 347
+    },
+    {
+      "name": "Permanent Geranium Lake",
+      "hex": "#E12C2C",
+      "rgb": [
+        225,
+        44,
+        44
+      ],
+      "lch": {
+        "l": 49.48,
+        "c": 81.09,
+        "h": 34.23
+      },
+      "hsv": {
+        "h": 0.0,
+        "s": 80.44,
+        "v": 88.24
+      },
+      "indices": {
+        "lch": 347308.63,
+        "hsv": 8132.68,
+        "lightness": 49.48
+      },
+      "contrast_ratio": 4.6,
+      "readable_on_black": true,
+      "line_number": 301
+    },
+    {
+      "name": "Maximum Red",
+      "hex": "#D92121",
+      "rgb": [
+        217,
+        33,
+        33
+      ],
+      "lch": {
+        "l": 46.91,
+        "c": 82.69,
+        "h": 35.73
+      },
+      "hsv": {
+        "h": 0.0,
+        "s": 84.79,
+        "v": 85.1
+      },
+      "indices": {
+        "lch": 362043.78,
+        "hsv": 8564.36,
+        "lightness": 46.91
+      },
+      "contrast_ratio": 4.19,
+      "readable_on_black": false,
+      "line_number": 292
+    },
+    {
+      "name": "red blood",
+      "hex": "#5F0000",
+      "rgb": [
+        95,
+        0,
+        0
+      ],
+      "lch": {
+        "l": 17.61,
+        "c": 47.47,
+        "h": 34.97
+      },
+      "hsv": {
+        "h": 0.0,
+        "s": 100.0,
+        "v": 37.25
+      },
+      "indices": {
+        "lch": 351526.77,
+        "hsv": 10037.25,
+        "lightness": 17.61
+      },
+      "contrast_ratio": 1.49,
+      "readable_on_black": false,
+      "line_number": 75
+    },
+    {
+      "name": "maroon",
+      "hex": "#800000",
+      "rgb": [
+        128,
+        0,
+        0
+      ],
+      "lch": {
+        "l": 25.53,
+        "c": 61.3,
+        "h": 38.38
+      },
+      "hsv": {
+        "h": 0.0,
+        "s": 100.0,
+        "v": 50.2
+      },
+      "indices": {
+        "lch": 386382.73,
+        "hsv": 10050.2,
+        "lightness": 25.53
+      },
+      "contrast_ratio": 1.92,
+      "readable_on_black": false,
+      "line_number": 125
+    },
+    {
+      "name": "dark red",
+      "hex": "#870000",
+      "rgb": [
+        135,
+        0,
+        0
+      ],
+      "lch": {
+        "l": 27.16,
+        "c": 64.07,
+        "h": 38.79
+      },
+      "hsv": {
+        "h": 0.0,
+        "s": 100.0,
+        "v": 52.94
+      },
+      "indices": {
+        "lch": 390663.35,
+        "hsv": 10052.94,
+        "lightness": 27.16
+      },
+      "contrast_ratio": 2.03,
+      "readable_on_black": false,
+      "line_number": 131
+    },
+    {
+      "name": "red door",
+      "hex": "#AF0000",
+      "rgb": [
+        175,
+        0,
+        0
+      ],
+      "lch": {
+        "l": 36.2,
+        "c": 78.79,
+        "h": 39.94
+      },
+      "hsv": {
+        "h": 0.0,
+        "s": 100.0,
+        "v": 68.63
+      },
+      "indices": {
+        "lch": 403119.68,
+        "hsv": 10068.63,
+        "lightness": 36.2
+      },
+      "contrast_ratio": 2.82,
+      "readable_on_black": false,
+      "line_number": 188
+    },
+    {
+      "name": "hot fever",
+      "hex": "#D70000",
+      "rgb": [
+        215,
+        0,
+        0
+      ],
+      "lch": {
+        "l": 44.87,
+        "c": 91.94,
+        "h": 40.0
+      },
+      "hsv": {
+        "h": 0.0,
+        "s": 100.0,
+        "v": 84.31
+      },
+      "indices": {
+        "lch": 404561.9,
+        "hsv": 10084.31,
+        "lightness": 44.87
+      },
+      "contrast_ratio": 3.89,
+      "readable_on_black": false,
+      "line_number": 255
+    },
+    {
+      "name": "red",
+      "hex": "#FF0000",
+      "rgb": [
+        255,
+        0,
+        0
+      ],
+      "lch": {
+        "l": 53.23,
+        "c": 104.58,
+        "h": 40.0
+      },
+      "hsv": {
+        "h": 0.0,
+        "s": 100.0,
+        "v": 100.0
+      },
+      "indices": {
+        "lch": 405411.07,
+        "hsv": 10100.0,
+        "lightness": 53.23
+      },
+      "contrast_ratio": 5.25,
+      "readable_on_black": true,
+      "line_number": 339
+    },
+    {
+      "name": "PrintHue Marsala",
+      "hex": "#955251",
+      "rgb": [
+        149,
+        82,
+        81
+      ],
+      "lch": {
+        "l": 42.79,
+        "c": 30.61,
+        "h": 25.02
+      },
+      "hsv": {
+        "h": 0.88,
+        "s": 45.64,
+        "v": 58.43
+      },
+      "indices": {
+        "lch": 254546.21,
+        "hsv": 13445.72,
+        "lightness": 42.79
+      },
+      "contrast_ratio": 3.6,
+      "readable_on_black": false,
+      "line_number": 176
+    },
+    {
+      "name": "PrintHue Rose Quartz",
+      "hex": "#F7CAC9",
+      "rgb": [
+        247,
+        202,
+        201
+      ],
+      "lch": {
+        "l": 85.11,
+        "c": 17.03,
+        "h": 22.42
+      },
+      "hsv": {
+        "h": 1.3,
+        "s": 18.62,
+        "v": 96.86
+      },
+      "indices": {
+        "lch": 232698.01,
+        "hsv": 15002.69,
+        "lightness": 85.11
+      },
+      "contrast_ratio": 14.25,
+      "readable_on_black": true,
+      "line_number": 322
+    },
+    {
+      "name": "PrintHue Warm Red",
+      "hex": "#F9423A",
+      "rgb": [
+        249,
+        66,
+        58
+      ],
+      "lch": {
+        "l": 56.43,
+        "c": 82.48,
+        "h": 34.49
+      },
+      "hsv": {
+        "h": 2.51,
+        "s": 76.71,
+        "v": 97.65
+      },
+      "indices": {
+        "lch": 350664.03,
+        "hsv": 32899.22,
+        "lightness": 56.43
+      },
+      "contrast_ratio": 5.87,
+      "readable_on_black": true,
+      "line_number": 324
+    },
+    {
+      "name": "Indian Red",
+      "hex": "#B94E48",
+      "rgb": [
+        185,
+        78,
+        72
+      ],
+      "lch": {
+        "l": 47.27,
+        "c": 49.78,
+        "h": 30.57
+      },
+      "hsv": {
+        "h": 3.19,
+        "s": 61.08,
+        "v": 72.55
+      },
+      "indices": {
+        "lch": 310457.39,
+        "hsv": 38039.06,
+        "lightness": 47.27
+      },
+      "contrast_ratio": 4.25,
+      "readable_on_black": false,
+      "line_number": 231
+    },
+    {
+      "name": "Orange Red",
+      "hex": "#FF5349",
+      "rgb": [
+        255,
+        83,
+        73
+      ],
+      "lch": {
+        "l": 59.82,
+        "c": 77.27,
+        "h": 33.52
+      },
+      "hsv": {
+        "h": 3.3,
+        "s": 71.37,
+        "v": 100.0
+      },
+      "indices": {
+        "lch": 341252.53,
+        "hsv": 40204.29,
+        "lightness": 59.82
+      },
+      "contrast_ratio": 6.59,
+      "readable_on_black": true,
+      "line_number": 345
+    },
+    {
+      "name": "Sunset Orange",
+      "hex": "#FE4C40",
+      "rgb": [
+        254,
+        76,
+        64
+      ],
+      "lch": {
+        "l": 58.61,
+        "c": 80.77,
+        "h": 34.82
+      },
+      "hsv": {
+        "h": 3.79,
+        "s": 74.8,
+        "v": 99.61
+      },
+      "indices": {
+        "lch": 354136.41,
+        "hsv": 45474.66,
+        "lightness": 58.61
+      },
+      "contrast_ratio": 6.32,
+      "readable_on_black": true,
+      "line_number": 333
+    },
+    {
+      "name": "PrintHue Living Coral",
+      "hex": "#FF6F61",
+      "rgb": [
+        255,
+        111,
+        97
+      ],
+      "lch": {
+        "l": 64.56,
+        "c": 64.37,
+        "h": 33.12
+      },
+      "hsv": {
+        "h": 5.32,
+        "s": 61.96,
+        "v": 100.0
+      },
+      "indices": {
+        "lch": 337682.14,
+        "hsv": 59460.64,
+        "lightness": 64.56
+      },
+      "contrast_ratio": 7.7,
+      "readable_on_black": true,
+      "line_number": 353
+    },
+    {
+      "name": "Bittersweet",
+      "hex": "#FE6F5E",
+      "rgb": [
+        254,
+        111,
+        94
+      ],
+      "lch": {
+        "l": 64.36,
+        "c": 64.69,
+        "h": 34.39
+      },
+      "hsv": {
+        "h": 6.38,
+        "s": 62.99,
+        "v": 99.61
+      },
+      "indices": {
+        "lch": 350440.59,
+        "hsv": 70148.82,
+        "lightness": 64.36
+      },
+      "contrast_ratio": 7.65,
+      "readable_on_black": true,
+      "line_number": 335
+    },
+    {
+      "name": "Burnt Umber",
+      "hex": "#8A3324",
+      "rgb": [
+        138,
+        51,
+        36
+      ],
+      "lch": {
+        "l": 33.77,
+        "c": 46.07,
+        "h": 38.22
+      },
+      "hsv": {
+        "h": 8.82,
+        "s": 73.91,
+        "v": 54.12
+      },
+      "indices": {
+        "lch": 385594.18,
+        "hsv": 95680.72,
+        "lightness": 33.77
+      },
+      "contrast_ratio": 2.58,
+      "readable_on_black": false,
+      "line_number": 168
+    },
+    {
+      "name": "Melon",
+      "hex": "#FEBAAD",
+      "rgb": [
+        254,
+        186,
+        173
+      ],
+      "lch": {
+        "l": 81.4,
+        "c": 28.06,
+        "h": 35.43
+      },
+      "hsv": {
+        "h": 9.63,
+        "s": 31.89,
+        "v": 99.61
+      },
+      "indices": {
+        "lch": 362506.46,
+        "hsv": 99584.88,
+        "lightness": 81.4
+      },
+      "contrast_ratio": 12.84,
+      "readable_on_black": true,
+      "line_number": 336
+    },
+    {
+      "name": "Dark Venetian Red",
+      "hex": "#B33B24",
+      "rgb": [
+        179,
+        59,
+        36
+      ],
+      "lch": {
+        "l": 42.52,
+        "c": 62.11,
+        "h": 40.13
+      },
+      "hsv": {
+        "h": 9.65,
+        "s": 79.89,
+        "v": 70.2
+      },
+      "indices": {
+        "lch": 405661.33,
+        "hsv": 104562.52,
+        "lightness": 42.52
+      },
+      "contrast_ratio": 3.57,
+      "readable_on_black": false,
+      "line_number": 227
+    },
+    {
+      "name": "Light Venetian Red",
+      "hex": "#E6735C",
+      "rgb": [
+        230,
+        115,
+        92
+      ],
+      "lch": {
+        "l": 61.53,
+        "c": 54.16,
+        "h": 38.01
+      },
+      "hsv": {
+        "h": 10.0,
+        "s": 60.0,
+        "v": 90.2
+      },
+      "indices": {
+        "lch": 386274.39,
+        "hsv": 106090.2,
+        "lightness": 61.53
+      },
+      "contrast_ratio": 6.97,
+      "readable_on_black": true,
+      "line_number": 307
+    },
+    {
+      "name": "Venetian Red",
+      "hex": "#CC553D",
+      "rgb": [
+        204,
+        85,
+        61
+      ],
+      "lch": {
+        "l": 51.46,
+        "c": 59.14,
+        "h": 39.26
+      },
+      "hsv": {
+        "h": 10.07,
+        "s": 70.1,
+        "v": 80.0
+      },
+      "indices": {
+        "lch": 397761.28,
+        "hsv": 107789.1,
+        "lightness": 51.46
+      },
+      "contrast_ratio": 4.93,
+      "readable_on_black": true,
+      "line_number": 248
+    },
+    {
+      "name": "Vivid Tangerine",
+      "hex": "#FF9980",
+      "rgb": [
+        255,
+        153,
+        128
+      ],
+      "lch": {
+        "l": 73.28,
+        "c": 46.24,
+        "h": 39.6
+      },
+      "hsv": {
+        "h": 11.81,
+        "s": 49.8,
+        "v": 100.0
+      },
+      "indices": {
+        "lch": 403345.97,
+        "hsv": 123190.63,
+        "lightness": 73.28
+      },
+      "contrast_ratio": 10.12,
+      "readable_on_black": true,
+      "line_number": 364
+    },
+    {
+      "name": "Burnt Sienna",
+      "hex": "#E97451",
+      "rgb": [
+        233,
+        116,
+        81
+      ],
+      "lch": {
+        "l": 62.0,
+        "c": 58.44,
+        "h": 43.22
+      },
+      "hsv": {
+        "h": 13.82,
+        "s": 65.24,
+        "v": 91.37
+      },
+      "indices": {
+        "lch": 438422.51,
+        "hsv": 144772.87,
+        "lightness": 62.0
+      },
+      "contrast_ratio": 7.08,
+      "readable_on_black": true,
+      "line_number": 310
+    },
+    {
+      "name": "Middle Red",
+      "hex": "#E58E73",
+      "rgb": [
+        229,
+        142,
+        115
+      ],
+      "lch": {
+        "l": 67.46,
+        "c": 41.37,
+        "h": 43.12
+      },
+      "hsv": {
+        "h": 14.21,
+        "s": 49.78,
+        "v": 89.8
+      },
+      "indices": {
+        "lch": 437973.67,
+        "hsv": 147173.23,
+        "lightness": 67.46
+      },
+      "contrast_ratio": 8.45,
+      "readable_on_black": true,
+      "line_number": 306
+    },
+    {
+      "name": "Brown",
+      "hex": "#AF593E",
+      "rgb": [
+        175,
+        89,
+        62
+      ],
+      "lch": {
+        "l": 47.76,
+        "c": 45.34,
+        "h": 43.79
+      },
+      "hsv": {
+        "h": 14.34,
+        "s": 64.57,
+        "v": 68.63
+      },
+      "indices": {
+        "lch": 442739.26,
+        "hsv": 149888.6,
+        "lightness": 47.76
+      },
+      "contrast_ratio": 4.32,
+      "readable_on_black": false,
+      "line_number": 194
+    },
+    {
+      "name": "pink fire",
+      "hex": "#FF875F",
+      "rgb": [
+        255,
+        135,
+        95
+      ],
+      "lch": {
+        "l": 69.05,
+        "c": 59.43,
+        "h": 44.66
+      },
+      "hsv": {
+        "h": 15.0,
+        "s": 62.75,
+        "v": 100.0
+      },
+      "indices": {
+        "lch": 453589.4,
+        "hsv": 156374.51,
+        "lightness": 69.05
+      },
+      "contrast_ratio": 8.88,
+      "readable_on_black": true,
+      "line_number": 356
+    },
+    {
+      "name": "Sepia",
+      "hex": "#9E5B40",
+      "rgb": [
+        158,
+        91,
+        64
+      ],
+      "lch": {
+        "l": 45.8,
+        "c": 36.85,
+        "h": 47.75
+      },
+      "hsv": {
+        "h": 17.23,
+        "s": 59.49,
+        "v": 61.96
+      },
+      "indices": {
+        "lch": 482132.61,
+        "hsv": 178351.75,
+        "lightness": 45.8
+      },
+      "contrast_ratio": 4.02,
+      "readable_on_black": false,
+      "line_number": 182
+    },
+    {
+      "name": "Burnt Orange",
+      "hex": "#FF7F49",
+      "rgb": [
+        255,
+        127,
+        73
+      ],
+      "lch": {
+        "l": 67.22,
+        "c": 67.97,
+        "h": 48.51
+      },
+      "hsv": {
+        "h": 17.8,
+        "s": 71.37,
+        "v": 100.0
+      },
+      "indices": {
+        "lch": 491938.53,
+        "hsv": 185259.23,
+        "lightness": 67.22
+      },
+      "contrast_ratio": 8.38,
+      "readable_on_black": true,
+      "line_number": 354
+    },
+    {
+      "name": "Copper",
+      "hex": "#DA8A67",
+      "rgb": [
+        218,
+        138,
+        103
+      ],
+      "lch": {
+        "l": 65.01,
+        "c": 41.36,
+        "h": 49.41
+      },
+      "hsv": {
+        "h": 18.26,
+        "s": 52.75,
+        "v": 85.49
+      },
+      "indices": {
+        "lch": 500596.2,
+        "hsv": 187969.42,
+        "lightness": 65.01
+      },
+      "contrast_ratio": 7.81,
+      "readable_on_black": true,
+      "line_number": 296
+    },
+    {
+      "name": "PrintHue Orange 021",
+      "hex": "#FE5000",
+      "rgb": [
+        254,
+        80,
+        0
+      ],
+      "lch": {
+        "l": 58.79,
+        "c": 94.19,
+        "h": 47.5
+      },
+      "hsv": {
+        "h": 18.9,
+        "s": 100.0,
+        "v": 99.61
+      },
+      "indices": {
+        "lch": 480958.22,
+        "hsv": 199075.99,
+        "lightness": 58.79
+      },
+      "contrast_ratio": 6.36,
+      "readable_on_black": true,
+      "line_number": 334
+    },
+    {
+      "name": "PrintHue Warm Gray 11",
+      "hex": "#5C504A",
+      "rgb": [
+        92,
+        80,
+        74
+      ],
+      "lch": {
+        "l": 35.02,
+        "c": 6.6,
+        "h": 54.25
+      },
+      "hsv": {
+        "h": 20.0,
+        "s": 19.57,
+        "v": 36.08
+      },
+      "indices": {
+        "lch": 546002.06,
+        "hsv": 201992.6,
+        "lightness": 35.02
+      },
+      "contrast_ratio": 2.7,
+      "readable_on_black": false,
+      "line_number": 74
+    },
+    {
+      "name": "Red Orange",
+      "hex": "#FF681F",
+      "rgb": [
+        255,
+        104,
+        31
+      ],
+      "lch": {
+        "l": 62.72,
+        "c": 84.56,
+        "h": 49.9
+      },
+      "hsv": {
+        "h": 19.55,
+        "s": 87.84,
+        "v": 100.0
+      },
+      "indices": {
+        "lch": 505324.36,
+        "hsv": 204420.03,
+        "lightness": 62.72
+      },
+      "contrast_ratio": 7.25,
+      "readable_on_black": true,
+      "line_number": 352
+    },
+    {
+      "name": "coral dusk",
+      "hex": "#FFAF87",
+      "rgb": [
+        255,
+        175,
+        135
+      ],
+      "lch": {
+        "l": 78.27,
+        "c": 40.73,
+        "h": 52.44
+      },
+      "hsv": {
+        "h": 20.0,
+        "s": 47.06,
+        "v": 100.0
+      },
+      "indices": {
+        "lch": 532295.98,
+        "hsv": 204805.88,
+        "lightness": 78.27
+      },
+      "contrast_ratio": 11.73,
+      "readable_on_black": true,
+      "line_number": 369
+    },
+    {
+      "name": "copper tan",
+      "hex": "#D7875F",
+      "rgb": [
+        215,
+        135,
+        95
+      ],
+      "lch": {
+        "l": 63.84,
+        "c": 43.34,
+        "h": 52.06
+      },
+      "hsv": {
+        "h": 20.0,
+        "s": 55.81,
+        "v": 84.31
+      },
+      "indices": {
+        "lch": 527074.18,
+        "hsv": 205665.71,
+        "lightness": 63.84
+      },
+      "contrast_ratio": 7.52,
+      "readable_on_black": true,
+      "line_number": 268
+    },
+    {
+      "name": "Atomic Tangerine",
+      "hex": "#FF9966",
+      "rgb": [
+        255,
+        153,
+        102
+      ],
+      "lch": {
+        "l": 72.89,
+        "c": 54.38,
+        "h": 51.87
+      },
+      "hsv": {
+        "h": 20.0,
+        "s": 60.0,
+        "v": 100.0
+      },
+      "indices": {
+        "lch": 526069.33,
+        "hsv": 206100.0,
+        "lightness": 72.89
+      },
+      "contrast_ratio": 10.0,
+      "readable_on_black": true,
+      "line_number": 363
+    },
+    {
+      "name": "PrintHue Tiger",
+      "hex": "#F96714",
+      "rgb": [
+        249,
+        103,
+        20
+      ],
+      "lch": {
+        "l": 61.56,
+        "c": 84.9,
+        "h": 51.71
+      },
+      "hsv": {
+        "h": 21.75,
+        "s": 91.97,
+        "v": 97.65
+      },
+      "indices": {
+        "lch": 523309.02,
+        "hsv": 226761.68,
+        "lightness": 61.56
+      },
+      "contrast_ratio": 6.98,
+      "readable_on_black": true,
+      "line_number": 325
+    },
+    {
+      "name": "Antique Brass",
+      "hex": "#C88A65",
+      "rgb": [
+        200,
+        138,
+        101
+      ],
+      "lch": {
+        "l": 62.84,
+        "c": 35.14,
+        "h": 56.43
+      },
+      "hsv": {
+        "h": 22.42,
+        "s": 49.5,
+        "v": 78.43
+      },
+      "indices": {
+        "lch": 570574.4,
+        "hsv": 229270.86,
+        "lightness": 62.84
+      },
+      "contrast_ratio": 7.28,
+      "readable_on_black": true,
+      "line_number": 242
+    },
+    {
+      "name": "molten core",
+      "hex": "#FF5F00",
+      "rgb": [
+        255,
+        95,
+        0
+      ],
+      "lch": {
+        "l": 61.17,
+        "c": 91.49,
+        "h": 50.64
+      },
+      "hsv": {
+        "h": 22.35,
+        "s": 100.0,
+        "v": 100.0
+      },
+      "indices": {
+        "lch": 512603.25,
+        "hsv": 233629.41,
+        "lightness": 61.17
+      },
+      "contrast_ratio": 6.89,
+      "readable_on_black": true,
+      "line_number": 346
+    },
+    {
+      "name": "Raw Sienna",
+      "hex": "#D68A59",
+      "rgb": [
+        214,
+        138,
+        89
+      ],
+      "lch": {
+        "l": 64.32,
+        "c": 44.99,
+        "h": 57.54
+      },
+      "hsv": {
+        "h": 23.52,
+        "s": 58.41,
+        "v": 83.92
+      },
+      "indices": {
+        "lch": 581838.72,
+        "hsv": 241125.04,
+        "lightness": 64.32
+      },
+      "contrast_ratio": 7.64,
+      "readable_on_black": true,
+      "line_number": 253
+    },
+    {
+      "name": "Orange",
+      "hex": "#FF8833",
+      "rgb": [
+        255,
+        136,
+        51
+      ],
+      "lch": {
+        "l": 68.83,
+        "c": 74.01,
+        "h": 57.55
+      },
+      "hsv": {
+        "h": 25.0,
+        "s": 80.0,
+        "v": 100.0
+      },
+      "indices": {
+        "lch": 582453.71,
+        "hsv": 258100.0,
+        "lightness": 68.83
+      },
+      "contrast_ratio": 8.82,
+      "readable_on_black": true,
+      "line_number": 361
+    },
+    {
+      "name": "Tan",
+      "hex": "#D99A6C",
+      "rgb": [
+        217,
+        154,
+        108
+      ],
+      "lch": {
+        "l": 68.71,
+        "c": 38.13,
+        "h": 61.25
+      },
+      "hsv": {
+        "h": 25.32,
+        "s": 50.23,
+        "v": 85.1
+      },
+      "indices": {
+        "lch": 619412.31,
+        "hsv": 258319.15,
+        "lightness": 68.71
+      },
+      "contrast_ratio": 8.79,
+      "readable_on_black": true,
+      "line_number": 294
+    },
+    {
+      "name": "PrintHue Black",
+      "hex": "#2D2926",
+      "rgb": [
+        45,
+        41,
+        38
+      ],
+      "lch": {
+        "l": 16.91,
+        "c": 2.88,
+        "h": 65.86
+      },
+      "hsv": {
+        "h": 25.71,
+        "s": 15.56,
+        "v": 17.65
+      },
+      "indices": {
+        "lch": 660340.25,
+        "hsv": 258716.06,
+        "lightness": 16.91
+      },
+      "contrast_ratio": 1.46,
+      "readable_on_black": false,
+      "line_number": 62
+    },
+    {
+      "name": "PrintHue Burnt Orange",
+      "hex": "#CC5500",
+      "rgb": [
+        204,
+        85,
+        0
+      ],
+      "lch": {
+        "l": 51.07,
+        "c": 75.13,
+        "h": 53.99
+      },
+      "hsv": {
+        "h": 25.0,
+        "s": 100.0,
+        "v": 80.0
+      },
+      "indices": {
+        "lch": 545120.34,
+        "hsv": 260080.0,
+        "lightness": 51.07
+      },
+      "contrast_ratio": 4.87,
+      "readable_on_black": true,
+      "line_number": 247
+    },
+    {
+      "name": "Peach",
+      "hex": "#FFCBA4",
+      "rgb": [
+        255,
+        203,
+        164
+      ],
+      "lch": {
+        "l": 85.33,
+        "c": 29.6,
+        "h": 63.39
+      },
+      "hsv": {
+        "h": 25.71,
+        "s": 35.69,
+        "v": 100.0
+      },
+      "indices": {
+        "lch": 642419.77,
+        "hsv": 260811.48,
+        "lightness": 85.33
+      },
+      "contrast_ratio": 14.33,
+      "readable_on_black": true,
+      "line_number": 374
+    },
+    {
+      "name": "Tumbleweed",
+      "hex": "#DE9E6B",
+      "rgb": [
+        222,
+        158,
+        107
+      ],
+      "lch": {
+        "l": 70.21,
+        "c": 40.29,
+        "h": 63.25
+      },
+      "hsv": {
+        "h": 26.61,
+        "s": 51.8,
+        "v": 87.06
+      },
+      "indices": {
+        "lch": 639573.16,
+        "hsv": 271354.2,
+        "lightness": 70.21
+      },
+      "contrast_ratio": 9.21,
+      "readable_on_black": true,
+      "line_number": 298
+    },
+    {
+      "name": "Macaroni and Cheese",
+      "hex": "#FFBD88",
+      "rgb": [
+        255,
+        189,
+        136
+      ],
+      "lch": {
+        "l": 81.53,
+        "c": 40.09,
+        "h": 63.97
+      },
+      "hsv": {
+        "h": 26.72,
+        "s": 46.67,
+        "v": 100.0
+      },
+      "indices": {
+        "lch": 647851.15,
+        "hsv": 271993.56,
+        "lightness": 81.53
+      },
+      "contrast_ratio": 12.89,
+      "readable_on_black": true,
+      "line_number": 373
+    },
+    {
+      "name": "tenné",
+      "hex": "#D75F00",
+      "rgb": [
+        215,
+        95,
+        0
+      ],
+      "lch": {
+        "l": 54.69,
+        "c": 77.2,
+        "h": 55.65
+      },
+      "hsv": {
+        "h": 26.51,
+        "s": 100.0,
+        "v": 84.31
+      },
+      "indices": {
+        "lch": 562040.68,
+        "hsv": 275200.59,
+        "lightness": 54.69
+      },
+      "contrast_ratio": 5.53,
+      "readable_on_black": true,
+      "line_number": 261
+    },
+    {
+      "name": "PrintHue Warm Gray 9",
+      "hex": "#7C6C5D",
+      "rgb": [
+        124,
+        108,
+        93
+      ],
+      "lch": {
+        "l": 46.71,
+        "c": 11.35,
+        "h": 70.73
+      },
+      "hsv": {
+        "h": 29.03,
+        "s": 25.0,
+        "v": 48.63
+      },
+      "indices": {
+        "lch": 711959.01,
+        "hsv": 292871.21,
+        "lightness": 46.71
+      },
+      "contrast_ratio": 4.16,
+      "readable_on_black": false,
+      "line_number": 124
+    },
+    {
+      "name": "satin latour",
+      "hex": "#FFD7AF",
+      "rgb": [
+        255,
+        215,
+        175
+      ],
+      "lch": {
+        "l": 88.43,
+        "c": 26.31,
+        "h": 71.47
+      },
+      "hsv": {
+        "h": 30.0,
+        "s": 31.37,
+        "v": 100.0
+      },
+      "indices": {
+        "lch": 723561.66,
+        "hsv": 303237.25,
+        "lightness": 88.43
+      },
+      "contrast_ratio": 15.59,
+      "readable_on_black": true,
+      "line_number": 378
+    },
+    {
+      "name": "buttery leather",
+      "hex": "#D7AF87",
+      "rgb": [
+        215,
+        175,
+        135
+      ],
+      "lch": {
+        "l": 74.1,
+        "c": 27.53,
+        "h": 70.77
+      },
+      "hsv": {
+        "h": 30.0,
+        "s": 37.21,
+        "v": 84.31
+      },
+      "indices": {
+        "lch": 715157.18,
+        "hsv": 303805.24,
+        "lightness": 74.1
+      },
+      "contrast_ratio": 10.37,
+      "readable_on_black": true,
+      "line_number": 275
+    },
+    {
+      "name": "clay ochre",
+      "hex": "#AF875F",
+      "rgb": [
+        175,
+        135,
+        95
+      ],
+      "lch": {
+        "l": 59.22,
+        "c": 29.14,
+        "h": 69.77
+      },
+      "hsv": {
+        "h": 30.0,
+        "s": 45.71,
+        "v": 68.63
+      },
+      "indices": {
+        "lch": 703678.66,
+        "hsv": 304640.06,
+        "lightness": 59.22
+      },
+      "contrast_ratio": 6.45,
+      "readable_on_black": true,
+      "line_number": 202
+    },
+    {
+      "name": "Mango Tango",
+      "hex": "#E77200",
+      "rgb": [
+        231,
+        114,
+        0
+      ],
+      "lch": {
+        "l": 60.8,
+        "c": 79.57,
+        "h": 59.47
+      },
+      "hsv": {
+        "h": 29.61,
+        "s": 100.0,
+        "v": 90.59
+      },
+      "indices": {
+        "lch": 600878.92,
+        "hsv": 306194.48,
+        "lightness": 60.8
+      },
+      "contrast_ratio": 6.8,
+      "readable_on_black": true,
+      "line_number": 309
+    },
+    {
+      "name": "rajah",
+      "hex": "#FFAF5F",
+      "rgb": [
+        255,
+        175,
+        95
+      ],
+      "lch": {
+        "l": 77.72,
+        "c": 56.33,
+        "h": 67.39
+      },
+      "hsv": {
+        "h": 30.0,
+        "s": 62.75,
+        "v": 100.0
+      },
+      "indices": {
+        "lch": 681691.48,
+        "hsv": 306374.51,
+        "lightness": 77.72
+      },
+      "contrast_ratio": 11.55,
+      "readable_on_black": true,
+      "line_number": 368
+    },
+    {
+      "name": "PrintHue Sand Dollar",
+      "hex": "#DFCFBE",
+      "rgb": [
+        223,
+        207,
+        190
+      ],
+      "lch": {
+        "l": 83.98,
+        "c": 10.8,
+        "h": 75.15
+      },
+      "hsv": {
+        "h": 30.91,
+        "s": 14.8,
+        "v": 87.45
+      },
+      "indices": {
+        "lch": 759954.82,
+        "hsv": 310658.18,
+        "lightness": 83.98
+      },
+      "contrast_ratio": 13.81,
+      "readable_on_black": true,
+      "line_number": 299
+    },
+    {
+      "name": "Raw Umber",
+      "hex": "#714B23",
+      "rgb": [
+        113,
+        75,
+        35
+      ],
+      "lch": {
+        "l": 35.33,
+        "c": 32.05,
+        "h": 68.31
+      },
+      "hsv": {
+        "h": 30.77,
+        "s": 69.03,
+        "v": 44.31
+      },
+      "indices": {
+        "lch": 686695.79,
+        "hsv": 314639.28,
+        "lightness": 35.33
+      },
+      "contrast_ratio": 2.73,
+      "readable_on_black": false,
+      "line_number": 117
+    },
+    {
+      "name": "Apricot",
+      "hex": "#FBD5AB",
+      "rgb": [
+        251,
+        213,
+        171
+      ],
+      "lch": {
+        "l": 87.5,
+        "c": 26.75,
+        "h": 73.97
+      },
+      "hsv": {
+        "h": 31.5,
+        "s": 31.87,
+        "v": 98.43
+      },
+      "indices": {
+        "lch": 748439.51,
+        "hsv": 318285.68,
+        "lightness": 87.5
+      },
+      "contrast_ratio": 15.21,
+      "readable_on_black": true,
+      "line_number": 328
+    },
+    {
+      "name": "sun crete",
+      "hex": "#FF8700",
+      "rgb": [
+        255,
+        135,
+        0
+      ],
+      "lch": {
+        "l": 68.45,
+        "c": 84.58,
+        "h": 62.27
+      },
+      "hsv": {
+        "h": 31.76,
+        "s": 100.0,
+        "v": 100.0
+      },
+      "indices": {
+        "lch": 629624.17,
+        "hsv": 327747.06,
+        "lightness": 68.45
+      },
+      "contrast_ratio": 8.72,
+      "readable_on_black": true,
+      "line_number": 355
+    },
+    {
+      "name": "Gray",
+      "hex": "#8B8680",
+      "rgb": [
+        139,
+        134,
+        128
+      ],
+      "lch": {
+        "l": 56.18,
+        "c": 3.95,
+        "h": 79.13
+      },
+      "hsv": {
+        "h": 32.73,
+        "s": 7.91,
+        "v": 54.51
+      },
+      "indices": {
+        "lch": 796929.01,
+        "hsv": 328118.6,
+        "lightness": 56.18
+      },
+      "contrast_ratio": 5.82,
+      "readable_on_black": true,
+      "line_number": 170
+    },
+    {
+      "name": "umber",
+      "hex": "#AF5F00",
+      "rgb": [
+        175,
+        95,
+        0
+      ],
+      "lch": {
+        "l": 48.63,
+        "c": 63.25,
+        "h": 64.39
+      },
+      "hsv": {
+        "h": 32.57,
+        "s": 100.0,
+        "v": 68.63
+      },
+      "indices": {
+        "lch": 648841.1,
+        "hsv": 335782.91,
+        "lightness": 48.63
+      },
+      "contrast_ratio": 4.46,
+      "readable_on_black": false,
+      "line_number": 195
+    },
+    {
+      "name": "Gold",
+      "hex": "#E6BE8A",
+      "rgb": [
+        230,
+        190,
+        138
+      ],
+      "lch": {
+        "l": 79.32,
+        "c": 32.47,
+        "h": 76.84
+      },
+      "hsv": {
+        "h": 33.91,
+        "s": 40.0,
+        "v": 90.2
+      },
+      "indices": {
+        "lch": 776353.36,
+        "hsv": 343220.63,
+        "lightness": 79.32
+      },
+      "contrast_ratio": 12.1,
+      "readable_on_black": true,
+      "line_number": 308
+    },
+    {
+      "name": "PrintHue Warm Gray 1",
+      "hex": "#F7F4F0",
+      "rgb": [
+        247,
+        244,
+        240
+      ],
+      "lch": {
+        "l": 96.31,
+        "c": 2.28,
+        "h": 82.16
+      },
+      "hsv": {
+        "h": 34.29,
+        "s": 2.83,
+        "v": 96.86
+      },
+      "indices": {
+        "lch": 831247.57,
+        "hsv": 343237.41,
+        "lightness": 96.31
+      },
+      "contrast_ratio": 19.15,
+      "readable_on_black": true,
+      "line_number": 323
+    },
+    {
+      "name": "PrintHue Warm Gray 7",
+      "hex": "#998B78",
+      "rgb": [
+        153,
+        139,
+        120
+      ],
+      "lch": {
+        "l": 58.6,
+        "c": 12.24,
+        "h": 80.42
+      },
+      "hsv": {
+        "h": 34.55,
+        "s": 21.57,
+        "v": 60.0
+      },
+      "indices": {
+        "lch": 810029.62,
+        "hsv": 347671.41,
+        "lightness": 58.6
+      },
+      "contrast_ratio": 6.32,
+      "readable_on_black": true,
+      "line_number": 179
+    },
+    {
+      "name": "Yellow Orange",
+      "hex": "#FFAE42",
+      "rgb": [
+        255,
+        174,
+        66
+      ],
+      "lch": {
+        "l": 77.23,
+        "c": 67.68,
+        "h": 72.23
+      },
+      "hsv": {
+        "h": 34.29,
+        "s": 74.12,
+        "v": 100.0
+      },
+      "indices": {
+        "lch": 730109.43,
+        "hsv": 350368.91,
+        "lightness": 77.23
+      },
+      "contrast_ratio": 11.39,
+      "readable_on_black": true,
+      "line_number": 366
+    },
+    {
+      "name": "PrintHue Tangerine",
+      "hex": "#F79100",
+      "rgb": [
+        247,
+        145,
+        0
+      ],
+      "lch": {
+        "l": 69.49,
+        "c": 81.14,
+        "h": 67.52
+      },
+      "hsv": {
+        "h": 35.22,
+        "s": 100.0,
+        "v": 96.86
+      },
+      "indices": {
+        "lch": 682193.22,
+        "hsv": 362323.58,
+        "lightness": 69.49
+      },
+      "contrast_ratio": 9.0,
+      "readable_on_black": true,
+      "line_number": 321
+    },
+    {
+      "name": "Shadow",
+      "hex": "#837050",
+      "rgb": [
+        131,
+        112,
+        80
+      ],
+      "lch": {
+        "l": 48.25,
+        "c": 20.72,
+        "h": 82.91
+      },
+      "hsv": {
+        "h": 37.65,
+        "s": 38.93,
+        "v": 51.37
+      },
+      "indices": {
+        "lch": 833967.72,
+        "hsv": 380415.09,
+        "lightness": 48.25
+      },
+      "contrast_ratio": 4.4,
+      "readable_on_black": false,
+      "line_number": 130
+    },
+    {
+      "name": "harvest eve gold",
+      "hex": "#D78700",
+      "rgb": [
+        215,
+        135,
+        0
+      ],
+      "lch": {
+        "l": 63.16,
+        "c": 72.6,
+        "h": 71.64
+      },
+      "hsv": {
+        "h": 37.67,
+        "s": 100.0,
+        "v": 84.31
+      },
+      "indices": {
+        "lch": 722800.15,
+        "hsv": 386828.5,
+        "lightness": 63.16
+      },
+      "contrast_ratio": 7.36,
+      "readable_on_black": true,
+      "line_number": 267
+    },
+    {
+      "name": "Desert Sand",
+      "hex": "#EDD19C",
+      "rgb": [
+        237,
+        209,
+        156
+      ],
+      "lch": {
+        "l": 85.0,
+        "c": 29.99,
+        "h": 85.64
+      },
+      "hsv": {
+        "h": 39.26,
+        "s": 34.18,
+        "v": 92.94
+      },
+      "indices": {
+        "lch": 864927.59,
+        "hsv": 396103.26,
+        "lightness": 85.0
+      },
+      "contrast_ratio": 14.2,
+      "readable_on_black": true,
+      "line_number": 313
+    },
+    {
+      "name": "workout routine",
+      "hex": "#FFD787",
+      "rgb": [
+        255,
+        215,
+        135
+      ],
+      "lch": {
+        "l": 87.78,
+        "c": 44.69,
+        "h": 84.84
+      },
+      "hsv": {
+        "h": 40.0,
+        "s": 47.06,
+        "v": 100.0
+      },
+      "indices": {
+        "lch": 857204.19,
+        "hsv": 404805.88,
+        "lightness": 87.78
+      },
+      "contrast_ratio": 15.32,
+      "readable_on_black": true,
+      "line_number": 377
+    },
+    {
+      "name": "sell gold",
+      "hex": "#D7AF5F",
+      "rgb": [
+        215,
+        175,
+        95
+      ],
+      "lch": {
+        "l": 73.5,
+        "c": 46.28,
+        "h": 83.64
+      },
+      "hsv": {
+        "h": 40.0,
+        "s": 55.81,
+        "v": 84.31
+      },
+      "indices": {
+        "lch": 843827.5,
+        "hsv": 405665.71,
+        "lightness": 73.5
+      },
+      "contrast_ratio": 10.19,
+      "readable_on_black": true,
+      "line_number": 274
+    },
+    {
+      "name": "PrintHue Mimosa",
+      "hex": "#F0C05A",
+      "rgb": [
+        240,
+        192,
+        90
+      ],
+      "lch": {
+        "l": 80.16,
+        "c": 57.02,
+        "h": 83.7
+      },
+      "hsv": {
+        "h": 40.8,
+        "s": 62.5,
+        "v": 94.12
+      },
+      "indices": {
+        "lch": 845042.34,
+        "hsv": 414344.12,
+        "lightness": 80.16
+      },
+      "contrast_ratio": 12.39,
+      "readable_on_black": true,
+      "line_number": 316
+    },
+    {
+      "name": "Timberwolf",
+      "hex": "#D9D6CF",
+      "rgb": [
+        217,
+        214,
+        207
+      ],
+      "lch": {
+        "l": 85.68,
+        "c": 3.81,
+        "h": 93.05
+      },
+      "hsv": {
+        "h": 42.0,
+        "s": 4.61,
+        "v": 85.1
+      },
+      "indices": {
+        "lch": 939089.84,
+        "hsv": 420545.93,
+        "lightness": 85.68
+      },
+      "contrast_ratio": 14.47,
+      "readable_on_black": true,
+      "line_number": 295
+    },
+    {
+      "name": "clementine jelly",
+      "hex": "#FFAF00",
+      "rgb": [
+        255,
+        175,
+        0
+      ],
+      "lch": {
+        "l": 77.23,
+        "c": 82.62,
+        "h": 76.9
+      },
+      "hsv": {
+        "h": 41.18,
+        "s": 100.0,
+        "v": 100.0
+      },
+      "indices": {
+        "lch": 776842.53,
+        "hsv": 421864.71,
+        "lightness": 77.23
+      },
+      "contrast_ratio": 11.38,
+      "readable_on_black": true,
+      "line_number": 367
+    },
+    {
+      "name": "ground earth",
+      "hex": "#875F00",
+      "rgb": [
+        135,
+        95,
+        0
+      ],
+      "lch": {
+        "l": 43.26,
+        "c": 51.75,
+        "h": 79.83
+      },
+      "hsv": {
+        "h": 42.22,
+        "s": 100.0,
+        "v": 52.94
+      },
+      "indices": {
+        "lch": 802667.54,
+        "hsv": 432275.16,
+        "lightness": 43.26
+      },
+      "contrast_ratio": 3.67,
+      "readable_on_black": false,
+      "line_number": 137
+    },
+    {
+      "name": "Banana Yellow",
+      "hex": "#FAE7B5",
+      "rgb": [
+        250,
+        231,
+        181
+      ],
+      "lch": {
+        "l": 92.05,
+        "c": 26.74,
+        "h": 92.03
+      },
+      "hsv": {
+        "h": 43.48,
+        "s": 27.6,
+        "v": 98.04
+      },
+      "indices": {
+        "lch": 929509.63,
+        "hsv": 437640.65,
+        "lightness": 92.05
+      },
+      "contrast_ratio": 17.16,
+      "readable_on_black": true,
+      "line_number": 326
+    },
+    {
+      "name": "PrintHue Warm Gray 3",
+      "hex": "#D7D2C4",
+      "rgb": [
+        215,
+        210,
+        196
+      ],
+      "lch": {
+        "l": 84.24,
+        "c": 7.57,
+        "h": 95.25
+      },
+      "hsv": {
+        "h": 44.21,
+        "s": 8.84,
+        "v": 84.31
+      },
+      "indices": {
+        "lch": 960905.27,
+        "hsv": 443073.3,
+        "lightness": 84.24
+      },
+      "contrast_ratio": 13.91,
+      "readable_on_black": true,
+      "line_number": 279
+    },
+    {
+      "name": "PrintHue Warm Gray 5",
+      "hex": "#B7B09C",
+      "rgb": [
+        183,
+        176,
+        156
+      ],
+      "lch": {
+        "l": 71.9,
+        "c": 11.17,
+        "h": 94.83
+      },
+      "hsv": {
+        "h": 44.44,
+        "s": 14.75,
+        "v": 71.76
+      },
+      "indices": {
+        "lch": 955543.16,
+        "hsv": 445991.62,
+        "lightness": 71.9
+      },
+      "contrast_ratio": 9.7,
+      "readable_on_black": true,
+      "line_number": 230
+    },
+    {
+      "name": "Goldenrod",
+      "hex": "#FCD975",
+      "rgb": [
+        252,
+        217,
+        117
+      ],
+      "lch": {
+        "l": 87.78,
+        "c": 53.19,
+        "h": 89.74
+      },
+      "hsv": {
+        "h": 44.44,
+        "s": 53.57,
+        "v": 98.82
+      },
+      "indices": {
+        "lch": 906206.64,
+        "hsv": 449900.41,
+        "lightness": 87.78
+      },
+      "contrast_ratio": 15.32,
+      "readable_on_black": true,
+      "line_number": 331
+    },
+    {
+      "name": "aspen gold",
+      "hex": "#FFD75F",
+      "rgb": [
+        255,
+        215,
+        95
+      ],
+      "lch": {
+        "l": 87.33,
+        "c": 62.78,
+        "h": 89.15
+      },
+      "hsv": {
+        "h": 45.0,
+        "s": 62.75,
+        "v": 100.0
+      },
+      "indices": {
+        "lch": 900310.93,
+        "hsv": 456374.51,
+        "lightness": 87.33
+      },
+      "contrast_ratio": 15.14,
+      "readable_on_black": true,
+      "line_number": 376
+    },
+    {
+      "name": "Dandelion",
+      "hex": "#FED85D",
+      "rgb": [
+        254,
+        216,
+        93
+      ],
+      "lch": {
+        "l": 87.47,
+        "c": 63.77,
+        "h": 90.1
+      },
+      "hsv": {
+        "h": 45.84,
+        "s": 63.39,
+        "v": 99.61
+      },
+      "indices": {
+        "lch": 909827.23,
+        "hsv": 464823.28,
+        "lightness": 87.47
+      },
+      "contrast_ratio": 15.19,
+      "readable_on_black": true,
+      "line_number": 337
+    },
+    {
+      "name": "chestnut gold",
+      "hex": "#AF8700",
+      "rgb": [
+        175,
+        135,
+        0
+      ],
+      "lch": {
+        "l": 58.45,
+        "c": 63.7,
+        "h": 85.43
+      },
+      "hsv": {
+        "h": 46.29,
+        "s": 100.0,
+        "v": 68.63
+      },
+      "indices": {
+        "lch": 860201.18,
+        "hsv": 472925.77,
+        "lightness": 58.45
+      },
+      "contrast_ratio": 6.29,
+      "readable_on_black": true,
+      "line_number": 201
+    },
+    {
+      "name": "chinese gold",
+      "hex": "#D7AF00",
+      "rgb": [
+        215,
+        175,
+        0
+      ],
+      "lch": {
+        "l": 72.96,
+        "c": 75.55,
+        "h": 88.91
+      },
+      "hsv": {
+        "h": 48.84,
+        "s": 100.0,
+        "v": 84.31
+      },
+      "indices": {
+        "lch": 896501.12,
+        "hsv": 498456.41,
+        "lightness": 72.96
+      },
+      "contrast_ratio": 10.02,
+      "readable_on_black": true,
+      "line_number": 273
+    },
+    {
+      "name": "gold",
+      "hex": "#FFD700",
+      "rgb": [
+        255,
+        215,
+        0
+      ],
+      "lch": {
+        "l": 86.93,
+        "c": 87.16,
+        "h": 91.26
+      },
+      "hsv": {
+        "h": 50.59,
+        "s": 100.0,
+        "v": 100.0
+      },
+      "indices": {
+        "lch": 921405.92,
+        "hsv": 515982.35,
+        "lightness": 86.93
+      },
+      "contrast_ratio": 14.97,
+      "readable_on_black": true,
+      "line_number": 375
+    },
+    {
+      "name": "Yellow",
+      "hex": "#FBE870",
+      "rgb": [
+        251,
+        232,
+        112
+      ],
+      "lch": {
+        "l": 91.41,
+        "c": 60.27,
+        "h": 97.73
+      },
+      "hsv": {
+        "h": 51.8,
+        "s": 55.38,
+        "v": 98.43
+      },
+      "indices": {
+        "lch": 986472.51,
+        "hsv": 523621.89,
+        "lightness": 91.41
+      },
+      "contrast_ratio": 16.88,
+      "readable_on_black": true,
+      "line_number": 329
+    },
+    {
+      "name": "PrintHue Yellow",
+      "hex": "#FEDD00",
+      "rgb": [
+        254,
+        221,
+        0
+      ],
+      "lch": {
+        "l": 88.34,
+        "c": 88.26,
+        "h": 93.49
+      },
+      "hsv": {
+        "h": 52.2,
+        "s": 100.0,
+        "v": 99.61
+      },
+      "indices": {
+        "lch": 943791.89,
+        "hsv": 532146.85,
+        "lightness": 88.34
+      },
+      "contrast_ratio": 15.56,
+      "readable_on_black": true,
+      "line_number": 338
+    },
+    {
+      "name": "Green Yellow",
+      "hex": "#F0E68C",
+      "rgb": [
+        240,
+        230,
+        140
+      ],
+      "lch": {
+        "l": 90.33,
+        "c": 45.87,
+        "h": 101.32
+      },
+      "hsv": {
+        "h": 54.0,
+        "s": 41.67,
+        "v": 94.12
+      },
+      "indices": {
+        "lch": 1022318.0,
+        "hsv": 544260.78,
+        "lightness": 90.33
+      },
+      "contrast_ratio": 16.4,
+      "readable_on_black": true,
+      "line_number": 317
+    },
+    {
+      "name": "Spring Green",
+      "hex": "#ECEBBD",
+      "rgb": [
+        236,
+        235,
+        189
+      ],
+      "lch": {
+        "l": 92.1,
+        "c": 23.58,
+        "h": 107.34
+      },
+      "hsv": {
+        "h": 58.72,
+        "s": 19.92,
+        "v": 92.55
+      },
+      "indices": {
+        "lch": 1082677.73,
+        "hsv": 589318.12,
+        "lightness": 92.1
+      },
+      "contrast_ratio": 17.18,
+      "readable_on_black": true,
+      "line_number": 311
+    },
+    {
+      "name": "Olive Green",
+      "hex": "#B5B35C",
+      "rgb": [
+        181,
+        179,
+        92
+      ],
+      "lch": {
+        "l": 71.44,
+        "c": 45.73,
+        "h": 104.53
+      },
+      "hsv": {
+        "h": 58.65,
+        "s": 49.17,
+        "v": 70.98
+      },
+      "indices": {
+        "lch": 1052489.76,
+        "hsv": 591504.96,
+        "lightness": 71.44
+      },
+      "contrast_ratio": 9.57,
+      "readable_on_black": true,
+      "line_number": 229
+    },
+    {
+      "name": "lit",
+      "hex": "#FFFFD7",
+      "rgb": [
+        255,
+        255,
+        215
+      ],
+      "lch": {
+        "l": 99.1,
+        "c": 20.21,
+        "h": 108.64
+      },
+      "hsv": {
+        "h": 60.0,
+        "s": 15.69,
+        "v": 100.0
+      },
+      "indices": {
+        "lch": 1096345.9,
+        "hsv": 601668.63,
+        "lightness": 99.1
+      },
+      "contrast_ratio": 20.54,
+      "readable_on_black": true,
+      "line_number": 385
+    },
+    {
+      "name": "dull sage",
+      "hex": "#D7D7AF",
+      "rgb": [
+        215,
+        215,
+        175
+      ],
+      "lch": {
+        "l": 85.07,
+        "c": 20.86,
+        "h": 108.37
+      },
+      "hsv": {
+        "h": 60.0,
+        "s": 18.6,
+        "v": 84.31
+      },
+      "indices": {
+        "lch": 1092266.96,
+        "hsv": 601944.78,
+        "lightness": 85.07
+      },
+      "contrast_ratio": 14.23,
+      "readable_on_black": true,
+      "line_number": 283
+    },
+    {
+      "name": "underhive ash",
+      "hex": "#AFAF87",
+      "rgb": [
+        175,
+        175,
+        135
+      ],
+      "lch": {
+        "l": 70.54,
+        "c": 21.64,
+        "h": 107.99
+      },
+      "hsv": {
+        "h": 60.0,
+        "s": 22.86,
+        "v": 68.63
+      },
+      "indices": {
+        "lch": 1087003.45,
+        "hsv": 602354.34,
+        "lightness": 70.54
+      },
+      "contrast_ratio": 9.3,
+      "readable_on_black": true,
+      "line_number": 209
+    },
+    {
+      "name": "bandicoot",
+      "hex": "#87875F",
+      "rgb": [
+        135,
+        135,
+        95
+      ],
+      "lch": {
+        "l": 55.38,
+        "c": 22.61,
+        "h": 107.41
+      },
+      "hsv": {
+        "h": 60.0,
+        "s": 29.63,
+        "v": 52.94
+      },
+      "indices": {
+        "lch": 1079654.3,
+        "hsv": 603015.9,
+        "lightness": 55.38
+      },
+      "contrast_ratio": 5.66,
+      "readable_on_black": true,
+      "line_number": 144
+    },
+    {
+      "name": "bollywood gold",
+      "hex": "#FFFFAF",
+      "rgb": [
+        255,
+        255,
+        175
+      ],
+      "lch": {
+        "l": 98.38,
+        "c": 40.09,
+        "h": 107.11
+      },
+      "hsv": {
+        "h": 60.0,
+        "s": 31.37,
+        "v": 100.0
+      },
+      "indices": {
+        "lch": 1081020.44,
+        "hsv": 603237.25,
+        "lightness": 98.38
+      },
+      "contrast_ratio": 20.18,
+      "readable_on_black": true,
+      "line_number": 384
+    },
+    {
+      "name": "golden delicious",
+      "hex": "#D7D787",
+      "rgb": [
+        215,
+        215,
+        135
+      ],
+      "lch": {
+        "l": 84.38,
+        "c": 41.2,
+        "h": 106.59
+      },
+      "hsv": {
+        "h": 60.0,
+        "s": 37.21,
+        "v": 84.31
+      },
+      "indices": {
+        "lch": 1074394.98,
+        "hsv": 603805.24,
+        "lightness": 84.38
+      },
+      "contrast_ratio": 13.96,
+      "readable_on_black": true,
+      "line_number": 282
+    },
+    {
+      "name": "palm",
+      "hex": "#AFAF5F",
+      "rgb": [
+        175,
+        175,
+        95
+      ],
+      "lch": {
+        "l": 69.89,
+        "c": 42.41,
+        "h": 105.87
+      },
+      "hsv": {
+        "h": 60.0,
+        "s": 45.71,
+        "v": 68.63
+      },
+      "indices": {
+        "lch": 1065729.81,
+        "hsv": 604640.06,
+        "lightness": 69.89
+      },
+      "contrast_ratio": 9.12,
+      "readable_on_black": true,
+      "line_number": 208
+    },
+    {
+      "name": "butter",
+      "hex": "#FFFF87",
+      "rgb": [
+        255,
+        255,
+        135
+      ],
+      "lch": {
+        "l": 97.84,
+        "c": 59.06,
+        "h": 105.65
+      },
+      "hsv": {
+        "h": 60.0,
+        "s": 47.06,
+        "v": 100.0
+      },
+      "indices": {
+        "lch": 1066382.87,
+        "hsv": 604805.88,
+        "lightness": 97.84
+      },
+      "contrast_ratio": 19.91,
+      "readable_on_black": true,
+      "line_number": 383
+    },
+    {
+      "name": "species",
+      "hex": "#D7D75F",
+      "rgb": [
+        215,
+        215,
+        95
+      ],
+      "lch": {
+        "l": 83.9,
+        "c": 60.04,
+        "h": 104.95
+      },
+      "hsv": {
+        "h": 60.0,
+        "s": 55.81,
+        "v": 84.31
+      },
+      "indices": {
+        "lch": 1057964.18,
+        "hsv": 605665.71,
+        "lightness": 83.9
+      },
+      "contrast_ratio": 13.77,
+      "readable_on_black": true,
+      "line_number": 281
+    },
+    {
+      "name": "canary",
+      "hex": "#FFFF5F",
+      "rgb": [
+        255,
+        255,
+        95
+      ],
+      "lch": {
+        "l": 97.47,
+        "c": 76.0,
+        "h": 104.37
+      },
+      "hsv": {
+        "h": 60.0,
+        "s": 62.75,
+        "v": 100.0
+      },
+      "indices": {
+        "lch": 1053544.2,
+        "hsv": 606374.51,
+        "lightness": 97.47
+      },
+      "contrast_ratio": 19.72,
+      "readable_on_black": true,
+      "line_number": 382
+    },
+    {
+      "name": "mud green",
+      "hex": "#5F5F00",
+      "rgb": [
+        95,
+        95,
+        0
+      ],
+      "lch": {
+        "l": 38.93,
+        "c": 47.05,
+        "h": 102.85
+      },
+      "hsv": {
+        "h": 60.0,
+        "s": 100.0,
+        "v": 37.25
+      },
+      "indices": {
+        "lch": 1032437.24,
+        "hsv": 610037.25,
+        "lightness": 38.93
+      },
+      "contrast_ratio": 3.12,
+      "readable_on_black": false,
+      "line_number": 82
+    },
+    {
+      "name": "verde tropa",
+      "hex": "#808000",
+      "rgb": [
+        128,
+        128,
+        0
+      ],
+      "lch": {
+        "l": 51.87,
+        "c": 58.13,
+        "h": 102.85
+      },
+      "hsv": {
+        "h": 60.0,
+        "s": 100.0,
+        "v": 50.2
+      },
+      "indices": {
+        "lch": 1033742.31,
+        "hsv": 610050.2,
+        "lightness": 51.87
+      },
+      "contrast_ratio": 5.01,
+      "readable_on_black": true,
+      "line_number": 127
+    },
+    {
+      "name": "heart gold",
+      "hex": "#878700",
+      "rgb": [
+        135,
+        135,
+        0
+      ],
+      "lch": {
+        "l": 54.53,
+        "c": 60.42,
+        "h": 102.85
+      },
+      "hsv": {
+        "h": 60.0,
+        "s": 100.0,
+        "v": 52.94
+      },
+      "indices": {
+        "lch": 1034010.9,
+        "hsv": 610052.94,
+        "lightness": 54.53
+      },
+      "contrast_ratio": 5.5,
+      "readable_on_black": true,
+      "line_number": 143
+    },
+    {
+      "name": "yew",
+      "hex": "#AFAF00",
+      "rgb": [
+        175,
+        175,
+        0
+      ],
+      "lch": {
+        "l": 69.31,
+        "c": 73.07,
+        "h": 102.85
+      },
+      "hsv": {
+        "h": 60.0,
+        "s": 100.0,
+        "v": 68.63
+      },
+      "indices": {
+        "lch": 1035501.21,
+        "hsv": 610068.63,
+        "lightness": 69.31
+      },
+      "contrast_ratio": 8.95,
+      "readable_on_black": true,
+      "line_number": 207
+    },
+    {
+      "name": "golden gun",
+      "hex": "#D7D700",
+      "rgb": [
+        215,
+        215,
+        0
+      ],
+      "lch": {
+        "l": 83.47,
+        "c": 85.2,
+        "h": 102.85
+      },
+      "hsv": {
+        "h": 60.0,
+        "s": 100.0,
+        "v": 84.31
+      },
+      "indices": {
+        "lch": 1036929.26,
+        "hsv": 610084.31,
+        "lightness": 83.47
+      },
+      "contrast_ratio": 13.61,
+      "readable_on_black": true,
+      "line_number": 280
+    },
+    {
+      "name": "yellow",
+      "hex": "#FFFF00",
+      "rgb": [
+        255,
+        255,
+        0
+      ],
+      "lch": {
+        "l": 97.14,
+        "c": 96.91,
+        "h": 102.85
+      },
+      "hsv": {
+        "h": 60.0,
+        "s": 100.0,
+        "v": 100.0
+      },
+      "indices": {
+        "lch": 1038308.01,
+        "hsv": 610100.0,
+        "lightness": 97.14
+      },
+      "contrast_ratio": 19.56,
+      "readable_on_black": true,
+      "line_number": 381
+    },
+    {
+      "name": "lime zest",
+      "hex": "#D7FF00",
+      "rgb": [
+        215,
+        255,
+        0
+      ],
+      "lch": {
+        "l": 94.3,
+        "c": 98.59,
+        "h": 112.46
+      },
+      "hsv": {
+        "h": 69.41,
+        "s": 100.0,
+        "v": 100.0
+      },
+      "indices": {
+        "lch": 1134154.69,
+        "hsv": 704217.65,
+        "lightness": 94.3
+      },
+      "contrast_ratio": 18.19,
+      "readable_on_black": true,
+      "line_number": 286
+    },
+    {
+      "name": "high grass",
+      "hex": "#AFD700",
+      "rgb": [
+        175,
+        215,
+        0
+      ],
+      "lch": {
+        "l": 80.58,
+        "c": 87.19,
+        "h": 114.04
+      },
+      "hsv": {
+        "h": 71.16,
+        "s": 100.0,
+        "v": 84.31
+      },
+      "indices": {
+        "lch": 1148504.6,
+        "hsv": 721712.22,
+        "lightness": 80.58
+      },
+      "contrast_ratio": 12.54,
+      "readable_on_black": true,
+      "line_number": 213
+    },
+    {
+      "name": "grasping grass",
+      "hex": "#87AF00",
+      "rgb": [
+        135,
+        175,
+        0
+      ],
+      "lch": {
+        "l": 66.37,
+        "c": 75.51,
+        "h": 116.2
+      },
+      "hsv": {
+        "h": 73.71,
+        "s": 100.0,
+        "v": 68.63
+      },
+      "indices": {
+        "lch": 1168707.72,
+        "hsv": 747211.48,
+        "lightness": 66.37
+      },
+      "contrast_ratio": 8.16,
+      "readable_on_black": true,
+      "line_number": 149
+    },
+    {
+      "name": "ultra moss",
+      "hex": "#D7FF5F",
+      "rgb": [
+        215,
+        255,
+        95
+      ],
+      "lch": {
+        "l": 94.65,
+        "c": 77.85,
+        "h": 116.32
+      },
+      "hsv": {
+        "h": 75.0,
+        "s": 62.75,
+        "v": 100.0
+      },
+      "indices": {
+        "lch": 1172696.04,
+        "hsv": 756374.51,
+        "lightness": 94.65
+      },
+      "contrast_ratio": 18.36,
+      "readable_on_black": true,
+      "line_number": 287
+    },
+    {
+      "name": "olive green",
+      "hex": "#5F8700",
+      "rgb": [
+        95,
+        135,
+        0
+      ],
+      "lch": {
+        "l": 51.56,
+        "c": 63.51,
+        "h": 119.33
+      },
+      "hsv": {
+        "h": 77.78,
+        "s": 100.0,
+        "v": 52.94
+      },
+      "indices": {
+        "lch": 1198519.37,
+        "hsv": 787830.72,
+        "lightness": 51.56
+      },
+      "contrast_ratio": 4.95,
+      "readable_on_black": true,
+      "line_number": 88
+    },
+    {
+      "name": "Yellow Green",
+      "hex": "#C5E384",
+      "rgb": [
+        197,
+        227,
+        132
+      ],
+      "lch": {
+        "l": 86.24,
+        "c": 49.76,
+        "h": 120.03
+      },
+      "hsv": {
+        "h": 78.95,
+        "s": 41.85,
+        "v": 89.02
+      },
+      "indices": {
+        "lch": 1209004.08,
+        "hsv": 793747.73,
+        "lightness": 86.24
+      },
+      "contrast_ratio": 14.69,
+      "readable_on_black": true,
+      "line_number": 239
+    },
+    {
+      "name": "lime candy pearl",
+      "hex": "#AFFF00",
+      "rgb": [
+        175,
+        255,
+        0
+      ],
+      "lch": {
+        "l": 91.97,
+        "c": 102.84,
+        "h": 120.83
+      },
+      "hsv": {
+        "h": 78.82,
+        "s": 100.0,
+        "v": 100.0
+      },
+      "indices": {
+        "lch": 1217570.03,
+        "hsv": 798335.29,
+        "lightness": 91.97
+      },
+      "contrast_ratio": 17.13,
+      "readable_on_black": true,
+      "line_number": 219
+    },
+    {
+      "name": "PrintHue Lime",
+      "hex": "#9FCB43",
+      "rgb": [
+        159,
+        203,
+        67
+      ],
+      "lch": {
+        "l": 76.37,
+        "c": 69.44,
+        "h": 119.46
+      },
+      "hsv": {
+        "h": 79.41,
+        "s": 67.0,
+        "v": 79.61
+      },
+      "indices": {
+        "lch": 1202289.54,
+        "hsv": 800896.76,
+        "lightness": 76.37
+      },
+      "contrast_ratio": 11.1,
+      "readable_on_black": true,
+      "line_number": 184
+    },
+    {
+      "name": "sunny lime",
+      "hex": "#D7FF87",
+      "rgb": [
+        215,
+        255,
+        135
+      ],
+      "lch": {
+        "l": 95.04,
+        "c": 61.29,
+        "h": 120.48
+      },
+      "hsv": {
+        "h": 80.0,
+        "s": 47.06,
+        "v": 100.0
+      },
+      "indices": {
+        "lch": 1214352.94,
+        "hsv": 804805.88,
+        "lightness": 95.04
+      },
+      "contrast_ratio": 18.54,
+      "readable_on_black": true,
+      "line_number": 288
+    },
+    {
+      "name": "badass grass",
+      "hex": "#AFD75F",
+      "rgb": [
+        175,
+        215,
+        95
+      ],
+      "lch": {
+        "l": 81.04,
+        "c": 62.43,
+        "h": 120.14
+      },
+      "hsv": {
+        "h": 80.0,
+        "s": 55.81,
+        "v": 84.31
+      },
+      "indices": {
+        "lch": 1209556.55,
+        "hsv": 805665.71,
+        "lightness": 81.04
+      },
+      "contrast_ratio": 12.71,
+      "readable_on_black": true,
+      "line_number": 214
+    },
+    {
+      "name": "Asparagus",
+      "hex": "#7BA428",
+      "rgb": [
+        123,
+        164,
+        40
+      ],
+      "lch": {
+        "l": 62.43,
+        "c": 64.26,
+        "h": 119.76
+      },
+      "hsv": {
+        "h": 79.84,
+        "s": 75.61,
+        "v": 64.31
+      },
+      "indices": {
+        "lch": 1203881.73,
+        "hsv": 806012.39,
+        "lightness": 62.43
+      },
+      "contrast_ratio": 7.18,
+      "readable_on_black": true,
+      "line_number": 122
+    },
+    {
+      "name": "overgrown",
+      "hex": "#87D700",
+      "rgb": [
+        135,
+        215,
+        0
+      ],
+      "lch": {
+        "l": 78.32,
+        "c": 92.06,
+        "h": 123.33
+      },
+      "hsv": {
+        "h": 82.33,
+        "s": 100.0,
+        "v": 84.31
+      },
+      "indices": {
+        "lch": 1241256.6,
+        "hsv": 833340.13,
+        "lightness": 78.32
+      },
+      "contrast_ratio": 11.75,
+      "readable_on_black": true,
+      "line_number": 155
+    },
+    {
+      "name": "PrintHue Greenery",
+      "hex": "#88B04B",
+      "rgb": [
+        136,
+        176,
+        75
+      ],
+      "lch": {
+        "l": 67.12,
+        "c": 55.26,
+        "h": 122.64
+      },
+      "hsv": {
+        "h": 83.76,
+        "s": 57.39,
+        "v": 69.02
+      },
+      "indices": {
+        "lch": 1233173.68,
+        "hsv": 843431.42,
+        "lightness": 67.12
+      },
+      "contrast_ratio": 8.36,
+      "readable_on_black": true,
+      "line_number": 167
+    },
+    {
+      "name": "emerald glitter",
+      "hex": "#5FAF00",
+      "rgb": [
+        95,
+        175,
+        0
+      ],
+      "lch": {
+        "l": 64.23,
+        "c": 81.06,
+        "h": 126.49
+      },
+      "hsv": {
+        "h": 87.43,
+        "s": 100.0,
+        "v": 68.63
+      },
+      "indices": {
+        "lch": 1271383.44,
+        "hsv": 884354.34,
+        "lightness": 64.23
+      },
+      "contrast_ratio": 7.62,
+      "readable_on_black": true,
+      "line_number": 95
+    },
+    {
+      "name": "lasting lime",
+      "hex": "#87FF00",
+      "rgb": [
+        135,
+        255,
+        0
+      ],
+      "lch": {
+        "l": 90.17,
+        "c": 108.38,
+        "h": 127.36
+      },
+      "hsv": {
+        "h": 88.24,
+        "s": 100.0,
+        "v": 100.0
+      },
+      "indices": {
+        "lch": 1282750.63,
+        "hsv": 892452.94,
+        "lightness": 90.17
+      },
+      "contrast_ratio": 16.33,
+      "readable_on_black": true,
+      "line_number": 161
+    },
+    {
+      "name": "lime mist",
+      "hex": "#D7FFAF",
+      "rgb": [
+        215,
+        255,
+        175
+      ],
+      "lch": {
+        "l": 95.6,
+        "c": 43.08,
+        "h": 127.59
+      },
+      "hsv": {
+        "h": 90.0,
+        "s": 31.37,
+        "v": 100.0
+      },
+      "indices": {
+        "lch": 1285492.84,
+        "hsv": 903237.25,
+        "lightness": 95.6
+      },
+      "contrast_ratio": 18.81,
+      "readable_on_black": true,
+      "line_number": 289
+    },
+    {
+      "name": "wasabi",
+      "hex": "#AFD787",
+      "rgb": [
+        175,
+        215,
+        135
+      ],
+      "lch": {
+        "l": 81.54,
+        "c": 44.35,
+        "h": 127.32
+      },
+      "hsv": {
+        "h": 90.0,
+        "s": 37.21,
+        "v": 84.31
+      },
+      "indices": {
+        "lch": 1281420.67,
+        "hsv": 903805.24,
+        "lightness": 81.54
+      },
+      "contrast_ratio": 12.89,
+      "readable_on_black": true,
+      "line_number": 215
+    },
+    {
+      "name": "celuce",
+      "hex": "#87AF5F",
+      "rgb": [
+        135,
+        175,
+        95
+      ],
+      "lch": {
+        "l": 67.0,
+        "c": 45.78,
+        "h": 126.96
+      },
+      "hsv": {
+        "h": 90.0,
+        "s": 45.71,
+        "v": 68.63
+      },
+      "indices": {
+        "lch": 1276359.85,
+        "hsv": 904640.06,
+        "lightness": 67.0
+      },
+      "contrast_ratio": 8.33,
+      "readable_on_black": true,
+      "line_number": 150
+    },
+    {
+      "name": "stinging wasabi",
+      "hex": "#AFFF5F",
+      "rgb": [
+        175,
+        255,
+        95
+      ],
+      "lch": {
+        "l": 92.33,
+        "c": 82.71,
+        "h": 126.36
+      },
+      "hsv": {
+        "h": 90.0,
+        "s": 62.75,
+        "v": 100.0
+      },
+      "indices": {
+        "lch": 1272924.67,
+        "hsv": 906374.51,
+        "lightness": 92.33
+      },
+      "contrast_ratio": 17.29,
+      "readable_on_black": true,
+      "line_number": 220
+    },
+    {
+      "name": "tropical funk",
+      "hex": "#5FD700",
+      "rgb": [
+        95,
+        215,
+        0
+      ],
+      "lch": {
+        "l": 76.7,
+        "c": 97.84,
+        "h": 129.99
+      },
+      "hsv": {
+        "h": 93.49,
+        "s": 100.0,
+        "v": 84.31
+      },
+      "indices": {
+        "lch": 1307709.37,
+        "hsv": 944968.03,
+        "lightness": 76.7
+      },
+      "contrast_ratio": 11.21,
+      "readable_on_black": true,
+      "line_number": 101
+    },
+    {
+      "name": "bright green",
+      "hex": "#5FFF00",
+      "rgb": [
+        95,
+        255,
+        0
+      ],
+      "lch": {
+        "l": 88.9,
+        "c": 113.7,
+        "h": 131.92
+      },
+      "hsv": {
+        "h": 97.65,
+        "s": 100.0,
+        "v": 100.0
+      },
+      "indices": {
+        "lch": 1328234.81,
+        "hsv": 986570.59,
+        "lightness": 88.9
+      },
+      "contrast_ratio": 15.79,
+      "readable_on_black": true,
+      "line_number": 107
+    },
+    {
+      "name": "light yellowish green",
+      "hex": "#AFFF87",
+      "rgb": [
+        175,
+        255,
+        135
+      ],
+      "lch": {
+        "l": 92.74,
+        "c": 66.94,
+        "h": 132.34
+      },
+      "hsv": {
+        "h": 100.0,
+        "s": 47.06,
+        "v": 100.0
+      },
+      "indices": {
+        "lch": 1332706.66,
+        "hsv": 1004805.88,
+        "lightness": 92.74
+      },
+      "contrast_ratio": 17.48,
+      "readable_on_black": true,
+      "line_number": 221
+    },
+    {
+      "name": "vivid spring",
+      "hex": "#87D75F",
+      "rgb": [
+        135,
+        215,
+        95
+      ],
+      "lch": {
+        "l": 78.8,
+        "c": 68.31,
+        "h": 131.94
+      },
+      "hsv": {
+        "h": 100.0,
+        "s": 55.81,
+        "v": 84.31
+      },
+      "indices": {
+        "lch": 1327298.24,
+        "hsv": 1005665.71,
+        "lightness": 78.8
+      },
+      "contrast_ratio": 11.92,
+      "readable_on_black": true,
+      "line_number": 156
+    },
+    {
+      "name": "stadium lawn",
+      "hex": "#87FF5F",
+      "rgb": [
+        135,
+        255,
+        95
+      ],
+      "lch": {
+        "l": 90.55,
+        "c": 88.93,
+        "h": 133.84
+      },
+      "hsv": {
+        "h": 105.0,
+        "s": 62.75,
+        "v": 100.0
+      },
+      "indices": {
+        "lch": 1347565.06,
+        "hsv": 1056374.51,
+        "lightness": 90.55
+      },
+      "contrast_ratio": 16.5,
+      "readable_on_black": true,
+      "line_number": 162
+    },
+    {
+      "name": "Granny Smith Apple",
+      "hex": "#9DE093",
+      "rgb": [
+        157,
+        224,
+        147
+      ],
+      "lch": {
+        "l": 83.22,
+        "c": 47.33,
+        "h": 138.81
+      },
+      "hsv": {
+        "h": 112.21,
+        "s": 34.38,
+        "v": 87.84
+      },
+      "indices": {
+        "lch": 1396448.73,
+        "hsv": 1125603.27,
+        "lightness": 83.22
+      },
+      "contrast_ratio": 13.52,
+      "readable_on_black": true,
+      "line_number": 181
+    },
+    {
+      "name": "mint zest",
+      "hex": "#D7FFD7",
+      "rgb": [
+        215,
+        255,
+        215
+      ],
+      "lch": {
+        "l": 96.36,
+        "c": 25.03,
+        "h": 143.47
+      },
+      "hsv": {
+        "h": 120.0,
+        "s": 15.69,
+        "v": 100.0
+      },
+      "indices": {
+        "lch": 1444346.62,
+        "hsv": 1201668.63,
+        "lightness": 96.36
+      },
+      "contrast_ratio": 19.17,
+      "readable_on_black": true,
+      "line_number": 290
+    },
+    {
+      "name": "coral springs",
+      "hex": "#AFD7AF",
+      "rgb": [
+        175,
+        215,
+        175
+      ],
+      "lch": {
+        "l": 82.28,
+        "c": 25.88,
+        "h": 143.27
+      },
+      "hsv": {
+        "h": 120.0,
+        "s": 18.6,
+        "v": 84.31
+      },
+      "indices": {
+        "lch": 1440922.39,
+        "hsv": 1201944.78,
+        "lightness": 82.28
+      },
+      "contrast_ratio": 13.16,
+      "readable_on_black": true,
+      "line_number": 216
+    },
+    {
+      "name": "peapod",
+      "hex": "#87AF87",
+      "rgb": [
+        135,
+        175,
+        135
+      ],
+      "lch": {
+        "l": 67.69,
+        "c": 26.91,
+        "h": 142.97
+      },
+      "hsv": {
+        "h": 120.0,
+        "s": 22.86,
+        "v": 68.63
+      },
+      "indices": {
+        "lch": 1436447.08,
+        "hsv": 1202354.34,
+        "lightness": 67.69
+      },
+      "contrast_ratio": 8.51,
+      "readable_on_black": true,
+      "line_number": 151
+    },
+    {
+      "name": "hippie green",
+      "hex": "#5F875F",
+      "rgb": [
+        95,
+        135,
+        95
+      ],
+      "lch": {
+        "l": 52.49,
+        "c": 28.2,
+        "h": 142.47
+      },
+      "hsv": {
+        "h": 120.0,
+        "s": 29.63,
+        "v": 52.94
+      },
+      "indices": {
+        "lch": 1429931.82,
+        "hsv": 1203015.9,
+        "lightness": 52.49
+      },
+      "contrast_ratio": 5.12,
+      "readable_on_black": true,
+      "line_number": 89
+    },
+    {
+      "name": "light mint",
+      "hex": "#AFFFAF",
+      "rgb": [
+        175,
+        255,
+        175
+      ],
+      "lch": {
+        "l": 93.33,
+        "c": 50.06,
+        "h": 142.19
+      },
+      "hsv": {
+        "h": 120.0,
+        "s": 31.37,
+        "v": 100.0
+      },
+      "indices": {
+        "lch": 1431317.53,
+        "hsv": 1203237.25,
+        "lightness": 93.33
+      },
+      "contrast_ratio": 17.75,
+      "readable_on_black": true,
+      "line_number": 222
+    },
+    {
+      "name": "de york",
+      "hex": "#87D787",
+      "rgb": [
+        135,
+        215,
+        135
+      ],
+      "lch": {
+        "l": 79.33,
+        "c": 51.52,
+        "h": 141.68
+      },
+      "hsv": {
+        "h": 120.0,
+        "s": 37.21,
+        "v": 84.31
+      },
+      "indices": {
+        "lch": 1424746.96,
+        "hsv": 1203805.24,
+        "lightness": 79.33
+      },
+      "contrast_ratio": 12.1,
+      "readable_on_black": true,
+      "line_number": 157
+    },
+    {
+      "name": "endo",
+      "hex": "#5FAF5F",
+      "rgb": [
+        95,
+        175,
+        95
+      ],
+      "lch": {
+        "l": 64.9,
+        "c": 53.07,
+        "h": 140.88
+      },
+      "hsv": {
+        "h": 120.0,
+        "s": 45.71,
+        "v": 68.63
+      },
+      "indices": {
+        "lch": 1415322.43,
+        "hsv": 1204640.06,
+        "lightness": 64.9
+      },
+      "contrast_ratio": 7.78,
+      "readable_on_black": true,
+      "line_number": 96
+    },
+    {
+      "name": "easter green",
+      "hex": "#87FF87",
+      "rgb": [
+        135,
+        255,
+        135
+      ],
+      "lch": {
+        "l": 90.97,
+        "c": 73.9,
+        "h": 140.62
+      },
+      "hsv": {
+        "h": 120.0,
+        "s": 47.06,
+        "v": 100.0
+      },
+      "indices": {
+        "lch": 1415351.26,
+        "hsv": 1204805.88,
+        "lightness": 90.97
+      },
+      "contrast_ratio": 16.68,
+      "readable_on_black": true,
+      "line_number": 163
+    },
+    {
+      "name": "loud green",
+      "hex": "#5FD75F",
+      "rgb": [
+        95,
+        215,
+        95
+      ],
+      "lch": {
+        "l": 77.2,
+        "c": 75.03,
+        "h": 139.7
+      },
+      "hsv": {
+        "h": 120.0,
+        "s": 55.81,
+        "v": 84.31
+      },
+      "indices": {
+        "lch": 1404746.4,
+        "hsv": 1205665.71,
+        "lightness": 77.2
+      },
+      "contrast_ratio": 11.37,
+      "readable_on_black": true,
+      "line_number": 102
+    },
+    {
+      "name": "biopunk",
+      "hex": "#5FFF5F",
+      "rgb": [
+        95,
+        255,
+        95
+      ],
+      "lch": {
+        "l": 89.29,
+        "c": 94.79,
+        "h": 138.83
+      },
+      "hsv": {
+        "h": 120.0,
+        "s": 62.75,
+        "v": 100.0
+      },
+      "indices": {
+        "lch": 1397363.96,
+        "hsv": 1206374.51,
+        "lightness": 89.29
+      },
+      "contrast_ratio": 15.96,
+      "readable_on_black": true,
+      "line_number": 108
+    },
+    {
+      "name": "emerald green",
+      "hex": "#005F00",
+      "rgb": [
+        0,
+        95,
+        0
+      ],
+      "lch": {
+        "l": 34.36,
+        "c": 58.15,
+        "h": 136.02
+      },
+      "hsv": {
+        "h": 120.0,
+        "s": 100.0,
+        "v": 37.25
+      },
+      "indices": {
+        "lch": 1363645.67,
+        "hsv": 1210037.25,
+        "lightness": 34.36
+      },
+      "contrast_ratio": 2.64,
+      "readable_on_black": false,
+      "line_number": 10
+    },
+    {
+      "name": "moth green",
+      "hex": "#008000",
+      "rgb": [
+        0,
+        128,
+        0
+      ],
+      "lch": {
+        "l": 46.23,
+        "c": 71.85,
+        "h": 136.02
+      },
+      "hsv": {
+        "h": 120.0,
+        "s": 100.0,
+        "v": 50.2
+      },
+      "indices": {
+        "lch": 1364845.83,
+        "hsv": 1210050.2,
+        "lightness": 46.23
+      },
+      "contrast_ratio": 4.09,
+      "readable_on_black": false,
+      "line_number": 17
+    },
+    {
+      "name": "hulk",
+      "hex": "#008700",
+      "rgb": [
+        0,
+        135,
+        0
+      ],
+      "lch": {
+        "l": 48.67,
+        "c": 74.67,
+        "h": 136.02
+      },
+      "hsv": {
+        "h": 120.0,
+        "s": 100.0,
+        "v": 52.94
+      },
+      "indices": {
+        "lch": 1365092.83,
+        "hsv": 1210052.94,
+        "lightness": 48.67
+      },
+      "contrast_ratio": 4.47,
+      "readable_on_black": false,
+      "line_number": 20
+    },
+    {
+      "name": "waystone green",
+      "hex": "#00AF00",
+      "rgb": [
+        0,
+        175,
+        0
+      ],
+      "lch": {
+        "l": 62.22,
+        "c": 90.32,
+        "h": 136.02
+      },
+      "hsv": {
+        "h": 120.0,
+        "s": 100.0,
+        "v": 68.63
+      },
+      "indices": {
+        "lch": 1366463.34,
+        "hsv": 1210068.63,
+        "lightness": 62.22
+      },
+      "contrast_ratio": 7.13,
+      "readable_on_black": true,
+      "line_number": 29
+    },
+    {
+      "name": "tunic green",
+      "hex": "#00D700",
+      "rgb": [
+        0,
+        215,
+        0
+      ],
+      "lch": {
+        "l": 75.2,
+        "c": 105.31,
+        "h": 136.02
+      },
+      "hsv": {
+        "h": 120.0,
+        "s": 100.0,
+        "v": 84.31
+      },
+      "indices": {
+        "lch": 1367776.6,
+        "hsv": 1210084.31,
+        "lightness": 75.2
+      },
+      "contrast_ratio": 10.72,
+      "readable_on_black": true,
+      "line_number": 38
+    },
+    {
+      "name": "green",
+      "hex": "#00FF00",
+      "rgb": [
+        0,
+        255,
+        0
+      ],
+      "lch": {
+        "l": 87.74,
+        "c": 119.78,
+        "h": 136.02
+      },
+      "hsv": {
+        "h": 120.0,
+        "s": 100.0,
+        "v": 100.0
+      },
+      "indices": {
+        "lch": 1369044.52,
+        "hsv": 1210100.0,
+        "lightness": 87.74
+      },
+      "contrast_ratio": 15.3,
+      "readable_on_black": true,
+      "line_number": 44
+    },
+    {
+      "name": "Fern",
+      "hex": "#71BC78",
+      "rgb": [
+        113,
+        188,
+        120
+      ],
+      "lch": {
+        "l": 70.06,
+        "c": 46.4,
+        "h": 143.98
+      },
+      "hsv": {
+        "h": 125.6,
+        "s": 39.89,
+        "v": 73.73
+      },
+      "indices": {
+        "lch": 1446818.5,
+        "hsv": 1260063.09,
+        "lightness": 70.06
+      },
+      "contrast_ratio": 9.17,
+      "readable_on_black": true,
+      "line_number": 118
+    },
+    {
+      "name": "light green",
+      "hex": "#5FFF87",
+      "rgb": [
+        95,
+        255,
+        135
+      ],
+      "lch": {
+        "l": 89.72,
+        "c": 80.26,
+        "h": 145.85
+      },
+      "hsv": {
+        "h": 135.0,
+        "s": 62.75,
+        "v": 100.0
+      },
+      "indices": {
+        "lch": 1467568.51,
+        "hsv": 1356374.51,
+        "lightness": 89.72
+      },
+      "contrast_ratio": 16.14,
+      "readable_on_black": true,
+      "line_number": 109
+    },
+    {
+      "name": "Green",
+      "hex": "#3AA655",
+      "rgb": [
+        58,
+        166,
+        85
+      ],
+      "lch": {
+        "l": 60.63,
+        "c": 58.63,
+        "h": 145.77
+      },
+      "hsv": {
+        "h": 135.0,
+        "s": 65.06,
+        "v": 65.1
+      },
+      "indices": {
+        "lch": 1463793.53,
+        "hsv": 1356571.12,
+        "lightness": 60.63
+      },
+      "contrast_ratio": 6.77,
+      "readable_on_black": true,
+      "line_number": 65
+    },
+    {
+      "name": "Forest Green",
+      "hex": "#5FA777",
+      "rgb": [
+        95,
+        167,
+        119
+      ],
+      "lch": {
+        "l": 62.84,
+        "c": 37.98,
+        "h": 151.81
+      },
+      "hsv": {
+        "h": 140.0,
+        "s": 43.11,
+        "v": 65.49
+      },
+      "indices": {
+        "lch": 1524402.86,
+        "hsv": 1404376.87,
+        "lightness": 62.84
+      },
+      "contrast_ratio": 7.28,
+      "readable_on_black": true,
+      "line_number": 94
+    },
+    {
+      "name": "foam green",
+      "hex": "#87FFAF",
+      "rgb": [
+        135,
+        255,
+        175
+      ],
+      "lch": {
+        "l": 91.58,
+        "c": 58.1,
+        "h": 151.17
+      },
+      "hsv": {
+        "h": 140.0,
+        "s": 47.06,
+        "v": 100.0
+      },
+      "indices": {
+        "lch": 1520866.04,
+        "hsv": 1404805.88,
+        "lightness": 91.58
+      },
+      "contrast_ratio": 16.95,
+      "readable_on_black": true,
+      "line_number": 164
+    },
+    {
+      "name": "snow pea",
+      "hex": "#5FD787",
+      "rgb": [
+        95,
+        215,
+        135
+      ],
+      "lch": {
+        "l": 77.75,
+        "c": 59.18,
+        "h": 150.03
+      },
+      "hsv": {
+        "h": 140.0,
+        "s": 55.81,
+        "v": 84.31
+      },
+      "indices": {
+        "lch": 1508115.61,
+        "hsv": 1405665.71,
+        "lightness": 77.75
+      },
+      "contrast_ratio": 11.56,
+      "readable_on_black": true,
+      "line_number": 103
+    },
+    {
+      "name": "cathode green",
+      "hex": "#00FF5F",
+      "rgb": [
+        0,
+        255,
+        95
+      ],
+      "lch": {
+        "l": 88.13,
+        "c": 101.33,
+        "h": 143.14
+      },
+      "hsv": {
+        "h": 142.35,
+        "s": 100.0,
+        "v": 100.0
+      },
+      "indices": {
+        "lch": 1440332.59,
+        "hsv": 1433629.41,
+        "lightness": 88.13
+      },
+      "contrast_ratio": 15.47,
+      "readable_on_black": true,
+      "line_number": 45
+    },
+    {
+      "name": "limonana",
+      "hex": "#00D75F",
+      "rgb": [
+        0,
+        215,
+        95
+      ],
+      "lch": {
+        "l": 75.72,
+        "c": 83.36,
+        "h": 146.16
+      },
+      "hsv": {
+        "h": 146.51,
+        "s": 100.0,
+        "v": 84.31
+      },
+      "indices": {
+        "lch": 1469291.21,
+        "hsv": 1475200.59,
+        "lightness": 75.72
+      },
+      "contrast_ratio": 10.89,
+      "readable_on_black": true,
+      "line_number": 39
+    },
+    {
+      "name": "Sea Green",
+      "hex": "#9FE2BF",
+      "rgb": [
+        159,
+        226,
+        191
+      ],
+      "lch": {
+        "l": 84.75,
+        "c": 30.11,
+        "h": 159.75
+      },
+      "hsv": {
+        "h": 148.66,
+        "s": 29.65,
+        "v": 88.63
+      },
+      "indices": {
+        "lch": 1605961.25,
+        "hsv": 1489620.39,
+        "lightness": 84.75
+      },
+      "contrast_ratio": 14.11,
+      "readable_on_black": true,
+      "line_number": 185
+    },
+    {
+      "name": "pale turquoise",
+      "hex": "#AFFFD7",
+      "rgb": [
+        175,
+        255,
+        215
+      ],
+      "lch": {
+        "l": 94.11,
+        "c": 34.47,
+        "h": 160.68
+      },
+      "hsv": {
+        "h": 150.0,
+        "s": 31.37,
+        "v": 100.0
+      },
+      "indices": {
+        "lch": 1616218.99,
+        "hsv": 1503237.25,
+        "lightness": 94.11
+      },
+      "contrast_ratio": 18.11,
+      "readable_on_black": true,
+      "line_number": 223
+    },
+    {
+      "name": "jovial jade",
+      "hex": "#87D7AF",
+      "rgb": [
+        135,
+        215,
+        175
+      ],
+      "lch": {
+        "l": 80.09,
+        "c": 35.39,
+        "h": 160.03
+      },
+      "hsv": {
+        "h": 150.0,
+        "s": 37.21,
+        "v": 84.31
+      },
+      "indices": {
+        "lch": 1608389.41,
+        "hsv": 1503805.24,
+        "lightness": 80.09
+      },
+      "contrast_ratio": 12.37,
+      "readable_on_black": true,
+      "line_number": 158
+    },
+    {
+      "name": "jade cream",
+      "hex": "#5FAF87",
+      "rgb": [
+        95,
+        175,
+        135
+      ],
+      "lch": {
+        "l": 65.62,
+        "c": 36.37,
+        "h": 159.04
+      },
+      "hsv": {
+        "h": 150.0,
+        "s": 45.71,
+        "v": 68.63
+      },
+      "indices": {
+        "lch": 1597019.08,
+        "hsv": 1504640.06,
+        "lightness": 65.62
+      },
+      "contrast_ratio": 7.97,
+      "readable_on_black": true,
+      "line_number": 97
+    },
+    {
+      "name": "sea green",
+      "hex": "#5FFFAF",
+      "rgb": [
+        95,
+        255,
+        175
+      ],
+      "lch": {
+        "l": 90.34,
+        "c": 65.08,
+        "h": 156.32
+      },
+      "hsv": {
+        "h": 150.0,
+        "s": 62.75,
+        "v": 100.0
+      },
+      "indices": {
+        "lch": 1572341.56,
+        "hsv": 1506374.51,
+        "lightness": 90.34
+      },
+      "contrast_ratio": 16.41,
+      "readable_on_black": true,
+      "line_number": 110
+    },
+    {
+      "name": "turquoise green",
+      "hex": "#00FF87",
+      "rgb": [
+        0,
+        255,
+        135
+      ],
+      "lch": {
+        "l": 88.57,
+        "c": 87.2,
+        "h": 150.18
+      },
+      "hsv": {
+        "h": 151.76,
+        "s": 100.0,
+        "v": 100.0
+      },
+      "indices": {
+        "lch": 1510705.6,
+        "hsv": 1527747.06,
+        "lightness": 88.57
+      },
+      "contrast_ratio": 15.65,
+      "readable_on_black": true,
+      "line_number": 46
+    },
+    {
+      "name": "jungle",
+      "hex": "#00AF5F",
+      "rgb": [
+        0,
+        175,
+        95
+      ],
+      "lch": {
+        "l": 62.91,
+        "c": 64.03,
+        "h": 151.5
+      },
+      "hsv": {
+        "h": 152.57,
+        "s": 100.0,
+        "v": 68.63
+      },
+      "indices": {
+        "lch": 1521385.26,
+        "hsv": 1535782.91,
+        "lightness": 62.91
+      },
+      "contrast_ratio": 7.3,
+      "readable_on_black": true,
+      "line_number": 30
+    },
+    {
+      "name": "aqua green",
+      "hex": "#00D787",
+      "rgb": [
+        0,
+        215,
+        135
+      ],
+      "lch": {
+        "l": 76.28,
+        "c": 68.16,
+        "h": 156.34
+      },
+      "hsv": {
+        "h": 157.67,
+        "s": 100.0,
+        "v": 84.31
+      },
+      "indices": {
+        "lch": 1571096.36,
+        "hsv": 1586828.5,
+        "lightness": 76.28
+      },
+      "contrast_ratio": 11.07,
+      "readable_on_black": true,
+      "line_number": 40
+    },
+    {
+      "name": "roller derby",
+      "hex": "#87FFD7",
+      "rgb": [
+        135,
+        255,
+        215
+      ],
+      "lch": {
+        "l": 92.39,
+        "c": 43.92,
+        "h": 168.57
+      },
+      "hsv": {
+        "h": 160.0,
+        "s": 47.06,
+        "v": 100.0
+      },
+      "indices": {
+        "lch": 1694955.05,
+        "hsv": 1604805.88,
+        "lightness": 92.39
+      },
+      "contrast_ratio": 17.32,
+      "readable_on_black": true,
+      "line_number": 165
+    },
+    {
+      "name": "jamaican jade",
+      "hex": "#5FD7AF",
+      "rgb": [
+        95,
+        215,
+        175
+      ],
+      "lch": {
+        "l": 78.54,
+        "c": 44.27,
+        "h": 167.4
+      },
+      "hsv": {
+        "h": 160.0,
+        "s": 55.81,
+        "v": 84.31
+      },
+      "indices": {
+        "lch": 1681881.53,
+        "hsv": 1605665.71,
+        "lightness": 78.54
+      },
+      "contrast_ratio": 11.83,
+      "readable_on_black": true,
+      "line_number": 104
+    },
+    {
+      "name": "night pearl",
+      "hex": "#00FFAF",
+      "rgb": [
+        0,
+        255,
+        175
+      ],
+      "lch": {
+        "l": 89.21,
+        "c": 72.42,
+        "h": 160.31
+      },
+      "hsv": {
+        "h": 161.18,
+        "s": 100.0,
+        "v": 100.0
+      },
+      "indices": {
+        "lch": 1612079.41,
+        "hsv": 1621864.71,
+        "lightness": 89.21
+      },
+      "contrast_ratio": 15.92,
+      "readable_on_black": true,
+      "line_number": 47
+    },
+    {
+      "name": "absinthe turquoise",
+      "hex": "#00875F",
+      "rgb": [
+        0,
+        135,
+        95
+      ],
+      "lch": {
+        "l": 49.68,
+        "c": 43.42,
+        "h": 162.76
+      },
+      "hsv": {
+        "h": 162.22,
+        "s": 100.0,
+        "v": 52.94
+      },
+      "indices": {
+        "lch": 1632607.53,
+        "hsv": 1632275.16,
+        "lightness": 49.68
+      },
+      "contrast_ratio": 4.63,
+      "readable_on_black": true,
+      "line_number": 21
+    },
+    {
+      "name": "Jungle Green",
+      "hex": "#29AB87",
+      "rgb": [
+        41,
+        171,
+        135
+      ],
+      "lch": {
+        "l": 62.8,
+        "c": 43.89,
+        "h": 168.45
+      },
+      "hsv": {
+        "h": 163.38,
+        "s": 76.02,
+        "v": 67.06
+      },
+      "indices": {
+        "lch": 1690801.4,
+        "hsv": 1641515.55,
+        "lightness": 62.8
+      },
+      "contrast_ratio": 7.27,
+      "readable_on_black": true,
+      "line_number": 61
+    },
+    {
+      "name": "icy life",
+      "hex": "#5FFFD7",
+      "rgb": [
+        95,
+        255,
+        215
+      ],
+      "lch": {
+        "l": 91.17,
+        "c": 51.51,
+        "h": 172.42
+      },
+      "hsv": {
+        "h": 165.0,
+        "s": 62.75,
+        "v": 100.0
+      },
+      "indices": {
+        "lch": 1733338.88,
+        "hsv": 1656374.51,
+        "lightness": 91.17
+      },
+      "contrast_ratio": 16.77,
+      "readable_on_black": true,
+      "line_number": 111
+    },
+    {
+      "name": "PrintHue Emerald",
+      "hex": "#009B77",
+      "rgb": [
+        0,
+        155,
+        119
+      ],
+      "lch": {
+        "l": 56.85,
+        "c": 44.5,
+        "h": 168.0
+      },
+      "hsv": {
+        "h": 166.06,
+        "s": 100.0,
+        "v": 60.78
+      },
+      "indices": {
+        "lch": 1685691.12,
+        "hsv": 1670705.95,
+        "lightness": 56.85
+      },
+      "contrast_ratio": 5.95,
+      "readable_on_black": true,
+      "line_number": 26
+    },
+    {
+      "name": "arcadia",
+      "hex": "#00AF87",
+      "rgb": [
+        0,
+        175,
+        135
+      ],
+      "lch": {
+        "l": 63.68,
+        "c": 48.57,
+        "h": 168.14
+      },
+      "hsv": {
+        "h": 166.29,
+        "s": 100.0,
+        "v": 68.63
+      },
+      "indices": {
+        "lch": 1687774.6,
+        "hsv": 1672925.77,
+        "lightness": 63.68
+      },
+      "contrast_ratio": 7.48,
+      "readable_on_black": true,
+      "line_number": 31
+    },
+    {
+      "name": "PrintHue Green",
+      "hex": "#00AB84",
+      "rgb": [
+        0,
+        171,
+        132
+      ],
+      "lch": {
+        "l": 62.33,
+        "c": 47.69,
+        "h": 168.22
+      },
+      "hsv": {
+        "h": 166.32,
+        "s": 100.0,
+        "v": 67.06
+      },
+      "indices": {
+        "lch": 1688485.09,
+        "hsv": 1673224.95,
+        "lightness": 62.33
+      },
+      "contrast_ratio": 7.16,
+      "readable_on_black": true,
+      "line_number": 28
+    },
+    {
+      "name": "pristine oceanic",
+      "hex": "#00D7AF",
+      "rgb": [
+        0,
+        215,
+        175
+      ],
+      "lch": {
+        "l": 77.1,
+        "c": 53.83,
+        "h": 172.09
+      },
+      "hsv": {
+        "h": 168.84,
+        "s": 100.0,
+        "v": 84.31
+      },
+      "indices": {
+        "lch": 1728645.08,
+        "hsv": 1698456.41,
+        "lightness": 77.1
+      },
+      "contrast_ratio": 11.34,
+      "readable_on_black": true,
+      "line_number": 41
+    },
+    {
+      "name": "plunge pool",
+      "hex": "#00FFD7",
+      "rgb": [
+        0,
+        255,
+        215
+      ],
+      "lch": {
+        "l": 90.06,
+        "c": 59.11,
+        "h": 175.1
+      },
+      "hsv": {
+        "h": 170.59,
+        "s": 100.0,
+        "v": 100.0
+      },
+      "indices": {
+        "lch": 1760076.36,
+        "hsv": 1715982.35,
+        "lightness": 90.06
+      },
+      "contrast_ratio": 16.29,
+      "readable_on_black": true,
+      "line_number": 48
+    },
+    {
+      "name": "PrintHue Turquoise",
+      "hex": "#00B4A6",
+      "rgb": [
+        0,
+        180,
+        166
+      ],
+      "lch": {
+        "l": 66.05,
+        "c": 41.36,
+        "h": 185.2
+      },
+      "hsv": {
+        "h": 175.33,
+        "s": 100.0,
+        "v": 70.59
+      },
+      "indices": {
+        "lch": 1858659.42,
+        "hsv": 1763403.92,
+        "lightness": 66.05
+      },
+      "contrast_ratio": 8.08,
+      "readable_on_black": true,
+      "line_number": 35
+    },
+    {
+      "name": "Pine Green",
+      "hex": "#01786F",
+      "rgb": [
+        1,
+        120,
+        111
+      ],
+      "lch": {
+        "l": 45.06,
+        "c": 30.53,
+        "h": 185.91
+      },
+      "hsv": {
+        "h": 175.46,
+        "s": 99.17,
+        "v": 47.06
+      },
+      "indices": {
+        "lch": 1863656.9,
+        "hsv": 1764585.57,
+        "lightness": 45.06
+      },
+      "contrast_ratio": 3.92,
+      "readable_on_black": false,
+      "line_number": 50
+    },
+    {
+      "name": "PrintHue Cool Gray 5",
+      "hex": "#B1B3B3",
+      "rgb": [
+        177,
+        179,
+        179
+      ],
+      "lch": {
+        "l": 72.79,
+        "c": 0.74,
+        "h": 200.16
+      },
+      "hsv": {
+        "h": 180.0,
+        "s": 1.12,
+        "v": 70.2
+      },
+      "indices": {
+        "lch": 2008841.18,
+        "hsv": 1800181.93,
+        "lightness": 72.79
+      },
+      "contrast_ratio": 9.97,
+      "readable_on_black": true,
+      "line_number": 225
+    },
+    {
+      "name": "ice",
+      "hex": "#D7FFFF",
+      "rgb": [
+        215,
+        255,
+        255
+      ],
+      "lch": {
+        "l": 97.3,
+        "c": 13.41,
+        "h": 198.62
+      },
+      "hsv": {
+        "h": 180.0,
+        "s": 15.69,
+        "v": 100.0
+      },
+      "indices": {
+        "lch": 1995926.64,
+        "hsv": 1801668.63,
+        "lightness": 97.3
+      },
+      "contrast_ratio": 19.64,
+      "readable_on_black": true,
+      "line_number": 291
+    },
+    {
+      "name": "light continental waters",
+      "hex": "#AFD7D7",
+      "rgb": [
+        175,
+        215,
+        215
+      ],
+      "lch": {
+        "l": 83.24,
+        "c": 13.73,
+        "h": 198.47
+      },
+      "hsv": {
+        "h": 180.0,
+        "s": 18.6,
+        "v": 84.31
+      },
+      "indices": {
+        "lch": 1993066.35,
+        "hsv": 1801944.78,
+        "lightness": 83.24
+      },
+      "contrast_ratio": 13.52,
+      "readable_on_black": true,
+      "line_number": 217
+    },
+    {
+      "name": "hydrology",
+      "hex": "#87AFAF",
+      "rgb": [
+        135,
+        175,
+        175
+      ],
+      "lch": {
+        "l": 68.68,
+        "c": 14.09,
+        "h": 198.28
+      },
+      "hsv": {
+        "h": 180.0,
+        "s": 22.86,
+        "v": 68.63
+      },
+      "indices": {
+        "lch": 1989637.04,
+        "hsv": 1802354.34,
+        "lightness": 68.68
+      },
+      "contrast_ratio": 8.78,
+      "readable_on_black": true,
+      "line_number": 152
+    },
+    {
+      "name": "steel teal",
+      "hex": "#5F8787",
+      "rgb": [
+        95,
+        135,
+        135
+      ],
+      "lch": {
+        "l": 53.5,
+        "c": 14.46,
+        "h": 197.99
+      },
+      "hsv": {
+        "h": 180.0,
+        "s": 29.63,
+        "v": 52.94
+      },
+      "indices": {
+        "lch": 1985280.34,
+        "hsv": 1803015.9,
+        "lightness": 53.5
+      },
+      "contrast_ratio": 5.3,
+      "readable_on_black": true,
+      "line_number": 90
+    },
+    {
+      "name": "affen turquoise",
+      "hex": "#AFFFFF",
+      "rgb": [
+        175,
+        255,
+        255
+      ],
+      "lch": {
+        "l": 95.1,
+        "c": 25.39,
+        "h": 197.86
+      },
+      "hsv": {
+        "h": 180.0,
+        "s": 31.37,
+        "v": 100.0
+      },
+      "indices": {
+        "lch": 1988089.62,
+        "hsv": 1803237.25,
+        "lightness": 95.1
+      },
+      "contrast_ratio": 18.57,
+      "readable_on_black": true,
+      "line_number": 224
+    },
+    {
+      "name": "PrintHue Aqua Sky",
+      "hex": "#7BC4C4",
+      "rgb": [
+        123,
+        196,
+        196
+      ],
+      "lch": {
+        "l": 74.62,
+        "c": 23.79,
+        "h": 197.63
+      },
+      "hsv": {
+        "h": 180.0,
+        "s": 37.24,
+        "v": 76.86
+      },
+      "indices": {
+        "lch": 1983817.87,
+        "hsv": 1803801.35,
+        "lightness": 74.62
+      },
+      "contrast_ratio": 10.54,
+      "readable_on_black": true,
+      "line_number": 123
+    },
+    {
+      "name": "vic 20 sky",
+      "hex": "#87D7D7",
+      "rgb": [
+        135,
+        215,
+        215
+      ],
+      "lch": {
+        "l": 81.1,
+        "c": 25.61,
+        "h": 197.63
+      },
+      "hsv": {
+        "h": 180.0,
+        "s": 37.21,
+        "v": 84.31
+      },
+      "indices": {
+        "lch": 1984394.58,
+        "hsv": 1803805.24,
+        "lightness": 81.1
+      },
+      "contrast_ratio": 12.73,
+      "readable_on_black": true,
+      "line_number": 159
+    },
+    {
+      "name": "aquarelle",
+      "hex": "#5FAFAF",
+      "rgb": [
+        95,
+        175,
+        175
+      ],
+      "lch": {
+        "l": 66.66,
+        "c": 25.62,
+        "h": 197.33
+      },
+      "hsv": {
+        "h": 180.0,
+        "s": 45.71,
+        "v": 68.63
+      },
+      "indices": {
+        "lch": 1980012.78,
+        "hsv": 1804640.06,
+        "lightness": 66.66
+      },
+      "contrast_ratio": 8.24,
+      "readable_on_black": true,
+      "line_number": 98
+    },
+    {
+      "name": "electric blue",
+      "hex": "#87FFFF",
+      "rgb": [
+        135,
+        255,
+        255
+      ],
+      "lch": {
+        "l": 93.4,
+        "c": 35.36,
+        "h": 197.25
+      },
+      "hsv": {
+        "h": 180.0,
+        "s": 47.06,
+        "v": 100.0
+      },
+      "indices": {
+        "lch": 1981869.28,
+        "hsv": 1804805.88,
+        "lightness": 93.4
+      },
+      "contrast_ratio": 17.78,
+      "readable_on_black": true,
+      "line_number": 166
+    },
+    {
+      "name": "jazzy jade",
+      "hex": "#5FD7D7",
+      "rgb": [
+        95,
+        215,
+        215
+      ],
+      "lch": {
+        "l": 79.58,
+        "c": 34.84,
+        "h": 197.0
+      },
+      "hsv": {
+        "h": 180.0,
+        "s": 55.81,
+        "v": 84.31
+      },
+      "indices": {
+        "lch": 1977956.41,
+        "hsv": 1805665.71,
+        "lightness": 79.58
+      },
+      "contrast_ratio": 12.19,
+      "readable_on_black": true,
+      "line_number": 105
+    },
+    {
+      "name": "frozen turquoise",
+      "hex": "#5FFFFF",
+      "rgb": [
+        95,
+        255,
+        255
+      ],
+      "lch": {
+        "l": 92.21,
+        "c": 42.86,
+        "h": 196.81
+      },
+      "hsv": {
+        "h": 180.0,
+        "s": 62.75,
+        "v": 100.0
+      },
+      "indices": {
+        "lch": 1977327.08,
+        "hsv": 1806374.51,
+        "lightness": 92.21
+      },
+      "contrast_ratio": 17.23,
+      "readable_on_black": true,
+      "line_number": 112
+    },
+    {
+      "name": "emerald stone",
+      "hex": "#005F5F",
+      "rgb": [
+        0,
+        95,
+        95
+      ],
+      "lch": {
+        "l": 36.0,
+        "c": 24.33,
+        "h": 196.39
+      },
+      "hsv": {
+        "h": 180.0,
+        "s": 100.0,
+        "v": 37.25
+      },
+      "indices": {
+        "lch": 1967498.7,
+        "hsv": 1810037.25,
+        "lightness": 36.0
+      },
+      "contrast_ratio": 2.8,
+      "readable_on_black": false,
+      "line_number": 11
+    },
+    {
+      "name": "teal",
+      "hex": "#008080",
+      "rgb": [
+        0,
+        128,
+        128
+      ],
+      "lch": {
+        "l": 48.26,
+        "c": 30.06,
+        "h": 196.39
+      },
+      "hsv": {
+        "h": 180.0,
+        "s": 100.0,
+        "v": 50.2
+      },
+      "indices": {
+        "lch": 1968729.54,
+        "hsv": 1810050.2,
+        "lightness": 48.26
+      },
+      "contrast_ratio": 4.4,
+      "readable_on_black": false,
+      "line_number": 18
+    },
+    {
+      "name": "navigate",
+      "hex": "#008787",
+      "rgb": [
+        0,
+        135,
+        135
+      ],
+      "lch": {
+        "l": 50.78,
+        "c": 31.24,
+        "h": 196.39
+      },
+      "hsv": {
+        "h": 180.0,
+        "s": 100.0,
+        "v": 52.94
+      },
+      "indices": {
+        "lch": 1968982.85,
+        "hsv": 1810052.94,
+        "lightness": 50.78
+      },
+      "contrast_ratio": 4.82,
+      "readable_on_black": true,
+      "line_number": 22
+    },
+    {
+      "name": "jade orchid",
+      "hex": "#00AFAF",
+      "rgb": [
+        0,
+        175,
+        175
+      ],
+      "lch": {
+        "l": 64.77,
+        "c": 37.79,
+        "h": 196.39
+      },
+      "hsv": {
+        "h": 180.0,
+        "s": 100.0,
+        "v": 68.63
+      },
+      "indices": {
+        "lch": 1970388.41,
+        "hsv": 1810068.63,
+        "lightness": 64.77
+      },
+      "contrast_ratio": 7.75,
+      "readable_on_black": true,
+      "line_number": 32
+    },
+    {
+      "name": "Robin Egg Blue",
+      "hex": "#00CCCC",
+      "rgb": [
+        0,
+        204,
+        204
+      ],
+      "lch": {
+        "l": 74.54,
+        "c": 42.36,
+        "h": 196.39
+      },
+      "hsv": {
+        "h": 180.0,
+        "s": 100.0,
+        "v": 80.0
+      },
+      "indices": {
+        "lch": 1971369.93,
+        "hsv": 1810080.0,
+        "lightness": 74.54
+      },
+      "contrast_ratio": 10.51,
+      "readable_on_black": true,
+      "line_number": 37
+    },
+    {
+      "name": "jade glass",
+      "hex": "#00D7D7",
+      "rgb": [
+        0,
+        215,
+        215
+      ],
+      "lch": {
+        "l": 78.17,
+        "c": 44.06,
+        "h": 196.39
+      },
+      "hsv": {
+        "h": 180.0,
+        "s": 100.0,
+        "v": 84.31
+      },
+      "indices": {
+        "lch": 1971735.24,
+        "hsv": 1810084.31,
+        "lightness": 78.17
+      },
+      "contrast_ratio": 11.7,
+      "readable_on_black": true,
+      "line_number": 42
+    },
+    {
+      "name": "fluorescent turquoise",
+      "hex": "#00FFFF",
+      "rgb": [
+        0,
+        255,
+        255
+      ],
+      "lch": {
+        "l": 91.12,
+        "c": 50.12,
+        "h": 196.39
+      },
+      "hsv": {
+        "h": 180.0,
+        "s": 100.0,
+        "v": 100.0
+      },
+      "indices": {
+        "lch": 1973035.59,
+        "hsv": 1810100.0,
+        "lightness": 91.12
+      },
+      "contrast_ratio": 16.75,
+      "readable_on_black": true,
+      "line_number": 49
+    },
+    {
+      "name": "Aquamarine",
+      "hex": "#95E0E8",
+      "rgb": [
+        149,
+        224,
+        232
+      ],
+      "lch": {
+        "l": 84.75,
+        "c": 23.97,
+        "h": 208.06
+      },
+      "hsv": {
+        "h": 185.78,
+        "s": 35.78,
+        "v": 90.98
+      },
+      "indices": {
+        "lch": 2089148.16,
+        "hsv": 1861499.89,
+        "lightness": 84.75
+      },
+      "contrast_ratio": 14.11,
+      "readable_on_black": true,
+      "line_number": 177
+    },
+    {
+      "name": "Turquoise Blue",
+      "hex": "#6CDAE7",
+      "rgb": [
+        108,
+        218,
+        231
+      ],
+      "lch": {
+        "l": 81.35,
+        "c": 32.22,
+        "h": 209.83
+      },
+      "hsv": {
+        "h": 186.34,
+        "s": 53.25,
+        "v": 90.59
+      },
+      "indices": {
+        "lch": 2106505.82,
+        "hsv": 1868829.9,
+        "lightness": 81.35
+      },
+      "contrast_ratio": 12.82,
+      "readable_on_black": true,
+      "line_number": 116
+    },
+    {
+      "name": "PrintHue Blue Turquoise",
+      "hex": "#00B5CE",
+      "rgb": [
+        0,
+        181,
+        206
+      ],
+      "lch": {
+        "l": 67.65,
+        "c": 37.47,
+        "h": 218.76
+      },
+      "hsv": {
+        "h": 187.28,
+        "s": 100.0,
+        "v": 80.78
+      },
+      "indices": {
+        "lch": 2194383.36,
+        "hsv": 1882896.32,
+        "lightness": 67.65
+      },
+      "contrast_ratio": 8.5,
+      "readable_on_black": true,
+      "line_number": 36
+    },
+    {
+      "name": "Sky Blue",
+      "hex": "#76D7EA",
+      "rgb": [
+        118,
+        215,
+        234
+      ],
+      "lch": {
+        "l": 80.96,
+        "c": 29.78,
+        "h": 217.62
+      },
+      "hsv": {
+        "h": 189.83,
+        "s": 49.57,
+        "v": 91.76
+      },
+      "indices": {
+        "lch": 2184289.04,
+        "hsv": 1903324.89,
+        "lightness": 80.96
+      },
+      "contrast_ratio": 12.68,
+      "readable_on_black": true,
+      "line_number": 121
+    },
+    {
+      "name": "tropical turquoise",
+      "hex": "#00D7FF",
+      "rgb": [
+        0,
+        215,
+        255
+      ],
+      "lch": {
+        "l": 79.51,
+        "c": 43.54,
+        "h": 226.82
+      },
+      "hsv": {
+        "h": 189.41,
+        "s": 100.0,
+        "v": 100.0
+      },
+      "indices": {
+        "lch": 2276205.92,
+        "hsv": 1904217.65,
+        "lightness": 79.51
+      },
+      "contrast_ratio": 12.16,
+      "readable_on_black": true,
+      "line_number": 43
+    },
+    {
+      "name": "maldives",
+      "hex": "#00AFD7",
+      "rgb": [
+        0,
+        175,
+        215
+      ],
+      "lch": {
+        "l": 66.19,
+        "c": 38.44,
+        "h": 232.92
+      },
+      "hsv": {
+        "h": 191.16,
+        "s": 100.0,
+        "v": 84.31
+      },
+      "indices": {
+        "lch": 2335903.42,
+        "hsv": 1921712.22,
+        "lightness": 66.19
+      },
+      "contrast_ratio": 8.11,
+      "readable_on_black": true,
+      "line_number": 33
+    },
+    {
+      "name": "Blue Green",
+      "hex": "#199EBD",
+      "rgb": [
+        25,
+        158,
+        189
+      ],
+      "lch": {
+        "l": 60.19,
+        "c": 33.81,
+        "h": 228.78
+      },
+      "hsv": {
+        "h": 191.34,
+        "s": 86.77,
+        "v": 74.12
+      },
+      "indices": {
+        "lch": 2293841.87,
+        "hsv": 1922166.0,
+        "lightness": 60.19
+      },
+      "contrast_ratio": 6.67,
+      "readable_on_black": true,
+      "line_number": 57
+    },
+    {
+      "name": "Pacific Blue",
+      "hex": "#009DC4",
+      "rgb": [
+        0,
+        157,
+        196
+      ],
+      "lch": {
+        "l": 59.98,
+        "c": 36.04,
+        "h": 235.52
+      },
+      "hsv": {
+        "h": 191.94,
+        "s": 100.0,
+        "v": 76.86
+      },
+      "indices": {
+        "lch": 2361232.46,
+        "hsv": 1929464.62,
+        "lightness": 59.98
+      },
+      "contrast_ratio": 6.62,
+      "readable_on_black": true,
+      "line_number": 27
+    },
+    {
+      "name": "Cerulean",
+      "hex": "#02A4D3",
+      "rgb": [
+        2,
+        164,
+        211
+      ],
+      "lch": {
+        "l": 62.73,
+        "c": 38.66,
+        "h": 240.98
+      },
+      "hsv": {
+        "h": 193.49,
+        "s": 99.05,
+        "v": 82.75
+      },
+      "indices": {
+        "lch": 2416111.82,
+        "hsv": 1944916.19,
+        "lightness": 62.73
+      },
+      "contrast_ratio": 7.25,
+      "readable_on_black": true,
+      "line_number": 51
+    },
+    {
+      "name": "tiny bubbles",
+      "hex": "#0087AF",
+      "rgb": [
+        0,
+        135,
+        175
+      ],
+      "lch": {
+        "l": 52.31,
+        "c": 33.75,
+        "h": 241.55
+      },
+      "hsv": {
+        "h": 193.71,
+        "s": 100.0,
+        "v": 68.63
+      },
+      "indices": {
+        "lch": 2420731.73,
+        "hsv": 1947211.48,
+        "lightness": 52.31
+      },
+      "contrast_ratio": 5.08,
+      "readable_on_black": true,
+      "line_number": 23
+    },
+    {
+      "name": "skyan",
+      "hex": "#5FD7FF",
+      "rgb": [
+        95,
+        215,
+        255
+      ],
+      "lch": {
+        "l": 80.88,
+        "c": 36.83,
+        "h": 233.31
+      },
+      "hsv": {
+        "h": 195.0,
+        "s": 62.75,
+        "v": 100.0
+      },
+      "indices": {
+        "lch": 2341272.88,
+        "hsv": 1956374.51,
+        "lightness": 80.88
+      },
+      "contrast_ratio": 12.65,
+      "readable_on_black": true,
+      "line_number": 106
+    },
+    {
+      "name": "impulse",
+      "hex": "#005F87",
+      "rgb": [
+        0,
+        95,
+        135
+      ],
+      "lch": {
+        "l": 37.72,
+        "c": 30.01,
+        "h": 253.99
+      },
+      "hsv": {
+        "h": 197.78,
+        "s": 100.0,
+        "v": 52.94
+      },
+      "indices": {
+        "lch": 2543736.75,
+        "hsv": 1987830.72,
+        "lightness": 37.72
+      },
+      "contrast_ratio": 2.99,
+      "readable_on_black": false,
+      "line_number": 12
+    },
+    {
+      "name": "democrat",
+      "hex": "#00AFFF",
+      "rgb": [
+        0,
+        175,
+        255
+      ],
+      "lch": {
+        "l": 67.93,
+        "c": 50.61,
+        "h": 259.74
+      },
+      "hsv": {
+        "h": 198.82,
+        "s": 100.0,
+        "v": 100.0
+      },
+      "indices": {
+        "lch": 2604270.55,
+        "hsv": 1998335.29,
+        "lightness": 67.93
+      },
+      "contrast_ratio": 8.58,
+      "readable_on_black": true,
+      "line_number": 34
+    },
+    {
+      "name": "PrintHue Cool Gray 3",
+      "hex": "#D1D3D4",
+      "rgb": [
+        209,
+        211,
+        212
+      ],
+      "lch": {
+        "l": 84.43,
+        "c": 0.89,
+        "h": 236.53
+      },
+      "hsv": {
+        "h": 200.0,
+        "s": 1.42,
+        "v": 83.14
+      },
+      "indices": {
+        "lch": 2373716.09,
+        "hsv": 2000224.65,
+        "lightness": 84.43
+      },
+      "contrast_ratio": 13.98,
+      "readable_on_black": true,
+      "line_number": 251
+    },
+    {
+      "name": "clear sky",
+      "hex": "#87D7FF",
+      "rgb": [
+        135,
+        215,
+        255
+      ],
+      "lch": {
+        "l": 82.36,
+        "c": 30.6,
+        "h": 242.46
+      },
+      "hsv": {
+        "h": 200.0,
+        "s": 47.06,
+        "v": 100.0
+      },
+      "indices": {
+        "lch": 2432881.58,
+        "hsv": 2004805.88,
+        "lightness": 82.36
+      },
+      "contrast_ratio": 13.19,
+      "readable_on_black": true,
+      "line_number": 160
+    },
+    {
+      "name": "flyway",
+      "hex": "#5FAFD7",
+      "rgb": [
+        95,
+        175,
+        215
+      ],
+      "lch": {
+        "l": 68.02,
+        "c": 30.67,
+        "h": 244.54
+      },
+      "hsv": {
+        "h": 200.0,
+        "s": 55.81,
+        "v": 84.31
+      },
+      "indices": {
+        "lch": 2452248.15,
+        "hsv": 2005665.71,
+        "lightness": 68.02
+      },
+      "contrast_ratio": 8.6,
+      "readable_on_black": true,
+      "line_number": 99
+    },
+    {
+      "name": "Cornflower",
+      "hex": "#93CCEA",
+      "rgb": [
+        147,
+        204,
+        234
+      ],
+      "lch": {
+        "l": 79.23,
+        "c": 23.4,
+        "h": 241.99
+      },
+      "hsv": {
+        "h": 200.69,
+        "s": 37.18,
+        "v": 91.76
+      },
+      "indices": {
+        "lch": 2427852.77,
+        "hsv": 2010706.27,
+        "lightness": 79.23
+      },
+      "contrast_ratio": 12.07,
+      "readable_on_black": true,
+      "line_number": 174
+    },
+    {
+      "name": "PrintHue Process Blue",
+      "hex": "#0085CA",
+      "rgb": [
+        0,
+        133,
+        202
+      ],
+      "lch": {
+        "l": 52.99,
+        "c": 44.3,
+        "h": 263.8
+      },
+      "hsv": {
+        "h": 200.5,
+        "s": 100.0,
+        "v": 79.22
+      },
+      "indices": {
+        "lch": 2643372.69,
+        "hsv": 2015029.71,
+        "lightness": 52.99
+      },
+      "contrast_ratio": 5.21,
+      "readable_on_black": true,
+      "line_number": 19
+    },
+    {
+      "name": "blue cola",
+      "hex": "#0087D7",
+      "rgb": [
+        0,
+        135,
+        215
+      ],
+      "lch": {
+        "l": 54.27,
+        "c": 49.36,
+        "h": 268.87
+      },
+      "hsv": {
+        "h": 202.33,
+        "s": 100.0,
+        "v": 84.31
+      },
+      "indices": {
+        "lch": 2694153.22,
+        "hsv": 2033340.13,
+        "lightness": 54.27
+      },
+      "contrast_ratio": 5.45,
+      "readable_on_black": true,
+      "line_number": 24
+    },
+    {
+      "name": "PrintHue Classic Blue",
+      "hex": "#0F4C75",
+      "rgb": [
+        15,
+        76,
+        117
+      ],
+      "lch": {
+        "l": 30.77,
+        "c": 28.79,
+        "h": 264.82
+      },
+      "hsv": {
+        "h": 204.12,
+        "s": 87.18,
+        "v": 45.88
+      },
+      "indices": {
+        "lch": 2651317.03,
+        "hsv": 2049940.3,
+        "lightness": 30.77
+      },
+      "contrast_ratio": 2.31,
+      "readable_on_black": false,
+      "line_number": 53
+    },
+    {
+      "name": "Green Blue",
+      "hex": "#2887C8",
+      "rgb": [
+        40,
+        135,
+        200
+      ],
+      "lch": {
+        "l": 53.97,
+        "c": 41.56,
+        "h": 263.94
+      },
+      "hsv": {
+        "h": 204.38,
+        "s": 80.0,
+        "v": 78.43
+      },
+      "indices": {
+        "lch": 2644791.95,
+        "hsv": 2051828.43,
+        "lightness": 53.97
+      },
+      "contrast_ratio": 5.39,
+      "readable_on_black": true,
+      "line_number": 60
+    },
+    {
+      "name": "cobalt stone",
+      "hex": "#005FAF",
+      "rgb": [
+        0,
+        95,
+        175
+      ],
+      "lch": {
+        "l": 40.05,
+        "c": 49.74,
+        "h": 279.32
+      },
+      "hsv": {
+        "h": 207.43,
+        "s": 100.0,
+        "v": 68.63
+      },
+      "indices": {
+        "lch": 2797287.83,
+        "hsv": 2084354.34,
+        "lightness": 40.05
+      },
+      "contrast_ratio": 3.26,
+      "readable_on_black": false,
+      "line_number": 13
+    },
+    {
+      "name": "azure",
+      "hex": "#0087FF",
+      "rgb": [
+        0,
+        135,
+        255
+      ],
+      "lch": {
+        "l": 56.63,
+        "c": 69.35,
+        "h": 282.02
+      },
+      "hsv": {
+        "h": 208.24,
+        "s": 100.0,
+        "v": 100.0
+      },
+      "indices": {
+        "lch": 2825964.87,
+        "hsv": 2092452.94,
+        "lightness": 56.63
+      },
+      "contrast_ratio": 5.91,
+      "readable_on_black": true,
+      "line_number": 25
+    },
+    {
+      "name": "PrintHue Cool Gray 7",
+      "hex": "#97999B",
+      "rgb": [
+        151,
+        153,
+        155
+      ],
+      "lch": {
+        "l": 63.12,
+        "c": 1.35,
+        "h": 256.02
+      },
+      "hsv": {
+        "h": 210.0,
+        "s": 2.58,
+        "v": 60.78
+      },
+      "indices": {
+        "lch": 2566536.88,
+        "hsv": 2100318.85,
+        "lightness": 63.12
+      },
+      "contrast_ratio": 7.35,
+      "readable_on_black": true,
+      "line_number": 178
+    },
+    {
+      "name": "PrintHue Cool Gray 9",
+      "hex": "#75787B",
+      "rgb": [
+        117,
+        120,
+        123
+      ],
+      "lch": {
+        "l": 50.27,
+        "c": 2.1,
+        "h": 256.16
+      },
+      "hsv": {
+        "h": 210.0,
+        "s": 4.88,
+        "v": 48.24
+      },
+      "indices": {
+        "lch": 2566618.62,
+        "hsv": 2100536.04,
+        "lightness": 50.27
+      },
+      "contrast_ratio": 4.73,
+      "readable_on_black": true,
+      "line_number": 119
+    },
+    {
+      "name": "droplet",
+      "hex": "#AFD7FF",
+      "rgb": [
+        175,
+        215,
+        255
+      ],
+      "lch": {
+        "l": 84.45,
+        "c": 24.09,
+        "h": 260.48
+      },
+      "hsv": {
+        "h": 210.0,
+        "s": 31.37,
+        "v": 100.0
+      },
+      "indices": {
+        "lch": 2613257.44,
+        "hsv": 2103237.25,
+        "lightness": 84.45
+      },
+      "contrast_ratio": 13.99,
+      "readable_on_black": true,
+      "line_number": 218
+    },
+    {
+      "name": "reform",
+      "hex": "#87AFD7",
+      "rgb": [
+        135,
+        175,
+        215
+      ],
+      "lch": {
+        "l": 69.98,
+        "c": 24.78,
+        "h": 261.68
+      },
+      "hsv": {
+        "h": 210.0,
+        "s": 37.21,
+        "v": 84.31
+      },
+      "indices": {
+        "lch": 2623786.22,
+        "hsv": 2103805.24,
+        "lightness": 69.98
+      },
+      "contrast_ratio": 9.14,
+      "readable_on_black": true,
+      "line_number": 153
+    },
+    {
+      "name": "sand shark",
+      "hex": "#5F87AF",
+      "rgb": [
+        95,
+        135,
+        175
+      ],
+      "lch": {
+        "l": 54.92,
+        "c": 25.58,
+        "h": 263.59
+      },
+      "hsv": {
+        "h": 210.0,
+        "s": 45.71,
+        "v": 68.63
+      },
+      "indices": {
+        "lch": 2641461.35,
+        "hsv": 2104640.06,
+        "lightness": 54.92
+      },
+      "contrast_ratio": 5.57,
+      "readable_on_black": true,
+      "line_number": 91
+    },
+    {
+      "name": "tiān lán sky",
+      "hex": "#5FAFFF",
+      "rgb": [
+        95,
+        175,
+        255
+      ],
+      "lch": {
+        "l": 69.69,
+        "c": 46.91,
+        "h": 269.15
+      },
+      "hsv": {
+        "h": 210.0,
+        "s": 62.75,
+        "v": 100.0
+      },
+      "indices": {
+        "lch": 2698481.93,
+        "hsv": 2106374.51,
+        "lightness": 69.69
+      },
+      "contrast_ratio": 9.06,
+      "readable_on_black": true,
+      "line_number": 100
+    },
+    {
+      "name": "Midnight Blue",
+      "hex": "#003366",
+      "rgb": [
+        0,
+        51,
+        102
+      ],
+      "lch": {
+        "l": 21.31,
+        "c": 34.89,
+        "h": 281.28
+      },
+      "hsv": {
+        "h": 210.0,
+        "s": 100.0,
+        "v": 40.0
+      },
+      "indices": {
+        "lch": 2814946.63,
+        "hsv": 2110040.0,
+        "lightness": 21.31
+      },
+      "contrast_ratio": 1.67,
+      "readable_on_black": false,
+      "line_number": 9
+    },
+    {
+      "name": "Navy Blue",
+      "hex": "#0066CC",
+      "rgb": [
+        0,
+        102,
+        204
+      ],
+      "lch": {
+        "l": 44.03,
+        "c": 61.45,
+        "h": 284.4
+      },
+      "hsv": {
+        "h": 210.0,
+        "s": 100.0,
+        "v": 80.0
+      },
+      "indices": {
+        "lch": 2848428.86,
+        "hsv": 2110080.0,
+        "lightness": 44.03
+      },
+      "contrast_ratio": 3.77,
+      "readable_on_black": false,
+      "line_number": 16
+    },
+    {
+      "name": "Denim",
+      "hex": "#1560BD",
+      "rgb": [
+        21,
+        96,
+        189
+      ],
+      "lch": {
+        "l": 41.53,
+        "c": 56.65,
+        "h": 284.34
+      },
+      "hsv": {
+        "h": 213.21,
+        "s": 88.89,
+        "v": 74.12
+      },
+      "indices": {
+        "lch": 2847654.04,
+        "hsv": 2141105.86,
+        "lightness": 41.53
+      },
+      "contrast_ratio": 3.44,
+      "readable_on_black": false,
+      "line_number": 56
+    },
+    {
+      "name": "PrintHue Cool Gray 11",
+      "hex": "#53565A",
+      "rgb": [
+        83,
+        86,
+        90
+      ],
+      "lch": {
+        "l": 36.43,
+        "c": 2.75,
+        "h": 263.76
+      },
+      "hsv": {
+        "h": 214.29,
+        "s": 7.78,
+        "v": 35.29
+      },
+      "indices": {
+        "lch": 2641256.85,
+        "hsv": 2143670.21,
+        "lightness": 36.43
+      },
+      "contrast_ratio": 2.85,
+      "readable_on_black": false,
+      "line_number": 71
+    },
+    {
+      "name": "royal navy blue",
+      "hex": "#005FD7",
+      "rgb": [
+        0,
+        95,
+        215
+      ],
+      "lch": {
+        "l": 42.9,
+        "c": 71.88,
+        "h": 289.71
+      },
+      "hsv": {
+        "h": 213.49,
+        "s": 100.0,
+        "v": 84.31
+      },
+      "indices": {
+        "lch": 2901445.62,
+        "hsv": 2144968.03,
+        "lightness": 42.9
+      },
+      "contrast_ratio": 3.62,
+      "readable_on_black": false,
+      "line_number": 14
+    },
+    {
+      "name": "bright blue",
+      "hex": "#005FFF",
+      "rgb": [
+        0,
+        95,
+        255
+      ],
+      "lch": {
+        "l": 46.18,
+        "c": 93.64,
+        "h": 295.03
+      },
+      "hsv": {
+        "h": 217.65,
+        "s": 100.0,
+        "v": 100.0
+      },
+      "indices": {
+        "lch": 2955039.29,
+        "hsv": 2186570.59,
+        "lightness": 46.18
+      },
+      "contrast_ratio": 4.08,
+      "readable_on_black": false,
+      "line_number": 15
+    },
+    {
+      "name": "PrintHue Serenity",
+      "hex": "#92A8D1",
+      "rgb": [
+        146,
+        168,
+        209
+      ],
+      "lch": {
+        "l": 68.55,
+        "c": 23.41,
+        "h": 274.53
+      },
+      "hsv": {
+        "h": 219.05,
+        "s": 30.14,
+        "v": 81.96
+      },
+      "indices": {
+        "lch": 2752218.71,
+        "hsv": 2193572.51,
+        "lightness": 68.55
+      },
+      "contrast_ratio": 8.74,
+      "readable_on_black": true,
+      "line_number": 173
+    },
+    {
+      "name": "Cadet Blue",
+      "hex": "#A9B2C3",
+      "rgb": [
+        169,
+        178,
+        195
+      ],
+      "lch": {
+        "l": 72.37,
+        "c": 9.71,
+        "h": 271.91
+      },
+      "hsv": {
+        "h": 219.23,
+        "s": 13.33,
+        "v": 76.47
+      },
+      "indices": {
+        "lch": 2726378.53,
+        "hsv": 2193717.5,
+        "lightness": 72.37
+      },
+      "contrast_ratio": 9.84,
+      "readable_on_black": true,
+      "line_number": 187
+    },
+    {
+      "name": "fly away",
+      "hex": "#87AFFF",
+      "rgb": [
+        135,
+        175,
+        255
+      ],
+      "lch": {
+        "l": 71.57,
+        "c": 44.45,
+        "h": 279.66
+      },
+      "hsv": {
+        "h": 220.0,
+        "s": 47.06,
+        "v": 100.0
+      },
+      "indices": {
+        "lch": 2803780.56,
+        "hsv": 2204805.88,
+        "lightness": 71.57
+      },
+      "contrast_ratio": 9.61,
+      "readable_on_black": true,
+      "line_number": 154
+    },
+    {
+      "name": "livid",
+      "hex": "#5F87D7",
+      "rgb": [
+        95,
+        135,
+        215
+      ],
+      "lch": {
+        "l": 56.75,
+        "c": 46.26,
+        "h": 281.89
+      },
+      "hsv": {
+        "h": 220.0,
+        "s": 55.81,
+        "v": 84.31
+      },
+      "indices": {
+        "lch": 2824611.8,
+        "hsv": 2205665.71,
+        "lightness": 56.75
+      },
+      "contrast_ratio": 5.93,
+      "readable_on_black": true,
+      "line_number": 92
+    },
+    {
+      "name": "deep denim",
+      "hex": "#5F87FF",
+      "rgb": [
+        95,
+        135,
+        255
+      ],
+      "lch": {
+        "l": 58.96,
+        "c": 67.87,
+        "h": 289.52
+      },
+      "hsv": {
+        "h": 225.0,
+        "s": 62.75,
+        "v": 100.0
+      },
+      "indices": {
+        "lch": 2901176.27,
+        "hsv": 2256374.51,
+        "lightness": 58.96
+      },
+      "contrast_ratio": 6.4,
+      "readable_on_black": true,
+      "line_number": 93
+    },
+    {
+      "name": "PrintHue Reflex Blue",
+      "hex": "#001489",
+      "rgb": [
+        0,
+        20,
+        137
+      ],
+      "lch": {
+        "l": 17.02,
+        "c": 76.28,
+        "h": 303.45
+      },
+      "hsv": {
+        "h": 231.24,
+        "s": 100.0,
+        "v": 53.73
+      },
+      "indices": {
+        "lch": 3036244.46,
+        "hsv": 2322462.48,
+        "lightness": 17.02
+      },
+      "contrast_ratio": 1.46,
+      "readable_on_black": false,
+      "line_number": 8
+    },
+    {
+      "name": "Periwinkle",
+      "hex": "#C5C5DD",
+      "rgb": [
+        197,
+        197,
+        221
+      ],
+      "lch": {
+        "l": 80.19,
+        "c": 12.8,
+        "h": 291.32
+      },
+      "hsv": {
+        "h": 240.0,
+        "s": 10.86,
+        "v": 86.67
+      },
+      "indices": {
+        "lch": 2921246.86,
+        "hsv": 2401172.64,
+        "lightness": 80.19
+      },
+      "contrast_ratio": 12.4,
+      "readable_on_black": true,
+      "line_number": 238
+    },
+    {
+      "name": "contrail",
+      "hex": "#D7D7FF",
+      "rgb": [
+        215,
+        215,
+        255
+      ],
+      "lch": {
+        "l": 87.13,
+        "c": 20.96,
+        "h": 291.91
+      },
+      "hsv": {
+        "h": 240.0,
+        "s": 15.69,
+        "v": 100.0
+      },
+      "indices": {
+        "lch": 2927803.86,
+        "hsv": 2401668.63,
+        "lightness": 87.13
+      },
+      "contrast_ratio": 15.05,
+      "readable_on_black": true,
+      "line_number": 285
+    },
+    {
+      "name": "lavender wash",
+      "hex": "#AFAFD7",
+      "rgb": [
+        175,
+        175,
+        215
+      ],
+      "lch": {
+        "l": 72.68,
+        "c": 21.77,
+        "h": 292.26
+      },
+      "hsv": {
+        "h": 240.0,
+        "s": 18.6,
+        "v": 84.31
+      },
+      "indices": {
+        "lch": 2929850.52,
+        "hsv": 2401944.78,
+        "lightness": 72.68
+      },
+      "contrast_ratio": 9.94,
+      "readable_on_black": true,
+      "line_number": 211
+    },
+    {
+      "name": "skysail blue",
+      "hex": "#8787AF",
+      "rgb": [
+        135,
+        135,
+        175
+      ],
+      "lch": {
+        "l": 57.63,
+        "c": 22.81,
+        "h": 292.78
+      },
+      "hsv": {
+        "h": 240.0,
+        "s": 22.86,
+        "v": 68.63
+      },
+      "indices": {
+        "lch": 2933603.32,
+        "hsv": 2402354.34,
+        "lightness": 57.63
+      },
+      "contrast_ratio": 6.11,
+      "readable_on_black": true,
+      "line_number": 146
+    },
+    {
+      "name": "idol",
+      "hex": "#5F5F87",
+      "rgb": [
+        95,
+        95,
+        135
+      ],
+      "lch": {
+        "l": 41.79,
+        "c": 24.23,
+        "h": 293.66
+      },
+      "hsv": {
+        "h": 240.0,
+        "s": 29.63,
+        "v": 52.94
+      },
+      "indices": {
+        "lch": 2940794.08,
+        "hsv": 2403015.9,
+        "lightness": 41.79
+      },
+      "contrast_ratio": 3.47,
+      "readable_on_black": false,
+      "line_number": 84
+    },
+    {
+      "name": "shy moment",
+      "hex": "#AFAFFF",
+      "rgb": [
+        175,
+        175,
+        255
+      ],
+      "lch": {
+        "l": 74.18,
+        "c": 43.34,
+        "h": 294.14
+      },
+      "hsv": {
+        "h": 240.0,
+        "s": 31.37,
+        "v": 100.0
+      },
+      "indices": {
+        "lch": 2948864.17,
+        "hsv": 2403237.25,
+        "lightness": 74.18
+      },
+      "contrast_ratio": 10.4,
+      "readable_on_black": true,
+      "line_number": 212
+    },
+    {
+      "name": "adora",
+      "hex": "#8787D7",
+      "rgb": [
+        135,
+        135,
+        215
+      ],
+      "lch": {
+        "l": 59.33,
+        "c": 45.3,
+        "h": 295.06
+      },
+      "hsv": {
+        "h": 240.0,
+        "s": 37.21,
+        "v": 84.31
+      },
+      "indices": {
+        "lch": 2956605.32,
+        "hsv": 2403805.24,
+        "lightness": 59.33
+      },
+      "contrast_ratio": 6.48,
+      "readable_on_black": true,
+      "line_number": 147
+    },
+    {
+      "name": "blue iris",
+      "hex": "#5F5FAF",
+      "rgb": [
+        95,
+        95,
+        175
+      ],
+      "lch": {
+        "l": 43.82,
+        "c": 47.87,
+        "h": 296.51
+      },
+      "hsv": {
+        "h": 240.0,
+        "s": 45.71,
+        "v": 68.63
+      },
+      "indices": {
+        "lch": 2969519.54,
+        "hsv": 2404640.06,
+        "lightness": 43.82
+      },
+      "contrast_ratio": 3.74,
+      "readable_on_black": false,
+      "line_number": 85
+    },
+    {
+      "name": "orchid",
+      "hex": "#8787FF",
+      "rgb": [
+        135,
+        135,
+        255
+      ],
+      "lch": {
+        "l": 61.39,
+        "c": 67.25,
+        "h": 296.99
+      },
+      "hsv": {
+        "h": 240.0,
+        "s": 47.06,
+        "v": 100.0
+      },
+      "indices": {
+        "lch": 2976072.06,
+        "hsv": 2404805.88,
+        "lightness": 61.39
+      },
+      "contrast_ratio": 6.94,
+      "readable_on_black": true,
+      "line_number": 148
+    },
+    {
+      "name": "ameixa",
+      "hex": "#5F5FD7",
+      "rgb": [
+        95,
+        95,
+        215
+      ],
+      "lch": {
+        "l": 46.34,
+        "c": 70.61,
+        "h": 298.71
+      },
+      "hsv": {
+        "h": 240.0,
+        "s": 55.81,
+        "v": 84.31
+      },
+      "indices": {
+        "lch": 2991832.27,
+        "hsv": 2405665.71,
+        "lightness": 46.34
+      },
+      "contrast_ratio": 4.1,
+      "readable_on_black": false,
+      "line_number": 86
+    },
+    {
+      "name": "blue genie",
+      "hex": "#5F5FFF",
+      "rgb": [
+        95,
+        95,
+        255
+      ],
+      "lch": {
+        "l": 49.3,
+        "c": 92.28,
+        "h": 300.37
+      },
+      "hsv": {
+        "h": 240.0,
+        "s": 62.75,
+        "v": 100.0
+      },
+      "indices": {
+        "lch": 3008754.57,
+        "hsv": 2406374.51,
+        "lightness": 49.3
+      },
+      "contrast_ratio": 4.57,
+      "readable_on_black": true,
+      "line_number": 87
+    },
+    {
+      "name": "abyssal blue",
+      "hex": "#00005F",
+      "rgb": [
+        0,
+        0,
+        95
+      ],
+      "lch": {
+        "l": 7.46,
+        "c": 64.92,
+        "h": 306.26
+      },
+      "hsv": {
+        "h": 240.0,
+        "s": 100.0,
+        "v": 37.25
+      },
+      "indices": {
+        "lch": 3063399.0,
+        "hsv": 2410037.25,
+        "lightness": 7.46
+      },
+      "contrast_ratio": 1.17,
+      "readable_on_black": false,
+      "line_number": 2
+    },
+    {
+      "name": "deep blue",
+      "hex": "#000080",
+      "rgb": [
+        0,
+        0,
+        128
+      ],
+      "lch": {
+        "l": 12.98,
+        "c": 80.27,
+        "h": 306.29
+      },
+      "hsv": {
+        "h": 240.0,
+        "s": 100.0,
+        "v": 50.2
+      },
+      "indices": {
+        "lch": 3064235.68,
+        "hsv": 2410050.2,
+        "lightness": 12.98
+      },
+      "contrast_ratio": 1.31,
+      "readable_on_black": false,
+      "line_number": 3
+    },
+    {
+      "name": "navy blue",
+      "hex": "#000087",
+      "rgb": [
+        0,
+        0,
+        135
+      ],
+      "lch": {
+        "l": 14.11,
+        "c": 83.42,
+        "h": 306.29
+      },
+      "hsv": {
+        "h": 240.0,
+        "s": 100.0,
+        "v": 52.94
+      },
+      "indices": {
+        "lch": 3064352.52,
+        "hsv": 2410052.94,
+        "lightness": 14.11
+      },
+      "contrast_ratio": 1.35,
+      "readable_on_black": false,
+      "line_number": 4
+    },
+    {
+      "name": "cobalt",
+      "hex": "#0000AF",
+      "rgb": [
+        0,
+        0,
+        175
+      ],
+      "lch": {
+        "l": 20.42,
+        "c": 100.9,
+        "h": 306.29
+      },
+      "hsv": {
+        "h": 240.0,
+        "s": 100.0,
+        "v": 68.63
+      },
+      "indices": {
+        "lch": 3065000.87,
+        "hsv": 2410068.63,
+        "lightness": 20.42
+      },
+      "contrast_ratio": 1.62,
+      "readable_on_black": false,
+      "line_number": 5
+    },
+    {
+      "name": "medium blue",
+      "hex": "#0000D7",
+      "rgb": [
+        0,
+        0,
+        215
+      ],
+      "lch": {
+        "l": 26.47,
+        "c": 117.64,
+        "h": 306.29
+      },
+      "hsv": {
+        "h": 240.0,
+        "s": 100.0,
+        "v": 84.31
+      },
+      "indices": {
+        "lch": 3065622.13,
+        "hsv": 2410084.31,
+        "lightness": 26.47
+      },
+      "contrast_ratio": 1.98,
+      "readable_on_black": false,
+      "line_number": 6
+    },
+    {
+      "name": "blue",
+      "hex": "#0000FF",
+      "rgb": [
+        0,
+        0,
+        255
+      ],
+      "lch": {
+        "l": 32.3,
+        "c": 133.81,
+        "h": 306.29
+      },
+      "hsv": {
+        "h": 240.0,
+        "s": 100.0,
+        "v": 100.0
+      },
+      "indices": {
+        "lch": 3066221.95,
+        "hsv": 2410100.0,
+        "lightness": 32.3
+      },
+      "contrast_ratio": 2.44,
+      "readable_on_black": false,
+      "line_number": 7
+    },
+    {
+      "name": "PrintHue Blue 072",
+      "hex": "#10069F",
+      "rgb": [
+        16,
+        6,
+        159
+      ],
+      "lch": {
+        "l": 18.99,
+        "c": 91.64,
+        "h": 306.14
+      },
+      "hsv": {
+        "h": 243.92,
+        "s": 96.23,
+        "v": 62.35
+      },
+      "indices": {
+        "lch": 3063420.87,
+        "hsv": 2448900.68,
+        "lightness": 18.99
+      },
+      "contrast_ratio": 1.55,
+      "readable_on_black": false,
+      "line_number": 54
+    },
+    {
+      "name": "PrintHue Blue Iris",
+      "hex": "#5A4FCF",
+      "rgb": [
+        90,
+        79,
+        207
+      ],
+      "lch": {
+        "l": 41.64,
+        "c": 76.37,
+        "h": 301.69
+      },
+      "hsv": {
+        "h": 245.16,
+        "s": 61.84,
+        "v": 81.18
+      },
+      "indices": {
+        "lch": 3021180.22,
+        "hsv": 2457827.25,
+        "lightness": 41.64
+      },
+      "contrast_ratio": 3.45,
+      "readable_on_black": false,
+      "line_number": 73
+    },
+    {
+      "name": "Blue Violet",
+      "hex": "#6456B7",
+      "rgb": [
+        100,
+        86,
+        183
+      ],
+      "lch": {
+        "l": 42.44,
+        "c": 58.35,
+        "h": 301.57
+      },
+      "hsv": {
+        "h": 248.66,
+        "s": 53.01,
+        "v": 71.76
+      },
+      "indices": {
+        "lch": 3020042.61,
+        "hsv": 2491970.25,
+        "lightness": 42.44
+      },
+      "contrast_ratio": 3.56,
+      "readable_on_black": false,
+      "line_number": 114
+    },
+    {
+      "name": "Ultramarine Blue",
+      "hex": "#3F26BF",
+      "rgb": [
+        63,
+        38,
+        191
+      ],
+      "lch": {
+        "l": 29.92,
+        "c": 92.34,
+        "h": 305.72
+      },
+      "hsv": {
+        "h": 249.8,
+        "s": 80.1,
+        "v": 74.9
+      },
+      "indices": {
+        "lch": 3060280.13,
+        "hsv": 2506124.59,
+        "lightness": 29.92
+      },
+      "contrast_ratio": 2.24,
+      "readable_on_black": false,
+      "line_number": 66
+    },
+    {
+      "name": "irrigo purple",
+      "hex": "#875FFF",
+      "rgb": [
+        135,
+        95,
+        255
+      ],
+      "lch": {
+        "l": 52.46,
+        "c": 91.43,
+        "h": 305.61
+      },
+      "hsv": {
+        "h": 255.0,
+        "s": 62.75,
+        "v": 100.0
+      },
+      "indices": {
+        "lch": 3061437.4,
+        "hsv": 2556374.51,
+        "lightness": 52.46
+      },
+      "contrast_ratio": 5.11,
+      "readable_on_black": true,
+      "line_number": 142
+    },
+    {
+      "name": "PrintHue Ultra Violet",
+      "hex": "#5F4B8B",
+      "rgb": [
+        95,
+        75,
+        139
+      ],
+      "lch": {
+        "l": 36.61,
+        "c": 40.2,
+        "h": 305.48
+      },
+      "hsv": {
+        "h": 258.75,
+        "s": 46.04,
+        "v": 54.51
+      },
+      "indices": {
+        "lch": 3058541.31,
+        "hsv": 2592158.83,
+        "lightness": 36.61
+      },
+      "contrast_ratio": 2.87,
+      "readable_on_black": false,
+      "line_number": 81
+    },
+    {
+      "name": "liliac",
+      "hex": "#AF87FF",
+      "rgb": [
+        175,
+        135,
+        255
+      ],
+      "lch": {
+        "l": 64.69,
+        "c": 67.66,
+        "h": 306.37
+      },
+      "hsv": {
+        "h": 260.0,
+        "s": 47.06,
+        "v": 100.0
+      },
+      "indices": {
+        "lch": 3070253.17,
+        "hsv": 2604805.88,
+        "lightness": 64.69
+      },
+      "contrast_ratio": 7.73,
+      "readable_on_black": true,
+      "line_number": 206
+    },
+    {
+      "name": "amethyst",
+      "hex": "#875FD7",
+      "rgb": [
+        135,
+        95,
+        215
+      ],
+      "lch": {
+        "l": 49.79,
+        "c": 70.43,
+        "h": 307.07
+      },
+      "hsv": {
+        "h": 260.0,
+        "s": 55.81,
+        "v": 84.31
+      },
+      "indices": {
+        "lch": 3075756.87,
+        "hsv": 2605665.71,
+        "lightness": 49.79
+      },
+      "contrast_ratio": 4.65,
+      "readable_on_black": true,
+      "line_number": 141
+    },
+    {
+      "name": "bright indigo",
+      "hex": "#5F00FF",
+      "rgb": [
+        95,
+        0,
+        255
+      ],
+      "lch": {
+        "l": 37.21,
+        "c": 128.44,
+        "h": 309.19
+      },
+      "hsv": {
+        "h": 262.35,
+        "s": 100.0,
+        "v": 100.0
+      },
+      "indices": {
+        "lch": 3095776.07,
+        "hsv": 2633629.41,
+        "lightness": 37.21
+      },
+      "contrast_ratio": 2.93,
+      "readable_on_black": false,
+      "line_number": 80
+    },
+    {
+      "name": "space opera",
+      "hex": "#5F00D7",
+      "rgb": [
+        95,
+        0,
+        215
+      ],
+      "lch": {
+        "l": 32.57,
+        "c": 111.2,
+        "h": 310.55
+      },
+      "hsv": {
+        "h": 266.51,
+        "s": 100.0,
+        "v": 84.31
+      },
+      "indices": {
+        "lch": 3108820.88,
+        "hsv": 2675200.59,
+        "lightness": 32.57
+      },
+      "contrast_ratio": 2.47,
+      "readable_on_black": false,
+      "line_number": 79
+    },
+    {
+      "name": "PrintHue Violet",
+      "hex": "#440099",
+      "rgb": [
+        68,
+        0,
+        153
+      ],
+      "lch": {
+        "l": 22.05,
+        "c": 86.09,
+        "h": 310.87
+      },
+      "hsv": {
+        "h": 266.67,
+        "s": 100.0,
+        "v": 60.0
+      },
+      "indices": {
+        "lch": 3110989.53,
+        "hsv": 2676726.67,
+        "lightness": 22.05
+      },
+      "contrast_ratio": 1.71,
+      "readable_on_black": false,
+      "line_number": 67
+    },
+    {
+      "name": "mauve",
+      "hex": "#D7AFFF",
+      "rgb": [
+        215,
+        175,
+        255
+      ],
+      "lch": {
+        "l": 77.47,
+        "c": 45.05,
+        "h": 310.62
+      },
+      "hsv": {
+        "h": 270.0,
+        "s": 31.37,
+        "v": 100.0
+      },
+      "indices": {
+        "lch": 3113995.48,
+        "hsv": 2703237.25,
+        "lightness": 77.47
+      },
+      "contrast_ratio": 11.47,
+      "readable_on_black": true,
+      "line_number": 278
+    },
+    {
+      "name": "pale purple",
+      "hex": "#AF87D7",
+      "rgb": [
+        175,
+        135,
+        215
+      ],
+      "lch": {
+        "l": 62.8,
+        "c": 46.78,
+        "h": 310.92
+      },
+      "hsv": {
+        "h": 270.0,
+        "s": 37.21,
+        "v": 84.31
+      },
+      "indices": {
+        "lch": 3115544.62,
+        "hsv": 2703805.24,
+        "lightness": 62.8
+      },
+      "contrast_ratio": 7.27,
+      "readable_on_black": true,
+      "line_number": 205
+    },
+    {
+      "name": "knight elf",
+      "hex": "#875FAF",
+      "rgb": [
+        135,
+        95,
+        175
+      ],
+      "lch": {
+        "l": 47.53,
+        "c": 48.91,
+        "h": 311.35
+      },
+      "hsv": {
+        "h": 270.0,
+        "s": 45.71,
+        "v": 68.63
+      },
+      "indices": {
+        "lch": 3118301.19,
+        "hsv": 2704640.06,
+        "lightness": 47.53
+      },
+      "contrast_ratio": 4.29,
+      "readable_on_black": false,
+      "line_number": 140
+    },
+    {
+      "name": "vega violet",
+      "hex": "#AF5FFF",
+      "rgb": [
+        175,
+        95,
+        255
+      ],
+      "lch": {
+        "l": 56.6,
+        "c": 91.05,
+        "h": 312.23
+      },
+      "hsv": {
+        "h": 270.0,
+        "s": 62.75,
+        "v": 100.0
+      },
+      "indices": {
+        "lch": 3128004.44,
+        "hsv": 2706374.51,
+        "lightness": 56.6
+      },
+      "contrast_ratio": 5.9,
+      "readable_on_black": true,
+      "line_number": 200
+    },
+    {
+      "name": "star platinum purple",
+      "hex": "#8700FF",
+      "rgb": [
+        135,
+        0,
+        255
+      ],
+      "lch": {
+        "l": 41.8,
+        "c": 124.24,
+        "h": 312.36
+      },
+      "hsv": {
+        "h": 271.76,
+        "s": 100.0,
+        "v": 100.0
+      },
+      "indices": {
+        "lch": 3127937.31,
+        "hsv": 2727747.06,
+        "lightness": 41.8
+      },
+      "contrast_ratio": 3.47,
+      "readable_on_black": false,
+      "line_number": 136
+    },
+    {
+      "name": "purplue",
+      "hex": "#5F00AF",
+      "rgb": [
+        95,
+        0,
+        175
+      ],
+      "lch": {
+        "l": 28.19,
+        "c": 93.19,
+        "h": 312.96
+      },
+      "hsv": {
+        "h": 272.57,
+        "s": 100.0,
+        "v": 68.63
+      },
+      "indices": {
+        "lch": 3132514.65,
+        "hsv": 2735782.91,
+        "lightness": 28.19
+      },
+      "contrast_ratio": 2.11,
+      "readable_on_black": false,
+      "line_number": 78
+    },
+    {
+      "name": "Violet",
+      "hex": "#8359A3",
+      "rgb": [
+        131,
+        89,
+        163
+      ],
+      "lch": {
+        "l": 45.1,
+        "c": 46.16,
+        "h": 313.45
+      },
+      "hsv": {
+        "h": 274.05,
+        "s": 45.4,
+        "v": 63.92
+      },
+      "indices": {
+        "lch": 3139054.28,
+        "hsv": 2745144.34,
+        "lightness": 45.1
+      },
+      "contrast_ratio": 3.92,
+      "readable_on_black": false,
+      "line_number": 129
+    },
+    {
+      "name": "Indigo",
+      "hex": "#4B0082",
+      "rgb": [
+        75,
+        0,
+        130
+      ],
+      "lch": {
+        "l": 20.47,
+        "c": 74.27,
+        "h": 314.11
+      },
+      "hsv": {
+        "h": 274.62,
+        "s": 100.0,
+        "v": 50.98
+      },
+      "indices": {
+        "lch": 3143250.92,
+        "hsv": 2756204.83,
+        "lightness": 20.47
+      },
+      "contrast_ratio": 1.62,
+      "readable_on_black": false,
+      "line_number": 69
+    },
+    {
+      "name": "violet ink",
+      "hex": "#8700D7",
+      "rgb": [
+        135,
+        0,
+        215
+      ],
+      "lch": {
+        "l": 37.94,
+        "c": 106.85,
+        "h": 315.08
+      },
+      "hsv": {
+        "h": 277.67,
+        "s": 100.0,
+        "v": 84.31
+      },
+      "indices": {
+        "lch": 3154741.56,
+        "hsv": 2786828.5,
+        "lightness": 37.94
+      },
+      "contrast_ratio": 3.01,
+      "readable_on_black": false,
+      "line_number": 135
+    },
+    {
+      "name": "crash pink",
+      "hex": "#D787FF",
+      "rgb": [
+        215,
+        135,
+        255
+      ],
+      "lch": {
+        "l": 68.75,
+        "c": 69.69,
+        "h": 316.69
+      },
+      "hsv": {
+        "h": 280.0,
+        "s": 47.06,
+        "v": 100.0
+      },
+      "indices": {
+        "lch": 3173812.38,
+        "hsv": 2804805.88,
+        "lightness": 68.75
+      },
+      "contrast_ratio": 8.8,
+      "readable_on_black": true,
+      "line_number": 272
+    },
+    {
+      "name": "rich lilac",
+      "hex": "#AF5FD7",
+      "rgb": [
+        175,
+        95,
+        215
+      ],
+      "lch": {
+        "l": 54.24,
+        "c": 71.54,
+        "h": 316.97
+      },
+      "hsv": {
+        "h": 280.0,
+        "s": 55.81,
+        "v": 84.31
+      },
+      "indices": {
+        "lch": 3175171.9,
+        "hsv": 2805665.71,
+        "lightness": 54.24
+      },
+      "contrast_ratio": 5.44,
+      "readable_on_black": true,
+      "line_number": 199
+    },
+    {
+      "name": "Wisteria",
+      "hex": "#C9A0DC",
+      "rgb": [
+        201,
+        160,
+        220
+      ],
+      "lch": {
+        "l": 71.37,
+        "c": 35.78,
+        "h": 316.37
+      },
+      "hsv": {
+        "h": 281.0,
+        "s": 27.27,
+        "v": 86.27
+      },
+      "indices": {
+        "lch": 3170880.97,
+        "hsv": 2812813.55,
+        "lightness": 71.37
+      },
+      "contrast_ratio": 9.55,
+      "readable_on_black": true,
+      "line_number": 243
+    },
+    {
+      "name": "bright violet",
+      "hex": "#AF00FF",
+      "rgb": [
+        175,
+        0,
+        255
+      ],
+      "lch": {
+        "l": 47.41,
+        "c": 120.2,
+        "h": 316.74
+      },
+      "hsv": {
+        "h": 281.18,
+        "s": 100.0,
+        "v": 100.0
+      },
+      "indices": {
+        "lch": 3172275.13,
+        "hsv": 2821864.71,
+        "lightness": 47.41
+      },
+      "contrast_ratio": 4.27,
+      "readable_on_black": false,
+      "line_number": 193
+    },
+    {
+      "name": "zeus purple",
+      "hex": "#5F0087",
+      "rgb": [
+        95,
+        0,
+        135
+      ],
+      "lch": {
+        "l": 24.26,
+        "c": 74.5,
+        "h": 317.72
+      },
+      "hsv": {
+        "h": 282.22,
+        "s": 100.0,
+        "v": 52.94
+      },
+      "indices": {
+        "lch": 3179705.04,
+        "hsv": 2832275.16,
+        "lightness": 24.26
+      },
+      "contrast_ratio": 1.84,
+      "readable_on_black": false,
+      "line_number": 77
+    },
+    {
+      "name": "pink fever",
+      "hex": "#D75FFF",
+      "rgb": [
+        215,
+        95,
+        255
+      ],
+      "lch": {
+        "l": 61.52,
+        "c": 91.65,
+        "h": 319.72
+      },
+      "hsv": {
+        "h": 285.0,
+        "s": 62.75,
+        "v": 100.0
+      },
+      "indices": {
+        "lch": 3203403.72,
+        "hsv": 2856374.51,
+        "lightness": 61.52
+      },
+      "contrast_ratio": 6.97,
+      "readable_on_black": true,
+      "line_number": 266
+    },
+    {
+      "name": "shiffurple",
+      "hex": "#8700AF",
+      "rgb": [
+        135,
+        0,
+        175
+      ],
+      "lch": {
+        "l": 34.49,
+        "c": 89.18,
+        "h": 319.75
+      },
+      "hsv": {
+        "h": 286.29,
+        "s": 100.0,
+        "v": 68.63
+      },
+      "indices": {
+        "lch": 3200991.72,
+        "hsv": 2872925.77,
+        "lightness": 34.49
+      },
+      "contrast_ratio": 2.65,
+      "readable_on_black": false,
+      "line_number": 134
+    },
+    {
+      "name": "foxy fuchsia",
+      "hex": "#AF00D7",
+      "rgb": [
+        175,
+        0,
+        215
+      ],
+      "lch": {
+        "l": 44.26,
+        "c": 103.36,
+        "h": 321.13
+      },
+      "hsv": {
+        "h": 288.84,
+        "s": 100.0,
+        "v": 84.31
+      },
+      "indices": {
+        "lch": 3215838.69,
+        "hsv": 2898456.41,
+        "lightness": 44.26
+      },
+      "contrast_ratio": 3.8,
+      "readable_on_black": false,
+      "line_number": 192
+    },
+    {
+      "name": "Purple Mountains Majesty",
+      "hex": "#D6AEDD",
+      "rgb": [
+        214,
+        174,
+        221
+      ],
+      "lch": {
+        "l": 75.94,
+        "c": 29.06,
+        "h": 321.29
+      },
+      "hsv": {
+        "h": 291.06,
+        "s": 21.27,
+        "v": 86.67
+      },
+      "indices": {
+        "lch": 3220571.09,
+        "hsv": 2912851.66,
+        "lightness": 75.94
+      },
+      "contrast_ratio": 10.96,
+      "readable_on_black": true,
+      "line_number": 254
+    },
+    {
+      "name": "phlox",
+      "hex": "#D700FF",
+      "rgb": [
+        215,
+        0,
+        255
+      ],
+      "lch": {
+        "l": 53.67,
+        "c": 117.13,
+        "h": 322.13
+      },
+      "hsv": {
+        "h": 290.59,
+        "s": 100.0,
+        "v": 100.0
+      },
+      "indices": {
+        "lch": 3226816.95,
+        "hsv": 2915982.35,
+        "lightness": 53.67
+      },
+      "contrast_ratio": 5.33,
+      "readable_on_black": true,
+      "line_number": 260
+    },
+    {
+      "name": "Pink Flamingo",
+      "hex": "#FC74FD",
+      "rgb": [
+        252,
+        116,
+        253
+      ],
+      "lch": {
+        "l": 69.67,
+        "c": 82.58,
+        "h": 327.02
+      },
+      "hsv": {
+        "h": 299.56,
+        "s": 54.15,
+        "v": 99.22
+      },
+      "indices": {
+        "lch": 3277201.83,
+        "hsv": 3001134.67,
+        "lightness": 69.67
+      },
+      "contrast_ratio": 9.06,
+      "readable_on_black": true,
+      "line_number": 330
+    },
+    {
+      "name": "sugarpills",
+      "hex": "#FFD7FF",
+      "rgb": [
+        255,
+        215,
+        255
+      ],
+      "lch": {
+        "l": 90.36,
+        "c": 25.06,
+        "h": 325.3
+      },
+      "hsv": {
+        "h": 300.0,
+        "s": 15.69,
+        "v": 100.0
+      },
+      "indices": {
+        "lch": 3262031.4,
+        "hsv": 3001668.63,
+        "lightness": 90.36
+      },
+      "contrast_ratio": 16.42,
+      "readable_on_black": true,
+      "line_number": 380
+    },
+    {
+      "name": "bff",
+      "hex": "#D7AFD7",
+      "rgb": [
+        215,
+        175,
+        215
+      ],
+      "lch": {
+        "l": 76.08,
+        "c": 25.9,
+        "h": 325.45
+      },
+      "hsv": {
+        "h": 300.0,
+        "s": 18.6,
+        "v": 84.31
+      },
+      "indices": {
+        "lch": 3262132.91,
+        "hsv": 3001944.78,
+        "lightness": 76.08
+      },
+      "contrast_ratio": 11.0,
+      "readable_on_black": true,
+      "line_number": 277
+    },
+    {
+      "name": "fashionably plum",
+      "hex": "#AF87AF",
+      "rgb": [
+        175,
+        135,
+        175
+      ],
+      "lch": {
+        "l": 61.25,
+        "c": 26.93,
+        "h": 325.67
+      },
+      "hsv": {
+        "h": 300.0,
+        "s": 22.86,
+        "v": 68.63
+      },
+      "indices": {
+        "lch": 3262805.77,
+        "hsv": 3002354.34,
+        "lightness": 61.25
+      },
+      "contrast_ratio": 6.91,
+      "readable_on_black": true,
+      "line_number": 204
+    },
+    {
+      "name": "candy violet",
+      "hex": "#875F87",
+      "rgb": [
+        135,
+        95,
+        135
+      ],
+      "lch": {
+        "l": 45.75,
+        "c": 28.2,
+        "h": 325.99
+      },
+      "hsv": {
+        "h": 300.0,
+        "s": 29.63,
+        "v": 52.94
+      },
+      "indices": {
+        "lch": 3264508.36,
+        "hsv": 3003015.9,
+        "lightness": 45.75
+      },
+      "contrast_ratio": 4.02,
+      "readable_on_black": false,
+      "line_number": 139
+    },
+    {
+      "name": "jigglypuff",
+      "hex": "#FFAFFF",
+      "rgb": [
+        255,
+        175,
+        255
+      ],
+      "lch": {
+        "l": 81.37,
+        "c": 50.05,
+        "h": 326.15
+      },
+      "hsv": {
+        "h": 300.0,
+        "s": 31.37,
+        "v": 100.0
+      },
+      "indices": {
+        "lch": 3269714.96,
+        "hsv": 3003237.25,
+        "lightness": 81.37
+      },
+      "contrast_ratio": 12.83,
+      "readable_on_black": true,
+      "line_number": 372
+    },
+    {
+      "name": "purception",
+      "hex": "#D787D7",
+      "rgb": [
+        215,
+        135,
+        215
+      ],
+      "lch": {
+        "l": 67.04,
+        "c": 51.45,
+        "h": 326.44
+      },
+      "hsv": {
+        "h": 300.0,
+        "s": 37.21,
+        "v": 84.31
+      },
+      "indices": {
+        "lch": 3271118.27,
+        "hsv": 3003805.24,
+        "lightness": 67.04
+      },
+      "contrast_ratio": 8.34,
+      "readable_on_black": true,
+      "line_number": 271
+    },
+    {
+      "name": "pearly purple",
+      "hex": "#AF5FAF",
+      "rgb": [
+        175,
+        95,
+        175
+      ],
+      "lch": {
+        "l": 52.28,
+        "c": 52.88,
+        "h": 326.82
+      },
+      "hsv": {
+        "h": 300.0,
+        "s": 45.71,
+        "v": 68.63
+      },
+      "indices": {
+        "lch": 3273464.25,
+        "hsv": 3004640.06,
+        "lightness": 52.28
+      },
+      "contrast_ratio": 5.08,
+      "readable_on_black": true,
+      "line_number": 198
+    },
+    {
+      "name": "bubble gum",
+      "hex": "#FF87FF",
+      "rgb": [
+        255,
+        135,
+        255
+      ],
+      "lch": {
+        "l": 73.42,
+        "c": 73.58,
+        "h": 326.93
+      },
+      "hsv": {
+        "h": 300.0,
+        "s": 47.06,
+        "v": 100.0
+      },
+      "indices": {
+        "lch": 3276716.86,
+        "hsv": 3004805.88,
+        "lightness": 73.42
+      },
+      "contrast_ratio": 10.16,
+      "readable_on_black": true,
+      "line_number": 360
+    },
+    {
+      "name": "fuchsia flash",
+      "hex": "#D75FD7",
+      "rgb": [
+        215,
+        95,
+        215
+      ],
+      "lch": {
+        "l": 59.47,
+        "c": 74.42,
+        "h": 327.28
+      },
+      "hsv": {
+        "h": 300.0,
+        "s": 55.81,
+        "v": 84.31
+      },
+      "indices": {
+        "lch": 3278868.19,
+        "hsv": 3005665.71,
+        "lightness": 59.47
+      },
+      "contrast_ratio": 6.51,
+      "readable_on_black": true,
+      "line_number": 265
+    },
+    {
+      "name": "Fuchsia",
+      "hex": "#C154C1",
+      "rgb": [
+        193,
+        84,
+        193
+      ],
+      "lch": {
+        "l": 53.52,
+        "c": 68.92,
+        "h": 327.3
+      },
+      "hsv": {
+        "h": 300.0,
+        "s": 56.48,
+        "v": 75.69
+      },
+      "indices": {
+        "lch": 3278376.26,
+        "hsv": 3005723.35,
+        "lightness": 53.52
+      },
+      "contrast_ratio": 5.31,
+      "readable_on_black": true,
+      "line_number": 236
+    },
+    {
+      "name": "violet pink",
+      "hex": "#FF5FFF",
+      "rgb": [
+        255,
+        95,
+        255
+      ],
+      "lch": {
+        "l": 67.02,
+        "c": 93.56,
+        "h": 327.56
+      },
+      "hsv": {
+        "h": 300.0,
+        "s": 62.75,
+        "v": 100.0
+      },
+      "indices": {
+        "lch": 3282443.94,
+        "hsv": 3006374.51,
+        "lightness": 67.02
+      },
+      "contrast_ratio": 8.33,
+      "readable_on_black": true,
+      "line_number": 351
+    },
+    {
+      "name": "PrintHue Purple",
+      "hex": "#BB29BB",
+      "rgb": [
+        187,
+        41,
+        187
+      ],
+      "lch": {
+        "l": 46.63,
+        "c": 84.28,
+        "h": 327.96
+      },
+      "hsv": {
+        "h": 300.0,
+        "s": 78.07,
+        "v": 73.33
+      },
+      "indices": {
+        "lch": 3284333.97,
+        "hsv": 3007880.82,
+        "lightness": 46.63
+      },
+      "contrast_ratio": 4.15,
+      "readable_on_black": false,
+      "line_number": 232
+    },
+    {
+      "name": "clear plum",
+      "hex": "#5F005F",
+      "rgb": [
+        95,
+        0,
+        95
+      ],
+      "lch": {
+        "l": 21.05,
+        "c": 56.11,
+        "h": 328.23
+      },
+      "hsv": {
+        "h": 300.0,
+        "s": 100.0,
+        "v": 37.25
+      },
+      "indices": {
+        "lch": 3284485.63,
+        "hsv": 3010037.25,
+        "lightness": 21.05
+      },
+      "contrast_ratio": 1.65,
+      "readable_on_black": false,
+      "line_number": 76
+    },
+    {
+      "name": "ultraberry",
+      "hex": "#800080",
+      "rgb": [
+        128,
+        0,
+        128
+      ],
+      "lch": {
+        "l": 29.78,
+        "c": 69.33,
+        "h": 328.23
+      },
+      "hsv": {
+        "h": 300.0,
+        "s": 100.0,
+        "v": 50.2
+      },
+      "indices": {
+        "lch": 3285371.73,
+        "hsv": 3010050.2,
+        "lightness": 29.78
+      },
+      "contrast_ratio": 2.23,
+      "readable_on_black": false,
+      "line_number": 126
+    },
+    {
+      "name": "purple",
+      "hex": "#870087",
+      "rgb": [
+        135,
+        0,
+        135
+      ],
+      "lch": {
+        "l": 31.58,
+        "c": 72.05,
+        "h": 328.23
+      },
+      "hsv": {
+        "h": 300.0,
+        "s": 100.0,
+        "v": 52.94
+      },
+      "indices": {
+        "lch": 3285554.09,
+        "hsv": 3010052.94,
+        "lightness": 31.58
+      },
+      "contrast_ratio": 2.38,
+      "readable_on_black": false,
+      "line_number": 133
+    },
+    {
+      "name": "kinky koala",
+      "hex": "#AF00AF",
+      "rgb": [
+        175,
+        0,
+        175
+      ],
+      "lch": {
+        "l": 41.55,
+        "c": 87.14,
+        "h": 328.23
+      },
+      "hsv": {
+        "h": 300.0,
+        "s": 100.0,
+        "v": 68.63
+      },
+      "indices": {
+        "lch": 3286565.97,
+        "hsv": 3010068.63,
+        "lightness": 41.55
+      },
+      "contrast_ratio": 3.44,
+      "readable_on_black": false,
+      "line_number": 191
+    },
+    {
+      "name": "awkward purple",
+      "hex": "#D700D7",
+      "rgb": [
+        215,
+        0,
+        215
+      ],
+      "lch": {
+        "l": 51.1,
+        "c": 101.61,
+        "h": 328.23
+      },
+      "hsv": {
+        "h": 300.0,
+        "s": 100.0,
+        "v": 84.31
+      },
+      "indices": {
+        "lch": 3287535.58,
+        "hsv": 3010084.31,
+        "lightness": 51.1
+      },
+      "contrast_ratio": 4.87,
+      "readable_on_black": true,
+      "line_number": 259
+    },
+    {
+      "name": "magenta",
+      "hex": "#FF00FF",
+      "rgb": [
+        255,
+        0,
+        255
+      ],
+      "lch": {
+        "l": 60.32,
+        "c": 115.57,
+        "h": 328.23
+      },
+      "hsv": {
+        "h": 300.0,
+        "s": 100.0,
+        "v": 100.0
+      },
+      "indices": {
+        "lch": 3288471.71,
+        "hsv": 3010100.0,
+        "lightness": 60.32
+      },
+      "contrast_ratio": 6.7,
+      "readable_on_black": true,
+      "line_number": 344
+    },
+    {
+      "name": "bright magenta",
+      "hex": "#FF00D7",
+      "rgb": [
+        255,
+        0,
+        215
+      ],
+      "lch": {
+        "l": 58.19,
+        "c": 102.0,
+        "h": 335.82
+      },
+      "hsv": {
+        "h": 309.41,
+        "s": 100.0,
+        "v": 100.0
+      },
+      "indices": {
+        "lch": 3364084.31,
+        "hsv": 3104217.65,
+        "lightness": 58.19
+      },
+      "contrast_ratio": 6.23,
+      "readable_on_black": true,
+      "line_number": 343
+    },
+    {
+      "name": "PrintHue Purple Haze",
+      "hex": "#B565A7",
+      "rgb": [
+        181,
+        101,
+        167
+      ],
+      "lch": {
+        "l": 53.94,
+        "c": 46.83,
+        "h": 332.46
+      },
+      "hsv": {
+        "h": 310.5,
+        "s": 44.2,
+        "v": 70.98
+      },
+      "indices": {
+        "lch": 3330024.66,
+        "hsv": 3109490.87,
+        "lightness": 53.94
+      },
+      "contrast_ratio": 5.38,
+      "readable_on_black": true,
+      "line_number": 228
+    },
+    {
+      "name": "purple pirate",
+      "hex": "#D700AF",
+      "rgb": [
+        215,
+        0,
+        175
+      ],
+      "lch": {
+        "l": 48.93,
+        "c": 87.8,
+        "h": 337.43
+      },
+      "hsv": {
+        "h": 311.16,
+        "s": 100.0,
+        "v": 84.31
+      },
+      "indices": {
+        "lch": 3379269.84,
+        "hsv": 3121712.22,
+        "lightness": 48.93
+      },
+      "contrast_ratio": 4.51,
+      "readable_on_black": true,
+      "line_number": 258
+    },
+    {
+      "name": "Orchid",
+      "hex": "#E29CD2",
+      "rgb": [
+        226,
+        156,
+        210
+      ],
+      "lch": {
+        "l": 72.63,
+        "c": 38.35,
+        "h": 333.61
+      },
+      "hsv": {
+        "h": 313.71,
+        "s": 30.97,
+        "v": 88.63
+      },
+      "indices": {
+        "lch": 3343439.11,
+        "hsv": 3140328.83,
+        "lightness": 72.63
+      },
+      "contrast_ratio": 9.92,
+      "readable_on_black": true,
+      "line_number": 302
+    },
+    {
+      "name": "Plum",
+      "hex": "#8E3179",
+      "rgb": [
+        142,
+        49,
+        121
+      ],
+      "lch": {
+        "l": 36.61,
+        "c": 52.11,
+        "h": 336.02
+      },
+      "hsv": {
+        "h": 313.55,
+        "s": 65.49,
+        "v": 55.69
+      },
+      "indices": {
+        "lch": 3363886.97,
+        "hsv": 3142088.85,
+        "lightness": 36.61
+      },
+      "contrast_ratio": 2.87,
+      "readable_on_black": false,
+      "line_number": 171
+    },
+    {
+      "name": "katy berry",
+      "hex": "#AF0087",
+      "rgb": [
+        175,
+        0,
+        135
+      ],
+      "lch": {
+        "l": 39.35,
+        "c": 73.13,
+        "h": 339.89
+      },
+      "hsv": {
+        "h": 313.71,
+        "s": 100.0,
+        "v": 68.63
+      },
+      "indices": {
+        "lch": 3402901.66,
+        "hsv": 3147211.48,
+        "lightness": 39.35
+      },
+      "contrast_ratio": 3.17,
+      "readable_on_black": false,
+      "line_number": 190
+    },
+    {
+      "name": "rose pink",
+      "hex": "#FF5FD7",
+      "rgb": [
+        255,
+        95,
+        215
+      ],
+      "lch": {
+        "l": 65.24,
+        "c": 79.18,
+        "h": 337.12
+      },
+      "hsv": {
+        "h": 315.0,
+        "s": 62.75,
+        "v": 100.0
+      },
+      "indices": {
+        "lch": 3377761.27,
+        "hsv": 3156374.51,
+        "lightness": 65.24
+      },
+      "contrast_ratio": 7.87,
+      "readable_on_black": true,
+      "line_number": 350
+    },
+    {
+      "name": "grapest",
+      "hex": "#87005F",
+      "rgb": [
+        135,
+        0,
+        95
+      ],
+      "lch": {
+        "l": 29.35,
+        "c": 57.97,
+        "h": 344.06
+      },
+      "hsv": {
+        "h": 317.78,
+        "s": 100.0,
+        "v": 52.94
+      },
+      "indices": {
+        "lch": 3443642.65,
+        "hsv": 3187830.72,
+        "lightness": 29.35
+      },
+      "contrast_ratio": 2.2,
+      "readable_on_black": false,
+      "line_number": 132
+    },
+    {
+      "name": "bright pink",
+      "hex": "#FF00AF",
+      "rgb": [
+        255,
+        0,
+        175
+      ],
+      "lch": {
+        "l": 56.44,
+        "c": 91.18,
+        "h": 346.38
+      },
+      "hsv": {
+        "h": 318.82,
+        "s": 100.0,
+        "v": 100.0
+      },
+      "indices": {
+        "lch": 3469545.34,
+        "hsv": 3198335.29,
+        "lightness": 56.44
+      },
+      "contrast_ratio": 5.87,
+      "readable_on_black": true,
+      "line_number": 342
+    },
+    {
+      "name": "PrintHue Rhodamine Red",
+      "hex": "#E10098",
+      "rgb": [
+        225,
+        0,
+        152
+      ],
+      "lch": {
+        "l": 49.83,
+        "c": 82.52,
+        "h": 347.05
+      },
+      "hsv": {
+        "h": 319.47,
+        "s": 100.0,
+        "v": 88.24
+      },
+      "indices": {
+        "lch": 3475526.45,
+        "hsv": 3204754.9,
+        "lightness": 49.83
+      },
+      "contrast_ratio": 4.65,
+      "readable_on_black": true,
+      "line_number": 300
+    },
+    {
+      "name": "pout pink",
+      "hex": "#FF87D7",
+      "rgb": [
+        255,
+        135,
+        215
+      ],
+      "lch": {
+        "l": 71.89,
+        "c": 58.91,
+        "h": 339.54
+      },
+      "hsv": {
+        "h": 320.0,
+        "s": 47.06,
+        "v": 100.0
+      },
+      "indices": {
+        "lch": 3402633.76,
+        "hsv": 3204805.88,
+        "lightness": 71.89
+      },
+      "contrast_ratio": 9.7,
+      "readable_on_black": true,
+      "line_number": 359
+    },
+    {
+      "name": "orion",
+      "hex": "#D75FAF",
+      "rgb": [
+        215,
+        95,
+        175
+      ],
+      "lch": {
+        "l": 57.78,
+        "c": 59.69,
+        "h": 340.41
+      },
+      "hsv": {
+        "h": 320.0,
+        "s": 55.81,
+        "v": 84.31
+      },
+      "indices": {
+        "lch": 3409942.23,
+        "hsv": 3205665.71,
+        "lightness": 57.78
+      },
+      "contrast_ratio": 6.15,
+      "readable_on_black": true,
+      "line_number": 264
+    },
+    {
+      "name": "mexican pink",
+      "hex": "#D70087",
+      "rgb": [
+        215,
+        0,
+        135
+      ],
+      "lch": {
+        "l": 47.23,
+        "c": 77.72,
+        "h": 350.85
+      },
+      "hsv": {
+        "h": 322.33,
+        "s": 100.0,
+        "v": 84.31
+      },
+      "indices": {
+        "lch": 3513257.98,
+        "hsv": 3233340.13,
+        "lightness": 47.23
+      },
+      "contrast_ratio": 4.24,
+      "readable_on_black": false,
+      "line_number": 257
+    },
+    {
+      "name": "Red Violet",
+      "hex": "#BB3385",
+      "rgb": [
+        187,
+        51,
+        133
+      ],
+      "lch": {
+        "l": 45.12,
+        "c": 62.56,
+        "h": 346.27
+      },
+      "hsv": {
+        "h": 323.82,
+        "s": 72.73,
+        "v": 73.33
+      },
+      "indices": {
+        "lch": 3467294.49,
+        "hsv": 3245581.35,
+        "lightness": 45.12
+      },
+      "contrast_ratio": 3.93,
+      "readable_on_black": false,
+      "line_number": 233
+    },
+    {
+      "name": "PrintHue Hot Pink",
+      "hex": "#E56DB1",
+      "rgb": [
+        229,
+        109,
+        177
+      ],
+      "lch": {
+        "l": 62.31,
+        "c": 56.01,
+        "h": 345.43
+      },
+      "hsv": {
+        "h": 326.0,
+        "s": 52.4,
+        "v": 89.8
+      },
+      "indices": {
+        "lch": 3460559.31,
+        "hsv": 3265329.98,
+        "lightness": 62.31
+      },
+      "contrast_ratio": 7.15,
+      "readable_on_black": true,
+      "line_number": 305
+    },
+    {
+      "name": "violet red",
+      "hex": "#AF005F",
+      "rgb": [
+        175,
+        0,
+        95
+      ],
+      "lch": {
+        "l": 37.73,
+        "c": 64.56,
+        "h": 357.82
+      },
+      "hsv": {
+        "h": 327.43,
+        "s": 100.0,
+        "v": 68.63
+      },
+      "indices": {
+        "lch": 3582082.87,
+        "hsv": 3284354.34,
+        "lightness": 37.73
+      },
+      "contrast_ratio": 2.99,
+      "readable_on_black": false,
+      "line_number": 189
+    },
+    {
+      "name": "hot pink",
+      "hex": "#FF0087",
+      "rgb": [
+        255,
+        0,
+        135
+      ],
+      "lch": {
+        "l": 55.08,
+        "c": 85.08,
+        "h": 0.1
+      },
+      "hsv": {
+        "h": 328.24,
+        "s": 100.0,
+        "v": 100.0
+      },
+      "indices": {
+        "lch": 6618.17,
+        "hsv": 3292452.94,
+        "lightness": 55.08
+      },
+      "contrast_ratio": 5.6,
+      "readable_on_black": true,
+      "line_number": 341
+    },
+    {
+      "name": "Magenta",
+      "hex": "#F653A6",
+      "rgb": [
+        246,
+        83,
+        166
+      ],
+      "lch": {
+        "l": 60.37,
+        "c": 69.74,
+        "h": 351.39
+      },
+      "hsv": {
+        "h": 329.45,
+        "s": 66.26,
+        "v": 96.47
+      },
+      "indices": {
+        "lch": 3520040.87,
+        "hsv": 3301201.01,
+        "lightness": 60.37
+      },
+      "contrast_ratio": 6.71,
+      "readable_on_black": true,
+      "line_number": 319
+    },
+    {
+      "name": "fresh gum",
+      "hex": "#FFAFD7",
+      "rgb": [
+        255,
+        175,
+        215
+      ],
+      "lch": {
+        "l": 80.08,
+        "c": 35.84,
+        "h": 346.63
+      },
+      "hsv": {
+        "h": 330.0,
+        "s": 31.37,
+        "v": 100.0
+      },
+      "indices": {
+        "lch": 3474364.94,
+        "hsv": 3303237.25,
+        "lightness": 80.08
+      },
+      "contrast_ratio": 12.37,
+      "readable_on_black": true,
+      "line_number": 371
+    },
+    {
+      "name": "middle purple",
+      "hex": "#D787AF",
+      "rgb": [
+        215,
+        135,
+        175
+      ],
+      "lch": {
+        "l": 65.65,
+        "c": 37.02,
+        "h": 347.29
+      },
+      "hsv": {
+        "h": 330.0,
+        "s": 37.21,
+        "v": 84.31
+      },
+      "indices": {
+        "lch": 3479467.92,
+        "hsv": 3303805.24,
+        "lightness": 65.65
+      },
+      "contrast_ratio": 7.97,
+      "readable_on_black": true,
+      "line_number": 270
+    },
+    {
+      "name": "cure all",
+      "hex": "#AF5F87",
+      "rgb": [
+        175,
+        95,
+        135
+      ],
+      "lch": {
+        "l": 50.74,
+        "c": 38.29,
+        "h": 348.32
+      },
+      "hsv": {
+        "h": 330.0,
+        "s": 45.71,
+        "v": 68.63
+      },
+      "indices": {
+        "lch": 3488263.61,
+        "hsv": 3304640.06,
+        "lightness": 50.74
+      },
+      "contrast_ratio": 4.81,
+      "readable_on_black": true,
+      "line_number": 197
+    },
+    {
+      "name": "pink katydid",
+      "hex": "#FF5FAF",
+      "rgb": [
+        255,
+        95,
+        175
+      ],
+      "lch": {
+        "l": 63.78,
+        "c": 68.61,
+        "h": 351.32
+      },
+      "hsv": {
+        "h": 330.0,
+        "s": 62.75,
+        "v": 100.0
+      },
+      "indices": {
+        "lch": 3519691.68,
+        "hsv": 3306374.51,
+        "lightness": 63.78
+      },
+      "contrast_ratio": 7.51,
+      "readable_on_black": true,
+      "line_number": 349
+    },
+    {
+      "name": "Lavender",
+      "hex": "#FBAED2",
+      "rgb": [
+        251,
+        174,
+        210
+      ],
+      "lch": {
+        "l": 79.29,
+        "c": 33.95,
+        "h": 348.45
+      },
+      "hsv": {
+        "h": 331.95,
+        "s": 30.68,
+        "v": 98.43
+      },
+      "indices": {
+        "lch": 3492433.32,
+        "hsv": 3322646.68,
+        "lightness": 79.29
+      },
+      "contrast_ratio": 12.09,
+      "readable_on_black": true,
+      "line_number": 327
+    },
+    {
+      "name": "anger",
+      "hex": "#D7005F",
+      "rgb": [
+        215,
+        0,
+        95
+      ],
+      "lch": {
+        "l": 46.01,
+        "c": 74.26,
+        "h": 8.14
+      },
+      "hsv": {
+        "h": 333.49,
+        "s": 100.0,
+        "v": 84.31
+      },
+      "indices": {
+        "lch": 86094.75,
+        "hsv": 3344968.03,
+        "lightness": 46.01
+      },
+      "contrast_ratio": 4.05,
+      "readable_on_black": false,
+      "line_number": 256
+    },
+    {
+      "name": "PrintHue Rubine Red",
+      "hex": "#CE0058",
+      "rgb": [
+        206,
+        0,
+        88
+      ],
+      "lch": {
+        "l": 43.98,
+        "c": 71.98,
+        "h": 9.43
+      },
+      "hsv": {
+        "h": 334.37,
+        "s": 100.0,
+        "v": 80.78
+      },
+      "indices": {
+        "lch": 98809.01,
+        "hsv": 3353770.1,
+        "lightness": 43.98
+      },
+      "contrast_ratio": 3.77,
+      "readable_on_black": false,
+      "line_number": 249
+    },
+    {
+      "name": "Carnation Pink",
+      "hex": "#FFA6C9",
+      "rgb": [
+        255,
+        166,
+        201
+      ],
+      "lch": {
+        "l": 77.73,
+        "c": 37.7,
+        "h": 353.65
+      },
+      "hsv": {
+        "h": 336.4,
+        "s": 34.9,
+        "v": 100.0
+      },
+      "indices": {
+        "lch": 3544350.15,
+        "hsv": 3367635.14,
+        "lightness": 77.73
+      },
+      "contrast_ratio": 11.55,
+      "readable_on_black": true,
+      "line_number": 365
+    },
+    {
+      "name": "Violet Red",
+      "hex": "#F7468A",
+      "rgb": [
+        247,
+        70,
+        138
+      ],
+      "lch": {
+        "l": 58.03,
+        "c": 71.05,
+        "h": 2.0
+      },
+      "hsv": {
+        "h": 336.95,
+        "s": 71.66,
+        "v": 96.86
+      },
+      "indices": {
+        "lch": 25837.64,
+        "hsv": 3376754.38,
+        "lightness": 58.03
+      },
+      "contrast_ratio": 6.2,
+      "readable_on_black": true,
+      "line_number": 320
+    },
+    {
+      "name": "Raspberry",
+      "hex": "#E30B5C",
+      "rgb": [
+        227,
+        11,
+        92
+      ],
+      "lch": {
+        "l": 48.69,
+        "c": 76.95,
+        "h": 12.35
+      },
+      "hsv": {
+        "h": 337.5,
+        "s": 95.15,
+        "v": 89.02
+      },
+      "indices": {
+        "lch": 128477.42,
+        "hsv": 3384604.44,
+        "lightness": 48.69
+      },
+      "contrast_ratio": 4.47,
+      "readable_on_black": false,
+      "line_number": 303
+    },
+    {
+      "name": "sorx red",
+      "hex": "#FF005F",
+      "rgb": [
+        255,
+        0,
+        95
+      ],
+      "lch": {
+        "l": 54.12,
+        "c": 85.63,
+        "h": 15.51
+      },
+      "hsv": {
+        "h": 337.65,
+        "s": 100.0,
+        "v": 100.0
+      },
+      "indices": {
+        "lch": 160601.68,
+        "hsv": 3386570.59,
+        "lightness": 54.12
+      },
+      "contrast_ratio": 5.42,
+      "readable_on_black": true,
+      "line_number": 340
+    },
+    {
+      "name": "pinky",
+      "hex": "#FF87AF",
+      "rgb": [
+        255,
+        135,
+        175
+      ],
+      "lch": {
+        "l": 70.65,
+        "c": 49.73,
+        "h": 359.77
+      },
+      "hsv": {
+        "h": 340.0,
+        "s": 47.06,
+        "v": 100.0
+      },
+      "indices": {
+        "lch": 3604833.36,
+        "hsv": 3404805.88,
+        "lightness": 70.65
+      },
+      "contrast_ratio": 9.34,
+      "readable_on_black": true,
+      "line_number": 358
+    },
+    {
+      "name": "PrintHue Pink",
+      "hex": "#D2386C",
+      "rgb": [
+        210,
+        56,
+        108
+      ],
+      "lch": {
+        "l": 49.02,
+        "c": 63.14,
+        "h": 6.03
+      },
+      "hsv": {
+        "h": 339.74,
+        "s": 73.33,
+        "v": 82.35
+      },
+      "indices": {
+        "lch": 65290.95,
+        "hsv": 3404818.28,
+        "lightness": 49.02
+      },
+      "contrast_ratio": 4.52,
+      "readable_on_black": true,
+      "line_number": 252
+    },
+    {
+      "name": "groovy",
+      "hex": "#D75F87",
+      "rgb": [
+        215,
+        95,
+        135
+      ],
+      "lch": {
+        "l": 56.47,
+        "c": 51.06,
+        "h": 1.5
+      },
+      "hsv": {
+        "h": 340.0,
+        "s": 55.81,
+        "v": 84.31
+      },
+      "indices": {
+        "lch": 20667.65,
+        "hsv": 3405665.71,
+        "lightness": 56.47
+      },
+      "contrast_ratio": 5.88,
+      "readable_on_black": true,
+      "line_number": 263
+    },
+    {
+      "name": "warm pink",
+      "hex": "#FF5F87",
+      "rgb": [
+        255,
+        95,
+        135
+      ],
+      "lch": {
+        "l": 62.67,
+        "c": 64.69,
+        "h": 9.83
+      },
+      "hsv": {
+        "h": 345.0,
+        "s": 62.75,
+        "v": 100.0
+      },
+      "indices": {
+        "lch": 104652.49,
+        "hsv": 3456374.51,
+        "lightness": 62.67
+      },
+      "contrast_ratio": 7.24,
+      "readable_on_black": true,
+      "line_number": 348
+    },
+    {
+      "name": "PrintHue Honeysuckle",
+      "hex": "#D94F70",
+      "rgb": [
+        217,
+        79,
+        112
+      ],
+      "lch": {
+        "l": 53.51,
+        "c": 57.52,
+        "h": 10.76
+      },
+      "hsv": {
+        "h": 345.65,
+        "s": 63.59,
+        "v": 85.1
+      },
+      "indices": {
+        "lch": 113055.94,
+        "hsv": 3462966.28,
+        "lightness": 53.51
+      },
+      "contrast_ratio": 5.3,
+      "readable_on_black": true,
+      "line_number": 293
+    },
+    {
+      "name": "Maroon",
+      "hex": "#C32148",
+      "rgb": [
+        195,
+        33,
+        72
+      ],
+      "lch": {
+        "l": 43.0,
+        "c": 65.83,
+        "h": 17.8
+      },
+      "hsv": {
+        "h": 345.56,
+        "s": 83.08,
+        "v": 76.47
+      },
+      "indices": {
+        "lch": 182373.51,
+        "hsv": 3463939.72,
+        "lightness": 43.0
+      },
+      "contrast_ratio": 3.63,
+      "readable_on_black": false,
+      "line_number": 237
+    },
+    {
+      "name": "Red",
+      "hex": "#ED0A3F",
+      "rgb": [
+        237,
+        10,
+        63
+      ],
+      "lch": {
+        "l": 50.19,
+        "c": 84.46,
+        "h": 25.52
+      },
+      "hsv": {
+        "h": 345.99,
+        "s": 95.78,
+        "v": 92.94
+      },
+      "indices": {
+        "lch": 260253.69,
+        "hsv": 3469582.89,
+        "lightness": 50.19
+      },
+      "contrast_ratio": 4.72,
+      "readable_on_black": true,
+      "line_number": 312
+    },
+    {
+      "name": "Salmon",
+      "hex": "#FF91A4",
+      "rgb": [
+        255,
+        145,
+        164
+      ],
+      "lch": {
+        "l": 72.35,
+        "c": 44.22,
+        "h": 10.94
+      },
+      "hsv": {
+        "h": 349.64,
+        "s": 43.14,
+        "v": 100.0
+      },
+      "indices": {
+        "lch": 116706.18,
+        "hsv": 3500777.36,
+        "lightness": 72.35
+      },
+      "contrast_ratio": 9.84,
+      "readable_on_black": true,
+      "line_number": 362
+    },
+    {
+      "name": "PrintHue Chili Pepper",
+      "hex": "#9B1B30",
+      "rgb": [
+        155,
+        27,
+        48
+      ],
+      "lch": {
+        "l": 33.91,
+        "c": 56.18,
+        "h": 23.08
+      },
+      "hsv": {
+        "h": 350.16,
+        "s": 82.58,
+        "v": 60.78
+      },
+      "indices": {
+        "lch": 234268.92,
+        "hsv": 3509881.35,
+        "lightness": 33.91
+      },
+      "contrast_ratio": 2.59,
+      "readable_on_black": false,
+      "line_number": 180
+    },
+    {
+      "name": "Scarlet",
+      "hex": "#FD0E35",
+      "rgb": [
+        253,
+        14,
+        53
+      ],
+      "lch": {
+        "l": 53.44,
+        "c": 92.06,
+        "h": 30.38
+      },
+      "hsv": {
+        "h": 350.21,
+        "s": 94.47,
+        "v": 99.22
+      },
+      "indices": {
+        "lch": 309234.33,
+        "hsv": 3511637.91,
+        "lightness": 53.44
+      },
+      "contrast_ratio": 5.29,
+      "readable_on_black": true,
+      "line_number": 332
+    },
+    {
+      "name": "Brick Red",
+      "hex": "#C62D42",
+      "rgb": [
+        198,
+        45,
+        66
+      ],
+      "lch": {
+        "l": 44.62,
+        "c": 65.35,
+        "h": 23.48
+      },
+      "hsv": {
+        "h": 351.76,
+        "s": 77.27,
+        "v": 77.65
+      },
+      "indices": {
+        "lch": 239324.2,
+        "hsv": 3525451.98,
+        "lightness": 44.62
+      },
+      "contrast_ratio": 3.86,
+      "readable_on_black": false,
+      "line_number": 240
+    },
+    {
+      "name": "PrintHue Red 032",
+      "hex": "#EF3340",
+      "rgb": [
+        239,
+        51,
+        64
+      ],
+      "lch": {
+        "l": 53.04,
+        "c": 80.03,
+        "h": 29.31
+      },
+      "hsv": {
+        "h": 355.85,
+        "s": 78.66,
+        "v": 93.73
+      },
+      "indices": {
+        "lch": 298499.71,
+        "hsv": 3566470.47,
+        "lightness": 53.04
+      },
+      "contrast_ratio": 5.22,
+      "readable_on_black": true,
+      "line_number": 315
+    },
+    {
+      "name": "PrintHue True Red",
+      "hex": "#8F1D21",
+      "rgb": [
+        143,
+        29,
+        33
+      ],
+      "lch": {
+        "l": 31.41,
+        "c": 54.46,
+        "h": 30.84
+      },
+      "hsv": {
+        "h": 357.89,
+        "s": 79.72,
+        "v": 56.08
+      },
+      "indices": {
+        "lch": 311617.4,
+        "hsv": 3586975.47,
+        "lightness": 31.41
+      },
+      "contrast_ratio": 2.37,
+      "readable_on_black": false,
+      "line_number": 172
+    },
+    {
+      "name": "English Vermilion",
+      "hex": "#CC474B",
+      "rgb": [
+        204,
+        71,
+        75
+      ],
+      "lch": {
+        "l": 49.31,
+        "c": 59.24,
+        "h": 26.88
+      },
+      "hsv": {
+        "h": 358.2,
+        "s": 65.2,
+        "v": 80.0
+      },
+      "indices": {
+        "lch": 273832.54,
+        "hsv": 3588554.5,
+        "lightness": 49.31
+      },
+      "contrast_ratio": 4.57,
+      "readable_on_black": true,
+      "line_number": 246
+    },
+    {
+      "name": "Madder Lake",
+      "hex": "#CC3336",
+      "rgb": [
+        204,
+        51,
+        54
+      ],
+      "lch": {
+        "l": 46.27,
+        "c": 69.04,
+        "h": 30.88
+      },
+      "hsv": {
+        "h": 358.82,
+        "s": 75.0,
+        "v": 80.0
+      },
+      "indices": {
+        "lch": 313456.06,
+        "hsv": 3595815.29,
+        "lightness": 46.27
+      },
+      "contrast_ratio": 4.09,
+      "readable_on_black": false,
+      "line_number": 245
+    },
+    {
+      "name": "Mahogany",
+      "hex": "#CA3435",
+      "rgb": [
+        202,
+        52,
+        53
+      ],
+      "lch": {
+        "l": 46.0,
+        "c": 68.29,
+        "h": 31.42
+      },
+      "hsv": {
+        "h": 359.6,
+        "s": 74.26,
+        "v": 79.22
+      },
+      "indices": {
+        "lch": 318855.51,
+        "hsv": 3603504.96,
+        "lightness": 46.0
+      },
+      "contrast_ratio": 4.05,
+      "readable_on_black": false,
+      "line_number": 244
+    }
+  ]
+}

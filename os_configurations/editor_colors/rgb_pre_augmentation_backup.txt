@@ -1,0 +1,247 @@
+black	#000000
+abyssal blue	#00005F
+deep blue	#000080
+navy blue	#000087
+cobalt	#0000AF
+medium blue	#0000D7
+blue	#0000FF
+emerald green	#005F00
+emerald stone	#005F5F
+impulse	#005F87
+cobalt stone	#005FAF
+royal navy blue	#005FD7
+bright blue	#005FFF
+moth green	#008000
+teal	#008080
+hulk	#008700
+absinthe turquoise	#00875F
+navigate	#008787
+tiny bubbles	#0087AF
+blue cola	#0087D7
+azure	#0087FF
+waystone green	#00AF00
+jungle	#00AF5F
+arcadia	#00AF87
+jade orchid	#00AFAF
+maldives	#00AFD7
+democrat	#00AFFF
+tunic green	#00D700
+limonana	#00D75F
+aqua green	#00D787
+pristine oceanic	#00D7AF
+jade glass	#00D7D7
+tropical turquoise	#00D7FF
+green	#00FF00
+cathode green	#00FF5F
+turquoise green	#00FF87
+night pearl	#00FFAF
+plunge pool	#00FFD7
+fluorescent turquoise	#00FFFF
+badab black wash	#080808
+dark tone ink	#121212
+gluon grey	#1C1C1C
+nero	#262626
+coated	#303030
+limousine leather	#3A3A3A
+medium black	#444444
+thunder	#4E4E4E
+carbon dating	#585858
+red blood	#5F0000
+clear plum	#5F005F
+zeus purple	#5F0087
+purplue	#5F00AF
+space opera	#5F00D7
+bright indigo	#5F00FF
+mud green	#5F5F00
+iron	#5F5F5F
+idol	#5F5F87
+blue iris	#5F5FAF
+ameixa	#5F5FD7
+blue genie	#5F5FFF
+olive green	#5F8700
+hippie green	#5F875F
+steel teal	#5F8787
+sand shark	#5F87AF
+livid	#5F87D7
+deep denim	#5F87FF
+emerald glitter	#5FAF00
+endo	#5FAF5F
+jade cream	#5FAF87
+aquarelle	#5FAFAF
+flyway	#5FAFD7
+tiān lán sky	#5FAFFF
+tropical funk	#5FD700
+loud green	#5FD75F
+snow pea	#5FD787
+jamaican jade	#5FD7AF
+jazzy jade	#5FD7D7
+skyan	#5FD7FF
+bright green	#5FFF00
+biopunk	#5FFF5F
+light green	#5FFF87
+sea green	#5FFFAF
+icy life	#5FFFD7
+frozen turquoise	#5FFFFF
+digital	#626262
+dark ash	#6C6C6C
+steel wool	#767676
+maroon	#800000
+ultraberry	#800080
+verde tropa	#808000
+grey	#808080
+dark red	#870000
+grapest	#87005F
+purple	#870087
+shiffurple	#8700AF
+violet ink	#8700D7
+star platinum purple	#8700FF
+ground earth	#875F00
+tarsier	#875F5F
+candy violet	#875F87
+knight elf	#875FAF
+amethyst	#875FD7
+irrigo purple	#875FFF
+heart gold	#878700
+bandicoot	#87875F
+jumbo	#878787
+skysail blue	#8787AF
+adora	#8787D7
+orchid	#8787FF
+grasping grass	#87AF00
+celuce	#87AF5F
+peapod	#87AF87
+hydrology	#87AFAF
+reform	#87AFD7
+fly away	#87AFFF
+overgrown	#87D700
+vivid spring	#87D75F
+de york	#87D787
+jovial jade	#87D7AF
+vic 20 sky	#87D7D7
+clear sky	#87D7FF
+lasting lime	#87FF00
+stadium lawn	#87FF5F
+easter green	#87FF87
+foam green	#87FFAF
+roller derby	#87FFD7
+electric blue	#87FFFF
+argent	#8A8A8A
+nickel	#949494
+waiting	#9E9E9E
+nosferatu	#A8A8A8
+red door	#AF0000
+violet red	#AF005F
+katy berry	#AF0087
+kinky koala	#AF00AF
+foxy fuchsia	#AF00D7
+bright violet	#AF00FF
+umber	#AF5F00
+sienna red	#AF5F5F
+cure all	#AF5F87
+pearly purple	#AF5FAF
+rich lilac	#AF5FD7
+vega violet	#AF5FFF
+chestnut gold	#AF8700
+clay ochre	#AF875F
+woodrose	#AF8787
+fashionably plum	#AF87AF
+pale purple	#AF87D7
+liliac	#AF87FF
+yew	#AFAF00
+palm	#AFAF5F
+underhive ash	#AFAF87
+tin foil	#AFAFAF
+lavender wash	#AFAFD7
+shy moment	#AFAFFF
+high grass	#AFD700
+badass grass	#AFD75F
+wasabi	#AFD787
+coral springs	#AFD7AF
+light continental waters	#AFD7D7
+droplet	#AFD7FF
+lime candy pearl	#AFFF00
+stinging wasabi	#AFFF5F
+light yellowish green	#AFFF87
+light mint	#AFFFAF
+pale turquoise	#AFFFD7
+affen turquoise	#AFFFFF
+silverstone	#B2B2B2
+gravel fint	#BCBCBC
+silver	#C0C0C0
+silver polish	#C6C6C6
+american silver	#D0D0D0
+hot fever	#D70000
+anger	#D7005F
+mexican pink	#D70087
+purple pirate	#D700AF
+awkward purple	#D700D7
+phlox	#D700FF
+tenné	#D75F00
+deep sea coral	#D75F5F
+groovy	#D75F87
+orion	#D75FAF
+fuchsia flash	#D75FD7
+pink fever	#D75FFF
+harvest eve gold	#D78700
+copper tan	#D7875F
+copperfield	#D78787
+middle purple	#D787AF
+purception	#D787D7
+crash pink	#D787FF
+chinese gold	#D7AF00
+sell gold	#D7AF5F
+buttery leather	#D7AF87
+mary rose	#D7AFAF
+bff	#D7AFD7
+mauve	#D7AFFF
+golden gun	#D7D700
+species	#D7D75F
+golden delicious	#D7D787
+dull sage	#D7D7AF
+silver medal	#D7D7D7
+contrail	#D7D7FF
+lime zest	#D7FF00
+ultra moss	#D7FF5F
+sunny lime	#D7FF87
+lime mist	#D7FFAF
+mint zest	#D7FFD7
+ice	#D7FFFF
+silver setting	#DADADA
+grey whisper	#E4E4E4
+super silver	#EEEEEE
+red	#FF0000
+sorx red	#FF005F
+hot pink	#FF0087
+bright pink	#FF00AF
+bright magenta	#FF00D7
+magenta	#FF00FF
+molten core	#FF5F00
+pompelmo	#FF5F5F
+warm pink	#FF5F87
+pink katydid	#FF5FAF
+rose pink	#FF5FD7
+violet pink	#FF5FFF
+sun crete	#FF8700
+pink fire	#FF875F
+coral trails	#FF8787
+pinky	#FF87AF
+pout pink	#FF87D7
+bubble gum	#FF87FF
+clementine jelly	#FFAF00
+rajah	#FFAF5F
+coral dusk	#FFAF87
+peach bud	#FFAFAF
+fresh gum	#FFAFD7
+jigglypuff	#FFAFFF
+gold	#FFD700
+aspen gold	#FFD75F
+workout routine	#FFD787
+satin latour	#FFD7AF
+satin ribbon	#FFD7D7
+sugarpills	#FFD7FF
+yellow	#FFFF00
+canary	#FFFF5F
+butter	#FFFF87
+bollywood gold	#FFFFAF
+lit	#FFFFD7
+white	#FFFFFF

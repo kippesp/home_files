@@ -1,0 +1,214 @@
+*macaw.txt* Unchain your art
+
+Author:  Urbain Vaes <https://urbain.vaes.uk/>
+License: MIT
+
+==============================================================================
+OVERVIEW                                                               *macaw*
+
+Macaw is a tool to interactively change colors in vim/nvim terminal.
+
+    1. Usage ............... |macaw-usage|
+    2. Functions ........... |macaw-functions|
+    2. Commands ............ |macaw-commands|
+    3. Mappings ............ |macaw-mappings|
+    3. Configuration ....... |macaw-config|
+
+==============================================================================
+USAGE                                                            *macaw-usage*
+
+Macaw aims to streamline the process of designing and tweaking vim
+colorschemes. The intended usage is as follows:
+
+1) Move the cursor to a character belonging to a syntax group of which you
+   would like to change the color.
+
+2) Press |yc| to open or focus the Macaw window.
+
+3) Change the color of the selected syntax group interactively.
+
+3) Repeat 1), 2) and 3) until you are satisfied with the changes.
+
+4) Use |:MacawWrite| in your colorscheme file or `.vimrc` to save the
+   highlight commands corresponding to your changes.
+
+If you just want to tweak a few colors of your colorscheme, the |ColorScheme|
+autocommand comes in handy. Just include the following code in your `.vimrc`,
+before the invocation of the |colorscheme| command. >
+
+    function! MyHighlights()
+        HIGHLIGHT COMMANDS COME HERE
+    endfunction
+
+    augroup myHighlights
+        autocmd!
+        autocmd ColorScheme * call MyHighlights()
+    augroup END
+
+    " Example colorscheme
+    colorscheme seoul256
+<
+Saving your Macaw tweaks can then be achieved with the command |:MacawWrite|
+within MyHighlights().
+
+A small additional feature of Macaw is that it defines highlighting rules for
+color numbers in highlight commands. For examlple, the numbers 26 and 44 will
+be highlighted with the corresponding colors if the following line appears in
+a vim file: >
+    highlight Comment ctermfg=26 ctermbg=44
+
+==============================================================================
+FUNCTIONS                                                     *macaw-functions*
+
+                                                                  *macaw#macaw*
+macaw#macaw([{syn_id} [, {fg_or_bg}]])
+    Open the Macaw window for the syntax group {syn_id}. The parameter
+    {syn_id} can be either the integer ID of a syntax group or a string with
+    the name of the syntax group. If unspecified, the syntax group of the
+    character under the cursor is employed. To change the color of the status
+    line, for example, you can run >
+        :call macaw#macaw("Statusline")
+<
+    If specified, the parameter {fg_or_bg} must be either 'fg' or 'bg'. It
+    determines whether the color changes should apply to the foreground color
+    or the background color of the syntax group. If left unspecified, it
+    defaults to 'fg'. To change the background color of |gitgutter| signs, for
+    example, you could run >
+        :call macaw#macaw("GitGutterAdd", "bg")
+<
+                                                                  *macaw#write*
+macaw#write()
+    Return the highlight command of the current Macaw session. If you apply
+    several tweaks and want to save them in your `.vimrc`, for example, write >
+        :put =macaw#write()
+
+                                                                 *macaw#rotate*
+macaw#rotate()
+    Rotate the colors of the current colorscheme, in RGB space. This erases any
+    previously saved tweaks.
+
+==============================================================================
+COMMANDS                                                       *macaw-commands*
+
+                                                                 *macaw-:Macaw*
+:Macaw [{syn_id} [{fg_or_bg}]]
+    Call |macaw#macaw()| with the parameters passed. The advantage of using
+    this command instead of the function is that completion is available for
+    the syntax group {syn_id}.
+
+                                                            *macaw-:MacawWrite*
+:MacawWrite
+    Call |macaw#write()| and write the result at the cursor position.
+
+==============================================================================
+MAPPINGS                                                      *macaw-mappings*
+
+Global~
+
+*yc*
+    Open Macaw with the syntax group under the cursor. This is equivalent to >
+       :call macaw#macaw()
+       :Macaw
+
+Buffer-local (in the Macaw buffer)~
+
+g?
+    Show this help.
+
+q
+    Close the plugin window.
+
+-
+    Open a list with the main syntax groups. In the list window, press <cr> to
+    select the syntax group under the cursor, and *K* to open the associated
+    vim documentation.
+
+<bs>
+    Clear the highlighting of the current syntax group.
+
+[count]<c-a>
+    Increment by [count] the number (0-255) of the color employed for the
+    selected syntax group.
+
+[count]<c-x>
+    Decrement by [count] the number (0-255) of the color employed for the
+    selected syntax group.
+
+<Left>
+    Cycle between red->blue->green->red. The currently selected color, which
+    is written in the status line of the plugin window, can then be modified
+    with <Up> and <Down>.
+
+<Right>
+    Cycle between red->green->blue->red.  The currently selected color, which
+    is written in the status line of the plugin window, can then be modified
+    with <Up> and <Down>.
+
+<Down>
+    Decrement either red, blue, or green.
+
+<Up>
+    Increment either red, blue, or green.
+
+!
+    This requires the program 'grabc' to be installed on your system.
+    It uses 'grabc' to fetch an external color, which is then approximated
+    using the terminal colors.
+B
+    Toggle between foreground and background. The current value value of this
+    parameter is written in the status line of the plugin window.
+
+R
+    Rotate the RGB values for the current syntax group.
+
+T
+    Toggle between vertical and horizontal mode. To make either layout
+    persistent, change |g:macaw_orientation|.
+
+I
+    Toggle between synID and translated synID. To illustrate the use of this,
+    let us consider two text files that both contain only one line.
+
+    *test.vim* : >
+        let a = 1729
+<
+    *test.py* : >
+        a = 1729
+<
+    With default vim settings, the number 1729 in *test.vim* is in the syntax
+    group 'vimNumber', whereas the number 1729 in *test.py*  is in the syntax
+    group 'pythonNumber'.
+
+    Both of these groups link to the group 'Number', which means that the
+    highlight rules of the group Number are employed for highlighting
+    numbers in both files. The group 'Number' is said to be the translated
+    syntax group of both 'vimNumber' and 'pythonNumber'; see |synIDtrans()| for
+    more details on this.
+
+    When Macaw is called with the cursor on 1729 in 'test.vim', it assumes
+    by default that the syntax group you want to tweak is 'Number', not
+    'vimNumber': a change of color will apply to all the syntax groups that
+    link to 'Number', which includes 'pythonNumber'.
+
+    If you want to tweak the highlighting of only the 'vimNumber' syntax
+    group, just press *I* in the Macaw buffer.
+
+==============================================================================
+CONFIGURATION                                                    *macaw-config*
+
+*g:macaw_orientation*
+    The orientation of the Macaw window. Either 'vertical' or 'horizontal'.
+    Default: 'vertical'.
+
+*g:macaw_command_vertical*
+    The command to open the Macaw file, which contains the color numbers,
+    when the orientation is set to 'vertical'.
+    Default: 'vert botright 23 split'.
+
+*g:macaw_command_horizontal*
+    The command to open the Macaw file, which contains the color numbers,
+    when the orientation is set to 'horizontal'.
+    Default: 'topleft 6 split'.
+
+==============================================================================
+ vim:tw=78:ts=4:et:ft=help:norl:
