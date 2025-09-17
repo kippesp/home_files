@@ -1,4 +1,7 @@
 @echo off
+if "%WINAUTORUN_WAS_RUN%"=="1" (goto :eof)
+set WINAUTORUN_WAS_RUN=1
+
 rem Add this file to c:\
 rem Add a registy autorun entry:
 rem     reg add "HKCU\Software\Microsoft\Command Processor" /v Autorun /d "%HOMEDRIVE%%HOMEPATH%\.winautorun.cmd" /f
