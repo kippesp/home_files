@@ -175,6 +175,20 @@ function dot2pdf {
     dot -Tpdf $1 -o ${1%.dot}.pdf
 }
 
+# Bash completion compatibility wrapper for internal _split_longopt function
+# The bash-completion project removed _split_longopt in 2023 (an internal function
+# not intended for public use). However, older completion scripts (like bat) still
+# call it, causing "command not found" errors. This wrapper provides compatibility.
+# See: https://github.com/scop/bash-completion/commit/d659507f8052151e9435706e5eee29676bc980f4
+# TODO: Consider removing this wrapper after May 2028 (5 years from removal in 2023)
+# when downstream projects have had sufficient time to update.
+_split_longopt() {
+    if declare -F _comp__split_longopt >/dev/null 2>&1; then
+        echo "DEBUG: _split_longopt wrapper called (will be removed after May 2028)" >&2
+        _comp__split_longopt
+    fi
+}
+
 # enable git colors if available
 _=`grep --color=auto --version > /dev/null 2>&1`
 if [ $? -eq 0 ]; then
