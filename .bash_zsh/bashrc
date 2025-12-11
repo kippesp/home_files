@@ -184,7 +184,7 @@ function dot2pdf {
 # when downstream projects have had sufficient time to update.
 _split_longopt() {
     if declare -F _comp__split_longopt >/dev/null 2>&1; then
-        echo "DEBUG: _split_longopt wrapper called (will be removed after May 2028)" >&2
+        # echo "DEBUG: _split_longopt wrapper called (will be removed after May 2028)" >&2
         _comp__split_longopt
     fi
 }
