@@ -17,8 +17,7 @@ if [[ -z "$cwd" ]]; then
 fi
 
 if (( $(echo "$pct > 0" | bc -l) )); then
-    remaining=$(echo "100 - $pct" | bc)
-    context="${remaining%.*}%"
+    context="${pct%.*}%"
 else
     context="--%"
 fi
@@ -31,4 +30,4 @@ else
     rel="$cwd"
 fi
 
-echo "$model | $context remaining | $rel"
+echo "$model | $context used | $rel"
