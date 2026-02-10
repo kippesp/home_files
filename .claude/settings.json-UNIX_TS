@@ -1,0 +1,12 @@
+{
+  "includeCoAuthoredBy": false,
+  "model": "sonnet",
+  "statusLine": {
+    "type": "command",
+    "command": "node /Users/kippesp/.claude/statusline.js"
+  },
+  "alwaysThinkingEnabled": true,
+  "feedbackSurveyState": {
+    "lastShownTime": 1753983760808
+  }
+}
