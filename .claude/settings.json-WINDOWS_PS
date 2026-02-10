@@ -1,0 +1,7 @@
+{
+  "includeCoAuthoredBy": false,
+  "statusLine": {
+    "type": "command",
+    "command": "powershell -NoProfile -ExecutionPolicy Bypass -File C:/Users/kippesp/.claude/statusline.ps1"
+  }
+}
