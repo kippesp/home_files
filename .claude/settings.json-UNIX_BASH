@@ -1,0 +1,12 @@
+{
+  "includeCoAuthoredBy": false,
+  "model": "sonnet",
+  "statusLine": {
+    "type": "command",
+    "command": "bash /Users/kippesp/.claude/statusline.sh"
+  },
+  "alwaysThinkingEnabled": true,
+  "feedbackSurveyState": {
+    "lastShownTime": 1753983760808
+  }
+}
