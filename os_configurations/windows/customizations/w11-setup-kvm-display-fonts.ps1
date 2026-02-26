@@ -95,4 +95,4 @@ public class NativeMethods {
 
 Write-Host "System font set to '$fontName' (weight 600, SemiBold)"
 Write-Host "Text scaling set to $textScaleFactor%"
-Write-Host "WM_SETTINGCHANGE broadcast sent — Explorer should update without sign-out."
+Write-Host "WM_SETTINGCHANGE broadcast sent.  Explorer should update without sign-out."
