@@ -1,0 +1,5 @@
+*
+!.gitignore
+!.inputrc
+!clink_settings
+!*.lua
