@@ -123,6 +123,9 @@ if [ -e /Library/Java/JavaVirtualMachines/jdk-24.0.1.jdk/Contents/Home ] ; then
     pathmunge $JAVA_HOME/bin
 fi
 
+# npm-global
+pathmunge $HOME/.npm-global/bin after
+
 export PATH
 
 # TODO - ??macos only?? Get the aliases and functions
