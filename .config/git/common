@@ -1,0 +1,39 @@
+[user]
+    name = Paul Kippes
+
+[protocol]
+    version = 2
+
+[feature]
+    manyFiles = true
+
+[pull]
+    rebase = true
+
+[rebase]
+    autostash = true
+
+[merge]
+    conflictstyle = zdiff3
+
+[filter "lfs"]
+    required = true
+    clean = git-lfs clean -- %f
+    smudge = git-lfs smudge -- %f
+    process = git-lfs filter-process
+
+[remote "origin"]
+    pruneTags = true
+
+[fetch]
+    prune = true
+
+[alias]
+    lo = log --graph --format='%C(auto) %h %aN %d %s'
+    ls = show --pretty= --stat --compact-summary
+    last = log -1 --stat
+    st = status
+    sw = switch
+    ds = diff --staged
+    blame-real = blame -w -C -C -C
+    log-diff = log -p -w --word-diff

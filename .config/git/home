@@ -1,0 +1,9 @@
+[user]
+    email = paul@kippesp.dev
+
+[push]
+    autoSetupRemote = true
+
+[merge]
+    tool = vimdiff
+    prompt = false
