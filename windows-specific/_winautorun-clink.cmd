@@ -18,3 +18,7 @@ rem Remove/uninstall:
 rem     reg delete "HKCU\Software\Microsoft\Command Processor" /v Autorun /f
 
 set CLINK_PATH=%USERPROFILE%\.clink.local
+
+rem Testing clink with profile:
+rem     cmd /d
+rem     clink inject --profile "%USERPROFILE%\.clink"
