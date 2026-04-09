@@ -29,7 +29,7 @@
     prune = true
 
 [alias]
-    lo = log --graph --format='%C(auto) %h %aN %d %s'
+    lo = log --graph --format='%C(auto) %h %aE %d %s'
     ls = show --pretty= --stat --compact-summary
     last = log -1 --stat
     st = status
