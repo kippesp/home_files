@@ -10,11 +10,18 @@
 [pull]
     rebase = true
 
+[push]
+    autoSetupRemote = true
+
 [rebase]
     autostash = true
 
 [merge]
     conflictstyle = zdiff3
+
+[diff]
+    colorMoved = zebra
+    colorMovedWS = allow-indentation-change
 
 [filter "lfs"]
     required = true
