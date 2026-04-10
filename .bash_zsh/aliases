@@ -31,3 +31,8 @@ function alias-ripgrep()
     alias lsf='rg --files --colors path:none'
     alias lsd='rg --hidden --files --null | xargs -0 dirname | uniq'
 }
+
+function alias-claude_code()
+{
+    alias plugin-refresh='rm -rf ~/.claude/plugins/cache/pmk-marketplace/ai-kippesp/'
+}
