@@ -12,5 +12,5 @@
     prompt = false
 
 [diff]
-    colorMoved = plain
+    colorMoved = zebra
     colorMovedWS = allow-indentation-change
