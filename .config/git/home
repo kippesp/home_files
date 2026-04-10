@@ -1,9 +1,16 @@
 [user]
     email = paul@kippesp.dev
 
+[init]
+    defaultBranch = main
+
 [push]
     autoSetupRemote = true
 
 [merge]
     tool = vimdiff
     prompt = false
+
+[diff]
+    colorMoved = plain
+    colorMovedWS = allow-indentation-change
