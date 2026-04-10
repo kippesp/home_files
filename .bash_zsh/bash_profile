@@ -128,6 +128,12 @@ pathmunge $HOME/.npm-global/bin after
 
 export PATH
 
+# ripgrep config
+if command -v rg 2>&1 >/dev/null
+then
+    export RIPGREP_CONFIG_PATH="$HOME/.config/ripgrep/config"
+fi
+
 # TODO - ??macos only?? Get the aliases and functions
 if [ -f ~/.bashrc ]; then
     . ~/.bashrc
@@ -139,8 +145,7 @@ if [ -f /opt/local/etc/profile.d/bash_completion.sh ]; then
 fi
 
 # Enable fzf's fuzzy auto completion for bash (from macports)
-_=`fzf --version > /dev/null 2>&1`
-if [ $? -eq 0 ]; then
+if command -v fzf 2>&1 >/dev/null; then
     if [ -f /opt/local/share/fzf/shell/key-bindings.bash ]; then
         . /opt/local/share/fzf/shell/key-bindings.bash
     fi
