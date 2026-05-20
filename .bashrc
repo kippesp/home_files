@@ -35,7 +35,13 @@ fi
 setbashprompt() {
     TITLEPREFIX=$MSYSTEM
 
-    PS1='\[\033]0;$TITLEPREFIX:${PWD//[^[:ascii:]]/?}\007\]' # set window title
+    # Set terminal/window title escape unless inside tmux, where we use the
+    # `title` command-alias to control the pane title manually.
+    if [ -z "$TMUX" ]; then
+        PS1='\[\033]0;$TITLEPREFIX:${PWD//[^[:ascii:]]/?}\007\]'  # set window title
+    else
+        PS1=''
+    fi
     PS1="$PS1"'\n'                 # new line
     PS1="$PS1"'\[\033[32m\]'       # change to green
     PS1="$PS1"'\u@\h '             # user@host<space>
