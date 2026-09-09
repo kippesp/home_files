@@ -44,3 +44,4 @@
     ds = diff --staged
     blame-real = blame -w -C -C -C
     log-diff = log -p -w --word-diff
+    lols = log --graph --format='%C(auto) %h %aE %d %s' --stat --compact-summary

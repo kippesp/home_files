@@ -251,8 +251,8 @@ if [ -e ~/.gitconfig ]; then
 fi
 
 # local git caches
-if [ -e ~/projects/local_git_caches ]; then
-  export GIT_DEP_REPOS_CACHE=~/projects/local_git_caches
+if [ -e ~/mystuff/local_git_caches ]; then
+  export GIT_DEP_REPOS_CACHE=~/mystuff/local_git_caches
 fi
 
 # If a login shell, fancify the prompt
