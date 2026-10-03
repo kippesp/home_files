@@ -78,15 +78,18 @@ nnoremap <silent> <Esc><Esc> <Esc>:nohlsearch<CR><Esc>
 
 " Search Forward - set the search register to the text of the previous
 " yank
-:nnoremap <leader>sf :silent let @/ = @" . '\>'<CR>:set hlsearch<CR>
+nnoremap <leader>sf :silent let @/ = @" . '\>'<CR>:set hlsearch<CR>
+
+" Copy the current buffer's full path to the system clipboard
+nnoremap <leader>cp :let @+ = expand('%:p')<CR>
 
 " Key mappings to keep incremental searches in the center
-:nnoremap n nzz
-:nnoremap N Nzz
-:nnoremap * *zz
-:nnoremap # #zz
-:nnoremap g* g*zz
-:nnoremap g# g#zz
+nnoremap n nzz
+nnoremap N Nzz
+nnoremap * *zz
+nnoremap # #zz
+nnoremap g* g*zz
+nnoremap g# g#zz
 
 " TODO: possibly per ft:
 
