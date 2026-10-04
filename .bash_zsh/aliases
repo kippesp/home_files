@@ -28,8 +28,19 @@ function alias-use_colorized_grep()
 
 function alias-ripgrep()
 {
+    # lsf - list the files ripgrep would search (honors .gitignore)
+    #   lsf                        # every file under .
+    #   lsf -g '*.md' docs         # only markdown files under docs/
     alias lsf='rg --files --colors path:none'
-    alias lsd='rg --hidden --files --null | xargs -0 dirname | uniq'
+
+    # lsd - list the directories that contain those files (takes no arguments)
+    #   lsd
+    alias lsd='rg --hidden --files --null | xargs -0 dirname | sort -u'
+
+    # lsg - list the files whose contents match a pattern (case-insensitive)
+    #   lsg error                  # every file containing "error"
+    #   lsg error -g '*log*' src   # only files named *log*, under src/
+    alias lsg='rg -il'
 }
 
 function alias-claude_code()

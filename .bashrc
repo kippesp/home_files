@@ -20,11 +20,11 @@ else
 fi
 
 # Load all bash configurations
-#if [[ -d "$HOME/.config/bash" ]]; then
-#    for file in "$HOME/.config/bash"/{functions,aliases,bashrc.d}/*.sh; do
-#        [[ -r "$file" ]] && source "$file"
-#    done
-#fi
+if [[ -d "$HOME/.config/bash" ]]; then
+    for file in "$HOME/.config/bash"/{functions,aliases,bashrc.d}/*.sh; do
+        [[ -r "$file" ]] && source "$file"
+    done
+fi
 
 # OS configuration:
 #   mkdir ~/usr/opt
