@@ -128,12 +128,6 @@ pathmunge $HOME/.npm-global/bin after
 
 export PATH
 
-# ripgrep config
-if command -v rg 2>&1 >/dev/null
-then
-    export RIPGREP_CONFIG_PATH="$HOME/.config/ripgrep/config"
-fi
-
 # TODO - ??macos only?? Get the aliases and functions
 if [ -f ~/.bashrc ]; then
     . ~/.bashrc

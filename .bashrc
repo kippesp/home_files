@@ -244,6 +244,18 @@ if [ -e ~/.ccache ]; then
     export CCACHE_DIR=~/.ccache
 fi
 
+# ripgrep config
+if command -v rg 2>&1 >/dev/null
+then
+    export RIPGREP_CONFIG_PATH="$HOME/.config/ripgrep/config"
+fi
+
+# glow config
+if command -v glow 2>&1 >/dev/null
+then
+    export GLOW_CONFIG_HOME="$HOME/.config/glow"
+fi
+
 # fixup for Windows mingw terminal applications
 if [ "$SYSOS" == "mingw" ]; then
     alias python='winpty python'
