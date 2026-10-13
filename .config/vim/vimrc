@@ -58,7 +58,9 @@ set modelines=1         " process a single modeline (as opposed to ...?)
 
 set mouse=nhv           " Enable console mouse for Normal, Visual, and Help
 if has('X11')
-  set clipboard=unnamedplus     " Use '+' register
+  if !empty($DISPLAY)           " No display (e.g. plain ssh): leave unset
+    set clipboard=unnamedplus   " Use '+' register
+  endif
 else
   set clipboard=autoselect      " (text mode) Use system clipboard
   set clipboard+=unnamed        " Use '*' register
