@@ -108,10 +108,19 @@ setbashprompt() {
     #then
 
     # Configure git-ified bash prompt
-    if test -f "$COMPLETION_PATH/git-prompt.sh"
+    GIT_PROMPT_SH="$COMPLETION_PATH/git-prompt.sh"
+    GIT_COMPLETION_SH="$COMPLETION_PATH/git-completion.bash"
+    if [ ! -f "$GIT_PROMPT_SH" ] && [ -f "$GIT_EXEC_PATH/git-sh-prompt" ]
     then
-        . "$COMPLETION_PATH/git-completion.bash"
-        . "$COMPLETION_PATH/git-prompt.sh"
+        # debian linux - 'git' package
+        GIT_PROMPT_SH="$GIT_EXEC_PATH/git-sh-prompt"
+        GIT_COMPLETION_SH="/usr/share/bash-completion/completions/git"
+    fi
+
+    if test -f "$GIT_PROMPT_SH"
+    then
+        test -f "$GIT_COMPLETION_SH" && . "$GIT_COMPLETION_SH"
+        . "$GIT_PROMPT_SH"
         PS1="$PS1"'\[\033[1;36m\]'          # change color to cyan
         PS1="$PS1"'`__git_ps1`'             # bash function
 
