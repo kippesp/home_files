@@ -32,10 +32,11 @@ function alias-ripgrep()
     #   lsf                        # every file under .
     #   lsf -g '*.md' docs         # only markdown files under docs/
     alias lsf='rg --files --colors path:none'
-
     # lsd - list the directories that contain those files (takes no arguments)
     #   lsd
     alias lsd='rg --hidden --files --null | xargs -0 dirname | sort -u'
+    alias lsf-all='rg -uu --files --colors path:none'
+    alias lsd-all='rg -uu --files --null | xargs -0 dirname | sort -u'
 
     # lsg - list the files whose contents match a pattern (case-insensitive)
     #   lsg error                  # every file containing "error"

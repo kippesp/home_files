@@ -15,8 +15,11 @@ BASHRC_WAS_RUN=1
 
 if [[ -f ~/.aliases ]]; then
     source ~/.aliases
-else
-    echo "*** No .aliases file found ***"
+fi
+
+# System-specific aliases
+if [[ -f ~/.aliases_system ]]; then
+    source ~/.aliases_system
 fi
 
 # Load all bash configurations
