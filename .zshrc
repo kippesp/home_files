@@ -36,7 +36,7 @@ RPROMPT=\$vcs_info_msg_0_
 zstyle ':vcs_info:git:*' formats '%b'
 
 # Alias a few commands
-alias gls='git log --stat --decorate --graph --abbrev-commit'
+alias gls='git log --stat --decorate --graph --abbrev-commit --stat-width=120'
 
 alias history='history 1'
 

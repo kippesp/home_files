@@ -18,6 +18,10 @@ rem Remove/uninstall:
 rem     reg delete "HKCU\Software\Microsoft\Command Processor" /v Autorun /f
 
 set CLINK_PATH=%USERPROFILE%\.clink.local
+doskey gls=git log --stat --decorate --graph --abbrev-commit --stat-width=120 $*
+doskey gss=git status -s $*
+doskey glo=git log --graph --format="%%C(auto) %%h %%aE %%d %%s" $*
+doskey glist=git show --pretty="" --name-only $*
 
 rem Testing clink with profile:
 rem     cmd /d
